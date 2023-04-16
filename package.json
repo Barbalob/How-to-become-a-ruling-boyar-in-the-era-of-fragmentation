@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "dev": " cross-env NODE_ENV=development webpack --mode development",
-    "build": " cross-env NODE_ENV=production webpack --mode production && git subtree push --prefix build origin gh-pages",
+    "build": " cross-env NODE_ENV=production webpack --mode production",
+    "pages": "git subtree push --prefix build origin gh-pages",
     "watch": " cross-env NODE_ENV=development webpack --mode development --watch",
     "start": " cross-env NODE_ENV=development webpack serve --mode development --open "
   },
