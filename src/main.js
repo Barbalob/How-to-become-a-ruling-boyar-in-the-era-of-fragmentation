@@ -1,27 +1,103 @@
 // import name from "./module.js";
+import { PageFlip } from 'page-flip'
 import './styles/style.scss'
 const buttonStart = document.querySelector('#start') 
-const leftPage = document.querySelector('.page__left')
-const rightPage = document.querySelector('.page__right')
-const mainPage = document.querySelector('.page')
+const leftPage = document.querySelector('.page1__left')
+const rightPage = document.querySelector('.page1__right')
+const mainPage = document.querySelector('.page1')
 buttonStart.addEventListener('click', () => {
     leftPage.remove();
     rightPage.remove();
     mainPage.innerHTML = `
-    <div class="real_book">
-    <div class="book_page">
-        test
+    <div class="container">
+    <div class="flip-book" id="demoBookExample">
+        <div class="page page-cover page-cover-top page-test" data-density="hard">
+            <div class="page-content">
+              <div class="imge">1</div>
+                <h2>BOOK TITLE</h2>
+            </div>
+        </div>
+        <div class="page page-test2">
+            <div class="page-content">
+                <h2 class="page-header">Page header 1</h2>
+                <div class="page-image" style="background-image: url(images/html/1.jpg)"></div>
+                <div class="page-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In cursus mollis nibh, non convallis ex convallis eu. Suspendisse potenti. Aenean vitae pellentesque erat. Integer non tristique quam. Suspendisse rutrum, augue ac sollicitudin mollis, eros velit viverra metus, a venenatis tellus tellus id magna. Aliquam ac nulla rhoncus, accumsan eros sed, viverra enim. Pellentesque non justo vel nibh sollicitudin pharetra suscipit ut ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In cursus mollis nibh, non convallis ex convallis eu. Suspendisse potenti. Aenean vitae pellentesque erat. Integer non tristique quam. Suspendisse rutrum, augue ac sollicitudin mollis, eros velit viverra metus, a venenatis tellus tellus id magna.</div>
+                <div class="page-footer">2</div>
+            </div>
+        </div>
+        <!-- PAGES .... -->
+        <div class="page page-test2">
+            <div class="page-content ">
+                <h2 class="page-header">Page header - 15</h2>
+                <div class="page-image" style="background-image: url(images/html/7.jpg)"></div>
+                <div class="page-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In cursus mollis nibh, non convallis ex convallis eu. Suspendisse potenti. Aenean vitae pellentesque erat. Integer non tristique quam. Suspendisse rutrum, augue ac sollicitudin mollis, eros velit viverra metus, a venenatis tellus tellus id magna. Aliquam ac nulla rhoncus, accumsan eros sed, viverra enim. Pellentesque non justo vel nibh sollicitudin pharetra suscipit ut ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In cursus mollis nibh, non convallis ex convallis eu. Suspendisse potenti. Aenean vitae pellentesque erat. Integer non tristique quam. Suspendisse rutrum, augue ac sollicitudin mollis, eros velit viverra metus, a venenatis tellus tellus id magna.</div>
+                <div class="page-footer">16</div>
+            </div>
+        </div>
+        <div class="page page-test2">
+            <div class="page-content">
+                <h2 class="page-header">Page header - 16</h2>
+                <div class="page-image" style="background-image: url(images/html/8.jpg)"></div>
+                <div class="page-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In cursus mollis nibh, non convallis ex convallis eu. Suspendisse potenti. Aenean vitae pellentesque erat. Integer non tristique quam. Suspendisse rutrum, augue ac sollicitudin mollis, eros velit viverra metus, a venenatis tellus tellus id magna. Aliquam ac nulla rhoncus, accumsan eros sed, viverra enim. Pellentesque non justo vel nibh sollicitudin pharetra suscipit ut ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In cursus mollis nibh, non convallis ex convallis eu. Suspendisse potenti. Aenean vitae pellentesque erat. Integer non tristique quam. Suspendisse rutrum, augue ac sollicitudin mollis, eros velit viverra metus, a venenatis tellus tellus id magna.</div>
+                <div class="page-footer">17</div>
+            </div>
+        </div>
+        <div class="page page-cover page-cover-bottom" data-density="hard">
+            <div class="page-content">
+                <h2>THE END</h2>
+            </div>
+        </div>
     </div>
-    <div class="book_page">
-
-    </div>
-    <div class="book_page">
-
-    </div>
-    <div class="book_page">
-
-    </div>
-    </div>
+</div>
 `
+const pageFlip = new PageFlip(
+    document.getElementById("demoBookExample"),
+    {
+        width: 550, // base page width
+        height: 733, // base page height
+
+        size: "stretch",
+        // set threshold values:
+        minWidth: 315,
+        maxWidth: 1000,
+        minHeight: 420,
+        maxHeight: 1350,
+        drawShadow: false,
+        showCover: true,
+        usePortrait: false,
+        mobileScrollSupport: false // disable content scrolling on mobile devices
+    }
+);
+
+// load pages
+pageFlip.loadFromHTML(document.querySelectorAll(".page"));
+
+// document.querySelector(".page-total").innerText = pageFlip.getPageCount();
+// document.querySelector(
+//     ".page-orientation"
+// ).innerText = pageFlip.getOrientation();
+
+// document.querySelector(".btn-prev").addEventListener("click", () => {
+//     pageFlip.flipPrev(); // Turn to the previous page (with animation)
+// });
+
+// document.querySelector(".btn-next").addEventListener("click", () => {
+//     pageFlip.flipNext(); // Turn to the next page (with animation)
+// });
+
+// // triggered by page turning
+// pageFlip.on("flip", (e) => {
+//     document.querySelector(".page-current").innerText = e.data + 1;
+// });
+
+// // triggered when the state of the book changes
+// pageFlip.on("changeState", (e) => {
+//     document.querySelector(".page-state").innerText = e.data;
+// });
+
+// // triggered when page orientation changes
+// pageFlip.on("changeOrientation", (e) => {
+//     document.querySelector(".page-orientation").innerText = e.data;
+// });
 })
 
