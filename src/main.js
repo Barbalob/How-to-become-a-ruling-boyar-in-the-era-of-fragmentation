@@ -5,6 +5,10 @@ const buttonStart = document.querySelector('#start')
 const leftPage = document.querySelector('.menu__left')
 const rightPage = document.querySelector('.menu__right')
 const mainPage = document.querySelector('.menu')
+const testButton = document.querySelector('#test')
+
+
+
 buttonStart.addEventListener('click', () => {
     leftPage.remove();
     rightPage.remove();
@@ -63,11 +67,31 @@ const pageFlip = new PageFlip(
         minHeight: 800,
         maxHeight: 1350,
         drawShadow: false,
-        showCover: true,
+        showCover: false,
         usePortrait: false,
         mobileScrollSupport: false // disable content scrolling on mobile devices
     }
 );
+
+testButton.addEventListener('click', () =>{
+    const tempDiv = document.createElement("div");
+    tempDiv.className = "page";
+    tempDiv.innerHTML=`
+    <div class="page-content">
+        <h2 class="page-header">Page header 1</h2>
+        <div class="page-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In cursus mollis nibh, non convallis ex convallis eu. Suspendisse potenti. Aenean vitae pellentesque erat. Integer non tristique quam. Suspendisse rutrum, augue ac sollicitudin mollis, eros velit viverra metus, a venenatis tellus tellus id magna. Aliquam ac nulla rhoncus, accumsan eros sed, viverra enim. Pellentesque non justo vel nibh sollicitudin pharetra suscipit ut ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In cursus mollis nibh, non convallis ex convallis eu. Suspendisse potenti. Aenean vitae pellentesque erat. Integer non tristique quam. Suspendisse rutrum, augue ac sollicitudin mollis, eros velit viverra metus, a venenatis tellus tellus id magna.</div>
+        <div class="page-footer">2</div>
+    </div>
+`
+    if (document.querySelector('.stf__block') != null){
+        document.querySelector('.stf__block').insertAdjacentElement("beforeend", tempDiv);
+    }
+    else{
+        console.log('no');
+    }
+    pageFlip.updateFromHtml(document.querySelectorAll(".page"));
+
+})
 
 // load pages
 pageFlip.loadFromHTML(document.querySelectorAll(".page"));
