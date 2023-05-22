@@ -8,11 +8,12 @@
 }
 .wrapper-book{
     margin: 0 auto;
-    margin-top: 60px;
+    margin-top: 25px;
     max-width: 1166px;
     height: 100%;
     .page{
-        border: 2px solid black;
+        background:url(../assets/page_t.png) no-repeat ; 
+        background-size: cover;
         height: 100%;
         top:0;
 

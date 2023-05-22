@@ -54,13 +54,13 @@ const pageFlip = new PageFlip(
     document.getElementById("demoBookExample"),
     {
         width: 550, // base page width
-        height: 733, // base page height
+        height: 803, // base page height
 
         size: "stretch",
         // set threshold values:
         minWidth: 315,
         maxWidth: 1000,
-        minHeight: 420,
+        minHeight: 800,
         maxHeight: 1350,
         drawShadow: false,
         showCover: true,
