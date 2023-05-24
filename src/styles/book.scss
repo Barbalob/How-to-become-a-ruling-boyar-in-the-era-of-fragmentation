@@ -16,11 +16,16 @@
         background-size: cover;
         height: 100%;
         top:0;
-        padding: 20px;
-
     }
     .flip-book{
 
     }
-
+    .--right{
+        border-bottom-right-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+    .--left{
+        border-bottom-left-radius: 5px;
+        border-top-left-radius: 5px;
+    }
 }
