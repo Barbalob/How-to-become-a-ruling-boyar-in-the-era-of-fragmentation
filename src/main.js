@@ -13,15 +13,16 @@ buttonStart.addEventListener('click', () => {
     leftPage.remove();
     rightPage.remove();
     mainPage.innerHTML = `
-    <div class="container">
+    <div class="container1">
           <div class="wrapper-book">
             <div class="flip-book" id="demoBookExample">
-                <div class="page page-cover page-cover-top page-test" data-density="hard">
+                <div class="page cover page-cover-top page-test">
                     <div class="page-content">
+                        <img class="cover_img" src="../assets/book-cover1.png">
                         <h2>BOOK TITLE</h2>
                     </div>
                 </div>
-                <div class="page page-test2">
+                <div class="page page1">
                     <div class="page-content">
                         <h2 class="page-header">Page header 1</h2>
                         <div class="page-image" style="background-image: url(images/html/1.jpg)"></div>
@@ -29,7 +30,7 @@ buttonStart.addEventListener('click', () => {
                         <div class="page-footer">2</div>
                     </div>
                 </div>
-                <div class="page page-test2">
+                <div class="page page2">
                     <div class="page-content ">
                         <h2 class="page-header">Page header - 15</h2>
                         <div class="page-image" style="background-image: url(images/html/7.jpg)"></div>
@@ -37,23 +38,11 @@ buttonStart.addEventListener('click', () => {
                         <div class="page-footer">16</div>
                     </div>
                 </div>
-                <div class="page page-test2">
-                    <div class="page-content">
-                        <h2 class="page-header">Page header - 16</h2>
-                        <div class="page-image" style="background-image: url(images/html/8.jpg)"></div>
-                        <div class="page-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In cursus mollis nibh, non convallis ex convallis eu. Suspendisse potenti. Aenean vitae pellentesque erat. Integer non tristique quam. Suspendisse rutrum, augue ac sollicitudin mollis, eros velit viverra metus, a venenatis tellus tellus id magna. Aliquam ac nulla rhoncus, accumsan eros sed, viverra enim. Pellentesque non justo vel nibh sollicitudin pharetra suscipit ut ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In cursus mollis nibh, non convallis ex convallis eu. Suspendisse potenti. Aenean vitae pellentesque erat. Integer non tristique quam. Suspendisse rutrum, augue ac sollicitudin mollis, eros velit viverra metus, a venenatis tellus tellus id magna.</div>
-                        <div class="page-footer">17</div>
-                    </div>
-                </div>
-                <div class="page page-cover page-cover-bottom" data-density="hard">
-                    <div class="page-content">
-                        <h2>THE END</h2>
-                    </div>
-                </div>
             </div>
           </div>
         </div>
 `
+
 const pageFlip = new PageFlip(
     document.getElementById("demoBookExample"),
     {
@@ -67,11 +56,75 @@ const pageFlip = new PageFlip(
         minHeight: 800,
         maxHeight: 1350,
         drawShadow: false,
-        showCover: false,
+        showCover: true,
         usePortrait: false,
         mobileScrollSupport: false // disable content scrolling on mobile devices
     }
 );
+pageFlip.loadFromHTML(document.querySelectorAll(".page"));
+setTimeout(() => {  pageFlip.flipNext(); }, 10);
+//     leftPage.remove();
+//     rightPage.remove();
+//     mainPage.innerHTML = `
+//     <div class="container">
+//           <div class="wrapper-book">
+//             <div class="flip-book" id="demoBookExample">
+//                 <div class="page page-cover page-cover-top page-test">
+//                     <div class="page-content">
+//                         <h2>BOOK TITLE</h2>
+//                     </div>
+//                 </div>
+//                 <div class="page page-test2">
+//                     <div class="page-content">
+//                         <h2 class="page-header">Page header 1</h2>
+//                         <div class="page-image" style="background-image: url(images/html/1.jpg)"></div>
+//                         <div class="page-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In cursus mollis nibh, non convallis ex convallis eu. Suspendisse potenti. Aenean vitae pellentesque erat. Integer non tristique quam. Suspendisse rutrum, augue ac sollicitudin mollis, eros velit viverra metus, a venenatis tellus tellus id magna. Aliquam ac nulla rhoncus, accumsan eros sed, viverra enim. Pellentesque non justo vel nibh sollicitudin pharetra suscipit ut ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In cursus mollis nibh, non convallis ex convallis eu. Suspendisse potenti. Aenean vitae pellentesque erat. Integer non tristique quam. Suspendisse rutrum, augue ac sollicitudin mollis, eros velit viverra metus, a venenatis tellus tellus id magna.</div>
+//                         <div class="page-footer">2</div>
+//                     </div>
+//                 </div>
+//                 <div class="page page-test2">
+//                     <div class="page-content ">
+//                         <h2 class="page-header">Page header - 15</h2>
+//                         <div class="page-image" style="background-image: url(images/html/7.jpg)"></div>
+//                         <div class="page-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In cursus mollis nibh, non convallis ex convallis eu. Suspendisse potenti. Aenean vitae pellentesque erat. Integer non tristique quam. Suspendisse rutrum, augue ac sollicitudin mollis, eros velit viverra metus, a venenatis tellus tellus id magna. Aliquam ac nulla rhoncus, accumsan eros sed, viverra enim. Pellentesque non justo vel nibh sollicitudin pharetra suscipit ut ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In cursus mollis nibh, non convallis ex convallis eu. Suspendisse potenti. Aenean vitae pellentesque erat. Integer non tristique quam. Suspendisse rutrum, augue ac sollicitudin mollis, eros velit viverra metus, a venenatis tellus tellus id magna.</div>
+//                         <div class="page-footer">16</div>
+//                     </div>
+//                 </div>
+//                 <div class="page page-test2">
+//                     <div class="page-content">
+//                         <h2 class="page-header">Page header - 16</h2>
+//                         <div class="page-image" style="background-image: url(images/html/8.jpg)"></div>
+//                         <div class="page-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In cursus mollis nibh, non convallis ex convallis eu. Suspendisse potenti. Aenean vitae pellentesque erat. Integer non tristique quam. Suspendisse rutrum, augue ac sollicitudin mollis, eros velit viverra metus, a venenatis tellus tellus id magna. Aliquam ac nulla rhoncus, accumsan eros sed, viverra enim. Pellentesque non justo vel nibh sollicitudin pharetra suscipit ut ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In cursus mollis nibh, non convallis ex convallis eu. Suspendisse potenti. Aenean vitae pellentesque erat. Integer non tristique quam. Suspendisse rutrum, augue ac sollicitudin mollis, eros velit viverra metus, a venenatis tellus tellus id magna.</div>
+//                         <div class="page-footer">17</div>
+//                     </div>
+//                 </div>
+//                 <div class="page page-cover page-cover-bottom" data-density="soft">
+//                     <div class="page-content">
+//                         <h2>THE END</h2>
+//                     </div>
+//                 </div>
+//             </div>
+//           </div>
+//         </div>
+// `
+// const pageFlip = new PageFlip(
+//     document.getElementById("demoBookExample"),
+//     {
+//         width: 550, // base page width
+//         height: 803, // base page height
+
+//         size: "stretch",
+//         // set threshold values:
+//         minWidth: 315,
+//         maxWidth: 1000,
+//         minHeight: 800,
+//         maxHeight: 1350,
+//         drawShadow: false,
+//         showCover: false,
+//         usePortrait: false,
+//         mobileScrollSupport: false // disable content scrolling on mobile devices
+//     }
+// );
 
 testButton.addEventListener('click', () =>{
     const tempDiv = document.createElement("div");
@@ -94,7 +147,7 @@ testButton.addEventListener('click', () =>{
 })
 
 // load pages
-pageFlip.loadFromHTML(document.querySelectorAll(".page"));
+// pageFlip.loadFromHTML(document.querySelectorAll(".page"));
 
 
 
