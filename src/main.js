@@ -30,8 +30,8 @@ buttonStart.addEventListener('click', () => {
     const pageFlip = new PageFlip(
         document.getElementById("demoBookExample"),
         {
-            width: 711, // base page width
-            height: 980, // base page height
+            width: 640, // base page width
+            height: 882, // base page height
 
             size: "fixed",
             // set threshold values:
