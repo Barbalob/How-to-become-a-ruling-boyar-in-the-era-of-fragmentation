@@ -1,0 +1,46 @@
+.page-content{
+    padding: 50px 40px;
+    width: 100%;
+    height: 100%;
+    .main-text{
+        color: #000000;
+    }
+
+    .img-letter{
+        &-small{
+            float: left;
+            margin-right: 5px;
+            mix-blend-mode: overlay;
+            width: 88px;
+        }
+        &-high{
+            float: left;
+            margin-right: 5px;
+            mix-blend-mode: overlay;
+            width: 102px;
+        }
+    }
+    .decor{
+        display: flex;
+        justify-content: center;
+    }
+}
+.content-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.page-content{
+    .img-wrapper{
+        display: flex;
+        flex-direction: column;
+        gap:30px
+    }
+    .content-img{
+        margin: 0 auto;
+    }
+    .text-img-author{
+        text-align: center;
+    }
+}
