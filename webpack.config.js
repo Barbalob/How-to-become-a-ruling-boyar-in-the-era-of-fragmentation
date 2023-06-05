@@ -10,7 +10,9 @@ const TerserWebpackPlugin = require("terser-webpack-plugin")
 const isDev = process.env.NODE_ENV === 'development'
 const isProd = !isDev
 
-const filename = ext => isDev ? `[name].${ext}` : `[name].[hash].${ext}`
+// const filename = ext => isDev ? `[name].${ext}` : `[name].[hash].${ext}`
+const filename = ext => isDev ? `[name].${ext}` : `[name].${ext}`
+
 
 const optimization = () => {
     const config = {
