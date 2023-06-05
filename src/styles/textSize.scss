@@ -19,6 +19,9 @@
     &-large{
         @include text-size(normal, 400, 30px, 37.47px);
     }
+    &-continued{
+        @include text-size(normal, 400, 100px, 70.47px);
+    }
     &-menu-main{
         @include text-size(normal, 400, 45px, 56px);
         text-shadow: 4px 4px 0px #000000;  
