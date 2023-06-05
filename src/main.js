@@ -30,8 +30,8 @@ buttonStart.addEventListener('click', () => {
     const pageFlip = new PageFlip(
         document.getElementById("demoBookExample"),
         {
-            width: 640, // base page width
-            height: 882, // base page height
+            width: 711, // base page width
+            height: 980, // base page height
 
             size: "fixed",
             // set threshold values:
@@ -249,7 +249,7 @@ buttonStart.addEventListener('click', () => {
             document.getElementById("demoBookExample"),
             {
                 width: 550, // base page width
-                height: 803, // base page height
+                height: 823, // base page height
 
                 size: "stretch",
                 // set threshold values:
@@ -264,7 +264,7 @@ buttonStart.addEventListener('click', () => {
             }
         );
         Book.loadFromHTML(document.querySelectorAll(".page"));
-    }, 990);
+    }, 1000);
     testButton.addEventListener('click', () => {
         const tempDiv = document.createElement("div");
         tempDiv.className = "page";
