@@ -1,0 +1,27 @@
+.container1{
+    margin: 0 auto;
+    width: 100%;
+    height: 900px;
+}
+.open-book{
+    margin: 0 auto;
+    max-width: 1280px;
+    height: 100%;
+    .page1{
+        background:url(../assets/book_hl.png) no-repeat ; 
+        background-size: cover;
+        height: 100%;
+        top:0;
+    }
+    .page2{
+        background:url(../assets/book_hl2.png) no-repeat ; 
+        background-size: cover;
+        height: 100%;
+        top:0;
+    }
+    .cover{
+        background:url(../assets/book-cover1.png) no-repeat ; 
+        height: 100%;
+        top:0;
+    }
+}

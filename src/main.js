@@ -14,21 +14,13 @@ buttonStart.addEventListener('click', () => {
     rightPage.remove();
     mainPage.innerHTML = `
     <div class="container1">
-          <div class="wrapper-book">
+          <div class="open-book">
             <div class="flip-book" id="demoBookExample">
                 <div class="page cover page-cover-top page-test">
-                    <div class="page-content">
-                        <img class="cover_img" src="../assets/book-cover1.png">
-                        <h2>BOOK TITLE</h2>
-                    </div>
                 </div>
                 <div class="page page1">
-                    <div class="page-content">
-                    </div>
                 </div>
                 <div class="page page2">
-                    <div class="page-content ">
-                    </div>
                 </div>
             </div>
           </div>
@@ -38,15 +30,11 @@ buttonStart.addEventListener('click', () => {
 const pageFlip = new PageFlip(
     document.getElementById("demoBookExample"),
     {
-        width: 550, // base page width
-        height: 803, // base page height
+        width: 640, // base page width
+        height: 882, // base page height
 
-        size: "stretch",
+        size: "fixed",
         // set threshold values:
-        minWidth: 315,
-        maxWidth: 1000,
-        minHeight: 800,
-        maxHeight: 1350,
         drawShadow: false,
         showCover: true,
         usePortrait: false,
@@ -57,9 +45,9 @@ const pageFlip = new PageFlip(
 pageFlip.loadFromHTML(document.querySelectorAll(".page"));
 setTimeout(() => {  pageFlip.flipNext(); }, 10);
 setTimeout(() => {
-    pageFlip.destroy();
-    const container = document.querySelector('.container1');
-    container.remove();
+    // pageFlip.destroy();
+    // const container = document.querySelector('.container1');
+    // container.remove();
     mainPage.innerHTML = `
     <div class="container">
           <div class="wrapper-book">
@@ -91,26 +79,6 @@ setTimeout(() => {
                         <div class="page-footer">2</div>
                     </div>
                 </div>
-                <div class="page page-test2">
-                    <div class="page-content ">
-                        <h2 class="page-header">Page header - 15</h2>
-                        <div class="page-image" style="background-image: url(images/html/7.jpg)"></div>
-                        <div class="page-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In cursus mollis nibh, non convallis ex convallis eu. Suspendisse potenti. Aenean vitae pellentesque erat. Integer non tristique quam. Suspendisse rutrum, augue ac sollicitudin mollis, eros velit viverra metus, a venenatis tellus tellus id magna. Aliquam ac nulla rhoncus, accumsan eros sed, viverra enim. Pellentesque non justo vel nibh sollicitudin pharetra suscipit ut ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In cursus mollis nibh, non convallis ex convallis eu. Suspendisse potenti. Aenean vitae pellentesque erat. Integer non tristique quam. Suspendisse rutrum, augue ac sollicitudin mollis, eros velit viverra metus, a venenatis tellus tellus id magna.</div>
-                        <div class="page-footer">16</div>
-                    </div>
-                </div>
-                <div class="page page-test2">
-                    <div class="page-content">
-                        <h2 class="page-header">Page header - 16</h2>
-                        <div class="page-image" style="background-image: url(images/html/8.jpg)"></div>
-                        <div class="page-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In cursus mollis nibh, non convallis ex convallis eu. Suspendisse potenti. Aenean vitae pellentesque erat. Integer non tristique quam. Suspendisse rutrum, augue ac sollicitudin mollis, eros velit viverra metus, a venenatis tellus tellus id magna. Aliquam ac nulla rhoncus, accumsan eros sed, viverra enim. Pellentesque non justo vel nibh sollicitudin pharetra suscipit ut ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In cursus mollis nibh, non convallis ex convallis eu. Suspendisse potenti. Aenean vitae pellentesque erat. Integer non tristique quam. Suspendisse rutrum, augue ac sollicitudin mollis, eros velit viverra metus, a venenatis tellus tellus id magna.</div>
-                        <div class="page-footer">17</div>
-                    </div>
-                </div>
-                <div class="page page-cover page-cover-bottom" data-density="soft">
-                    <div class="page-content">
-                        <h2>THE END</h2>
-                    </div>
                 </div>
             </div>
         </div>
@@ -135,7 +103,7 @@ const Book = new PageFlip(
     }
 );
 Book.loadFromHTML(document.querySelectorAll(".page"));
-}, 1100);
+}, 990);
 testButton.addEventListener('click', () =>{
     const tempDiv = document.createElement("div");
     tempDiv.className = "page";
