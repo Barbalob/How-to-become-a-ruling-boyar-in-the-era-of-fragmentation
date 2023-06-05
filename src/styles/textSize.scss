@@ -1,0 +1,29 @@
+
+@mixin text-size($font-style: normal, $font-weight:400, $font-size:26px, $line-height:32px) {
+    font-style: $font-style;
+    font-weight: $font-weight;
+    font-size: $font-size;
+    line-height: $line-height;
+}
+
+.text{
+    &-small{
+        @include text-size(normal, 400, 24px, 29.98px);
+    }
+    &-medium{
+        @include text-size(normal, 400, 26px, 32.47px);
+    }
+    &-high{
+        @include text-size(normal, 400, 28px, 35px);
+    }
+    &-large{
+        @include text-size(normal, 400, 30px, 37.47px);
+    }
+    &-menu-main{
+        @include text-size(normal, 400, 45px, 56px);
+        text-shadow: 4px 4px 0px #000000;  
+    }
+    &-menu-button{
+        @include text-size(normal, 400, 40px, 50px);
+    }
+}

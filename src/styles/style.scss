@@ -1,7 +1,8 @@
-@import url(nullstyle.scss);
+@import 'nullstyle.scss';
 @import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
-@import url(book.scss);
-@import url(text.scss);
+@import 'book.scss';
+@import 'content.scss';
+@import 'textSize';
 
 .wrapper{
     width: 100%;
@@ -38,9 +39,6 @@
         align-items: center;
         background: url(../assets/bg-button.png);
         border-radius: 30px;
-        font-weight: 400;
-        font-size: 40px;
-        line-height: 50px;
         &-active{
             text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
             font-weight: bold;
@@ -70,9 +68,6 @@
             height: 328px;          
             text-align: center;
             font-style: normal;
-            font-weight: 400;
-            font-size: 45px;
-            line-height: 56px;
             margin-left: 151px;
             margin-right: 97px;
         }
