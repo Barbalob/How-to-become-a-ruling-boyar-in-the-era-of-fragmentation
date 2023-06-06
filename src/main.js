@@ -2,14 +2,18 @@
 import { PageFlip } from 'page-flip'
 import './styles/style.scss'
 const buttonStart = document.querySelector('#start')
-const leftPage = document.querySelector('.menu__left')
+let leftPage = document.querySelector('#btns')
 const rightPage = document.querySelector('.menu__right')
 const mainPage = document.querySelector('.menu')
-const testButton = document.querySelector('#test')
+// const testButton = document.querySelector('#test')
 
-
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+  }
 
 buttonStart.addEventListener('click', () => {
+    leftPage.classList.add('is-hidden');
+    sleep(200).then(() => { 
     leftPage.remove();
     rightPage.remove();
     mainPage.innerHTML = `
@@ -25,8 +29,7 @@ buttonStart.addEventListener('click', () => {
             </div>
           </div>
         </div>
-`
-
+        `
     const pageFlip = new PageFlip(
         document.getElementById("demoBookExample"),
         {
@@ -39,15 +42,16 @@ buttonStart.addEventListener('click', () => {
             showCover: true,
             usePortrait: false,
             mobileScrollSupport: false,
-            useMouseEvents: false // disable content scrolling on mobile devices
+            useMouseEvents: false, // disable content scrolling on mobile devices
+            flippingTime: 1100
         }
     );
-    pageFlip.loadFromHTML(document.querySelectorAll(".page"));
-    setTimeout(() => { pageFlip.flipNext(); }, 10);
-    setTimeout(() => {
+    pageFlip.loadFromHTML(document.querySelectorAll(".page"));   
+    sleep(20).then(() => {  pageFlip.flipNext(); });
+    sleep(1100).then(() => {
         pageFlip.destroy();
-        const container = document.querySelector('.container1');
-        container.remove();
+        const container1 = document.querySelector('.container1');
+        container1.remove();
         mainPage.innerHTML = `
     <div class="container">
           <div class="wrapper-book">
@@ -207,40 +211,10 @@ buttonStart.addEventListener('click', () => {
                             чтобы занять достойное место в “семейном владении Рюриковичей”.
                             </div>
                         </div>
-                        <button id="trophies" class="menu__button text-medium">Что Вы намерены делать в первую очередь?</button>
+                        <button id="choice" class="menu__button text-medium">Что Вы намерены делать в первую очередь?</button>
                         <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>
                     </div>
                 </div>
-
-                <div class="page">
-                    <div class="page-content content-text">
-                        <div class='main-text'> 
-                            <img src="assets/letter/letterH.svg" alt="Буква H" class='img-letter-small'>
-                            <div class='text text-medium'> 
-                            аходясь при особе своего князя, Вы,
-                            к своему стыду, не сумели уберечь
-                            его от отравления, совершенного коварным поваром по прозвищу Поганка. Не только могущество и влияние, но и само выживание княжеского клана, 
-                            к которому он принадлежал, подверглись угрозе. Пока бурное развитие сел и городов прерывается набегами половцев, 
-                            зачастую приглашаемых на Русскую землю самими русскими князьями, Вы рискуете остаться за бортом Истории. Однако, 
-                            судьба дала Вам второй шанс в лице его молодого наследника. Несмотря на то, что княжеский стол потерян, честь клана попрана, 
-                            а молодой и неопытный Рюрикович превращен в князя-изгоя, Вы решаете начать искать союзников для возвращения отчины, чтобы занять достойное место в 
-                            “семейном владении Рюриковичей”. Что Вы намерены делать в первую очередь?
-                            </div>
-                        </div>
-                        <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>
-                    </div>
-                </div>
-
-                <div class="page">
-                    <div class="page-content content-img">
-                        <figure>
-                            <figcaption class="text-img-author text-continued">To be continued...</figcaption>                     
-                        </figure> 
-                        <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>
-                    </div>
-                </div>
-
-
             </div>
         </div>
     </div>
@@ -264,31 +238,38 @@ buttonStart.addEventListener('click', () => {
             }
         );
         Book.loadFromHTML(document.querySelectorAll(".page"));
-    }, 1000);
-    testButton.addEventListener('click', () => {
-        const tempDiv = document.createElement("div");
-        tempDiv.className = "page";
-        tempDiv.innerHTML = `
-    <div class="page-content">
-        <h2 class="page-header">Page header 1</h2>
-        <div class="page-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In cursus mollis nibh, non convallis ex convallis eu. 
-        Suspendisse potenti. Aenean vitae pellentesque erat. Integer non tristique quam. Suspendisse rutrum, augue ac sollicitudin mollis, 
-        eros velit viverra metus, a venenatis tellus tellus id magna. Aliquam ac nulla rhoncus, accumsan eros sed, viverra enim. 
-        Pellentesque non justo vel nibh sollicitudin pharetra suscipit ut ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-        In cursus mollis nibh, non convallis ex convallis eu. Suspendisse potenti. Aenean vitae pellentesque erat. Integer non tristique quam. 
-        Suspendisse rutrum, augue ac sollicitudin mollis, eros velit viverra metus, a venenatis tellus tellus id magna.</div>
-        <div class="page-footer">2</div>
-    </div>
-`
-        if (document.querySelector('.stf__block') != null) {
-            document.querySelector('.stf__block').insertAdjacentElement("beforeend", tempDiv);
-        }
-        else {
-            console.log('no');
-        }
-        Book.updateFromHtml(document.querySelectorAll(".page"));
-
+        let choiceBtn = document.querySelector('#choice');
+        choiceBtn.addEventListener('click', () => {
+            let container = document.querySelector('.container');
+            container.classList.add('move-left');
+        });
     });
+    });
+
+//     testButton.addEventListener('click', () => {
+//         const tempDiv = document.createElement("div");
+//         tempDiv.className = "page";
+//         tempDiv.innerHTML = `
+//     <div class="page-content">
+//         <h2 class="page-header">Page header 1</h2>
+//         <div class="page-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In cursus mollis nibh, non convallis ex convallis eu. 
+//         Suspendisse potenti. Aenean vitae pellentesque erat. Integer non tristique quam. Suspendisse rutrum, augue ac sollicitudin mollis, 
+//         eros velit viverra metus, a venenatis tellus tellus id magna. Aliquam ac nulla rhoncus, accumsan eros sed, viverra enim. 
+//         Pellentesque non justo vel nibh sollicitudin pharetra suscipit ut ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+//         In cursus mollis nibh, non convallis ex convallis eu. Suspendisse potenti. Aenean vitae pellentesque erat. Integer non tristique quam. 
+//         Suspendisse rutrum, augue ac sollicitudin mollis, eros velit viverra metus, a venenatis tellus tellus id magna.</div>
+//         <div class="page-footer">2</div>
+//     </div>
+// `
+//         if (document.querySelector('.stf__block') != null) {
+//             document.querySelector('.stf__block').insertAdjacentElement("beforeend", tempDiv);
+//         }
+//         else {
+//             console.log('no');
+//         }
+//         Book.updateFromHtml(document.querySelectorAll(".page"));
+
+//     });
 
     // load pages
     // pageFlip.loadFromHTML(document.querySelectorAll(".page"));

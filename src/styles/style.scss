@@ -81,3 +81,17 @@
     left:10px;
     padding: 20px 40px;
 }
+
+
+.is-hidden {
+	animation: fadeOutFromBlock 0.25s ease-in-out;
+}
+ 
+  @keyframes fadeOutFromBlock {
+	0% {
+	  opacity: 1;
+	}
+	100% {
+	  opacity: 0;
+	}
+}

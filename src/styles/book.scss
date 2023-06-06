@@ -30,3 +30,11 @@
         border-top-left-radius: 5px;
     }
 }
+
+.move-left {
+    transition: transform 2s;
+    transform: translate(-50em,0);
+    -webkit-transform: translate(-50em,0); /** Safari & Chrome **/
+    -o-transform: translate(-50em,0); /** Opera **/
+    -moz-transform: translate(-50em,0); /** Firefox **/
+}
