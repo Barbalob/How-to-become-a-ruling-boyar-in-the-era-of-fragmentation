@@ -60,7 +60,7 @@ buttonStart.addEventListener('click', () => {
         sleep(1300).then(() => {
             pageFlip.destroy();
             const container1 = document.querySelector('.container1');
-            container1.remove();
+            container1.remove(); 
             mainPage.innerHTML = `
     <div class="container">
           <div class="wrapper-book">
