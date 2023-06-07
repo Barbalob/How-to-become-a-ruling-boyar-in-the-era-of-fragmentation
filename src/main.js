@@ -254,14 +254,14 @@ buttonStart.addEventListener('click', () => {
         choiceBtn.addEventListener('click', (evt) => {
             let container = document.querySelector('.container');
             container.classList.add('move-left');
-            const tempDiv = `
+            const testElement = createElement(`
             <ul class='list-answer'>
-            <li><button id="choice-1" class="text-medium button-answer">Нужно попытаться найти дружелюбных князей, готовых помочь мальчику вернуть отчину. Уверен, такие найдутся!</button></li>
-            <li><button id="choice-2" class="text-medium button-answer">Необходимо обратиться за помощью к польскому королю, с которым у нас есть давние связи. Конечно, за свою помощь он попросит золото, серебро или часть земельных владений, но, вернув свои земли и заручившись верной дружиной, мы сможем легко вернуть все отданное обратно. Тем паче, что я знаю язык Ляхов. Я знал, что это мне не единожды пригодиться!</button></li>
-            <li><button id="choice-3" class="text-medium button-answer">Если честно, я, все-таки, не понимаю, зачем мне всё это нужно. Рисковать своей жизнью ради этого мальчика… Пойду-ка я лучше служить к другому князю, обзаведусь слугами и умру никому неизвестным боярином!</button></li>
+                <li><button id="choice-1" class="text-medium button-answer">Нужно попытаться найти дружелюбных князей, готовых помочь мальчику вернуть отчину. Уверен, такие найдутся!</button></li>
+                <li><button id="choice-2" class="text-medium button-answer">Необходимо обратиться за помощью к польскому королю, с которым у нас есть давние связи. Конечно, за свою помощь он попросит золото, серебро или часть земельных владений, но, вернув свои земли и заручившись верной дружиной, мы сможем легко вернуть все отданное обратно. Тем паче, что я знаю язык Ляхов. Я знал, что это мне не единожды пригодиться!</button></li>
+                <li><button id="choice-3" class="text-medium button-answer">Если честно, я, все-таки, не понимаю, зачем мне всё это нужно. Рисковать своей жизнью ради этого мальчика… Пойду-ка я лучше служить к другому князю, обзаведусь слугами и умру никому неизвестным боярином!</button></li>
             </ul>
-            `
-            mainPage.insertAdjacentHTML(RenderPosition.BEFOREEND, tempDiv);
+            `)
+            mainPage.insertAdjacentElement(RenderPosition.BEFOREEND, testElement);
             evt.target.disabled = true; 
             sleep(3000).then(() => {
                 const buttonChoice1 = document.querySelector('#choice-1')
@@ -278,13 +278,57 @@ buttonStart.addEventListener('click', () => {
                     }
                 }
 
+                CreateListBook(`
+                    <li class="page">
+                    <div class="page-content content-img">
+                        <figure>
+                            <img class="content-img" src="assets/image/4.png" alt="Съезд князей">
+                            <figcaption class="text-img-author text-medium">Отравление Ростислава Владимировича Тмутараканского, первого князя-изгоя, греческим стратигом. Миниатюра из Радзивилловской летописи (XV век)</figcaption>                     
+                        </figure>                       
+                        <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>    
+                    </div>
+                    </li>    
+
+                    <li class="page">
+                        <div class="page-content content-text">
+                            <div class='main-text'> 
+                                <img src="assets/letter/letterH.svg" alt="Буква И" class='img-letter-small'>
+                                <div class='text text-small'> 
+                                Отправив гонцов к ближайшим
+                                князьям, Вы либо не получаете
+                                никаких известий, либо получаете послания с отказами в помощи. 
+                                Еще бы: кому нужно поддерживать молодого князя-изгоя, да еще и без большого воинства! 
+                                А вот к западу от Русских земель такие силы как раз имеются. Силы, готовые за обещания земель или золота, помочь заполучить Вашему князю вожделенный престол. 
+                                Вы отправляйтесь в Польшу и прибываете ко двору польского короля из династии Пястов, который довольно сносно Вас принимает, но, стоит отметить, без особого энтузиазма.
+                                </div>
+                            </div>
+                            <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>
+                        </div>
+                    </li>
+                `)
+
+                testElement.remove();
+                container.classList.remove('move-left')
+
                 buttonChoice1.addEventListener('click', F)
                 buttonChoice2.addEventListener('click', F)
                 buttonChoice3.addEventListener('click', F)
-        });
+                
+                function CreateListBook(template){
+                    const test =  `${template}`
+                    if (document.querySelector('.stf__block') != null) {
+                        document.querySelector('.stf__block').insertAdjacentHTML("beforeend", test);
+                    } else {
+                        console.log('no');
+                    }
+                    Book.updateFromHtml(document.querySelectorAll(".page"));
+                }
+            });
+
         });
     });
     });
+
 
     
 
