@@ -2,7 +2,7 @@
 import { PageFlip } from 'page-flip'
 import './styles/style.scss'
 const buttonStart = document.querySelector('#start')
-let leftPage = document.querySelector('#btns')
+const leftPage = document.querySelector('#btns')
 const rightPage = document.querySelector('.menu__right')
 const mainPage = document.querySelector('.menu')
 // const testButton = document.querySelector('#test')
@@ -20,16 +20,17 @@ buttonStart.addEventListener('click', () => {
     <div class="container1">
           <div class="open-book">
             <div class="flip-book" id="demoBookExample">
-                <div class="page cover page-cover-top page-test">
+                <div id="page" class="cover page-cover-top page-test">
                 </div>
-                <div class="page page1">
+                <div id="page" class="page1 right-br">
                 </div>
-                <div class="page page2">
+                <div id="page" class="page2 left-br">
                 </div>
             </div>
           </div>
         </div>
         `
+
     const pageFlip = new PageFlip(
         document.getElementById("demoBookExample"),
         {
@@ -46,8 +47,14 @@ buttonStart.addEventListener('click', () => {
             flippingTime: 1100
         }
     );
-    pageFlip.loadFromHTML(document.querySelectorAll(".page"));   
+    const pOne = document.querySelector(".page1");
+    const pTwo = document.querySelector(".page2");
+    pageFlip.loadFromHTML(document.querySelectorAll("#page"));   
     sleep(20).then(() => {  pageFlip.flipNext(); });
+    sleep(500).then(() => {
+        pOne.classList.remove("right-br")
+        pTwo.classList.remove("left-br")
+    });
     sleep(1100).then(() => {
         pageFlip.destroy();
         const container1 = document.querySelector('.container1');
