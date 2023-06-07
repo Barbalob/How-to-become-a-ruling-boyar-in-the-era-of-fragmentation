@@ -247,9 +247,9 @@ buttonStart.addEventListener('click', () => {
             }
         );
         Book.loadFromHTML(document.querySelectorAll(".page"));
-        testButton.addEventListener('click', () => {
-            Book.turnToPage(8);
-        });
+        // testButton.addEventListener('click', () => {
+        //     Book.turnToPage(8);
+        // });
         let choiceBtn = document.querySelector('#choice');
         choiceBtn.addEventListener('click', (evt) => {
             let container = document.querySelector('.container');
@@ -276,42 +276,41 @@ buttonStart.addEventListener('click', () => {
                             buttonChoice.disabled = true; 
                         }
                     }
-                }
 
-                CreateListBook(`
-                    <li class="page">
-                    <div class="page-content content-img">
-                        <figure>
-                            <img class="content-img" src="assets/image/4.png" alt="Съезд князей">
-                            <figcaption class="text-img-author text-medium">Отравление Ростислава Владимировича Тмутараканского, первого князя-изгоя, греческим стратигом. Миниатюра из Радзивилловской летописи (XV век)</figcaption>                     
-                        </figure>                       
-                        <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>    
-                    </div>
-                    </li>    
-
-                    <li class="page">
-                        <div class="page-content content-text">
-                            <div class='main-text'> 
-                                <img src="assets/letter/letterH.svg" alt="Буква И" class='img-letter-small'>
-                                <div class='text text-small'> 
-                                Отправив гонцов к ближайшим
-                                князьям, Вы либо не получаете
-                                никаких известий, либо получаете послания с отказами в помощи. 
-                                Еще бы: кому нужно поддерживать молодого князя-изгоя, да еще и без большого воинства! 
-                                А вот к западу от Русских земель такие силы как раз имеются. Силы, готовые за обещания земель или золота, помочь заполучить Вашему князю вожделенный престол. 
-                                Вы отправляйтесь в Польшу и прибываете ко двору польского короля из династии Пястов, который довольно сносно Вас принимает, но, стоит отметить, без особого энтузиазма.
-                                </div>
-                            </div>
-                            <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>
+                    CreateListBook(`
+                        <li class="page">
+                        <div class="page-content content-img">
+                            <figure>
+                                <img class="content-img" src="assets/image/4.png" alt="Съезд князей">
+                                <figcaption class="text-img-author text-medium">Отравление Ростислава Владимировича Тмутараканского, первого князя-изгоя, греческим стратигом. Миниатюра из Радзивилловской летописи (XV век)</figcaption>                     
+                            </figure>                       
+                            <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>    
                         </div>
-                    </li>
-                `)
-                sleep(500).then(()=>{
-                    testElement.remove();
-                    container.classList.add('move-right')
-                    container.classList.remove('move-left')
-                })
-                
+                        </li>    
+
+                        <li class="page">
+                            <div class="page-content content-text">
+                                <div class='main-text'> 
+                                    <img src="assets/letter/letterH.svg" alt="Буква И" class='img-letter-small'>
+                                    <div class='text text-small'> 
+                                    Отправив гонцов к ближайшим
+                                    князьям, Вы либо не получаете
+                                    никаких известий, либо получаете послания с отказами в помощи. 
+                                    Еще бы: кому нужно поддерживать молодого князя-изгоя, да еще и без большого воинства! 
+                                    А вот к западу от Русских земель такие силы как раз имеются. Силы, готовые за обещания земель или золота, помочь заполучить Вашему князю вожделенный престол. 
+                                    Вы отправляйтесь в Польшу и прибываете ко двору польского короля из династии Пястов, который довольно сносно Вас принимает, но, стоит отметить, без особого энтузиазма.
+                                    </div>
+                                </div>
+                                <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>
+                            </div>
+                        </li>
+                    `)
+                    sleep(500).then(()=>{
+                        testElement.remove();
+                        container.classList.add('move-right')
+                        container.classList.remove('move-left')
+                    })
+                }
 
                 buttonChoice1.addEventListener('click', F)
                 buttonChoice2.addEventListener('click', F)
