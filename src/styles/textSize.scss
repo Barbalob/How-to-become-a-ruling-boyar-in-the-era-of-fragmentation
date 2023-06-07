@@ -19,6 +19,9 @@
     &-large{
         @include text-size(normal, 400, 30px, 37.47px);
     }
+    &-trophy{
+        @include text-size(normal, 400, 52px, 65px);
+    }
     &-continued{
         @include text-size(normal, 400, 100px, 70.47px);
     }
