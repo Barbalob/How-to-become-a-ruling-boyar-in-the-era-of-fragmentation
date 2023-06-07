@@ -263,27 +263,25 @@ buttonStart.addEventListener('click', () => {
             `
             mainPage.insertAdjacentHTML(RenderPosition.BEFOREEND, tempDiv);
             evt.target.disabled = true; 
-            const buttonChoice1 = document.querySelector('#choice-1')
-            const buttonChoice2 = document.querySelector('#choice-2')
-            const buttonChoice3 = document.querySelector('#choice-3')   
+            sleep(3000).then(() => {
+                const buttonChoice1 = document.querySelector('#choice-1')
+                const buttonChoice2 = document.querySelector('#choice-2')
+                const buttonChoice3 = document.querySelector('#choice-3')   
 
-            const F = (evt)=>{
-                const id = evt.target.id.slice(-1)
-                for (let i = 1; i < 4; i++) {
-                    if (String(i) !== id){
-                        const buttonChoice = document.querySelector(`#choice-${i}`)
-                        buttonChoice.disabled = true; 
+                const F = (evt)=>{
+                    const id = evt.target.id.slice(-1)
+                    for (let i = 1; i < 4; i++) {
+                        if (String(i) !== id){
+                            const buttonChoice = document.querySelector(`#choice-${i}`)
+                            buttonChoice.disabled = true; 
+                        }
                     }
                 }
-            }
 
-            buttonChoice1.addEventListener('click', F)
-            buttonChoice2.addEventListener('click', F)
-            buttonChoice3.addEventListener('click', F)
-
-
-
-
+                buttonChoice1.addEventListener('click', F)
+                buttonChoice2.addEventListener('click', F)
+                buttonChoice3.addEventListener('click', F)
+        });
         });
     });
     });
