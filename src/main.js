@@ -263,16 +263,18 @@ buttonStart.addEventListener('click', () => {
             `)
             mainPage.insertAdjacentElement(RenderPosition.BEFOREEND, testElement);
             evt.target.disabled = true; 
-            const buttonChoice1 = document.querySelector('#choice-1')
-            const buttonChoice2 = document.querySelector('#choice-2')
-            const buttonChoice3 = document.querySelector('#choice-3')   
+            sleep(3000).then(() => {
+                const buttonChoice1 = document.querySelector('#choice-1')
+                const buttonChoice2 = document.querySelector('#choice-2')
+                const buttonChoice3 = document.querySelector('#choice-3')   
 
-            const F = (evt)=>{
-                const id = evt.target.id.slice(-1)
-                for (let i = 1; i < 4; i++) {
-                    if (String(i) !== id){
-                        const buttonChoice = document.querySelector(`#choice-${i}`)
-                        buttonChoice.disabled = true; 
+                const F = (evt)=>{
+                    const id = evt.target.id.slice(-1)
+                    for (let i = 1; i < 4; i++) {
+                        if (String(i) !== id){
+                            const buttonChoice = document.querySelector(`#choice-${i}`)
+                            buttonChoice.disabled = true; 
+                        }
                     }
                 }
 
@@ -304,6 +306,7 @@ buttonStart.addEventListener('click', () => {
                         </div>
                     </li>
                 `)
+<<<<<<< HEAD
                 sleep(500).then(()=>{
                     testElement.remove();
                     container.classList.add('move-right')
@@ -321,10 +324,27 @@ buttonStart.addEventListener('click', () => {
                     document.querySelector('.stf__block').insertAdjacentHTML("beforeend", test);
                 } else {
                     console.log('no');
+=======
+
+                testElement.remove();
+                container.classList.remove('move-left')
+
+                buttonChoice1.addEventListener('click', F)
+                buttonChoice2.addEventListener('click', F)
+                buttonChoice3.addEventListener('click', F)
+                
+                function CreateListBook(template){
+                    const test =  `${template}`
+                    if (document.querySelector('.stf__block') != null) {
+                        document.querySelector('.stf__block').insertAdjacentHTML("beforeend", test);
+                    } else {
+                        console.log('no');
+                    }
+                    Book.updateFromHtml(document.querySelectorAll(".page"));
+>>>>>>> 63ba0408c33f92b811b0733902b0972d026b998c
                 }
-                Book.updateFromHtml(document.querySelectorAll(".page"));
-            }
-            
+            });
+
         });
     });
     });
