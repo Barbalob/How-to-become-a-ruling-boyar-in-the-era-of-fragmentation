@@ -1,7 +1,7 @@
 // import name from "./module.js";
 import { PageFlip } from 'page-flip'
 import './styles/style.scss'
-import {RenderPosition, createElement, render} from './render.js'
+import {RenderPosition, createElement, render, renderHTML} from './render.js'
 const buttonStart = document.querySelector('#start')
 const leftPage = document.querySelector('#btns')
 const rightPage = document.querySelector('.menu__right')
@@ -251,6 +251,14 @@ buttonStart.addEventListener('click', () => {
         choiceBtn.addEventListener('click', () => {
             let container = document.querySelector('.container');
             container.classList.add('move-left');
+            const tempDiv = `
+            <ul class='list-answer'>
+            <li><button id="choice" class="menu__button text-medium button-answer">Что Вы намерены делать в первую очередь?</button></li>
+            <li><button id="choice" class="menu__button text-medium button-answer">Что Вы намерены делать в первую очередь?</button></li>
+            <li><button id="choice" class="menu__button text-medium button-answer">Что Вы намерены делать в первую очередь?</button></li>
+            </ul>
+            `
+            mainPage.insertAdjacentHTML(RenderPosition.BEFOREEND, tempDiv);
         });
     });
     });

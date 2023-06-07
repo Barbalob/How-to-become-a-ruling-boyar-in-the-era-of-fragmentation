@@ -14,13 +14,13 @@
     overflow: hidden;
 }
 .menu{
-    display: block;
     max-width: 1438px;
     margin: 0 auto;
     padding-top: 10px;
     background-size: cover;
     display: flex;
     flex-direction: row;
+    position: relative;
     
     &__left{
         display: flex;
@@ -94,4 +94,14 @@
 	100% {
 	  opacity: 0;
 	}
+}
+
+.list-answer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:50px;
+    height: 100%;
+    position: absolute;
+    right: 50px;
 }
