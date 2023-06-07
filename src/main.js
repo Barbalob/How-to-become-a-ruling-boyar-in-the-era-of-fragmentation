@@ -306,28 +306,12 @@ buttonStart.addEventListener('click', () => {
                         </div>
                     </li>
                 `)
-<<<<<<< HEAD
                 sleep(500).then(()=>{
                     testElement.remove();
                     container.classList.add('move-right')
                     container.classList.remove('move-left')
-                }) 
-            }
-
-            buttonChoice1.addEventListener('click', F)
-            buttonChoice2.addEventListener('click', F)
-            buttonChoice3.addEventListener('click', F)
-            
-            function CreateListBook(template){
-                const test =  `${template}`
-                if (document.querySelector('.stf__block') != null) {
-                    document.querySelector('.stf__block').insertAdjacentHTML("beforeend", test);
-                } else {
-                    console.log('no');
-=======
-
-                testElement.remove();
-                container.classList.remove('move-left')
+                })
+                
 
                 buttonChoice1.addEventListener('click', F)
                 buttonChoice2.addEventListener('click', F)
@@ -341,7 +325,6 @@ buttonStart.addEventListener('click', () => {
                         console.log('no');
                     }
                     Book.updateFromHtml(document.querySelectorAll(".page"));
->>>>>>> 63ba0408c33f92b811b0733902b0972d026b998c
                 }
             });
 
