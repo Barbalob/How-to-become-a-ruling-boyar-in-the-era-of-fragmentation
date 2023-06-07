@@ -1,7 +1,7 @@
 // import name from "./module.js";
 import { PageFlip } from 'page-flip'
 import './styles/style.scss'
-import {RenderPosition, createElement, render, renderHTML} from './render.js'
+import { RenderPosition, createElement, render, renderHTML } from './render.js'
 const buttonStart = document.querySelector('#start')
 const leftPage = document.querySelector('#btns')
 const rightPage = document.querySelector('.menu__right')
@@ -11,14 +11,14 @@ const testButton = document.querySelector('#test')
 
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
-  }
+}
 
 buttonStart.addEventListener('click', () => {
     leftPage.classList.add('is-hidden');
-    sleep(200).then(() => { 
-    leftPage.remove();
-    rightPage.remove();
-    mainPage.innerHTML = `
+    sleep(200).then(() => {
+        leftPage.remove();
+        rightPage.remove();
+        mainPage.innerHTML = `
     <div class="container1">
           <div class="open-book">
             <div class="flip-book" id="demoBookExample">
@@ -33,35 +33,35 @@ buttonStart.addEventListener('click', () => {
         </div>
         `
 
-    const pageFlip = new PageFlip(
-        document.getElementById("demoBookExample"),
-        {
-            width: 640, // base page width
-            height: 882, // base page height
+        const pageFlip = new PageFlip(
+            document.getElementById("demoBookExample"),
+            {
+                width: 640, // base page width
+                height: 882, // base page height
 
-            size: "fixed",
-            // set threshold values:
-            drawShadow: false,
-            showCover: true,
-            usePortrait: false,
-            mobileScrollSupport: false,
-            useMouseEvents: false, // disable content scrolling on mobile devices
-            flippingTime: 1100
-        }
-    );
-    const pOne = document.querySelector(".page1");
-    const pTwo = document.querySelector(".page2");
-    pageFlip.loadFromHTML(document.querySelectorAll("#page"));   
-    sleep(20).then(() => {  pageFlip.flipNext(); });
-    sleep(500).then(() => {
-        pOne.classList.remove("right-br")
-        pTwo.classList.remove("left-br")
-    });
-    sleep(1500).then(() => {
-        pageFlip.destroy();
-        const container1 = document.querySelector('.container1');
-        container1.remove();
-        mainPage.innerHTML = `
+                size: "fixed",
+                // set threshold values:
+                drawShadow: false,
+                showCover: true,
+                usePortrait: false,
+                mobileScrollSupport: false,
+                useMouseEvents: false, // disable content scrolling on mobile devices
+                flippingTime: 1100
+            }
+        );
+        const pOne = document.querySelector(".page1");
+        const pTwo = document.querySelector(".page2");
+        pageFlip.loadFromHTML(document.querySelectorAll("#page"));
+        sleep(20).then(() => { pageFlip.flipNext(); });
+        sleep(500).then(() => {
+            pOne.classList.remove("right-br")
+            pTwo.classList.remove("left-br")
+        });
+        sleep(1500).then(() => {
+            pageFlip.destroy();
+            const container1 = document.querySelector('.container1');
+            container1.remove();
+            mainPage.innerHTML = `
     <div class="container">
           <div class="wrapper-book">
             <ul class="flip-book" id="demoBookExample">
@@ -228,56 +228,55 @@ buttonStart.addEventListener('click', () => {
         </div>
     </div>
 `
-        const Book = new PageFlip(
-            document.getElementById("demoBookExample"),
-            {
-                width: 550, // base page width
-                height: 803, // base page height
+            const Book = new PageFlip(
+                document.getElementById("demoBookExample"),
+                {
+                    width: 550, // base page width
+                    height: 803, // base page height
 
-                size: "stretch",
-                // set threshold values:
-                minWidth: 315,
-                maxWidth: 1000,
-                minHeight: 800,
-                maxHeight: 1350,
-                drawShadow: false,
-                showCover: false,
-                usePortrait: false,
-                mobileScrollSupport: false // disable content scrolling on mobile devices
-            }
-        );
-        Book.loadFromHTML(document.querySelectorAll(".page"));
-        // testButton.addEventListener('click', () => {
-        //     Book.turnToPage(8);
-        // });
-        let choiceBtn = document.querySelector('#choice');
-        choiceBtn.addEventListener('click', (evt) => {
-            let container = document.querySelector('.container');
-            container.classList.add('move-left');
-            const testElement = createElement(`
+                    size: "stretch",
+                    // set threshold values:
+                    minWidth: 315,
+                    maxWidth: 1000,
+                    minHeight: 800,
+                    maxHeight: 1350,
+                    drawShadow: false,
+                    showCover: false,
+                    usePortrait: false,
+                    mobileScrollSupport: false // disable content scrolling on mobile devices
+                }
+            );
+            Book.loadFromHTML(document.querySelectorAll(".page"));
+            // testButton.addEventListener('click', () => {
+            //     Book.turnToPage(8);
+            // });
+            let choiceBtn = document.querySelector('#choice');
+            choiceBtn.addEventListener('click', (evt) => {
+                let container = document.querySelector('.container');
+                container.classList.add('move-left');
+                const testElement = createElement(`
             <ul class='list-answer'>
                 <li><button id="choice-1" class="text-medium button-answer">Нужно попытаться найти дружелюбных князей, готовых помочь мальчику вернуть отчину. Уверен, такие найдутся!</button></li>
                 <li><button id="choice-2" class="text-medium button-answer">Необходимо обратиться за помощью к польскому королю, с которым у нас есть давние связи. Конечно, за свою помощь он попросит золото, серебро или часть земельных владений, но, вернув свои земли и заручившись верной дружиной, мы сможем легко вернуть все отданное обратно. Тем паче, что я знаю язык Ляхов. Я знал, что это мне не единожды пригодиться!</button></li>
                 <li><button id="choice-3" class="text-medium button-answer">Если честно, я, все-таки, не понимаю, зачем мне всё это нужно. Рисковать своей жизнью ради этого мальчика… Пойду-ка я лучше служить к другому князю, обзаведусь слугами и умру никому неизвестным боярином!</button></li>
             </ul>
             `)
-            mainPage.insertAdjacentElement(RenderPosition.BEFOREEND, testElement);
-            evt.target.disabled = true; 
-            sleep(3000).then(() => {
-                const buttonChoice1 = document.querySelector('#choice-1')
-                const buttonChoice2 = document.querySelector('#choice-2')
-                const buttonChoice3 = document.querySelector('#choice-3')   
+                mainPage.insertAdjacentElement(RenderPosition.BEFOREEND, testElement);
+                evt.target.disabled = true;
+                sleep(3000).then(() => {
+                    const buttonChoice1 = document.querySelector('#choice-1')
+                    const buttonChoice2 = document.querySelector('#choice-2')
+                    const buttonChoice3 = document.querySelector('#choice-3')
 
-                const F = (evt)=>{
-                    const id = evt.target.id.slice(-1)
-                    for (let i = 1; i < 4; i++) {
-                        if (String(i) !== id){
-                            const buttonChoice = document.querySelector(`#choice-${i}`)
-                            buttonChoice.disabled = true; 
+                    const F = (evt) => {
+                        const id = evt.target.id.slice(-1)
+                        for (let i = 1; i < 4; i++) {
+                            if (String(i) !== id) {
+                                const buttonChoice = document.querySelector(`#choice-${i}`)
+                                buttonChoice.disabled = true;
+                            }
                         }
-                    }
-
-                    CreateListBook(`
+                        CreateListBook(`
                         <li class="page">
                         <div class="page-content content-img">
                             <figure>
@@ -305,59 +304,116 @@ buttonStart.addEventListener('click', () => {
                             </div>
                         </li>
                     `)
-                    sleep(500).then(()=>{
-                        testElement.remove();
-                        container.classList.add('move-right')
-                        container.classList.remove('move-left')
-                    })
-                }
+                        CreateListBook(` 
 
-                buttonChoice1.addEventListener('click', F)
-                buttonChoice2.addEventListener('click', F)
-                buttonChoice3.addEventListener('click', F)
-                
-                function CreateListBook(template){
-                    const test =  `${template}`
-                    if (document.querySelector('.stf__block') != null) {
-                        document.querySelector('.stf__block').insertAdjacentHTML("beforeend", test);
-                    } else {
-                        console.log('no');
+                        <li class="page">
+                            <div class="page-content content-text">
+                                <div class='main-text'> 
+                                    <img src="assets/letter/letterP.svg" alt="Буква П" class='img-letter-small'>
+                                    <div class='text text-small'> 
+                                    рибыв ко двору польского короля из
+                                    династии Пястов, Вы очаровываите
+                                    монарха и придворных своим знанием языка и обычаев. Польский король выделяет Вам и князю лучшие покои в своем замке, а также положительно отвечает на Ваше предложение о военном союзе. 
+                                    <br>
+                                    Впечатленный Вашим дипломатическим даром и даром толмача, князь не может сдержать своего восхищения.
+                                    После аудиенции у польского короля Вы возвращайтесь в свои покои, куда Вам приносят княжеский вышитый пояс в качестве знака высшей признательности. 
+                                    Так, Вы не просто завоевали уважение своего князя, но и снискали его милость, что, конечно же, не применет сказаться на Вашем статусе и положении как при иноземных дворах, так и при будущем дворе Вашего князя.
+                                    </div>
+                                </div>
+                                <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>
+                            </div>
+                        </li>
+
+                        <li class="page">
+                        <div class="page-content content-img">
+                            <figure>
+                                <h2>Получен трофей:</h2>
+                                <img class="content-img" src="assets/trophy/1.png" alt="Княжеский вышитый пояс">
+                                <figcaption class="text-img-author text-medium">Княжеский вышитый пояс</figcaption>                     
+                            </figure>                       
+                            <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>    
+                        </div>
+                        </li>   
+                    `)
+                       
+                        CreateListBook(`
+                        <li class="page">
+                        <div class="page-content content-img">
+                            <figure>
+                                <img class="content-img" src="assets/image/4.png" alt="Съезд князей">
+                                <figcaption class="text-img-author text-medium">Отравление Ростислава Владимировича Тмутараканского, первого князя-изгоя, греческим стратигом. Миниатюра из Радзивилловской летописи (XV век)</figcaption>                     
+                            </figure>                       
+                            <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>    
+                        </div>
+                        </li>    
+
+                        <li class="page">
+                            <div class="page-content content-text">
+                                <div class='main-text'> 
+                                    <img src="assets/letter/letterB.svg" alt="Буква И" class='img-letter-small'>
+                                    <div class='text text-small'> 
+                                    ы не захотели прожить 
+                                    по-настоящему увлекательную и
+                                    полную приключений жизнь. Вы умерли в безвестности, и не один летописец не счел нужным упомянуть о Вас хотя бы вкратце.
+                                    </div>
+                                </div>
+                                <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>
+                            </div>
+                        </li>
+                    `)
+                        sleep(500).then(() => {
+                            testElement.remove();
+                            container.classList.add('move-right')
+                            container.classList.remove('move-left')
+                        })
                     }
-                    Book.updateFromHtml(document.querySelectorAll(".page"));
-                }
-            });
 
+                    buttonChoice1.addEventListener('click', F)
+                    buttonChoice2.addEventListener('click', F)
+                    buttonChoice3.addEventListener('click', F)
+
+                    function CreateListBook(template) {
+                        const test = `${template}`
+                        if (document.querySelector('.stf__block') != null) {
+                            document.querySelector('.stf__block').insertAdjacentHTML("beforeend", test);
+                        } else {
+                            console.log('no');
+                        }
+                        Book.updateFromHtml(document.querySelectorAll(".page"));
+                    }
+                });
+
+            });
         });
     });
-    });
 
 
-    
 
-//     testButton.addEventListener('click', () => {
-//         const tempDiv = document.createElement("div");
-//         tempDiv.className = "page";
-//         tempDiv.innerHTML = `
-//     <div class="page-content">
-//         <h2 class="page-header">Page header 1</h2>
-//         <div class="page-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In cursus mollis nibh, non convallis ex convallis eu. 
-//         Suspendisse potenti. Aenean vitae pellentesque erat. Integer non tristique quam. Suspendisse rutrum, augue ac sollicitudin mollis, 
-//         eros velit viverra metus, a venenatis tellus tellus id magna. Aliquam ac nulla rhoncus, accumsan eros sed, viverra enim. 
-//         Pellentesque non justo vel nibh sollicitudin pharetra suscipit ut ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-//         In cursus mollis nibh, non convallis ex convallis eu. Suspendisse potenti. Aenean vitae pellentesque erat. Integer non tristique quam. 
-//         Suspendisse rutrum, augue ac sollicitudin mollis, eros velit viverra metus, a venenatis tellus tellus id magna.</div>
-//         <div class="page-footer">2</div>
-//     </div>
-// `
-//         if (document.querySelector('.stf__block') != null) {
-//             document.querySelector('.stf__block').insertAdjacentElement("beforeend", tempDiv);
-//         }
-//         else {
-//             console.log('no');
-//         }
-//         Book.updateFromHtml(document.querySelectorAll(".page"));
 
-//     });
+    //     testButton.addEventListener('click', () => {
+    //         const tempDiv = document.createElement("div");
+    //         tempDiv.className = "page";
+    //         tempDiv.innerHTML = `
+    //     <div class="page-content">
+    //         <h2 class="page-header">Page header 1</h2>
+    //         <div class="page-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In cursus mollis nibh, non convallis ex convallis eu. 
+    //         Suspendisse potenti. Aenean vitae pellentesque erat. Integer non tristique quam. Suspendisse rutrum, augue ac sollicitudin mollis, 
+    //         eros velit viverra metus, a venenatis tellus tellus id magna. Aliquam ac nulla rhoncus, accumsan eros sed, viverra enim. 
+    //         Pellentesque non justo vel nibh sollicitudin pharetra suscipit ut ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+    //         In cursus mollis nibh, non convallis ex convallis eu. Suspendisse potenti. Aenean vitae pellentesque erat. Integer non tristique quam. 
+    //         Suspendisse rutrum, augue ac sollicitudin mollis, eros velit viverra metus, a venenatis tellus tellus id magna.</div>
+    //         <div class="page-footer">2</div>
+    //     </div>
+    // `
+    //         if (document.querySelector('.stf__block') != null) {
+    //             document.querySelector('.stf__block').insertAdjacentElement("beforeend", tempDiv);
+    //         }
+    //         else {
+    //             console.log('no');
+    //         }
+    //         Book.updateFromHtml(document.querySelectorAll(".page"));
+
+    //     });
 
     // load pages
     // pageFlip.loadFromHTML(document.querySelectorAll(".page"));
