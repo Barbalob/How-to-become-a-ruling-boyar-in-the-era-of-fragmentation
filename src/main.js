@@ -304,11 +304,11 @@ buttonStart.addEventListener('click', () => {
                         </div>
                     </li>
                 `)
-
-                testElement.remove();
-                container.classList.remove('move-left')
-
-                 
+                sleep(500).then(()=>{
+                    testElement.remove();
+                    container.classList.add('move-right')
+                    container.classList.remove('move-left')
+                }) 
             }
 
             buttonChoice1.addEventListener('click', F)

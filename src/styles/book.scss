@@ -45,3 +45,10 @@
     -o-transform: translate(-60em,0); /** Opera **/
     -moz-transform: translate(-60em,0); /** Firefox **/
 }
+.move-right {
+    transition: transform 2s;
+    transform: translate(0,0);
+    -webkit-transform: translate(0,0); /** Safari & Chrome **/
+    -o-transform: translate(0,0); /** Opera **/
+    -moz-transform: translate(0,0); /** Firefox **/
+}
