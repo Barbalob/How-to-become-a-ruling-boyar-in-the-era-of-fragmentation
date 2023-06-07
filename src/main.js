@@ -6,7 +6,7 @@ const buttonStart = document.querySelector('#start')
 const leftPage = document.querySelector('#btns')
 const rightPage = document.querySelector('.menu__right')
 const mainPage = document.querySelector('.menu')
-// const testButton = document.querySelector('#test')
+const testButton = document.querySelector('#test')
 
 
 function sleep(ms) {
@@ -247,6 +247,9 @@ buttonStart.addEventListener('click', () => {
             }
         );
         Book.loadFromHTML(document.querySelectorAll(".page"));
+        testButton.addEventListener('click', () => {
+            Book.turnToPage(8);
+        });
         let choiceBtn = document.querySelector('#choice');
         choiceBtn.addEventListener('click', () => {
             let container = document.querySelector('.container');
