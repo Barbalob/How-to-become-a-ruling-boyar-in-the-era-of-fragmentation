@@ -57,7 +57,7 @@ buttonStart.addEventListener('click', () => {
         pOne.classList.remove("right-br")
         pTwo.classList.remove("left-br")
     });
-    sleep(1100).then(() => {
+    sleep(1500).then(() => {
         pageFlip.destroy();
         const container1 = document.querySelector('.container1');
         container1.remove();
@@ -67,7 +67,7 @@ buttonStart.addEventListener('click', () => {
             <div class="flip-book" id="demoBookExample">
 
                 <div class="page">
-                    <div class="page-content content-text">
+                    <div class="page-content content-text first">
                         <div class='main-text'> 
                             <img src="assets/letter/letterU.svg" alt="Буква И" class='img-letter-high'>
                             <div class='text text-high'> 
@@ -88,7 +88,7 @@ buttonStart.addEventListener('click', () => {
 
 
                 <div class="page">
-                    <div class="page-content content-img">
+                    <div class="page-content content-img first">
                         <figure>
                             <img class="content-img" src="assets/image/1-Gogol.png" alt="Портрет Гоголя">
                             <figcaption class="text-img-author text-medium">Ф. А. Моллер. Портрет Гоголя (Третьяковская галерея, 1841 г.)</figcaption>                     
@@ -253,9 +253,9 @@ buttonStart.addEventListener('click', () => {
             container.classList.add('move-left');
             const tempDiv = `
             <ul class='list-answer'>
-            <li><button id="choice" class="menu__button text-medium button-answer">Что Вы намерены делать в первую очередь?</button></li>
-            <li><button id="choice" class="menu__button text-medium button-answer">Что Вы намерены делать в первую очередь?</button></li>
-            <li><button id="choice" class="menu__button text-medium button-answer">Что Вы намерены делать в первую очередь?</button></li>
+            <li><button id="choice" class="text-medium button-answer">Нужно попытаться найти дружелюбных князей, готовых помочь мальчику вернуть отчину. Уверен, такие найдутся!</button></li>
+            <li><button id="choice" class="text-medium button-answer">Необходимо обратиться за помощью к польскому королю, с которым у нас есть давние связи. Конечно, за свою помощь он попросит золото, серебро или часть земельных владений, но, вернув свои земли и заручившись верной дружиной, мы сможем легко вернуть все отданное обратно. Тем паче, что я знаю язык Ляхов. Я знал, что это мне не единожды пригодиться!</button></li>
+            <li><button id="choice" class="text-medium button-answer">Если честно, я, все-таки, не понимаю, зачем мне всё это нужно. Рисковать своей жизнью ради этого мальчика… Пойду-ка я лучше служить к другому князю, обзаведусь слугами и умру никому неизвестным боярином!</button></li>
             </ul>
             `
             mainPage.insertAdjacentHTML(RenderPosition.BEFOREEND, tempDiv);

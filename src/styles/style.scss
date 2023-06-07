@@ -96,6 +96,15 @@
 	}
 }
 
+ @keyframes ani  {
+	0% {
+	  opacity: 0;
+	}
+	100% {
+	  opacity: 1;
+	}
+}
+
 .list-answer{
     display: flex;
     flex-direction: column;
@@ -104,4 +113,31 @@
     height: 100%;
     position: absolute;
     right: 50px;
+    max-width: 50%;
+
+    li{
+        &:nth-child(1){
+            animation: ani 3.5s ease-in-out;
+        }
+        &:nth-child(2){
+            animation: ani 4.5s ease-in-out;
+        }
+        &:nth-child(3){
+            animation: ani 5.5s ease-in-out;
+        }
+    }
+
+
+    .button-answer{
+        padding: 30px;
+        align-items: center;
+        background: url(../assets/bg-button-answer.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+}
+
+.first{
+    animation: ani 1.0s ease-in-out;
 }
