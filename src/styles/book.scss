@@ -12,14 +12,21 @@
     margin-top: 25px;
     max-width: 1166px;
     height: 100%;
-    .page{
-        background:url(../assets/page_t.png) no-repeat ; 
-        background-size: cover;
-        height: 100%;
-        top:0;
-    }
-    .flip-book{
 
+    .flip-book{
+        li{
+            height: 100%;
+            top:0;    
+            &:nth-child(2n+1){              
+                background:url(../assets/page_t.png) no-repeat ;     
+                background-size: cover;             
+            }
+            &:nth-child(2n){              
+                background:url(../assets/page2.png) no-repeat ;     
+                background-size: cover;             
+            }
+            
+        }
     }
     .--right{
         border-bottom-right-radius: 5px;

@@ -64,9 +64,9 @@ buttonStart.addEventListener('click', () => {
         mainPage.innerHTML = `
     <div class="container">
           <div class="wrapper-book">
-            <div class="flip-book" id="demoBookExample">
+            <ul class="flip-book" id="demoBookExample">
 
-                <div class="page">
+                <li class="page">
                     <div class="page-content content-text first">
                         <div class='main-text'> 
                             <img src="assets/letter/letterU.svg" alt="Буква И" class='img-letter-high'>
@@ -84,10 +84,10 @@ buttonStart.addEventListener('click', () => {
                         <div class='main-text text-high'>(Н. В. Гоголь, “О средних веках”)</div>
                         <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>
                     </div>
-                </div>
+                </li>
 
 
-                <div class="page">
+                <li class="page">
                     <div class="page-content content-img first">
                         <figure>
                             <img class="content-img" src="assets/image/1-Gogol.png" alt="Портрет Гоголя">
@@ -95,10 +95,10 @@ buttonStart.addEventListener('click', () => {
                         </figure>                       
                         <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>    
                     </div>
-                </div>
+                </li>
 
 
-                <div class="page">
+                <li class="page">
                     <div class="page-content content-text">
                         <div class='main-text'> 
                             <img src="assets/letter/letterH.svg" alt="Буква Н" class='img-letter-small'>
@@ -116,10 +116,10 @@ buttonStart.addEventListener('click', () => {
                         </div>
                         <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>
                     </div>
-                </div>
+                </li>
 
                 
-                <div class="page">
+                <li class="page">
                     <div class="page-content content-img">
                         <figure>
                             <img class="content-img" src="assets/image/2.png" alt="Съезд князей">
@@ -127,10 +127,10 @@ buttonStart.addEventListener('click', () => {
                         </figure>                       
                         <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>    
                     </div>
-                </div>
+                </li>
 
                 
-                <div class="page">
+                <li class="page">
                     <div class="page-content content-text">
                         <div class='main-text'> 
                             <img src="assets/letter/letterB.svg" alt="Буква В" class='img-letter-small'>
@@ -149,9 +149,9 @@ buttonStart.addEventListener('click', () => {
                         </div>
                         <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>
                     </div>
-                </div>
+                </li>
 
-                <div class="page">
+                <li class="page">
                     <div class="page-content content-img">
                         <figure>
                             <img class="content-img" src="assets/image/2.png" alt="Съезд князей">
@@ -159,9 +159,9 @@ buttonStart.addEventListener('click', () => {
                         </figure>                       
                         <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>    
                     </div>
-                </div>
+                </li>
 
-                <div class="page">
+                <li class="page">
                     <div class="page-content content-text">
                         <div class='main-text'> 
                             <img src="assets/letter/letterB.svg" alt="Буква В" class='img-letter-small'>
@@ -183,9 +183,9 @@ buttonStart.addEventListener('click', () => {
                         </div>
                         <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>
                     </div>
-                </div>
+                </li>
 
-                <div class="page">
+                <li class="page">
                     <div class="page-content content-img">
                         <figure>
                             <img class="content-img" src="assets/image/3.png" alt="Съезд князей">
@@ -193,9 +193,9 @@ buttonStart.addEventListener('click', () => {
                         </figure>                       
                         <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>    
                     </div>
-                </div>
+                </li>
 
-                <div class="page">
+                <li class="page">
                     <div class="page-content content-img">
                         <figure>
                             <img class="content-img" src="assets/image/4.png" alt="Съезд князей">
@@ -203,9 +203,9 @@ buttonStart.addEventListener('click', () => {
                         </figure>                       
                         <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>    
                     </div>
-                </div>
+                </li>
 
-                <div class="page">
+                <li class="page">
                     <div class="page-content content-text">
                         <div class='main-text'> 
                             <img src="assets/letter/letterH.svg" alt="Буква И" class='img-letter-small'>
@@ -223,8 +223,8 @@ buttonStart.addEventListener('click', () => {
                         <button id="choice" class="menu__button text-medium">Что Вы намерены делать в первую очередь?</button>
                         <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>
                     </div>
-                </div>
-            </div>
+                </li>
+            </ul>
         </div>
     </div>
 `
@@ -256,9 +256,9 @@ buttonStart.addEventListener('click', () => {
             container.classList.add('move-left');
             const tempDiv = `
             <ul class='list-answer'>
-            <li><button id="choice" class="text-medium button-answer">Нужно попытаться найти дружелюбных князей, готовых помочь мальчику вернуть отчину. Уверен, такие найдутся!</button></li>
-            <li><button id="choice" class="text-medium button-answer">Необходимо обратиться за помощью к польскому королю, с которым у нас есть давние связи. Конечно, за свою помощь он попросит золото, серебро или часть земельных владений, но, вернув свои земли и заручившись верной дружиной, мы сможем легко вернуть все отданное обратно. Тем паче, что я знаю язык Ляхов. Я знал, что это мне не единожды пригодиться!</button></li>
-            <li><button id="choice" class="text-medium button-answer">Если честно, я, все-таки, не понимаю, зачем мне всё это нужно. Рисковать своей жизнью ради этого мальчика… Пойду-ка я лучше служить к другому князю, обзаведусь слугами и умру никому неизвестным боярином!</button></li>
+            <li><button id="choice-1" class="text-medium button-answer">Нужно попытаться найти дружелюбных князей, готовых помочь мальчику вернуть отчину. Уверен, такие найдутся!</button></li>
+            <li><button id="choice-2" class="text-medium button-answer">Необходимо обратиться за помощью к польскому королю, с которым у нас есть давние связи. Конечно, за свою помощь он попросит золото, серебро или часть земельных владений, но, вернув свои земли и заручившись верной дружиной, мы сможем легко вернуть все отданное обратно. Тем паче, что я знаю язык Ляхов. Я знал, что это мне не единожды пригодиться!</button></li>
+            <li><button id="choice-3" class="text-medium button-answer">Если честно, я, все-таки, не понимаю, зачем мне всё это нужно. Рисковать своей жизнью ради этого мальчика… Пойду-ка я лучше служить к другому князю, обзаведусь слугами и умру никому неизвестным боярином!</button></li>
             </ul>
             `
             mainPage.insertAdjacentHTML(RenderPosition.BEFOREEND, tempDiv);
