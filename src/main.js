@@ -1,11 +1,13 @@
 // import name from "./module.js";
 import { PageFlip } from 'page-flip'
 import './styles/style.scss'
+import {RenderPosition, createElement, render} from './render.js'
 const buttonStart = document.querySelector('#start')
 const leftPage = document.querySelector('#btns')
 const rightPage = document.querySelector('.menu__right')
 const mainPage = document.querySelector('.menu')
 // const testButton = document.querySelector('#test')
+
 
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
