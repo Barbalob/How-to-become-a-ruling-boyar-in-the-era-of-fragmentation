@@ -251,7 +251,7 @@ buttonStart.addEventListener('click', () => {
             Book.turnToPage(8);
         });
         let choiceBtn = document.querySelector('#choice');
-        choiceBtn.addEventListener('click', () => {
+        choiceBtn.addEventListener('click', (evt) => {
             let container = document.querySelector('.container');
             container.classList.add('move-left');
             const tempDiv = `
@@ -262,9 +262,33 @@ buttonStart.addEventListener('click', () => {
             </ul>
             `
             mainPage.insertAdjacentHTML(RenderPosition.BEFOREEND, tempDiv);
+            evt.target.disabled = true; 
+            const buttonChoice1 = document.querySelector('#choice-1')
+            const buttonChoice2 = document.querySelector('#choice-2')
+            const buttonChoice3 = document.querySelector('#choice-3')   
+
+            const F = (evt)=>{
+                const id = evt.target.id.slice(-1)
+                for (let i = 1; i < 4; i++) {
+                    if (String(i) !== id){
+                        const buttonChoice = document.querySelector(`#choice-${i}`)
+                        buttonChoice.disabled = true; 
+                    }
+                }
+            }
+
+            buttonChoice1.addEventListener('click', F)
+            buttonChoice2.addEventListener('click', F)
+            buttonChoice3.addEventListener('click', F)
+
+
+
+
         });
     });
     });
+
+    
 
 //     testButton.addEventListener('click', () => {
 //         const tempDiv = document.createElement("div");
