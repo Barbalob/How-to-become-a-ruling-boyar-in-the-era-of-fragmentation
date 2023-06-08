@@ -2,11 +2,13 @@
 import { PageFlip } from 'page-flip'
 import './styles/style.scss'
 import { RenderPosition, createElement, render, renderHTML } from './render.js'
+import pages from './pages.js'
 const buttonStart = document.querySelector('#start')
 const leftPage = document.querySelector('#btns')
 const rightPage = document.querySelector('.menu__right')
 const mainPage = document.querySelector('.menu')
 const testButton = document.querySelector('#test')
+let stage = 0;
 
 
 function sleep(ms) {
@@ -256,9 +258,9 @@ buttonStart.addEventListener('click', () => {
                 container.classList.add('move-left');
                 const testElement = createElement(`
             <ul class='list-answer'>
-                <li><button id="choice-1" class="text-medium button-answer">Нужно попытаться найти дружелюбных князей, готовых помочь мальчику вернуть отчину. Уверен, такие найдутся!</button></li>
-                <li><button id="choice-2" class="text-medium button-answer">Необходимо обратиться за помощью к польскому королю, с которым у нас есть давние связи. Конечно, за свою помощь он попросит золото, серебро или часть земельных владений, но, вернув свои земли и заручившись верной дружиной, мы сможем легко вернуть все отданное обратно. Тем паче, что я знаю язык Ляхов. Я знал, что это мне не единожды пригодиться!</button></li>
-                <li><button id="choice-3" class="text-medium button-answer">Если честно, я, все-таки, не понимаю, зачем мне всё это нужно. Рисковать своей жизнью ради этого мальчика… Пойду-ка я лучше служить к другому князю, обзаведусь слугами и умру никому неизвестным боярином!</button></li>
+                ${pages[stage]["кнопка-1"]}
+                ${pages[stage]["кнопка-2"]}
+                ${pages[stage]["кнопка-3"]}
             </ul>
             `)
                 mainPage.insertAdjacentElement(RenderPosition.BEFOREEND, testElement);
