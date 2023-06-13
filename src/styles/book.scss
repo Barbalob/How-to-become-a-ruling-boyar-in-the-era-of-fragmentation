@@ -14,7 +14,7 @@
     height: 100%;
 
     .flip-book{
-        li{
+        li.page{
             height: 100%;
             top:0;    
             &:nth-child(2n+1){              

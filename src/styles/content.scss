@@ -77,6 +77,22 @@
     }
 }
 
+.content-dictionary{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:center;
+    ol{
+        display: flex;
+        flex-direction: column;
+        gap:10px;
+        padding-left: 20px;
+        li{
+            list-style: space-counter;
+        }
+    }
+}
+
 
 
 
