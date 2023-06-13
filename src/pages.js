@@ -84,7 +84,7 @@ export const pages = [
                     полную приключений жизнь. Вы умерли в безвестности, и не один летописец не счел нужным упомянуть о Вас хотя бы вкратце.
                     </div>
                 </div>
-                <button id="choice" class="menu__button text-medium" onclick="location.reload(); return false;">Начать игру заново</button>
+                <button id="endBtn" class="menu__button text-medium" onclick="location.reload(); return false;">Начать игру заново</button>
                 <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>
             </div>
         </li>
@@ -146,7 +146,7 @@ export const pages = [
                     над которой все насмехались.
                     </div>
                 </div>
-                <button id="choice" class="menu__button text-medium" onclick="location.reload(); return false;">Начать игру заново</button>
+                <button id="endBtn" class="menu__button text-medium" onclick="location.reload(); return false;">Начать игру заново</button>
                 <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>
             </div>
         </li>
@@ -378,7 +378,7 @@ export const pages = [
                     и пытаясь забыть то, что совершили.
                     </div>
                 </div>
-                <button id="choice" class="menu__button text-medium" onclick="location.reload(); return false;">Начать игру заново</button>
+                <button id="endBtn" class="menu__button text-medium" onclick="location.reload(); return false;">Начать игру заново</button>
                 <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>
             </div>
         </li>
@@ -504,7 +504,7 @@ export const pages = [
                     а Вы – изгоем на чужбине.
                     </div>
                 </div>
-                <button id="choice" class="menu__button text-medium" onclick="location.reload(); return false;">Начать игру заново</button>
+                <button id="endBtn" class="menu__button text-medium" onclick="location.reload(); return false;">Начать игру заново</button>
                 <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>
             </div>
         </li>
@@ -591,7 +591,7 @@ export const pages = [
                     Вы не знаете, что делать дальше: все мечты рухнули, осталось лишь доживать свой век…
                     </div>
                 </div>
-                <button id="choice" class="menu__button text-medium" onclick="location.reload(); return false;">Начать игру заново</button>
+                <button id="endBtn" class="menu__button text-medium" onclick="location.reload(); return false;">Начать игру заново</button>
                 <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>
             </div>
         </li>
@@ -634,7 +634,7 @@ export const pages = [
         <li class="page">
         <div class="page-content content-img">
             <figure>
-                <img class="content-img" src="assets/image/10.png" alt="Похороны Андрея Боголюбского">
+                <img class="content-img" src="assets/image/9.png" alt="Похороны Андрея Боголюбского">
                 <figcaption class="text-img-author text-medium">Похороны Андрея Боголюбского (ум. 1174 г.). Миниатюра из Лицевого летописного свода (XVI в.). Российская национальная библиотека.</figcaption>                     
             </figure>                       
             <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>    
@@ -661,7 +661,7 @@ export const pages = [
         <li class="page">
         <div class="page-content content-img">
             <figure>
-                <img class="content-img" src="assets/image/10.png" alt="Съезд князей">
+                <img class="content-img" src="assets/image/9.png" alt="Съезд князей">
                 <figcaption class="text-img-author text-medium">Похороны Андрея Боголюбского (ум. 1174 г.). Миниатюра из Лицевого летописного свода (XVI в.). Российская национальная библиотека.</figcaption>                     
             </figure>                       
             <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>    
@@ -715,7 +715,7 @@ export const pages = [
         <li class="page">
         <div class="page-content content-img">
             <figure>
-                <img class="content-img" src="assets/image/10.png" alt="Похороны Андрея Боголюбского">
+                <img class="content-img" src="assets/image/9.png" alt="Похороны Андрея Боголюбского">
                 <figcaption class="text-img-author text-medium">Похороны Андрея Боголюбского (ум. 1174 г.). Миниатюра из Лицевого летописного свода (XVI в.). Российская национальная библиотека.</figcaption>                     
             </figure>                       
             <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>    
@@ -732,7 +732,7 @@ export const pages = [
                     сына, но приняла Ваши соболезнования.
                     </div>
                 </div>
-                <button id="choice" class="menu__button text-medium" onclick="location.reload(); return false;">Начать игру заново</button>
+                <button id="endBtn" class="menu__button text-medium" onclick="location.reload(); return false;">Начать игру заново</button>
                 <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>
             </div>
         </li>
@@ -746,7 +746,7 @@ export const pages = [
         <li class="page">
         <div class="page-content content-img">
             <figure>
-                <img class="content-img" src="assets/image/11.png" alt="Венгерский король">
+                <img class="content-img" src="assets/image/10.png" alt="Венгерский король">
                 <figcaption class="text-img-author text-medium">Венгерский король Бела III (ок. 1148–1196). Миниатюра из Венгерской иллюстрированной хроники (вторая половина XIV в.). Национальная библиотека им. Сеченьи (Венгрия).</figcaption>                     
             </figure>                       
             <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>    
@@ -804,7 +804,7 @@ export const pages = [
     <li class="page">
     <div class="page-content content-img">
         <figure>
-        <img class="content-img" src="assets/image/11.png" alt="Венгерский король">
+        <img class="content-img" src="assets/image/10.png" alt="Венгерский король">
         <figcaption class="text-img-author text-medium">Венгерский король Бела III (ок. 1148–1196). Миниатюра из Венгерской иллюстрированной хроники (вторая половина XIV в.). Национальная библиотека им. Сеченьи (Венгрия).</figcaption>                     
         </figure>                       
         <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>    
@@ -821,7 +821,7 @@ export const pages = [
                 камере, пока Вас не казнят за оскорбление Его Величества…
                 </div>
             </div>
-            <button id="choice" class="menu__button text-medium" onclick="location.reload(); return false;">Начать игру заново</button>
+            <button id="endBtn" class="menu__button text-medium" onclick="location.reload(); return false;">Начать игру заново</button>
             <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>
         </div>
     </li>
@@ -830,7 +830,7 @@ export const pages = [
         <li class="page">
         <div class="page-content content-img">
             <figure>
-            <img class="content-img" src="assets/image/11.png" alt="Венгерский король">
+            <img class="content-img" src="assets/image/10.png" alt="Венгерский король">
             <figcaption class="text-img-author text-medium">Венгерский король Бела III (ок. 1148–1196). Миниатюра из Венгерской иллюстрированной хроники (вторая половина XIV в.). Национальная библиотека им. Сеченьи (Венгрия).</figcaption>                     
             </figure>                       
             <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>    
@@ -862,7 +862,7 @@ export const pages = [
         <li class="page">
         <div class="page-content content-img">
             <figure>
-                <img class="content-img" src="assets/image/12.png" alt="Император Мануил">
+                <img class="content-img" src="assets/image/11.png" alt="Император Мануил">
                 <figcaption class="text-img-author text-medium">Император Мануил I Комнин (1118–1180) с супругой императрицей Марией Антиохийской (1145–1182). Миниатюра 1166 г. Ватиканская апостольская библиотека.</figcaption>                     
             </figure>                       
             <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>    
@@ -892,7 +892,7 @@ export const pages = [
         <li class="page">
         <div class="page-content content-img">
             <figure>
-            <img class="content-img" src="assets/image/12.png" alt="Император Мануил">
+            <img class="content-img" src="assets/image/11.png" alt="Император Мануил">
             <figcaption class="text-img-author text-medium">Император Мануил I Комнин (1118–1180) с супругой императрицей Марией Антиохийской (1145–1182). Миниатюра 1166 г. Ватиканская апостольская библиотека.</figcaption>                     
             </figure>                       
             <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>    
@@ -954,7 +954,7 @@ export const pages = [
     <li class="page">
     <div class="page-content content-img">
         <figure>
-            <img class="content-img" src="assets/image/12.png" alt="Император Мануил">
+            <img class="content-img" src="assets/image/11.png" alt="Император Мануил">
             <figcaption class="text-img-author text-medium">Император Мануил I Комнин (1118–1180) с супругой императрицей Марией Антиохийской (1145–1182). Миниатюра 1166 г. Ватиканская апостольская библиотека.</figcaption>                     
         </figure>                       
         <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>    
@@ -971,13 +971,782 @@ export const pages = [
                 не готов оказывать свою помощь. Он не изгоняет вас из Царьграда, но вы просто продолжаете тихо доживать свой век при императорском дворе…
                 </div>
             </div>
-            <button id="choice" class="menu__button text-medium" onclick="location.reload(); return false;">Начать игру заново</button>
+            <button id="endBtn" class="menu__button text-medium" onclick="location.reload(); return false;">Начать игру заново</button>
             <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>
         </div>
     </li>
 `,
     
     },
+    {
+        "page":`
+        
+                <li class="page">
+                    <div class="page-content content-img">
+                        <figure>
+                            <img class="content-img" src="assets/image/12.png" alt="Папа Александр III">
+                            <figcaption class="text-img-author text-medium">Спинелло Аретино. Папа Александр III (1105–1181). Фреска. Вторая половина XIV в. Палаццо Публико, Сиена (Италия).</figcaption>                     
+                        </figure>                       
+                        <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>    
+                    </div>
+                </li>
 
+                <li class="page">
+                    <div class="page-content content-text">
+                        <div class='main-text'> 
+                            <img src="assets/letter/letterB.svg" alt="Буква В" class='img-letter-small'>
+                            <div class='text text-small'> 
+                            ы успешно добираетесь до <a href="#" alt="Ссылка" data-tooltip="В Святую землю, 
+                            располагавшуюся на территории Иерусалимского королевства, совершались многочисленные 
+                            паломничества. Памятник литературы Древней Руси «Хождение игумена Даниила» как раз 
+                            посвящен паломничеству, совершенному в начале XII столетия. При этом паломничества 
+                            совершались не только в Святую землю, но и в Византию и даже Европу.">Святой земли</a>, где встречаетесь с королем 
+                            Иерусалима. Во время этой встречи Вы передаете ему послание от императора 
+                            о совместном <a href="#" alt="Ссылка" data-tooltip="Завоевание Египта совместными силами 
+                            Византийской империи и Иерусалимского королевства действительно планировалось. Между 
+                            Константинополем и Иерусалимом был заключен союз в 1168 г. Мануил I Комнин (1118–1180) 
+                            и Амори I Иерусалимский (1136–1174) предприняли даже несколько попыток военного захвата 
+                            Египта, однако потерпели неудачу.">походе на Египет</a>. Пробыв несколько дней 
+                            в <a href="#" alt="Ссылка" data-tooltip="Первое Иерусалимское королевство возникло 
+                            после успешного завершения Первого крестового похода (1096–1099). Правителем нового государства 
+                            был избран Готфрид Бульонский (ок. 1060–1100), один из предводителей крестового похода, 
+                            а первым королем – Болдуин I (1060-е – 1118). Христианский Иерусалим просуществовал вплоть 
+                            до 1187 г., когда султан Египта Салах ад-Дин (1137–1193) захватил его.">Иерусалимском королевстве</a>, Вы 
+                            отправляетесь обратно на корабле, выделенном для Вас 
+                            как посланника <a href="#" alt="Ссылка" data-tooltip="Василевс (βᾰσῐλέως) – официальное именование, титул византийского императора.">василевса</a>. Вскоре 
+                            Вы возвращаетесь в Царьград<a href="#" alt="Ссылка" data-tooltip="Одно из наименований Константинополя, столицы Византийской империи в Древней Руси.">Царьград</a>, где получаете послание от Константинопольского Патриарха. 
+                            Он просит Вас доставить свое письмо к Папе Римскому с отказом 
+                            от <a href="#" alt="Ссылка" data-tooltip="Полемика об объединении Православной и Католической церквей обострилась в годы правления Мануила I Комнина (1118–1180). Несмотря на уступки Рима, Константинополь стоял на своем, что, в частности, выразилось в позиции патриарха Михаила III (ум. 1178 г.), который вел к провалу любые переговоры объединении.">переговоров об объединении Церквей</a>.
+                            </div>
+                        </div>
+                        <button id="choice" class="menu__button text-medium">Что Вы ответите на эту просьбу?</button>
+                        <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>
+                    </div>
+                </li>
+
+        `,
+        "btn-1":`<li><button id="choice-1" class="text-medium button-answer">Негоже православному человеку отказывать Патриарху в просьбе. Конечно, я отвезу его послание <a href="#" alt="Ссылка" data-tooltip="Латинский, латиняне, латинство. «Латинский» – имеется в виду «католический». Латинство – обозначение католицизма.">латинянам</a></button></li>`,
+        "btn-2":`<li><button id="choice-2" class="text-medium button-answer">Я сюда приехал, чтобы быть гонцом ромеев?! Если ему так надо, то пусть сам и отвозит свои послания!</button></li>`,
+        "btn-3":`<li><button id="choice-3" class="text-medium button-answer">Я не буду выполнять поручения Константинопольского Патриарха! Я всегда был и буду за <a href="#" alt="Ссылка" data-tooltip="По мнению ряда исследователей, в период Русского Средневековья можно найти моменты неповиновения Русской Церкви Константинопольскому патриархату: в пример приводится фигура митрополита Киевского Илариона (ум. ок. 1054/1055 г.), поставленного не Константинополем, а автохтонно, русскими епископами и княжеской властью. Тем не менее, автокефалию Русская православная церковь провозгласила лишь в 1448 г., в год избрания Ионы (1390-е – 1461) митрополитом Киевским и всея Руси, вставшего против подписания бывшим митрополитом Исидором (между 1385–1390 – 1463) унии между Православной и Католической церквями на Ферраро-Флорентийском соборе (1438–1445). В конце XVI в. русские митрополиты получили сан патриарха (первый патриарх Московский – Иов (ок. 1525–1607)), а Церковь – признание со стороны Константинополя и других православных церквей.">автокефалию Русской Церкви</a>!</button></li>`,
+        
+        "choice-1":`
+        <li class="page">
+            <div class="page-content content-text">
+                <div class='main-text'> 
+                    <img src="assets/letter/letterB.svg" alt="Буква В" class='img-letter-small'>
+                    <div class='text text-small'> 
+                    ы соглашаетесь отвезти послание Патриарха Папе Римскому.
+                    <br>
+                    <br>
+                    Узнав о Вашем согласии выполнить столь важное для всего православия дело, 
+                    <a href="#" alt="Ссылка" data-tooltip="Его Божественное Всесвятейшество – официальный титул Константинопольского патриарха.">Его Божественное Всесвятейшество</a> даровал Вам Евангелие, украшенное золотом 
+                    и драгоценными камнями, повелев и впредь хранить веру от <a href="#" alt="Ссылка" data-tooltip="Латинский, латиняне, латинство. «Латинский» – имеется в виду «католический». Латинство – обозначение католицизма.">латинства</a>
+                    </div>
+                </div>
+                <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>
+            </div>
+        </li>
+
+        <li class="page">
+        <div class="page-content content-img">
+            <figure>
+                <h2 class='text-trophy'>Получен трофей:</h2>
+                <img class="content-img" src="assets/trophy/9.png" alt="Евангелие, украшенное золотом и драгоценными камнями">
+                <figcaption class="text-img-author text-medium">Евангелие, украшенное золотом и драгоценными камнями</figcaption>                     
+            </figure>                       
+            <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>    
+        </div>
+        </li>      
+    `,
+        "choiceр-2":` 
+        <li class="page">
+        <div class="page-content content-img">
+            <figure>
+                <img class="content-img" src="assets/image/13.png" alt="Папа Александр III">
+                <figcaption class="text-img-author text-medium">Спинелло Аретино. Папа Александр III (1105–1181). Фреска. Вторая половина XIV в. Палаццо Публико, Сиена (Италия)</figcaption>                     
+            </figure>                       
+            <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>    
+        </div>
+        </li> 
+
+        <li class="page">
+            <div class="page-content content-text">
+                <div class='main-text'> 
+                    <img src="assets/letter/letterP.svg" alt="Буква П" class='img-letter-small'>
+                    <div class='text text-small'> 
+                    атриарх огорчен Вашим отказом. Более того, Вы нанесли ему этим оскорбление. 
+                    Вас перестают принимать при дворе, а также во всех приличных дворцах Нового Рима<a href="#" alt="Ссылка" data-tooltip="«Новый Рим» – официальное наименование Константинополя как столицы Римской (Византийской) империи.">Нового Рима</a>. 
+                    Ваша миссия завоевать престол для своего князя отныне совершенно невыполнима…
+                    </div>
+                </div>
+                <button id="choice" class="menu__button text-medium" onclick="location.reload(); return false;">Начать игру заново</button>
+                <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>
+            </div>
+        </li>
+    `,
+        "choice-3":`
+        <li class="page">
+        <div class="page-content content-img">
+            <figure>
+                <img class="content-img" src="assets/image/12.png" alt="Папа Александр III">
+                <figcaption class="text-img-author text-medium">Спинелло Аретино. Папа Александр III (1105–1181). Фреска. Вторая половина XIV в. Палаццо Публико, Сиена (Италия)</figcaption>                     
+            </figure>                       
+            <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>    
+        </div>
+        </li> 
+
+        <li class="page">
+            <div class="page-content content-text">
+                <div class='main-text'> 
+                    <img src="assets/letter/letterK.svg" alt="Буква К" class='img-letter-small'>
+                    <div class='text text-small'> 
+                     сожалению или к счастью, в Ваше время мечтать об автокефалии не приходится. 
+                     Да и дело даже не в этом. Своей позицией Вы отвернули от себя не только 
+                     Константинопольского Патриарха, но и императора, который более не понимает, 
+                     зачем он должен оказывать поддержку тем, кто не желает считать Русь 
+                     духовной дочерью Византийской империи
+                    </div>
+                </div>
+                <button id="choice" class="menu__button text-medium" onclick="location.reload(); return false;">Начать игру заново</button>
+                <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>
+            </div>
+        </li>
+    `,
+    },
+    {
+        "page":`
+        
+                <li class="page">
+                    <div class="page-content content-img">
+                        <figure>
+                            <img class="content-img" src="assets/image/13.png" alt="Поход на Киев черниговских князей">
+                            <figcaption class="text-img-author text-medium">Поход на Киев черниговских князей Ольговичей в союзе с половцами против князей Владимировичей (Мономаховичей). 1136 г. Миниатюра из Радзивилловской летописи (рукопись конца XV в.)</figcaption>                     
+                        </figure>                       
+                        <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>    
+                    </div>
+                </li>
+
+                <li class="page">
+                    <div class="page-content content-text">
+                        <div class='main-text'> 
+                            <img src="assets/letter/letterB.svg" alt="Буква В" class='img-letter-small'>
+                            <div class='text text-small'> 
+                            озвращаясь в Константинополь после поездки в Рим, Вы узнаете, что император 
+                            не готов поддержать Вас и Вашего князя военными силами. Однако, он одаривает Вас золотом, 
+                            предлагая попытать счастья у <a href="#" alt="Ссылка" data-tooltip="Половцы – классический 
+                            кочевой скотоводческий народ, живший в регионе Дешт-и-Кипчак (Половецкая степь), 
+                            вытеснивший в XI в. торков и печенегов. Половцы активно взаимодействовали с русскими княжествами 
+                            через династические браки и участие в междоусобных войнах. Первым князем, который привел 
+                            половцев войной на Русскую землю, был Олег Святославич (ум. 1115 г.), который в 1078 г. 
+                            нанял половцев для борьбы с Всеволодом Ярославичем (1030–1093).">половцев</a>. Вы благодарите 
+                            <a href="#" alt="Ссылка" data-tooltip="Василевс (βᾰσῐλέως) – официальное именование, титул византийского императора.">василевса</a> за оказанный прием 
+                            и идете в <a href="#" alt="Ссылка" data-tooltip="Золотой Рог – залив, впадающий в пролив Босфор. 
+                            Земли Константинополя, прилегающие к заливу, населяли итальянские торговцы, 
+                            которые при Мануиле I Комнине (1118–1180) начали все более увеличивать свое влияние 
+                            на византийскую коммерцию и экономику империи в целом.">итальянские кварталы Золотого Рога</a>, где находите купеческий корабль, 
+                            готовый отвезти вас на север Черного моря. Вы подбрасываете в воздух звонкую <a href="#" alt="Ссылка" data-tooltip="Номисма (солид) – 
+                            основная денежная единица Византии, содержащая около 4,45 г золота, которая в IV–XI вв. стала образцом для монет Европы и Востока.">номисму</a>, 
+                            и вот вы уже на корабле. Прибывая в <a href="#" alt="Ссылка" data-tooltip="В географическом 
+                            плане кыпчакские (половецкие) степи занимали территории от низовий Дуная до Иртыша, 
+                            на которых кочевали различные половецкие племена. Наиболее тесные контакты Русь имела 
+                            с половцами так называемого Дикого поля – областью причерноморских и приазовских степей 
+                            между Днестром на западе и Доном и Хопром на востоке.">кыпчакские степи</a>, Вы и Ваш князь отправляетесь 
+                            к хану одной из половецких орд, который ранее был союзником отца Вашего молодого князя. 
+                            Доехав до половецкого лагеря, Вы идете на встречу с ханом. Он радушно принимает 
+                            Вас и князя, сына своего погибшего друга. Вы сообщаете ему о своих планах 
+                            и просите о помощи. Он соглашается пойти вместе с вами на русские княжества, 
+                            однако просит об одолжении: вы должны поучаствовать в его борьбе с соседним 
+                            половецким кланом и разгромить его.
+                            </div>
+                        </div>
+                        <button id="choice" class="menu__button text-medium">Что скажете?</button>
+                        <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>
+                    </div>
+                </li>
+
+        `,
+        "btn-1":`<li><button id="choice-1" class="text-medium button-answer">Конечно же, мы согласны! Я знаю, что этот клан при любых усобицах и <a href="#" alt="Ссылка" data-tooltip="Которы – междоусобицы, свары среди князей и бояр.">которах</a> нападал на Русскую землю и уводил в полон многих людей… Пришла пора наказать их!</button></li>`,
+        "btn-2":`<li><button id="choice-2" class="text-medium button-answer">Нет! Мы зашли слишком далеко! Уж лучше мы сгинем в степях, чем пойдем вместе с <a href="#" alt="Ссылка" data-tooltip="Половцы – классический 
+                            кочевой скотоводческий народ, живший в регионе Дешт-и-Кипчак (Половецкая степь), 
+                            вытеснивший в XI в. торков и печенегов. Половцы активно взаимодействовали с русскими княжествами 
+                            через династические браки и участие в междоусобных войнах. Первым князем, который привел 
+                            половцев войной на Русскую землю, был Олег Святославич (ум. 1115 г.), который в 1078 г. 
+                            нанял половцев для борьбы с Всеволодом Ярославичем (1030–1093).">половцами</a> на Русскую землю!</button></li>`,
+        "btn-3":`<li><button id="choice-3" class="text-medium button-answer"></a>!</button></li>`,
+        
+        "choice-1":`
+        <li class="page">
+            <div class="page-content content-text">
+                <div class='main-text'> 
+                    <img src="assets/letter/letterB.svg" alt="Буква В" class='img-letter-small'>
+                    <div class='text text-small'> 
+                    скоре вы выступаете в поход. Пара дней, и вот Вы напротив вражеского войска. 
+                    Тяжелый бой, тысячи взмахов мечами, но победа за вами, враги повержены!
+                    <br>
+                    <br>
+                    Победив враждебный половецкий клан, Вы пируете вместе с ханом дружественной 
+                    Вам орды. По окончанию пира, хан дарит Вам в награду за проявленную на поле брани 
+                    доблесть свою серебряную чашу
+                    </div>
+                </div>
+                <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>
+            </div>
+        </li>
+
+        <li class="page">
+        <div class="page-content content-img">
+            <figure>
+                <h2 class='text-trophy'>Получен трофей:</h2>
+                <img class="content-img" src="assets/trophy/10.png" alt="Серебряная чаша половецкого хана">
+                <figcaption class="text-img-author text-medium">Серебряная чаша половецкого хана</figcaption>                     
+            </figure>                       
+            <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>    
+        </div>
+        </li>      
+    `,
+        "choiceр-2":` 
+        <li class="page">
+        <div class="page-content content-img">
+            <figure>
+                <img class="content-img" src="assets/image/13.png" alt="Поход на Киев черниговских князей">
+                <figcaption class="text-img-author text-medium">Поход на Киев черниговских князей Ольговичей в союзе с половцами против князей Владимировичей (Мономаховичей). 1136 г. Миниатюра из Радзивилловской летописи (рукопись конца XV в.)</figcaption>                     
+            </figure>                       
+            <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>    
+        </div>
+        </li> 
+
+        <li class="page">
+            <div class="page-content content-text">
+                <div class='main-text'> 
+                    <img src="assets/letter/letterP.svg" alt="Буква П" class='img-letter-small'>
+                    <div class='text text-small'> 
+                    Достойный уважения поступок, но, к сожалению, ставящий крест на достижении 
+                    Вашей цели – завоевании княжества для своего князя. Тем не менее, 
+                    Вы вошли в историю. Русская Церковь причислила Вас вместе с князем 
+                    за ваше благородное решение к лику святых!
+                    </div>
+                </div>
+                <button id="endBtn" class="menu__button text-medium" onclick="location.reload(); return false;">Начать игру заново</button>
+                <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>
+            </div>
+        </li>
+    `,
+        "choice-3":`
+        <li class="page">
+        
+        </li>
+    `,
+    },
+    {
+        "page":`
+        
+                <li class="page">
+                    <div class="page-content content-img">
+                        <figure>
+                            <img class="content-img" src="assets/image/14.png" alt="Появление звезды (кометы Галлея)">
+                            <figcaption class="text-img-author text-medium">Появление звезды (кометы Галлея), восходившей 7 дней и предвещавшей княжеские междоусобицы и нашествие половцев на Русскую землю. 862–1206 гг. Миниатюра из Радзивилловской летописи (рукопись конца XV в.). Библиотека Российской академии наук.</figcaption>                     
+                        </figure>                       
+                        <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>    
+                    </div>
+                </li>
+
+                <li class="page">
+                    <div class="page-content content-text">
+                        <div class='main-text'> 
+                            <img src="assets/letter/letterP.svg" alt="Буква П" class='img-letter-small'>
+                            <div class='text text-small'> 
+                            ока Вы спите, к Вам тайно пробирается одна <a href="#" alt="Ссылка" data-tooltip="Половцы – классический 
+                            кочевой скотоводческий народ, живший в регионе Дешт-и-Кипчак (Половецкая степь), 
+                            вытеснивший в XI в. торков и печенегов. Половцы активно взаимодействовали с русскими княжествами 
+                            через династические браки и участие в междоусобных войнах. Первым князем, который привел 
+                            половцев войной на Русскую землю, был Олег Святославич (ум. 1115 г.), который в 1078 г. 
+                            нанял половцев для борьбы с Всеволодом Ярославичем (1030–1093).">половецкая</a> девушка, 
+                            с которой Вы вчера познакомились на ханском пиру. Она будит Вас и 
+                            сообщает новость о желании хана убить Вас и Вашего князя. На стойбище, 
+                            по ее словам, есть три боевых коня, она хочет сбежать вместе с вами.
+                            </div>
+                        </div>
+                        <button id="choice" class="menu__button text-medium">Что Вы намерены делать?</button>
+                        <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>
+                    </div>
+                </li>
+
+        `,
+        "btn-1":`<li><button id="choice-1" class="text-medium button-answer">Это все вранье! Как она посмела будить меня и рассказывать всякие глупости! Хан – мой друг, он не может нас предать!</button></li>`,
+        "btn-2":`<li><button id="choice-2" class="text-medium button-answer">НУбить нас?! Княже, доставай меч! Будем биться!</button></li>`,
+        "btn-3":`<li><button id="choice-3" class="text-medium button-answer">Что ж… Чего можно было ждать от <a href="#" alt="Ссылка" data-tooltip="Половцы – классический 
+                            кочевой скотоводческий народ, живший в регионе Дешт-и-Кипчак (Половецкая степь), 
+                            вытеснивший в XI в. торков и печенегов. Половцы активно взаимодействовали с русскими княжествами 
+                            через династические браки и участие в междоусобных войнах. Первым князем, который привел 
+                            половцев войной на Русскую землю, был Олег Святославич (ум. 1115 г.), который в 1078 г. 
+                            нанял половцев для борьбы с Всеволодом Ярославичем (1030–1093).">половцев</a>? Уже много лет они терзают Русскую землю и хотят еще… Не бывать этому! Мы сбежим сейчас отсюда, но потом, когда княжество будет наше, мы соберем всех князей Русской земли, чтобы разгромить враждебные нам половецкие кланы! В путь!</button></li>`,
+        
+        "choice-1":`
+        <li class="page">
+        <div class="page-content content-img">
+            <figure>
+                <img class="content-img" src="assets/image/14.png" alt="Появление звезды (кометы Галлея)">
+                <figcaption class="text-img-author text-medium">Появление звезды (кометы Галлея), восходившей 7 дней и предвещавшей княжеские междоусобицы и нашествие половцев на Русскую землю. 862–1206 гг. Миниатюра из Радзивилловской летописи (рукопись конца XV в.). Библиотека Российской академии наук.</figcaption>                     
+            </figure>                       
+            <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>    
+        </div>
+        </li> 
+
+        <li class="page">
+            <div class="page-content content-text">
+                <div class='main-text'> 
+                    <img src="assets/letter/letterP.svg" alt="Буква П" class='img-letter-small'>
+                    <div class='text text-small'> 
+                    <a href="#" alt="Ссылка" data-tooltip="Половцы – классический 
+                            кочевой скотоводческий народ, живший в регионе Дешт-и-Кипчак (Половецкая степь), 
+                            вытеснивший в XI в. торков и печенегов. Половцы активно взаимодействовали с русскими княжествами 
+                            через династические браки и участие в междоусобных войнах. Первым князем, который привел 
+                            половцев войной на Русскую землю, был Олег Святославич (ум. 1115 г.), который в 1078 г. 
+                            нанял половцев для борьбы с Всеволодом Ярославичем (1030–1093).">оловчанка</a> с грустью покидает Вас. К сожалению, Вы ее больше не увидите. 
+                    Впрочем, Вы больше ничего не увидите…
+                    </div>
+                </div>
+                <button id="endBtn" class="menu__button text-medium" onclick="location.reload(); return false;">Начать игру заново</button>
+                <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>
+            </div>
+        </li>
+    `,
+        "choiceр-2":` 
+        <li class="page">
+        <div class="page-content content-img">
+            <figure>
+                <img class="content-img" src="assets/image/14.png" alt="Появление звезды (кометы Галлея)">
+                <figcaption class="text-img-author text-medium">Появление звезды (кометы Галлея), восходившей 7 дней и предвещавшей княжеские междоусобицы и нашествие половцев на Русскую землю. 862–1206 гг. Миниатюра из Радзивилловской летописи (рукопись конца XV в.). Библиотека Российской академии наук.</figcaption>                     
+            </figure>                       
+            <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>    
+        </div>
+        </li> 
+
+        <li class="page">
+            <div class="page-content content-text">
+                <div class='main-text'> 
+                    <img src="assets/letter/letterB.svg" alt="Буква В" class='img-letter-small'>
+                    <div class='text text-small'> 
+                    ы приняли смелое решение, но совершенно безрассудное. За несколько минут 
+                    Вас и Вашего князя убивает стража ханского шатра. Ваш путь окончен
+                    </div>
+                </div>
+                <button id="endBtn" class="menu__button text-medium" onclick="location.reload(); return false;">Начать игру заново</button>
+                <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>
+            </div>
+        </li>
+    `,
+        "choice-3":`
+        <li class="page">
+            <div class="page-content content-text">
+                <div class='main-text'> 
+                    <img src="assets/letter/letterB.svg" alt="Буква В" class='img-letter-small'>
+                    <div class='text text-small'> 
+                    ы будите князя, а после, втроем, вместе с прекрасной половчанкой, 
+                    пробираетесь через лагерь к стойбищу. Здесь вы садитесь на трех боевых 
+                    половецких коней и отправляетесь на север, в <a href="#" alt="Ссылка" data-tooltip="Новгородская земля географически располагалась на севере Древней Руси. В годы наивысшего расцвета ее владения могли достигать Уральских гор на востоке и Балтийского моря – на западе. В период раздробленности Новгород постепенно освобождался от зависимости от Киева, однако в то же время, росло его соперничество с Владимиро-Суздальским княжеством. Именно в Новгороде найдено уже более 1100 берестяных грамот – уникальных памятников древнерусской письменности.">Новгородскую землю</a>, надеясь снискать 
+                    расположение местного князя и купечества…
+                    <br>
+                    <br>
+                    В седле Вы чувствуете себя прекрасно. Уж что-что, а кони у <a href="#" alt="Ссылка" data-tooltip="Половцы – классический кочевой скотоводческий народ, живший в регионе Дешт-и-Кипчак (Половецкая степь), вытеснивший в XI в. торков и печенегов. Половцы активно взаимодействовали с русскими княжествами через династические браки и участие в междоусобных войнах. Первым князем, который привел половцев войной на Русскую землю, был Олег Святославич (ум. 1115 г.), который в 1078 г. нанял половцев для борьбы с Всеволодом Ярославичем (1030–1093).">половцев</a> великолепные!
+                    </div>
+                </div>
+                <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>
+            </div>
+        </li>
+
+        <li class="page">
+        <div class="page-content content-img">
+            <figure>
+                <h2 class='text-trophy'>Получен трофей:</h2>
+                <img class="content-img" src="assets/trophy/11.png" alt="Боевой половецкий конь">
+                <figcaption class="text-img-author text-medium">Боевой половецкий конь</figcaption>                     
+            </figure>                       
+            <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>    
+        </div>
+        </li> 
+
+        <li class="page">
+            <div class="page-content content-text">
+                <div class='main-text'> 
+                    <img src="assets/letter/letterB.svg" alt="Буква В" class='img-letter-small'>
+                    <div class='text text-small'> 
+                    Благодаря Вас за спасение своей жизни, князь дарит Вам свою княжескую 
+                    круглую шапку с меховым околышем, говоря, что в новгородских владениях 
+                    гораздо холоднее, чем в тех землях, где Вы бывали ранее.
+                    </div>
+                </div>
+                <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>
+            </div>
+        </li>
+
+        <li class="page">
+        <div class="page-content content-img">
+            <figure>
+                <h2 class='text-trophy'>Получен трофей:</h2>
+                <img class="content-img" src="assets/trophy/4.png" alt="Княжеская круглая шапка с меховым околышем">
+                <figcaption class="text-img-author text-medium">Княжеская круглая шапка с меховым околышем</figcaption>                     
+            </figure>                       
+            <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>    
+        </div>
+        </li>
+    `,
+    },
+    {
+        "page":`
+        
+                <li class="page">
+                    <div class="page-content content-img">
+                        <figure>
+                            <img class="content-img" src="assets/image/15.png" alt="Русь в 1237 году накануне монгольского нашествия.">
+                            <figcaption class="text-img-author text-medium">Русь в 1237 г. накануне монгольского нашествия.</figcaption>                     
+                        </figure>                       
+                        <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>    
+                    </div>
+                </li>
+
+                <li class="page">
+                    <div class="page-content content-text">
+                        <div class='main-text'> 
+                            <img src="assets/letter/letterP.svg" alt="Буква П" class='img-letter-small'>
+                            <div class='text text-small'> 
+                            осле долгого пути через <a href="#" alt="Ссылка" data-tooltip="Переяславское княжество располагалось к востоку от Киева. В период раздробленности являлось аванпостом Русских земель в борьбе с кочевниками-половцами. Именно по этой причине его границы менялись в зависимости от военной ситуации. Находясь около Киева, Переяславское княжество рассматривалось князьями как способ скорого занятия киевского великокняжеского стола.">Переяславское</a>, 
+                            <a href="#" alt="Ссылка" data-tooltip="Черниговское княжество являлось мощным звеном в структуре раздробленной Руси. Находилось севернее Переяславского княжества. Одним из самых известных князей данной земли был Игорь Святославич (1151–1201) – главный герой «Слова о полку Игореве».">Черниговское</a>, 
+                            <a href="#" alt="Ссылка" data-tooltip="Муромо-Рязанское княжество находилось на северо-востоке от Черниговского княжества. Его южные и восточные рубежи были открыты степи и, соответственно, набегам половцев. С течением времени, к середине XII в., стало Муром и Рязань стали постепенно подпадать под влияние Владимира и Суздаля.">Муромо-Рязанское</a> 
+                            и <a href="#" alt="Ссылка" data-tooltip="Одно из сильнейших удельных княжеств на Руси. Образовалось в 1157 г., когда князь Андрей Юрьевич Боголюбский (ум. 1174 г.) перенес столицу Ростово-Суздальской земли из Суздаля во Владимир. Владимиро-Суздальская земля отличалось сильной княжеской властью. Внешнее могущество княжества выражалось в возможности князя Всеволода Юрьевича Большое Гнездо (1154–1212) подчинить своему влиянию Новгород и Рязань. Кроме того, владимирские князья совершали походы на Волжскую Булгарию, сумев обезопасить свои границы вплоть до нашествия монголов в 1237 г.">Владимиро-Суздальское</a> княжества 
+                            вы прибываете в Новгород. Новгородский князь и новгородцы встречают вас очень дружелюбно. 
+                            После сытного обеда Вы просите новгородского князя оказать Вам поддержку в завоевании 
+                            престола для своего князя. Он соглашается Вам помочь, но при одном условии: 
+                            Вы пойдете с ним в <a href="#" alt="Ссылка" data-tooltip="Поход новгородских войск на Полоцкое княжество действительно имел место в истории. В 1127 г. состоялся Полоцкий поход Мстислава Великого (1076–1132), великого киевского князя, совместно с его сыном Всеволодом Мстиславичем, князем Новгородским (ум. 1138 г.). Целью похода было смещение княжеского полоцкого стола Давыда Всеславича (ум. после 1129 г.) и постановку на его место Бориса (Рогволода) Всеславича (до 1054 – 1128). Поход оказался успешен для Мстислава Великого и его сына.">поход на враждебный Новгороду Полоцк</a>.
+                            </div>
+                        </div>
+                        <button id="choice" class="menu__button text-medium">Что Вы намерены сказать?</button>
+                        <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>
+                    </div>
+                </li>
+
+        `,
+        "btn-1":`<li><button id="choice-1" class="text-medium button-answer">Участвовать в чужом походе? Мы лучше поищем других князей, которые согласятся помочь нам, не надеясь, что мы сгинем в гуще сражений за их интересы!</button></li>`,
+        "btn-2":`<li><button id="choice-2" class="text-medium button-answer">Что ж, если таково предложение <a href="#" alt="Ссылка" data-tooltip="Новгородская земля географически располагалась на севере Древней Руси. В годы наивысшего расцвета ее владения могли достигать Уральских гор на востоке и Балтийского моря – на западе. В период раздробленности Новгород постепенно освобождался от зависимости от Киева, однако в то же время, росло его соперничество с Владимиро-Суздальским княжеством. Именно в Новгороде найдено уже более 1100 берестяных грамот – уникальных памятников древнерусской письменности.">Новгорода</a>, мы согласны. Надеюсь, новгородский князь сдержит свое слово</button></li>`,
+        "btn-3":`<li><button id="choice-3" class="text-medium button-answer"></button></li>`,
+        
+        "choice-1":`
+        <li class="page">
+        <div class="page-content content-img">
+            <figure>
+                <img class="content-img" src="assets/image/15.png" alt="Русь в 1237 году накануне монгольского нашествия.">
+                <figcaption class="text-img-author text-medium">Русь в 1237 г. накануне монгольского нашествия.</figcaption>                     
+            </figure>                       
+            <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>    
+        </div>
+        </li> 
+
+        <li class="page">
+            <div class="page-content content-text">
+                <div class='main-text'> 
+                    <img src="assets/letter/letterP.svg" alt="Буква П" class='img-letter-small'>
+                    <div class='text text-small'> 
+                    Довольно опрометчивое решение. Вы даже не знаете, готов ли вас поддержать 
+                    хотя бы кто-то из русских князей, но разбрасываетесь потенциальными союзниками, 
+                    как будто их у вас тысячи
+                    </div>
+                </div>
+                <button id="endBtn" class="menu__button text-medium" onclick="location.reload(); return false;">Начать игру заново</button>
+                <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>
+            </div>
+        </li>
+    `,
+        "choiceр-2":` 
+        <li class="page">
+            <div class="page-content content-text">
+                <div class='main-text'> 
+                    <img src="assets/letter/letterP.svg" alt="Буква П" class='img-letter-small'>
+                    <div class='text text-small'> 
+                    Что ж, если таково предложение Новгорода, мы согласны. Надеюсь, новгородский князь 
+                    сдержит свое слово ⇒ Князь удовлетворен Вашим решением. После нескольких дней 
+                    отдыха Вы отправляетесь <a href="#" alt="Ссылка" data-tooltip="Поход новгородских войск на Полоцкое княжество действительно имел место в истории. В 1127 г. состоялся Полоцкий поход Мстислава Великого (1076–1132), великого киевского князя, совместно с его сыном Всеволодом Мстиславичем, князем Новгородским (ум. 1138 г.). Целью похода было смещение княжеского полоцкого стола Давыда Всеславича (ум. после 1129 г.) и постановку на его место Бориса (Рогволода) Всеславича (до 1054 – 1128). Поход оказался успешен для Мстислава Великого и его сына.">походом на Полоцк</a>
+                    <br>
+                    <br>
+                    Согласившись отправиться с походом на Полоцк, Вы снискали уважение 
+                    новгородского князя. Взамен он пообещал помочь Вам в завоевании какого-нибудь 
+                    южного русского княжества. Чувствуя свою признательность, князь также одарил Вас, 
+                    Вашего князя и приехавшую с Вами половчанку тремя шубами, крытыми шелком, 
+                    с меховым отложным воротником. Теперь Вы действительно 
+                    похожи на выдающегося боярина!
+                    </div>
+                </div>
+                <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>
+            </div>
+        </li>
+
+        <li class="page">
+        <div class="page-content content-img">
+            <figure>
+                <h2 class='text-trophy'>Получен трофей:</h2>
+                <img class="content-img" src="assets/trophy/13.png" alt="Шуба, крытая шелком, с меховым отложным воротником">
+                <figcaption class="text-img-author text-medium">Шуба, крытая шелком, с меховым отложным воротником</figcaption>                     
+            </figure>                       
+            <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>    
+        </div>
+        </li>  
+    `,
+        "choice-3":`
+        <li class="page">
+            
+        </li>
+    `,
+    },
+    {
+        "page":`
+        
+                <li class="page">
+                    <div class="page-content content-img">
+                        <figure>
+                            <img class="content-img" src="assets/image/16.png" alt="Поединок Пересвета с Челубеем на Куликовом поле">
+                            <figcaption class="text-img-author text-medium">Авилов М. И. Поединок Пересвета с Челубеем на Куликовом поле. 1943 г. Государственный Русский музей.</figcaption>                     
+                        </figure>                       
+                        <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>    
+                    </div>
+                </li>
+
+                <li class="page">
+                    <div class="page-content content-text">
+                        <div class='main-text'> 
+                            <img src="assets/letter/letterP.svg" alt="Буква П" class='img-letter-small'>
+                            <div class='text text-small'> 
+                            оход был сорван скоропостижной смертью новгородского князя. 
+                            Тем не менее, дружина уже настроена на бой. Часть дружинников 
+                            бывшего князя готова стать дружиной Вашего князя, если он согласится 
+                            <a href="#" alt="Ссылка" data-tooltip="О проблему принятия бояр и 
+                            дружинников в окружение князя в исторической науке сломано немало копий. 
+                            Данный вопрос входит в дискуссию о феодализме на Руси и касается 
+                            таких понятий и практик как клятва верности и право перехода (отъезда). 
+                            Традиционную концепцию «вольной» боярской службы пересмотрел историк 
+                            первой половины XX в. С. Б. Веселовский. Для него право отъезда являлось 
+                            исключительной мерой, на которую решались очень немногие бояре и, 
+                            видимо, только в крайнем случае. Многими современными историками 
+                            боярское право отъезда считается свободно применяемым 
+                            на Руси. П. С. Стефанович пришел к выводу, что домонгольская Русь 
+                            не знала присяги верности дружинников и права отъезда как институтов 
+                            системы взаимоотношений князя и служилой знати, что, как подчеркнул 
+                            исследователь, не является доказательством отсталости общественных 
+                            отношений в Древней Руси: они были просто другими, чем в Западной Европе.">принять их</a> и завоевать с ними любое южное княжество. Ваш князь 
+                            без раздумий принимает их к себе. Ваше войско начинает двигаться на юг. 
+                            Вы решаете, что наилучшим приобретением будут земли Галицкого 
+                            и Волынского княжеств, когда узнаете, что в Венгрии правит 
+                            Ваш давний друг – один из старших сыновей короля, который помог Вам 
+                            отплыть в Константинополь. Так, захватив Галич и Волынь, 
+                            Ваш князь сможет стать влиятельным правителем юга Руси, 
+                            у которого будут в союзниках венгерский король и византийский император! 
+                            Более того, он сможет отомстить половцам! Пройдя земли <a href="#" alt="Ссылка" data-tooltip="Смоленское княжество располагалось южнее Новгородской земли. Оно имело стойкие торговые связи с Западом, в частности, с Ригой и Готландом (остров на юго-востоке современной Швеции). Однако битва на р. Калке (1223) подорвет силы княжества, а мор и монгольское нашествие еще сильнее ударят по нему.">Смоленского</a>, 
+                            <a href="#" alt="Ссылка" data-tooltip="Полоцкое княжество располагалось на западе от Смоленской земли и граничило с землями, населенными литовскими племенами. С конца X в. оно представляло собой отдельную единицу, обособившуюся от киевских князей. Территория в основном состояла из лесов и болот, но по ней проходили важные торговые пути, связывавшие Русь с Балтийским морем. В начале XIII в. княжество начинает терять земли в низовьях Западной Двины: их захватывают ордена крестоносцев. С середины XIII в. на полоцком княжеском столе все чаще оказываются литовские князя, а уже в XIV в. Полоцкое княжество войдет в состав Великого княжества Литовского.">Полоцкого</a> 
+                            и <a href="#" alt="Ссылка" data-tooltip="Турово-Пинское княжество располагалось на территории современного Полесья, в среднем течении Припяти. Так как княжество было довольно маленьким, оно не играло большой роли в эпоху раздробленности, тем более что оно занимало лесистую и болотистую территорию, не очень плодородную. Во второй половине XII в. княжество раздробилось на несколько мелких уделов. В то же время через княжество проходил торговый путь, связывавший Киев с Балтикой. В начале XIV столетия Туров и Пинск войдут в состав Великого княжества Литовского.">Турово-Пинского</a> 
+                            княжеств, Вы приближаетесь к Волыни. Навстречу Вам выходит враждебное войско. 
+                            Оно больше, чем Вы могли ожидать, дружина Вашего князя тоже напугана.
+                            </div>
+                        </div>
+                        <button id="choice" class="menu__button text-medium">Что же делать?</button>
+                        <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>
+                    </div>
+                </li>
+
+        `,
+        "btn-1":`<li><button id="choice-1" class="text-medium button-answer">Нужно сражаться. Вперед, за мной, храброе воинство!</button></li>`,
+        "btn-2":`<li><button id="choice-2" class="text-medium button-answer">Вот он вожделенный момент, которого я так ждал! Нужно переметнуться к вражескому князю и сделаться его боярином. Он одарит меня землями и сделает богатым!</button></li>`,
+        "btn-3":`<li><button id="choice-3" class="text-medium button-answer"></button></li>`,
+        
+        "choice-1":`
+        <li class="page">
+            <div class="page-content content-text">
+                <div class='main-text'> 
+                    <img src="assets/letter/letterP.svg" alt="Буква П" class='img-letter-small'>
+                    <div class='text text-small'> 
+                    омолившись, Вы взбираетесь на своего коня. Надеясь, прорвать оборону противника 
+                    по центру, Вы во главе конницы мчитесь в атаку на передние ряды вражеских войск. 
+                    Ваш план, дерзкий и неожиданный для противников, раскалывает их воинство 
+                    на две части, беспомощные друг без друга. Вы одерживаете поистине 
+                    героическую победу, которая навсегда войдет в историю нашего Отечества!
+                    <br>
+                    <br>
+                    В качестве награды от князя, Вы получаете большое 
+                    земельное владение в тех землях, которыми он отныне правит.
+                    </div>
+                </div>
+                <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>
+            </div>
+        </li>
+
+        <li class="page">
+        <div class="page-content content-img">
+            <figure>
+                <h2 class='text-trophy'>Получен трофей:</h2>
+                <img class="content-img" src="assets/trophy/14.png" alt="Земельное владение">
+                <figcaption class="text-img-author text-medium">Земельное владение</figcaption>                     
+            </figure>                       
+            <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>    
+        </div>
+        </li>      
+
+    `,
+        "choiceр-2":` 
+        <li class="page">
+        <div class="page-content content-img">
+            <figure>
+                <img class="content-img" src="assets/image/16.png" alt="Поединок Пересвета с Челубеем на Куликовом поле">
+                <figcaption class="text-img-author text-medium">Авилов М. И. Поединок Пересвета с Челубеем на Куликовом поле. 1943 г. Государственный Русский музей.</figcaption>                     
+            </figure>                       
+            <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>    
+        </div>
+        </li> 
+
+        <li class="page">
+            <div class="page-content content-text">
+                <div class='main-text'> 
+                    <img src="assets/letter/letterB.svg" alt="Буква В" class='img-letter-small'>
+                    <div class='text text-small'> 
+                    ы решили <a href="#" alt="Ссылка" data-tooltip="О проблему принятия бояр и дружинников в окружение князя в исторической науке сломано немало копий. Данный вопрос входит в дискуссию о феодализме на Руси и касается таких понятий и практик как клятва верности и право перехода (отъезда). Традиционную концепцию «вольной» боярской службы пересмотрел историк первой половины XX в. С. Б. Веселовский. Для него право отъезда являлось исключительной мерой, на которую решались очень немногие бояре и, видимо, только в крайнем случае. Многими современными историками боярское право отъезда считается свободно применяемым на Руси. П. С. Стефанович пришел к выводу, что домонгольская Русь не знала присяги верности дружинников и права отъезда как институтов системы взаимоотношений князя и служилой знати, что, как подчеркнул исследователь, не является доказательством отсталости общественных отношений в Древней Руси: они были просто другими, чем в Западной Европе.">переметнуться</a> 
+                    во вражеский стан. Ночью Вы взбираетесь на своего коня 
+                    и скачете в лагерь противника. Здесь Вас встречает вражеский князь, 
+                    который смотрит на Вас с отвращением, называя Вас Иудой, продавшимся 
+                    за тридцать сребреников. Он изгоняет Вас из лагеря. Что делать дальше, 
+                    для Вас совершенно непонятно… Кому нужен такой предатель, как Вы?
+                    </div>
+                </div>
+                <button id="endBtn" class="menu__button text-medium" onclick="location.reload(); return false;">Начать игру заново</button>
+                <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>
+            </div>
+        </li>
+    `,
+        "choice-3":`
+        <li class="page">
+            
+        </li>
+    `,
+    },
+    {
+        "page":`
+        
+                <li class="page">
+                    <div class="page-content content-img">
+                        <figure>
+                            <img class="content-img" src="assets/image/17.png" alt="Папский нунций подносит князю Даниилу Романовичу Галицкому королевскую корону">
+                            <figcaption class="text-img-author text-medium">Папский нунций подносит князю Даниилу Романовичу Галицкому (1201–1264) королевскую корону. 1253 г. Гравюра Ю. Шюблера по рисунку К. Лебедева из собрания иллюстраций журнала «Нива». 1894 г.</figcaption>                     
+                        </figure>                       
+                        <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>    
+                    </div>
+                </li>
+
+                <li class="page">
+                    <div class="page-content content-text">
+                        <div class='main-text'> 
+                            <img src="assets/letter/letterP.svg" alt="Буква П" class='img-letter-small'>
+                            <div class='text text-small'> 
+                            осле захвата <a href="#" alt="Ссылка" data-tooltip="Волынское княжество располагалось в бассейне южных притоков Припяти и верховьев Западного Буга. Формирование Волынского княжества активно шло во второй половине XI в. В XII столетии здесь активно развиваются города, особенно в восточной части княжества, где не было опасности со стороны польских князей (на западе) или ятвяжских племенных вождей (на севере). Активно растет и боярское землевладение. В 1199 г. Волынское княжество было объединено Романом Мстиславичем (1150–1205) с Галицким княжеством, что привело к созданию сильного государственного объединения, которое могло защитить свои границы и, следовательно, начать строить города на рубежах с Польшей, Венгрией, Литвой и землей ятвягов.">Волыни</a>
+                             Вы вместе с князем захватываете и <a href="#" alt="Ссылка" data-tooltip="Галицкое княжество располагалось на территориях юго-западной Руси. Будущая Галицкая земля произошла в основном из территорий Перемышльской и Теребовльской волостей, владений галицких Ростиславичей. Кроме того, территория княжества расширялась за счет колонизации новых земель на западе, севере и юге. Сам Галич, судя по всему, возник к середине XII в. С этого же времени вокруг него, как стольного града, начинается рост боярского землевладения. Развитие других городов в княжестве происходило медленно: как и в Новгороде, хозяйство сосредотачивалось вокруг столицы. Тем не менее, после объединения Галицкого княжества с Волынским в 1199 г. процесс укрепления единой земли и развития сел и городов ускорился. Весной 1241 г. Галицко-Волынская Русь была разорена монголами.">Галич</a>, 
+                             объединяя два княжества в единое целое – в Галицко-Волынское княжество. 
+                             Да, цель достигнута, Ваш <a href="#" alt="Ссылка" data-tooltip="Князья-изгои – представители рода Рюриковичей, которым не досталось земельного владения в Древнерусском государстве. Многие историки именно в появлении князей-изгоев и в их деятельности видели главную причину удельной раздробленности Руси и частых междоусобиц. Такого мнения, в частности, придерживался С. М. Соловьев в своей «Истории России с древнейших времен». В разное время с ним соглашались А. Е. Пресняков, А. С. Орлов и Н. Ф. Котляр.">князь-изгой</a> 
+                             отныне Галицко-Волынский князь, славный представитель рода <a href="#" alt="Ссылка" data-tooltip="Русскую землю как владение династии Рюриковичей рассматривали несколько историков. Такую мысль высказал еще русский литератор и историк Н. А. Полевой в начале XIX в., считавший, что социальные, экономические и политические аспекты раздробленности Руси нужно рассматривать в рамках понятия «семейный феодализм». На сегодняшний день Древнюю Русь как семейное владение дома Рюриковичей рассматривает А. П. Толочко, говоря, что Русь эпохи раздробленности – «форма сожительства одной семьи, которая является и историческим собственником этого государства, и эмпирическим ее отождествлением».">Рюриковичей</a>, 
+                             которого уважают другие представители династии, а также иноземные 
+                             правители. Даже Папа Римский желает даровать Вашему князю титул 
+                             <a href="#" alt="Ссылка" data-tooltip="Данный титул действительно имел место в отечественной истории. В 1253 г. венцом короля Руси папскими представителями был коронован Даниил Романович Галицкий (1201/1204–1264). Князь искал у Святого престола помощи против монголов, однако, так этого и не дождался. Рим же пытался расширить сферу своего влияния на Восток, однако, также потерпел неудачу: ни Даниил Романович, ни сама Галицкая земля не собирались переходить в католицизм. Так титул утратил привлекательность для обеих сторон.">короля Руси</a> вместе с короной!
+                            </div>
+                        </div>
+                        <button id="choice" class="menu__button text-medium">Не пора ли Вам уходит на покой?</button>
+                        <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>
+                    </div>
+                </li>
+
+        `,
+        "btn-1":`<li><button id="choice-1" class="text-medium button-answer">Да, я слишком устал. Пора завести семью и почивать в своих владениях</button></li>`,
+        "btn-2":`<li><button id="choice-2" class="text-medium button-answer">Кажется, князь предлагал стать мне его покладником… Может, все же принять его предложение?..</button></li>`,
+        "btn-3":`<li><button id="choice-3" class="text-medium button-answer"></button></li>`,
+        
+        "choice-1":`
+        <li class="page">
+        <div class="page-content content-img">
+            <figure>
+                <img class="content-img" src="assets/image/17.png" alt="Папский нунций подносит князю Даниилу Романовичу Галицкому королевскую корону">
+                <figcaption class="text-img-author text-medium">Папский нунций подносит князю Даниилу Романовичу Галицкому (1201–1264) королевскую корону. 1253 г. Гравюра Ю. Шюблера по рисунку К. Лебедева из собрания иллюстраций журнала «Нива». 1894 г.</figcaption>                     
+            </figure>                       btn-1
+            <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>    
+        </div>
+        </li> 
+
+        <li class="page">
+            <div class="page-content content-text">
+                <div class='main-text'> 
+                    <img src="assets/letter/letterB.svg" alt="Буква В" class='img-letter-small'>
+                    <div class='text text-small'> 
+                    ы проделали славный путь и вполне заслуженно ушли на покой. Гордитесь своими 
+                    успехами: Ваше имя, легендарного боярина Василько, навсегда войдет в историю!
+                    </div>
+                </div>
+                <button id="endBtn" class="menu__button text-medium" onclick="location.reload(); return false;">Начать игру заново</button>
+                <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>
+            </div>
+        </li>
+
+    `,
+        "choiceр-2":` 
+        <li class="page">
+        <div class="page-content content-img">
+            <figure>
+                <img class="content-img" src="assets/image/17.png" alt="Папский нунций подносит князю Даниилу Романовичу Галицкому королевскую корону">
+                <figcaption class="text-img-author text-medium">Папский нунций подносит князю Даниилу Романовичу Галицкому (1201–1264) королевскую корону. 1253 г. Гравюра Ю. Шюблера по рисунку К. Лебедева из собрания иллюстраций журнала «Нива». 1894 г.</figcaption>                     
+            </figure>                       
+            <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>    
+        </div>
+        </li> 
+
+        <li class="page">
+            <div class="page-content content-text">
+                <div class='main-text'> 
+                    <img src="assets/letter/letterB.svg" alt="Буква В" class='img-letter-small'>
+                    <div class='text text-small'> 
+                    ы приходите к князю и говорите ему о своем согласии стать его 
+                    покладником. Князь с великой радостью принимает Вас и дарует этот чин.
+                    <br>
+                    <br>
+                    Согласившись быть покладником князя, Вы приобретаете огромное влияние 
+                    при его дворе. Отныне Вы правая рука правящего князя, легендарный 
+                    боярин Василько, чье имя навсегда останется в истории!
+                    </div>
+                </div>
+                <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>
+            </div>
+        </li>
+
+        <li class="page">
+        <div class="page-content content-img">
+            <figure>
+                <h2 class='text-trophy'>Получен трофей:</h2>
+                <img class="content-img" src="assets/trophy/15.png" alt="Чин покладника">
+                <figcaption class="text-img-author text-medium">Чин покладника</figcaption>                     
+            </figure>                       
+            <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>    
+        </div>
+        </li>      
+
+        <li class="page">
+            <div class="page-content content-text">
+                <div class='main-text'> 
+                    <img src="assets/letter/letterP.svg" alt="Буква П" class='img-letter-small'>
+                    <div class='text text-small'> 
+                    оздравляю, Вы прошли квест до самого конца! Вы преодолели все препятствия 
+                    и вместе с Вашим героев достигли многих успехов!
+                    <br>
+                    <br>
+                    Возможно, Вам теперь интересно узнать, как еще могла сложиться судьба дружинника Василько и его князя?
+                    </div>
+                </div>
+                <button id="endBtn" class="menu__button text-medium" onclick="location.reload(); return false;">Начать игру заново</button>
+                <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>
+            </div>
+        </li>
+    `,
+        "choice-3":`
+        
+    `,
+    },
     
 ];

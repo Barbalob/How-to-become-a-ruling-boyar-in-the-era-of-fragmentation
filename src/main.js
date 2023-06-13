@@ -69,7 +69,9 @@ function ChoiceCreate(Book, evt){
                 for (let i = 1; i < 4; i++) {
                     if (String(i) !== id) {
                         const buttonChoice = document.querySelector(`#choice-${i}`)
+                        if(buttonChoice){
                         buttonChoice.disabled = true;
+                        }
                     }
                 }
 
@@ -98,7 +100,9 @@ function ChoiceCreate(Book, evt){
 
             buttonChoice1.addEventListener('click', F)
             buttonChoice2.addEventListener('click', F)
+            if(buttonChoice3){
             buttonChoice3.addEventListener('click', F)
+            }
 
             
         });
@@ -116,7 +120,8 @@ function CreateListBook(template, Book) {
 }
 
 function NextStage(Book){
-    if (stage == 7){
+    const end = document.querySelector("#endBtn");
+    if (end){
         return
     } 
     stage+=1
