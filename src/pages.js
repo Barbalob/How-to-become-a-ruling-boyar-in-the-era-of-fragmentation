@@ -1483,7 +1483,7 @@ export const pages = [
         <div class="page-content content-img">
             <figure>
                 <h2 class='text-trophy'>Получен трофей:</h2>
-                <img class="content-img" src="assets/trophy/13.png" alt="Шуба, крытая шелком, с меховым отложным воротником">
+                <img class="content-img" src="assets/trophy/12.png" alt="Шуба, крытая шелком, с меховым отложным воротником">
                 <figcaption class="text-img-author text-medium">Шуба, крытая шелком, с меховым отложным воротником</figcaption>                     
             </figure>                       
             <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>    
@@ -1580,7 +1580,7 @@ export const pages = [
         <div class="page-content content-img">
             <figure>
                 <h2 class='text-trophy'>Получен трофей:</h2>
-                <img class="content-img" src="assets/trophy/14.png" alt="Земельное владение">
+                <img class="content-img" src="assets/trophy/13.png" alt="Земельное владение">
                 <figcaption class="text-img-author text-medium">Земельное владение</figcaption>                     
             </figure>                       
             <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>    
@@ -1720,7 +1720,7 @@ export const pages = [
         <div class="page-content content-img">
             <figure>
                 <h2 class='text-trophy'>Получен трофей:</h2>
-                <img class="content-img" src="assets/trophy/15.png" alt="Чин покладника">
+                <img class="content-img" src="assets/trophy/14.png" alt="Чин покладника">
                 <figcaption class="text-img-author text-medium">Чин покладника</figcaption>                     
             </figure>                       
             <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>    
