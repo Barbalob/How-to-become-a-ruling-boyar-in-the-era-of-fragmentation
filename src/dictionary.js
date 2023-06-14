@@ -87,7 +87,7 @@ export const dictionary =
                                 <ol class='text text-small'>
                                     ${isEmptyRemainingText(dop)}
                                     <li>
-                                        ${count++}. ${key}. ${one}        
+                                        ${count++}. <span class='keyword'>${key}</span>. ${one}        
                                     </li>
                                     ${isEmptyText(thee)}
                                 </ol>
@@ -101,7 +101,7 @@ export const dictionary =
                         <ol class='text text-small'>
                             ${isEmptyRemainingText(dop)}
                             <li>
-                                ${count++}. ${key}. ${one}        
+                                ${count++}. <span class='keyword'>${key}</span>. ${one}        
                             </li>
                             ${isEmptyText(thee)}
                         </ol>

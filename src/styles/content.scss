@@ -79,15 +79,16 @@
 
 .content-dictionary{
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
     justify-content: space-between;
     align-items:center;
     ol{
         display: flex;
         flex-direction: column;
         gap:5px;
-        li{
-           
+        span.keyword{
+            color: 
+            #0500FF
         }
     }
 }
