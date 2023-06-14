@@ -347,7 +347,7 @@ buttonStart.addEventListener('click', () => {
         </div>
     </div>
 `
-            // mainPage.innerHTML = dictionary
+            mainPage.innerHTML = dictionary
             const Book = new PageFlip(
                 document.getElementById("demoBookExample"),
                 {
