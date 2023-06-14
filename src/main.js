@@ -212,6 +212,7 @@ buttonStart.addEventListener('click', () => {
                     const pagesCount = Book.getPageCount();
                     CreateListBook(dictionary, Book);
                     Book.flip(pagesCount);
+                    dictBtn.disabled = true;
                 });
             }
             const choiceBtn = document.querySelector('#choice');
