@@ -1,6 +1,179 @@
+import { definitions } from './definitionDict'
 export const pages = [
     {
-        "page":``,
+        "page":`
+        <div class="container">
+          <button class='dictionary-btn'><img src='assets/Dictionary_bookmark.png'></button>
+          <div class="wrapper-book">
+            <ul class="flip-book" id="demoBookExample">
+
+                <li class="page">
+                    <div class="page-content content-text first">
+                        <div class='main-text'> 
+                            <img src="assets/letter/letterU.svg" alt="Буква И" class='img-letter-high'>
+                            <div class='text text-high'> 
+                                стория средних веков менее
+                                всего может назваться скучною.
+                                Нигде нет такой пестроты, такого живого действия,
+                                таких резких противоположностей, такой странной яркости, как в ней:
+                                ее можно сравнить с огромным строением, в фундаменте которого улегся свежий,
+                                крепкий, как вечность, гранит, а толстые стены выведены из различного, старого и нового материала,
+                                так что на одном кирпиче видны готфские руны, на другом блестит римская позолота; арабская резьба,
+                                греческий карниз, готическое окно, – все слепилось в нем и составило самую пеструю башню”
+                            </div>
+                        </div>
+                        <div class='main-text text-high'>(Н. В. Гоголь, “О средних веках”)</div>
+                        <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>
+                    </div>
+                </li>
+
+
+                <li class="page">
+                    <div class="page-content content-img first">
+                        <figure>
+                            <img class="content-img" src="assets/image/1-Gogol.png" alt="Портрет Гоголя">
+                            <figcaption class="text-img-author text-medium">Ф. А. Моллер. Портрет Гоголя (Третьяковская галерея, 1841 г.)</figcaption>                     
+                        </figure>                       
+                        <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>    
+                    </div>
+                </li>
+
+
+                <li class="page">
+                    <div class="page-content content-text">
+                        <div class='main-text'> 
+                            <img src="assets/letter/letterH.svg" alt="Буква Н" class='img-letter-small'>
+                            <div class='text text-small'> 
+                                а землях Руси настали поистине смутные времена. Могущественные
+                                княжеские кланы готовы вступить в ожесточенную борьбу за власть и влияние. 
+                                Князья-изгои, оскорбленные лишением земель, уже точат свои мечи и не спешат убирать их обратно в ножны. 
+                                Владетели крупных княжеств собирают свои дружины, чтобы отстоять свои права перед другими представителями разросшейся семьи Рюриковичей. 
+                                Бурное развитие сел и городов прерывается набегами половцев, зачастую приглашаемых на Русскую землю самими русскими князьями. 
+                                Бал начинает править кровавая эпоха раздробленности...
+                                Вы – молодой дружинник по имени Василько, состоящий в дружине у князя-изгоя, которому не досталось места в “семейном владении Рюриковичей”. 
+                                Его отец, также князь-изгой, всю свою жизнь провел в битвах со своими родичами, но, как только захватил княжеский стол, 
+                                был отравлен своим же поваром по прозвищу Поганка. 
+                            </div>
+                        </div>
+                        <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>
+                    </div>
+                </li>
+
+                
+                <li class="page">
+                    <div class="page-content content-img">
+                        <figure>
+                            <img class="content-img" src="assets/image/2.png" alt="Съезд князей">
+                            <figcaption class="text-img-author text-medium">И. Билибин. Рисунок “Съезд князей”</figcaption>                     
+                        </figure>                       
+                        <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>    
+                    </div>
+                </li>
+
+                
+                <li class="page">
+                    <div class="page-content content-text">
+                        <div class='main-text'> 
+                            <img src="assets/letter/letterB.svg" alt="Буква В" class='img-letter-small'>
+                            <div class='text text-small'> 
+                            аша задача – выжить в жестоком
+                            мире удельной раздробленности и 
+                            попытаться, заручившись верными союзниками и братьями-дружинниками, 
+                            добиться для своего князя власти в каком-либо княжестве, поправ врагов и восстановив честь клана!
+                            <br>
+                            <br>
+                            Вас ждет невероятное путешествие по землям Восточной Европы, в ходе которого Вы будете вести битвы, 
+                            плести интриги, торговать и вступать в переговоры. Любое Ваше решение будет иметь последствия: 
+                            за каждый выбранный Вами ход Вы получите определенное количество очков, а также, если повезет, трофейный предмет, 
+                            который прибавит Вам итоговых очков в конце игры. Чем больше Вы наберете очков в течение игры – тем лучше результат!               
+                            </div>
+                        </div>
+                        <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>
+                    </div>
+                </li>
+
+                <li class="page">
+                    <div class="page-content content-img">
+                        <figure>
+                            <img class="content-img" src="assets/image/2.png" alt="Съезд князей">
+                            <figcaption class="text-img-author text-medium">И. Билибин. Рисунок “Съезд князей”</figcaption>                     
+                        </figure>                       
+                        <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>    
+                    </div>
+                </li>
+
+                <li class="page">
+                    <div class="page-content content-text">
+                        <div class='main-text'> 
+                            <img src="assets/letter/letterB.svg" alt="Буква В" class='img-letter-small'>
+                            <div class='text text-small'> 
+                                течение игры каждый ход Вам будет 
+                                предлагаться выбор из трех или двух
+                                вариантов ответа, от которого будет зависеть судьба Вашего героя и князя, за которым Вы стоите. 
+                                Наиболее успешный выбор даст дружиннику большее количество очков. От выбора зависит и достаток Вашего героя: 
+                                за те или иные ходы Вы будете получать трофеи, которые также влияют на конечный результат борьбы за княжеский стол. 
+                                Будьте внимательны: некоторые варианты ответа могут привести Вас и Вашего князя к гибели или к бесславному окончанию путешествия, выбирайте с умом!
+                                <br>
+                                <br>
+                                Ваша цель – выжить, заручиться союзниками и захватить княжеский престол для своего князя.
+                                <br>
+                                <br>
+                                Кроме того, по ходу игры некоторые слова будут выделяться особым маркером. Это будет означать, 
+                                что у данного слова существует историческая справка – объяснение понятия с возможной краткой историографией.           
+                            </div>
+                        </div>
+                        <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>
+                    </div>
+                </li>
+
+                <li class="page">
+                    <div class="page-content content-img">
+                        <figure>
+                            <img class="content-img" src="assets/image/3.png" alt="Съезд князей">
+                            <figcaption class="text-img-author text-medium">Памятник Любечкому съезду князей. Памятник скульптора Геннадия Ершова, расположенный в Любече на берегу Днепра (Украина, 1997 г.)</figcaption>                     
+                        </figure>                       
+                        <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>    
+                    </div>
+                </li>
+
+                <li class="page">
+                    <div class="page-content content-img">
+                        <figure>
+                            <img class="content-img" src="assets/image/4.png" alt="Съезд князей">
+                            <figcaption class="text-img-author text-medium">Отравление Ростислава Владимировича Тмутараканского, первого князя-изгоя, греческим стратигом. Миниатюра из Радзивилловской летописи (XV век)</figcaption>                     
+                        </figure>                       
+                        <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>    
+                    </div>
+                </li>
+
+                <li class="page">
+                    <div class="page-content content-text">
+                        <div class='main-text'> 
+                            <img src="assets/letter/letterH.svg" alt="Буква И" class='img-letter-small'>
+                            <div class='text text-small'> 
+                            аходясь при особе своего князя, Вы,
+                            к своему стыду, не сумели уберечь
+                            его от отравления, совершенного коварным поваром по прозвищу <a href="#" alt="Ссылка" data-tooltip="${definitions['Поганка'][0]}">Поганка</a>. 
+                            Не только могущество и влияние, но и само выживание 
+                            <a href="#" alt="Ссылка" data-tooltip="${definitions['Княжеские кланы'][0]}">княжеского клана</a>, 
+                            к которому он принадлежал, подверглись угрозе. Пока <a href="#" alt="Ссылка" data-tooltip="${definitions['Бурное развитие сел и городов'][0]}">бурное развитие сел и городов</a> прерывается набегами 
+                            <a href="#" alt="Ссылка" data-tooltip="${definitions['Половцы'][0]}">половцев</a>, 
+                            зачастую приглашаемых на Русскую землю самими русскими князьями, Вы рискуете остаться за бортом Истории. 
+                            Однако, судьба дала Вам второй шанс в лице его молодого наследника. Несмотря на то, что княжеский стол потерян, честь клана попрана, 
+                            а молодой и неопытный Рюрикович превращен в 
+                            <a href="#" alt="Ссылка" data-tooltip="${definitions['Князья-изгои'][0]}">князя-изгоя</a>, 
+                            Вы решаете начать искать союзников для возвращения отчины, 
+                            чтобы занять достойное место в “<a href="#" alt="Ссылка" data-tooltip="${definitions['Семейное владение Рюриковичей'][0]}">семейном владении Рюриковичей</a>”.
+                            </div>
+                        </div>
+                        <button id="choice" class="menu__button text-medium">Что Вы намерены делать в первую очередь?</button>
+                        <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+        `,
         "btn-1":`<li><button id="choice-1" class="text-medium button-answer">Нужно попытаться найти дружелюбных князей, готовых помочь мальчику вернуть отчину. Уверен, такие найдутся!</button></li>`,
         "btn-2":`<li><button id="choice-2" class="text-medium button-answer">Необходимо обратиться за помощью к польскому королю, с которым у нас есть давние связи. Конечно, за свою помощь он попросит золото, серебро или часть земельных владений, но, вернув свои земли и заручившись верной дружиной, мы сможем легко вернуть все отданное обратно. Тем паче, что я знаю язык Ляхов. Я знал, что это мне не единожды пригодиться!</button></li>`,
         "btn-3":`<li><button id="choice-3" class="text-medium button-answer">Если честно, я, все-таки, не понимаю, зачем мне всё это нужно. Рисковать своей жизнью ради этого мальчика… Пойду-ка я лучше служить к другому князю, обзаведусь слугами и умру никому неизвестным боярином!</button></li>`,
