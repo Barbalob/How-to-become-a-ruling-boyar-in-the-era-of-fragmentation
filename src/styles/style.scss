@@ -165,3 +165,12 @@
     opacity: 0.80;
     border-radius: 15px;
   }
+
+.blockerator{
+    display: none;
+    position: absolute;
+    opacity: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 9999;
+}

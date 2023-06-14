@@ -3,7 +3,7 @@ export const pages = [
     {
         "page":`
         <div class="container">
-          <button class='dictionary-btn'><img src='assets/Dictionary_bookmark.png'></button>
+          <button class='dictionary-btn'></button>
           <div class="wrapper-book">
             <ul class="flip-book" id="demoBookExample">
 

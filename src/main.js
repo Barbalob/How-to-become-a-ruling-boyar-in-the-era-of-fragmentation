@@ -213,37 +213,43 @@ buttonStart.addEventListener('click', () => {
             if (dictBtn){
                 dictBtn.addEventListener('click', () => {
                     if(flag ){
-                    const pagesCount = Book.getPageCount();
-                    curPage = Book.getCurrentPageIndex();
-                    CreateListBook(dictionary, Book);
-                    Book.flip(pagesCount);
-                    flag = false;
-                    Book.on('flip', (e) => {
-                        if(e.data == pagesCount - 2){
-                            $(".dictClass").remove();
-                            sleep(700).then(() => {
-                            flag = true; 
-                            Book.updateFromHtml(document.querySelectorAll(".page"));
-                            Book.off('flip', (e) => {
-                                if(e.data == pagesCount - 2){
-                                    $(".dictClass").remove();
-                                    sleep(700).then(() => {
-                                    flag = true; 
-                                    Book.updateFromHtml(document.querySelectorAll(".page"));
-                                    Book.off()
-                                });
+                        dictBtn.disabled = true;
+                        const pagesCount = Book.getPageCount();
+                        curPage = Book.getCurrentPageIndex();
+                        CreateListBook(dictionary, Book);
+                        Book.flip(pagesCount);
+                        flag = false;
+                        sleep(800).then(() => {
+                            dictBtn.disabled = false;
+                            Book.on('flip', (e) => {
+                            if(e.data == pagesCount - 2){
+                                $(".dictClass").remove();
+                                sleep(100).then(() => {
+                                flag = true; 
+                                Book.updateFromHtml(document.querySelectorAll(".page"));
+                                Book.off('flip', (e) => {
+                                    if(e.data == pagesCount - 2){
+                                        $(".dictClass").remove();
+                                        sleep(100).then(() => {
+                                        flag = true; 
+                                        Book.updateFromHtml(document.querySelectorAll(".page"));
+                                        Book.off()
+                                    });
                                 };
                             })
                         });
                         };
                     });
+                    });
                     }
                     else{
+                        document.getElementById('blockerator').style.display = 'block';
                         Book.flip(curPage);
-                        sleep(700).then(() => {
-                        $(".dictClass").remove();
-                        Book.updateFromHtml(document.querySelectorAll(".page"));
-                        flag = true;
+                        sleep(800).then(() => {
+                            $(".dictClass").remove();
+                            Book.updateFromHtml(document.querySelectorAll(".page"));
+                            flag = true;
+                            document.getElementById('blockerator').style.display = "none"
                         });
                     }
                 });
