@@ -7,6 +7,9 @@ const isEmptyRemainingText = (word) => {return word != '' ?  `${word}` : ''};
 const wrapperLi = (word) => {return `<li>${word}</li>`}
 
 function cutOffPartString (word, num) {
+    if (num <= 0){
+        return ['', word]
+    }
     if (word.length < num){
       return [word, '']
     }
@@ -34,7 +37,7 @@ export const dictionary =
                 let thee = definitions[key][2]
                 let dop = ''
                 let newList =''
-                const transfer = 700
+                const transfer = 800
                 if (remainingText != ''){
                     dop = remainingText;
                     remainingText = '';
@@ -65,7 +68,7 @@ export const dictionary =
                     else if (len >= transfer){
                         console.log(len - (definitions[key][0].length + dop.length));
                         console.log(thee.length);
-                        const array = cutOffPartString(thee, (len - (definitions[key][0].length + dop.length)) / 2)
+                        const array = cutOffPartString(thee, transfer - (definitions[key][0].length + dop.length))
                         console.log(array);
                         remainingText = wrapperLi(array[1])
                         thee = array[0]        
