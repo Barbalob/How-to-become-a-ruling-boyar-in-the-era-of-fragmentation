@@ -377,6 +377,14 @@ buttonStart.addEventListener('click', () => {
             // testButton.addEventListener('click', () => {
             //     Book.turnToPage(8);
             // });
+            const dictBtn = document.querySelector(".dictionary-btn");
+            if (dictBtn){
+                dictBtn.addEventListener('click', () => {
+                    const pagesCount = Book.getPageCount();
+                    CreateListBook(dictionary, Book);
+                    Book.flip(pagesCount);
+                });
+            }
             const choiceBtn = document.querySelector('#choice');
             if (choiceBtn){
                 choiceBtn.addEventListener('click', (evt) => {ChoiceCreate(Book, evt)});
