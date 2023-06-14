@@ -5,7 +5,7 @@ const sumbol = ['.', ':', ';', ',', ' ', '!', '?']
 const isEmptyText = (word) => {return !sumbol.includes(word) ?   `<li>${word}</li>` : ''};
 const isEmptyRemainingText = (word) => {return word != '' ?  `${word}` : ''};
 const wrapperLi = (word) => {return `<li>${word}</li>`}
-
+const dictClass = `dictClass`
 function cutOffPartString (word, num) {
     if (num <= 0){
         return ['', word]
@@ -31,9 +31,6 @@ function cutOffPartString (word, num) {
 
 export const dictionary = 
   `
-  <div class="container">
-          <div class="wrapper-book">
-            <ul class="flip-book" id="demoBookExample">
     ${
         Object.keys(definitions).map(key =>{
 
@@ -54,7 +51,7 @@ export const dictionary =
                 if (len >= transfer){
                     if (dop.length >= transfer){
                         newList = `
-                            <li class="page">
+                            <li class="page ${dictClass}">
                                 <div class="page-content content-dictionary">
                                     <ol class='text text-small'>
                                         ${dop}
@@ -82,7 +79,7 @@ export const dictionary =
                 };
                 if (newList === '')
                     {return `
-                        <li class="page">
+                        <li class="page ${dictClass}">
                             <div class="page-content content-dictionary">
                                 <ol class='text text-small'>
                                     ${isEmptyRemainingText(dop)}
@@ -96,7 +93,7 @@ export const dictionary =
                         </li>
                     `}
                 else {return newList + `
-                <li class="page">
+                <li class="page ${dictClass}">
                     <div class="page-content content-dictionary">
                         <ol class='text text-small'>
                             ${isEmptyRemainingText(dop)}
@@ -113,7 +110,7 @@ export const dictionary =
         }).join(' ')
     }
     ${`
-    <li class="page">
+    <li class="page ${dictClass}">
         <div class="page-content content-dictionary">
             <ol class='text text-small'>
                 <li>
@@ -124,9 +121,4 @@ export const dictionary =
         </div>
     </li>
     `}
-    
-
-    </ul>
-    </div>
-</div>
   `;

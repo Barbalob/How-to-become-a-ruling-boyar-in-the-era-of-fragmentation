@@ -200,19 +200,51 @@ buttonStart.addEventListener('click', () => {
                     showCover: false,
                     usePortrait: false,
                     mobileScrollSupport: false // disable content scrolling on mobile devices
-                }
+                } 
             );
             Book.loadFromHTML(document.querySelectorAll(".page"));
             // testButton.addEventListener('click', () => {
             //     Book.turnToPage(8);
             // });
             const dictBtn = document.querySelector(".dictionary-btn");
+            let flag = true;
+            let curPage;
             if (dictBtn){
                 dictBtn.addEventListener('click', () => {
+                    if(flag ){
                     const pagesCount = Book.getPageCount();
+                    curPage = Book.getCurrentPageIndex();
                     CreateListBook(dictionary, Book);
                     Book.flip(pagesCount);
-                    dictBtn.disabled = true;
+                    flag = false;
+                    Book.on('flip', (e) => {
+                        if(e.data == pagesCount - 2){
+                            $(".dictClass").remove();
+                            sleep(200).then(() => {
+                            flag = true; 
+                            Book.updateFromHtml(document.querySelectorAll(".page"));
+                            Book.off('flip', (e) => {
+                                if(e.data == pagesCount - 2){
+                                    $(".dictClass").remove();
+                                    sleep(200).then(() => {
+                                    flag = true; 
+                                    Book.updateFromHtml(document.querySelectorAll(".page"));
+                                    Book.off()
+                                });
+                                };
+                            })
+                        });
+                        };
+                    });
+                    }
+                    else{
+                        Book.flip(curPage);
+                        $(".dictClass").remove();
+                        sleep(200).then(() => {
+                        Book.updateFromHtml(document.querySelectorAll(".page"));
+                        flag = true;
+                        });
+                    }
                 });
             }
             const choiceBtn = document.querySelector('#choice');
