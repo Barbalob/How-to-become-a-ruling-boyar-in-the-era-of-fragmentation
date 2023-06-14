@@ -16,6 +16,12 @@ function cutOffPartString (word, num) {
     else {
         for (let i = num-1; i >= 0; i--){
           if (sumbol.includes(word[i])){
+            if (word.slice(0,i).length <= 10){
+                return ['', word]
+            }
+            if (word.slice(i).length <= 15){
+                return [word, '']
+            }
             return [word.slice(0,i), word.slice(i)]
           }
         }
@@ -37,7 +43,7 @@ export const dictionary =
                 let thee = definitions[key][2]
                 let dop = ''
                 let newList =''
-                const transfer = 800
+                const transfer = 780
                 if (remainingText != ''){
                     dop = remainingText;
                     remainingText = '';
