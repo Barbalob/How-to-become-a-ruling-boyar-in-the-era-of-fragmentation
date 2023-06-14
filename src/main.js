@@ -199,6 +199,7 @@ buttonStart.addEventListener('click', () => {
                     drawShadow: false,
                     showCover: false,
                     usePortrait: false,
+                    flippingTime: 700,
                     mobileScrollSupport: false // disable content scrolling on mobile devices
                 } 
             );
@@ -220,13 +221,13 @@ buttonStart.addEventListener('click', () => {
                     Book.on('flip', (e) => {
                         if(e.data == pagesCount - 2){
                             $(".dictClass").remove();
-                            sleep(200).then(() => {
+                            sleep(700).then(() => {
                             flag = true; 
                             Book.updateFromHtml(document.querySelectorAll(".page"));
                             Book.off('flip', (e) => {
                                 if(e.data == pagesCount - 2){
                                     $(".dictClass").remove();
-                                    sleep(200).then(() => {
+                                    sleep(700).then(() => {
                                     flag = true; 
                                     Book.updateFromHtml(document.querySelectorAll(".page"));
                                     Book.off()
@@ -239,8 +240,8 @@ buttonStart.addEventListener('click', () => {
                     }
                     else{
                         Book.flip(curPage);
+                        sleep(700).then(() => {
                         $(".dictClass").remove();
-                        sleep(200).then(() => {
                         Book.updateFromHtml(document.querySelectorAll(".page"));
                         flag = true;
                         });
