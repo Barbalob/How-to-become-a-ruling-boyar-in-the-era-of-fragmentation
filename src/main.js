@@ -6,6 +6,7 @@ import {pages} from './pages.js'
 import { dictionary } from './dictionary'
 import { definitions } from './definitionDict'
 
+console.log(dictionary);
 
 const buttonStart = document.querySelector('#start')
 const leftPage = document.querySelector('#btns')
@@ -182,6 +183,7 @@ buttonStart.addEventListener('click', () => {
             container1.remove(); 
             mainPage.innerHTML = `
     <div class="container">
+          <button class='dictionary-btn'><img src='assets/Dictionary_bookmark.png'></button>
           <div class="wrapper-book">
             <ul class="flip-book" id="demoBookExample">
 
@@ -352,7 +354,7 @@ buttonStart.addEventListener('click', () => {
         </div>
     </div>
 `
-            mainPage.innerHTML = dictionary
+            // mainPage.innerHTML = dictionary
             const Book = new PageFlip(
                 document.getElementById("demoBookExample"),
                 {

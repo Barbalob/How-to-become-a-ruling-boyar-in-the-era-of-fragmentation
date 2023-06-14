@@ -110,8 +110,7 @@ export const dictionary =
                 </li>
             `}
             }
-        
-        })
+        }).join(' ')
     }
     ${`
     <li class="page">

@@ -4,6 +4,7 @@
 @import 'content.scss';
 @import 'textSize';
 @import 'open.scss';
+@import 'bookmark.scss';
 
 .wrapper{
     width: 100%;
@@ -28,7 +29,7 @@
         align-items: center;
     }
     &__list-button{ 
-        margin-top: 148px;
+        margin-top: 160px;
         display: flex;
         flex-direction: column;
         gap: 48px;
@@ -52,7 +53,17 @@
         text-align: center;
         justify-content: center;
         flex-wrap: wrap;
-        gap:35px
+        gap:40px;
+        &-dop{
+            display: flex;
+            gap: 30px;
+            justify-content:center;
+            align-items:center;
+        }
+        .menu__logo{
+
+        }
+
     }
 
     &__right{
