@@ -1,0 +1,36 @@
+.wrapper-result{
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    justify-content: center;
+    align-items:center;
+    z-index: 999;
+    gap: 15px;
+    .result{
+        background: url(../assets/bg-button-answer.png);
+        background-size:cover;
+        padding: 50px 70px;
+        border-radius:100px;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        flex-direction: column;
+        &-points{
+            text-align: center;
+            margin: 10px;
+        }
+        &-template{
+            margin: 30px;
+            text-align: center;
+        }
+        .menu__button-result{
+            width: 400px;
+            height: 73px;
+            background: url(../assets/bg-button.png);
+            background-size: cover;
+            border-radius: 20px;
+        }
+        
+    }
+    
+}

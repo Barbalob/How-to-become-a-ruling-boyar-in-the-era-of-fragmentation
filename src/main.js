@@ -5,6 +5,7 @@ import { RenderPosition, createElement, render, renderHTML } from './render.js'
 import {pages} from './pages.js'
 import { dictionary } from './dictionary'
 import { definitions } from './definitionDict'
+import { printPoints } from './withdrawalPoints'
 
 console.log(dictionary);
 
@@ -182,6 +183,7 @@ buttonStart.addEventListener('click', () => {
             const container1 = document.querySelector('.container1');
             container1.remove(); 
             mainPage.innerHTML = pages[0]['page']
+            // mainPage.innerHTML =printPoints(109)
             
             // mainPage.innerHTML = dictionary
             const Book = new PageFlip(
