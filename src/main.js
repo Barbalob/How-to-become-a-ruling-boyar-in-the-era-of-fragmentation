@@ -16,6 +16,7 @@ const mainPage = document.querySelector('.menu')
 const testButton = document.querySelector('#test')
 const tooltip = document.querySelector("#tooltip")
 let stage = 0;
+let points = 0;
 
 
 
@@ -42,7 +43,8 @@ function tooltipCreate(){
     });
 };
 
-function ChoiceCreate(Book, evt){
+function ChoiceCreate(Book, evt, dictBtn){
+        dictBtn.disabled = true;
         let container = document.querySelector('.container');
         container.classList.remove('move-right');
         container.classList.add('move-left');
@@ -63,10 +65,12 @@ function ChoiceCreate(Book, evt){
             const buttonChoice3 = document.querySelector('#choice-3')
 
             const F = (evt) => {
+                dictBtn.disabled = false;
                 if(evt.target.id == "chosen"){
                     return
                 }
                 const id = evt.target.id.slice(-1)
+                points += Number($(evt).attr("value"));
                 evt.target.id ="chosen"
                 for (let i = 1; i < 4; i++) {
                     if (String(i) !== id) {
@@ -96,7 +100,7 @@ function ChoiceCreate(Book, evt){
                     container.classList.add('move-right')
                     container.classList.remove('move-left')
                 })
-                NextStage(Book)
+                NextStage(Book, dictBtn)
 
             }
 
@@ -121,7 +125,7 @@ function CreateListBook(template, Book) {
     Book.updateFromHtml(document.querySelectorAll(".page"));
 }
 
-function NextStage(Book){
+function NextStage(Book, dictBtn){
     const end = document.querySelector("#endBtn");
     if (end){
         return
@@ -130,7 +134,7 @@ function NextStage(Book){
     CreateListBook(pages[stage]["page"], Book)
     tooltipCreate();
     const choiceBtn = document.querySelector('#choice');
-    choiceBtn.addEventListener('click', (evt) => {ChoiceCreate(Book, evt)});
+    choiceBtn.addEventListener('click', (evt) => {ChoiceCreate(Book, evt, dictBtn)});
 }
 
 buttonStart.addEventListener('click', () => {
@@ -258,7 +262,7 @@ buttonStart.addEventListener('click', () => {
             }
             const choiceBtn = document.querySelector('#choice');
             if (choiceBtn){
-                choiceBtn.addEventListener('click', (evt) => {ChoiceCreate(Book, evt)});
+                choiceBtn.addEventListener('click', (evt) => {ChoiceCreate(Book, evt, dictBtn)});
                 tooltipCreate();
             }  
         });
