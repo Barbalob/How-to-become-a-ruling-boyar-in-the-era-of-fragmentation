@@ -22,7 +22,7 @@ let trophies = [0,0,0,0,0,0,0,0,0,0,0,0,0,0];
 
 let savedTr = GetTr();
 if(savedTr){
-    trophies = savedTr.split(',');
+    trophies = savedTr.split('');
 }
 console.log(trophies);
 
@@ -147,7 +147,7 @@ function CreateListBook(template, Book) {
 function NextStage(Book, dictBtn){
     const end = document.querySelector("#endBtn");
     if (end){
-        SaveTr(trophies.join(','));
+        SaveTr(trophies.join(''));
         console.log(trophies);
         return
     } 
