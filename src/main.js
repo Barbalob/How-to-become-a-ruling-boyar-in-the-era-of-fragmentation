@@ -4,6 +4,7 @@ import './styles/style.scss'
 import { RenderPosition, createElement, render, renderHTML } from './render.js'
 import {pages} from './pages.js'
 import { dictionary } from './dictionary'
+import {SaveTr, GetTr} from './save'
 import { definitions } from './definitionDict'
 import { printPoints } from './withdrawalPoints'
 
@@ -17,7 +18,13 @@ const testButton = document.querySelector('#test')
 const tooltip = document.querySelector("#tooltip")
 let stage = 0;
 let points = 0;
+let trophies = [0,0,0,0,0,0,0,0,0,0,0,0,0,0];
 
+let savedTr = GetTr();
+if(savedTr){
+    trophies = savedTr.split(',');
+}
+console.log(trophies);
 
 
 function sleep(ms) {
@@ -70,7 +77,19 @@ function ChoiceCreate(Book, evt, dictBtn){
                     return
                 }
                 const id = evt.target.id.slice(-1)
-                points += Number($(evt).attr("value"));
+                points += Number($(evt.target).attr("value"));
+                let trophy = $(evt.target).attr("trophy");
+                console.log(trophy);
+                if(trophy){
+                    if(trophy.length > 2){
+                        trophy = trophy.split(',');
+                        trophies[Number(trophy[0])] = "1";
+                        trophies[Number(trophy[1])] = "1";
+                    }
+                    else{
+                        trophies[Number(trophy)] = "1";
+                    }
+                }
                 evt.target.id ="chosen"
                 for (let i = 1; i < 4; i++) {
                     if (String(i) !== id) {
@@ -128,6 +147,8 @@ function CreateListBook(template, Book) {
 function NextStage(Book, dictBtn){
     const end = document.querySelector("#endBtn");
     if (end){
+        SaveTr(trophies.join(','));
+        console.log(trophies);
         return
     } 
     stage+=1
