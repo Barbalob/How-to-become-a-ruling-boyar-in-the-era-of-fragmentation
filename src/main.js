@@ -7,8 +7,9 @@ import { dictionary } from './dictionary'
 import {SaveTr, GetTr} from './save'
 import { definitions } from './definitionDict'
 import { printPoints } from './withdrawalPoints'
+import {trophiesBook }from './trophies'
 
-console.log(dictionary);
+
 
 const buttonStart = document.querySelector('#start')
 const leftPage = document.querySelector('#btns')
@@ -208,7 +209,7 @@ buttonStart.addEventListener('click', () => {
             const container1 = document.querySelector('.container1');
             container1.remove(); 
             mainPage.innerHTML = pages[0]['page']
-            // mainPage.innerHTML =printPoints(109)
+            mainPage.innerHTML = trophiesBook()
             
             // mainPage.innerHTML = dictionary
             const Book = new PageFlip(

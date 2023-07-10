@@ -69,10 +69,10 @@ export const dictionary =
                             one = array[0]            
                     }
                     else if (len >= transfer){
-                        console.log(len - (definitions[key][0].length + dop.length));
-                        console.log(thee.length);
+                        // console.log(len - (definitions[key][0].length + dop.length));
+                        // console.log(thee.length);
                         const array = cutOffPartString(thee, transfer - (definitions[key][0].length + dop.length))
-                        console.log(array);
+                        // console.log(array);
                         remainingText = wrapperLi(array[1])
                         thee = array[0]        
                     }          
