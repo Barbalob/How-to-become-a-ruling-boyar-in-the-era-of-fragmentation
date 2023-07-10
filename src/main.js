@@ -235,52 +235,7 @@ buttonStart.addEventListener('click', () => {
             //     Book.turnToPage(8);
             // });
             const dictBtn = document.querySelector(".dictionary-btn");
-            let flag = true;
-            let curPage;
-            if (dictBtn){
-                dictBtn.addEventListener('click', () => {
-                    if(flag ){
-                        dictBtn.disabled = true;
-                        const pagesCount = Book.getPageCount();
-                        curPage = Book.getCurrentPageIndex();
-                        CreateListBook(dictionary, Book);
-                        Book.flip(pagesCount);
-                        flag = false;
-                        sleep(800).then(() => {
-                            dictBtn.disabled = false;
-                            Book.on('flip', (e) => {
-                            if(e.data == pagesCount - 2){
-                                $(".dictClass").remove();
-                                sleep(100).then(() => {
-                                flag = true; 
-                                Book.updateFromHtml(document.querySelectorAll(".page"));
-                                Book.off('flip', (e) => {
-                                    if(e.data == pagesCount - 2){
-                                        $(".dictClass").remove();
-                                        sleep(100).then(() => {
-                                        flag = true; 
-                                        Book.updateFromHtml(document.querySelectorAll(".page"));
-                                        Book.off()
-                                    });
-                                };
-                            })
-                        });
-                        };
-                    });
-                    });
-                    }
-                    else{
-                        document.getElementById('blockerator').style.display = 'block';
-                        Book.flip(curPage);
-                        sleep(800).then(() => {
-                            $(".dictClass").remove();
-                            Book.updateFromHtml(document.querySelectorAll(".page"));
-                            flag = true;
-                            document.getElementById('blockerator').style.display = "none"
-                        });
-                    }
-                });
-            }
+            openSideBtn(dictBtn, Book, ".dictClass")
             const choiceBtn = document.querySelector('#choice');
             if (choiceBtn){
                 choiceBtn.addEventListener('click', (evt) => {ChoiceCreate(Book, evt, dictBtn)});
@@ -289,4 +244,53 @@ buttonStart.addEventListener('click', () => {
         });
 });
 
+
+function openSideBtn(dictBtn, Book, pageClass) {
+    let flag = true
+    let curPage
+    if (dictBtn) {
+        dictBtn.addEventListener('click', () => {
+            if (flag) {
+                dictBtn.disabled = true
+                const pagesCount = Book.getPageCount()
+                curPage = Book.getCurrentPageIndex()
+                CreateListBook(dictionary, Book)
+                Book.flip(pagesCount)
+                flag = false
+                sleep(800).then(() => {
+                    dictBtn.disabled = false
+                    Book.on('flip', (e) => {
+                        if (e.data == pagesCount - 2) {
+                            $(pageClass).remove()
+                            sleep(100).then(() => {
+                                flag = true
+                                Book.updateFromHtml(document.querySelectorAll(".page"))
+                                Book.off('flip', (e) => {
+                                    if (e.data == pagesCount - 2) {
+                                        $(pageClass).remove()
+                                        sleep(100).then(() => {
+                                            flag = true
+                                            Book.updateFromHtml(document.querySelectorAll(".page"))
+                                            Book.off()
+                                        })
+                                    };
+                                })
+                            })
+                        };
+                    })
+                })
+            }
+            else {
+                document.getElementById('blockerator').style.display = 'block'
+                Book.flip(curPage)
+                sleep(800).then(() => {
+                    $(pageClass).remove()
+                    Book.updateFromHtml(document.querySelectorAll(".page"))
+                    flag = true
+                    document.getElementById('blockerator').style.display = "none"
+                })
+            }
+        })
+    }
+}
 
