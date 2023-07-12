@@ -20,4 +20,15 @@
         width:75px;
         height: 80px;
     }
+
+    .home-btn{
+        position: absolute;
+        z-index: 0;
+        top:100px;
+        left: 65px;
+        background: url(../assets/Home_bookmark.png);
+        background-size: cover;
+        width:75px;
+        height: 80px;
+    }
 }
