@@ -99,7 +99,7 @@ const CreateLiDescriptionTrophies = (index) => {
     }
 
     return `
-    <li class="page">
+    <li class="page trophy_class">
         <div class="page-content content-trophies-img">
             <figure>
                 <img class="content-img" src="assets/trophy/${image}.png">
@@ -110,7 +110,7 @@ const CreateLiDescriptionTrophies = (index) => {
         </div>
     </li>
 
-    <li class="page">
+    <li class="page trophy_class">
     <div class="page-content content-trophies-text">
         <ul class='trophies-description'>
             <li class='trophies-description-li ${textSize}'>${item[0]}</li>
@@ -127,18 +127,6 @@ const CreateLiDescriptionTrophies = (index) => {
 
 export function trophiesBook(){
     return `
-    <div class="container">
-        <button class='dictionary-btn'></button>
-        <div class="wrapper-book">
-            <ul class="flip-book" id="demoBookExample">
-
-
-            ${CreateAllTrophies()}
-
-
-            </ul>
-        </div>
-    </div>
-        
+            ${CreateAllTrophies()}        
     `;
 }

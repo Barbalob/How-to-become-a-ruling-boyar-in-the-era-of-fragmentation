@@ -244,7 +244,7 @@ function OpenBook(gameStarted) {
                 minWidth: 315,
                 maxWidth: 1000,
                 minHeight: 800,
-                maxHeight: 1350,
+                maxHeight: 400,
                 drawShadow: false,
                 showCover: false,
                 usePortrait: false,
