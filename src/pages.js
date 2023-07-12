@@ -4,6 +4,7 @@ export const pages = [
         "page":`
         <div class="container">
           <button class='dictionary-btn'></button>
+          <button class='trophy-btn'></button>
           <div class="wrapper-book">
             <ul class="flip-book" id="demoBookExample">
 
