@@ -8,7 +8,7 @@ export function trophiesBook(first, second, third){
             <ul class="flip-book" id="demoBookExample">
 
 
-                <li class="page">
+                <li class="page TrophyClass">
                 <div class="page-content content-dictionary">
 
                     <div class="content-list-img">
