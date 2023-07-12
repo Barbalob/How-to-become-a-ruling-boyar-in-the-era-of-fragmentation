@@ -5,13 +5,14 @@ const cycle = () => {
     for (let i = 0; i < trophiesList.length-1; i=i+3){
         liList.push(F(i))
     }
+    liList.push(Q(trophiesList.length-1))
     return liList.join(' ');
 }
 const F = (first) => {
     const imageFirst = trophiesDict[trophiesList[first]][3]
     const imageSecond = trophiesDict[trophiesList[first + 1]][3]
     const imageThird = trophiesDict[trophiesList[first + 2]][3]
-    console.log(imageFirst,imageSecond ,imageThird);
+    console.log(imageFirst, imageSecond, imageThird);
     return `
     <li class="page trophy_class">
         <div class="page-content content-dictionary">
@@ -41,6 +42,25 @@ const F = (first) => {
                 </div>  
             </div>
 
+            <div class='decor'><img src="assets/decor-1.svg" alt=""></div>
+        </div>
+    </li> 
+    `
+}
+
+const Q = (index) => {
+    const image =  trophiesDict[trophiesList[index]][3]
+
+    return `
+    <li class="page trophy_class">
+        <div class="page-content content-dictionary">
+                <div class="content-list-img-main"> 
+                        <figure>
+                            <img src="assets/trophy/${image}.png" alt="">
+                            <figcaption class='text-medium'>${trophiesList[index]}</figcaption>
+                        </figure>
+                    
+                </div>  
             <div class='decor'><img src="assets/decor-1.svg" alt=""></div>
         </div>
     </li> 
