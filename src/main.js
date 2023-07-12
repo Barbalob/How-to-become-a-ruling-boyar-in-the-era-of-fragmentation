@@ -236,7 +236,11 @@ buttonStart.addEventListener('click', () => {
             //     Book.turnToPage(8);
             // });
             const dictBtn = document.querySelector(".dictionary-btn");
-            openSideBtn(dictBtn, Book, ".dictClass")
+            openSideBtn(dictBtn, Book, ".dictClass", dictionary)
+
+            const trophyBtn = document.querySelector(".trophy-btn");
+            openSideBtn(dictBtn, Book, ".dictClass", dictionary)
+
             const choiceBtn = document.querySelector('#choice');
             if (choiceBtn){
                 choiceBtn.addEventListener('click', (evt) => {ChoiceCreate(Book, evt, dictBtn)});
@@ -246,7 +250,7 @@ buttonStart.addEventListener('click', () => {
 });
 
 
-function openSideBtn(dictBtn, Book, pageClass) {
+function openSideBtn(dictBtn, Book, pageClass, addingPages) {
     let flag = true
     let curPage
     if (dictBtn) {
@@ -255,7 +259,7 @@ function openSideBtn(dictBtn, Book, pageClass) {
                 dictBtn.disabled = true
                 const pagesCount = Book.getPageCount()
                 curPage = Book.getCurrentPageIndex()
-                CreateListBook(dictionary, Book)
+                CreateListBook(addingPages, Book)
                 Book.flip(pagesCount)
                 flag = false
                 sleep(800).then(() => {
