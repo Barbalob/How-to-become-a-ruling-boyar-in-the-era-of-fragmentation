@@ -7,6 +7,9 @@
 }
 
 .text{
+    &-very-small{
+        @include text-size(normal, 400, 22px, 27.5px);
+    }
     &-small{
         @include text-size(normal, 400, 24px, 29.98px);
     }

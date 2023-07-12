@@ -50,3 +50,39 @@
         }
     }
 }
+
+.content-trophies-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:center;
+    .trophies-description{
+        display: flex;
+        gap: 15px;
+        flex-direction: column;
+        &_li{
+
+        }
+    }
+}
+
+.content-trophies-img{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:center;
+    figure{
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        justify-content: center;
+        width: 100%;
+        height: 90%;
+        img{
+            max-height: 90%;
+            max-width: 100%;
+            object-fit: contain;
+            
+        }
+    }
+}
