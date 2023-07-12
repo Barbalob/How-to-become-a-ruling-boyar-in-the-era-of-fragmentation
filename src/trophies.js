@@ -1,18 +1,26 @@
 import { trophiesDict} from "./trophiesList";
 const trophiesList = Object.keys(trophiesDict)
-const cycle = () => {
+
+
+const CreateAllTrophies = () => {
     const liList = []
+    const description = []
     for (let i = 0; i < trophiesList.length-1; i=i+3){
-        liList.push(F(i))
+        liList.push(CreateLiTrophies(i))
+        description.push(CreateLiDescriptionTrophies(i))
+        description.push(CreateLiDescriptionTrophies(i+1))
+        description.push(CreateLiDescriptionTrophies(i+2))
     }
-    liList.push(Q(trophiesList.length-1))
-    return liList.join(' ');
+    liList.push(CreateLiTrophiesMain(trophiesList.length-1))
+    const result = [...description, ...liList];
+    return result.join(' ');
 }
-const F = (first) => {
+
+
+const CreateLiTrophies = (first) => {
     const imageFirst = trophiesDict[trophiesList[first]][3]
     const imageSecond = trophiesDict[trophiesList[first + 1]][3]
     const imageThird = trophiesDict[trophiesList[first + 2]][3]
-    console.log(imageFirst, imageSecond, imageThird);
     return `
     <li class="page trophy_class">
         <div class="page-content content-dictionary">
@@ -46,7 +54,7 @@ const F = (first) => {
     `
 }
 
-const Q = (index) => {
+const CreateLiTrophiesMain = (index) => {
     const image =  trophiesDict[trophiesList[index]][3]
 
     return `
@@ -65,8 +73,59 @@ const Q = (index) => {
     `
 }
 
+const CreateLiDescriptionTrophies = (index) => {
+    const name  =  trophiesList[index]
+    const image =  trophiesDict[name][3]
+    const item  =  trophiesDict[trophiesList[index]]
+
+    let textSize = 'text-small'
+
+    console.log(item[0].length + item[1].length + item[2].length);
+    if (item[0].length + item[1].length + item[2].length > 1000){
+        console.log("ok");
+        textSize = 'text-very-small'
+    }
+
+    return `
+    <li class="page">
+        <div class="page-content content-trophies-img">
+            <figure>
+                <img class="content-img" src="assets/trophy/${image}.png">
+                <figcaption class="text-img-author text-medium">${name}</figcaption>                     
+            </figure>                       
+            <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>    
+        </div>
+    </li>
+
+    <li class="page">
+    <div class="page-content content-trophies-text">
+        <ul class='trophies-description'>
+            <li class='trophies-description-li ${textSize}'>${item[0]}</li>
+            <li class='trophies-description-li ${textSize}'>${item[1]}</li>
+            <li class='trophies-description-li ${textSize}'>${item[2]}</li>
+        </ul>
+        <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>
+    </div>
+</li>
+    `
+}
+        
+
+
 export function trophiesBook(){
     return `
-        ${cycle()}
+    <div class="container">
+        <button class='dictionary-btn'></button>
+        <div class="wrapper-book">
+            <ul class="flip-book" id="demoBookExample">
+
+
+            ${CreateAllTrophies()}
+
+
+            </ul>
+        </div>
+    </div>
+        
     `;
 }
