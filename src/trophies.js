@@ -2,7 +2,7 @@ import { trophiesDict} from "./trophiesList";
 import {SaveTr, GetTr} from './save'
 const trophiesList = Object.keys(trophiesDict)
 
-let trophies = [0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+let trophies = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
 
 let savedTr = GetTr();
 if(savedTr){
