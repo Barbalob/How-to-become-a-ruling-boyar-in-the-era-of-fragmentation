@@ -275,7 +275,7 @@ function openSideBtn(dictBtn, Book, pageClass, addingPages) {
                                         $(pageClass).remove()
                                         sleep(100).then(() => {
                                             flag = true
-                                            Book.updateFromHtml(document.querySelectorAll(".page"))
+                                            Book.updateFromHtml(document.querySelectorAll(".page" ))
                                             Book.off()
                                         })
                                     };
