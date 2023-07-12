@@ -20,7 +20,7 @@ const tooltip = document.querySelector("#tooltip")
 let trophiesPages = trophiesBook()
 let stage = 0;
 let points = 0;
-let trophies = [0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+let trophies = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
 
 let savedTr = GetTr();
 if(savedTr){
