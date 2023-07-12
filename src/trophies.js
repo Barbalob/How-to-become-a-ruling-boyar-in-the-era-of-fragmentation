@@ -4,11 +4,7 @@ const trophiesList = Object.keys(trophiesDict)
 
 let trophies = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
 
-let savedTr = GetTr();
-if(savedTr){
-    trophies = savedTr.split('');
-}
-console.log(trophies);
+
 
 const CreateAllTrophies = () => {
     const liList = []
@@ -126,6 +122,11 @@ const CreateLiDescriptionTrophies = (index) => {
 
 
 export function trophiesBook(){
+    let savedTr = GetTr();
+    if(savedTr){
+        trophies = savedTr.split('');
+    }
+    console.log(trophies);
     return `
             ${CreateAllTrophies()}        
     `;
