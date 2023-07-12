@@ -21,7 +21,7 @@ let trophiesPages = trophiesBook()
 let stage = 0;
 let points = 0;
 let trophies = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
-
+SaveTr()
 let savedTr = GetTr();
 if(savedTr){
     trophies = savedTr.split('');
