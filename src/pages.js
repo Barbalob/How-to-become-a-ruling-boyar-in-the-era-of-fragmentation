@@ -5,6 +5,7 @@ export const pages = [
         <div class="container">
           <button class='dictionary-btn'></button>
           <button class='trophy-btn'></button>
+          <button class='home-btn'></button>
           <div class="wrapper-book">
             <ul class="flip-book" id="demoBookExample">
 
