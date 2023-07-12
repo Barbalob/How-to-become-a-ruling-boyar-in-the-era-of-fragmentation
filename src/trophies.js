@@ -33,12 +33,10 @@ const F = (first) => {
                     </li> 
                 </ul>
                 <div class="content-list-img-bottom"> 
-                    <div class="content-list-img-dop-li"> 
-                        <figure>
-                            <img src="assets/trophy/${imageThird}.png" alt="">
-                            <figcaption class='text-medium'>${trophiesList[first + 2]}</figcaption>
-                        </figure>
-                    </div>
+                    <figure>
+                        <img src="assets/trophy/${imageThird}.png" alt="">
+                        <figcaption class='text-medium'>${trophiesList[first + 2]}</figcaption>
+                    </figure>
                 </div>  
             </div>
 
@@ -69,16 +67,6 @@ const Q = (index) => {
 
 export function trophiesBook(){
     return `
-    <div class="container">
-        <button class='dictionary-btn'></button>
-        <div class="wrapper-book">
-            <ul class="flip-book" id="demoBookExample">
-
-            ${cycle()}
-
-
-            </ul>
-        </div>
-    </div>
+        ${cycle()}
     `;
 }
