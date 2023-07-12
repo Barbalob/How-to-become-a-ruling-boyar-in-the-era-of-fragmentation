@@ -1,6 +1,14 @@
 import { trophiesDict} from "./trophiesList";
+import {SaveTr, GetTr} from './save'
 const trophiesList = Object.keys(trophiesDict)
 
+let trophies = [0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+
+let savedTr = GetTr();
+if(savedTr){
+    trophies = savedTr.split('');
+}
+console.log(trophies);
 
 const CreateAllTrophies = () => {
     const liList = []
@@ -12,15 +20,15 @@ const CreateAllTrophies = () => {
         description.push(CreateLiDescriptionTrophies(i+2))
     }
     liList.push(CreateLiTrophiesMain(trophiesList.length-1))
-    const result = [...description, ...liList];
+    const result = [...liList, ...description];
     return result.join(' ');
 }
 
 
-const CreateLiTrophies = (first) => {
-    const imageFirst = trophiesDict[trophiesList[first]][3]
-    const imageSecond = trophiesDict[trophiesList[first + 1]][3]
-    const imageThird = trophiesDict[trophiesList[first + 2]][3]
+const CreateLiTrophies = (index) => {
+    const imageFirst = trophiesDict[trophiesList[index]][3]
+    const imageSecond = trophiesDict[trophiesList[index + 1]][3]
+    const imageThird = trophiesDict[trophiesList[index + 2]][3]
     return `
     <li class="page trophy_class">
         <div class="page-content content-dictionary">
@@ -28,22 +36,22 @@ const CreateLiTrophies = (first) => {
             <div class="content-list-img">
                 <ul class="content-list-img-dop">
                     <li class="content-list-img-dop-li"> 
-                        <figure>
+                        <figure class='${trophies[index] == 0 ? 'received' : '' }'>
                             <img src="assets/trophy/${imageFirst}.png" alt="">
-                            <figcaption class='text-medium'>${trophiesList[first]}</figcaption>
+                            <figcaption class='text-medium'>${trophiesList[index]}</figcaption>
                         </figure>
                     </li> 
                     <li class="content-list-img-dop-li"> 
-                        <figure>
+                        <figure class='${trophies[index+1] == 0 ? 'received' : '' }'>
                             <img src="assets/trophy/${imageSecond}.png" alt="">
-                            <figcaption class='text-medium'>${trophiesList[first + 1]}</figcaption>
+                            <figcaption class='text-medium'>${trophiesList[index + 1]}</figcaption>
                         </figure>
                     </li> 
                 </ul>
                 <div class="content-list-img-bottom"> 
-                    <figure>
+                    <figure class='${trophies[index+2] == 0 ? 'received' : '' }'>
                         <img src="assets/trophy/${imageThird}.png" alt="">
-                        <figcaption class='text-medium'>${trophiesList[first + 2]}</figcaption>
+                        <figcaption class='text-medium'>${trophiesList[index + 2]}</figcaption>
                     </figure>
                 </div>  
             </div>
@@ -61,7 +69,7 @@ const CreateLiTrophiesMain = (index) => {
     <li class="page trophy_class">
         <div class="page-content content-dictionary">
                 <div class="content-list-img-main"> 
-                        <figure>
+                        <figure class='${trophies[index] == 0 ? 'received' : '' }'>
                             <img src="assets/trophy/${image}.png" alt="">
                             <figcaption class='text-medium'>${trophiesList[index]}</figcaption>
                         </figure>
@@ -74,6 +82,11 @@ const CreateLiTrophiesMain = (index) => {
 }
 
 const CreateLiDescriptionTrophies = (index) => {
+
+    let dop = ''
+    if (trophies[index] == 0){
+        dop = `<p class="trophy-not-received text-large">Трофей не получен</p>`
+    }
     const name  =  trophiesList[index]
     const image =  trophiesDict[name][3]
     const item  =  trophiesDict[trophiesList[index]]
@@ -82,7 +95,6 @@ const CreateLiDescriptionTrophies = (index) => {
 
     console.log(item[0].length + item[1].length + item[2].length);
     if (item[0].length + item[1].length + item[2].length > 1000){
-        console.log("ok");
         textSize = 'text-very-small'
     }
 
@@ -91,7 +103,8 @@ const CreateLiDescriptionTrophies = (index) => {
         <div class="page-content content-trophies-img">
             <figure>
                 <img class="content-img" src="assets/trophy/${image}.png">
-                <figcaption class="text-img-author text-medium">${name}</figcaption>                     
+                <figcaption class="text-img-author text-medium">${name}</figcaption>     
+                ${dop}                
             </figure>                       
             <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>    
         </div>
