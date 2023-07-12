@@ -236,10 +236,10 @@ buttonStart.addEventListener('click', () => {
             //     Book.turnToPage(8);
             // });
             const dictBtn = document.querySelector(".dictionary-btn");
-            openSideBtn(dictBtn, Book, ".dictClass", dictionary)
+            openSideBtn(dictBtn, Book, ".dict_class", dictionary)
 
             const trophyBtn = document.querySelector(".trophy-btn");
-            openSideBtn(dictBtn, Book, ".dictClass", dictionary)
+            openSideBtn(dictBtn, Book, ".trophy_class", dictionary)
 
             const choiceBtn = document.querySelector('#choice');
             if (choiceBtn){

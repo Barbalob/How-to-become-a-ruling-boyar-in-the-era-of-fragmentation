@@ -5,7 +5,7 @@ const sumbol = ['.', ':', ';', ',', ' ', '!', '?']
 const isEmptyText = (word) => {return !sumbol.includes(word) ?   `<li>${word}</li>` : ''};
 const isEmptyRemainingText = (word) => {return word != '' ?  `${word}` : ''};
 const wrapperLi = (word) => {return `<li>${word}</li>`}
-const dictClass = `dictClass`
+const dictClass = `dict_class`
 function cutOffPartString (word, num) {
     if (num <= 0){
         return ['', word]
