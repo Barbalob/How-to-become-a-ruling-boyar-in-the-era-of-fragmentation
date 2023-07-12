@@ -10,7 +10,7 @@ import { printPoints } from './withdrawalPoints'
 import {trophiesBook }from './trophies'
 
 
-
+trophiesBook()
 const buttonStart = document.querySelector('#start')
 const leftPage = document.querySelector('#btns')
 const rightPage = document.querySelector('.menu__right')
