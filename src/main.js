@@ -239,7 +239,7 @@ buttonStart.addEventListener('click', () => {
             openSideBtn(dictBtn, Book, ".dict_class", dictionary)
 
             const trophyBtn = document.querySelector(".trophy-btn");
-            openSideBtn(dictBtn, Book, ".trophy_class", dictionary)
+            openSideBtn(trophyBtn, Book, ".trophy_class", trophiesPages)
 
             const choiceBtn = document.querySelector('#choice');
             if (choiceBtn){
