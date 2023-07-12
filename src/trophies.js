@@ -1,25 +1,44 @@
 import { trophiesDict} from "./trophiesList";
 const trophiesList = Object.keys(trophiesDict)
-
 const cycle = () => {
-    for (let i = 0; i < trophiesList.length; i=i+3){
-        F(trophiesList[i])
+    const liList = []
+    for (let i = 0; i < trophiesList.length-1; i=i+3){
+        liList.push(F(i))
     }
+    return liList.join(' ');
 }
 const F = (first) => {
-    const imageFirst = trophiesList[first]
-    const imageSecond = trophiesList[first + 1]
-    const imageThird = trophiesList[first + 2]
+    const imageFirst = trophiesDict[trophiesList[first]][3]
+    const imageSecond = trophiesDict[trophiesList[first + 1]][3]
+    const imageThird = trophiesDict[trophiesList[first + 2]][3]
+    console.log(imageFirst,imageSecond ,imageThird);
     return `
     <li class="page trophy_class">
         <div class="page-content content-dictionary">
 
             <div class="content-list-img">
                 <ul class="content-list-img-dop">
-                    <li class="content-list-img-dop-li"> <img src="assets/trophy/${first}.png" alt=""></li> 
-                    <li class="content-list-img-dop-li"> <img src="assets/trophy/${second}.png" alt=""></li> 
+                    <li class="content-list-img-dop-li"> 
+                        <figure>
+                            <img src="assets/trophy/${imageFirst}.png" alt="">
+                            <figcaption class='text-medium'>${trophiesList[first]}</figcaption>
+                        </figure>
+                    </li> 
+                    <li class="content-list-img-dop-li"> 
+                        <figure>
+                            <img src="assets/trophy/${imageSecond}.png" alt="">
+                            <figcaption class='text-medium'>${trophiesList[first + 1]}</figcaption>
+                        </figure>
+                    </li> 
                 </ul>
-                <div class="content-list-img-bottom"> <img src="assets/trophy/${third}.png" alt="" class="menu__logo"> </div>  
+                <div class="content-list-img-bottom"> 
+                    <div class="content-list-img-dop-li"> 
+                        <figure>
+                            <img src="assets/trophy/${imageThird}.png" alt="">
+                            <figcaption class='text-medium'>${trophiesList[first + 2]}</figcaption>
+                        </figure>
+                    </div>
+                </div>  
             </div>
 
             <div class='decor'><img src="assets/decor-1.svg" alt=""></div>
@@ -36,20 +55,6 @@ export function trophiesBook(){
             <ul class="flip-book" id="demoBookExample">
 
             ${cycle()}
-                <li class="page trophy_class">
-                    <div class="page-content content-dictionary">
-
-                        <div class="content-list-img">
-                            <ul class="content-list-img-dop">
-                                <li class="content-list-img-dop-li"> <img src="assets/trophy/${first}.png" alt=""></li> 
-                                <li class="content-list-img-dop-li"> <img src="assets/trophy/${second}.png" alt=""></li> 
-                            </ul>
-                            <div class="content-list-img-bottom"> <img src="assets/trophy/${third}.png" alt="" class="menu__logo"> </div>  
-                        </div>
-
-                        <div class='decor'><img src="assets/decor-1.svg" alt=""></div>
-                    </div>
-                </li>  
 
 
             </ul>
