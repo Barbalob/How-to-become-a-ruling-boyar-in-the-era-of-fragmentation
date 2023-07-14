@@ -3,9 +3,9 @@ export const pages = [
     {
         "page":`
         <div class="container">
-          <button class='dictionary-btn'></button>
-          <button class='trophy-btn'></button>
-          <button class='home-btn'></button>
+          <button class='dictionary-btn' data-tooltip="Словарь"></button>
+          <button class='trophy-btn' data-tooltip="Трофеи"></button>
+          <button class='home-btn' data-tooltip="Главное меню<br>Вы потеряете весь прогресс"></button>
           <div class="wrapper-book">
             <ul class="flip-book" id="demoBookExample">
 
