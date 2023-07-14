@@ -267,7 +267,7 @@ export const pages = [
                     полную приключений жизнь. Вы умерли в безвестности, и не один летописец не счел нужным упомянуть о Вас хотя бы вкратце.
                     </div>
                 </div>
-                <button id="endBtn" class="menu__button text-medium" onclick="location.reload(); return false;">Начать игру заново</button>
+                <button id="endBtn" class="menu__button text-medium" >Начать игру заново</button>
                 <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>
             </div>
         </li>
@@ -329,7 +329,7 @@ export const pages = [
                     над которой все насмехались.
                     </div>
                 </div>
-                <button id="endBtn" class="menu__button text-medium" onclick="location.reload(); return false;">Начать игру заново</button>
+                <button id="endBtn" class="menu__button text-medium" >Начать игру заново</button>
                 <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>
             </div>
         </li>
@@ -567,7 +567,7 @@ export const pages = [
                     и пытаясь забыть то, что совершили.
                     </div>
                 </div>
-                <button id="endBtn" class="menu__button text-medium" onclick="location.reload(); return false;">Начать игру заново</button>
+                <button id="endBtn" class="menu__button text-medium" >Начать игру заново</button>
                 <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>
             </div>
         </li>
@@ -694,7 +694,7 @@ export const pages = [
                     а Вы – изгоем на чужбине.
                     </div>
                 </div>
-                <button id="endBtn" class="menu__button text-medium" onclick="location.reload(); return false;">Начать игру заново</button>
+                <button id="endBtn" class="menu__button text-medium" >Начать игру заново</button>
                 <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>
             </div>
         </li>
@@ -781,7 +781,7 @@ export const pages = [
                     Вы не знаете, что делать дальше: все мечты рухнули, осталось лишь доживать свой век…
                     </div>
                 </div>
-                <button id="endBtn" class="menu__button text-medium" onclick="location.reload(); return false;">Начать игру заново</button>
+                <button id="endBtn" class="menu__button text-medium" >Начать игру заново</button>
                 <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>
             </div>
         </li>
@@ -923,7 +923,7 @@ export const pages = [
                     сына, но приняла Ваши соболезнования.
                     </div>
                 </div>
-                <button id="endBtn" class="menu__button text-medium" onclick="location.reload(); return false;">Начать игру заново</button>
+                <button id="endBtn" class="menu__button text-medium" >Начать игру заново</button>
                 <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>
             </div>
         </li>
@@ -1013,7 +1013,7 @@ export const pages = [
                 камере, пока Вас не казнят за оскорбление Его Величества…
                 </div>
             </div>
-            <button id="endBtn" class="menu__button text-medium" onclick="location.reload(); return false;">Начать игру заново</button>
+            <button id="endBtn" class="menu__button text-medium" >Начать игру заново</button>
             <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>
         </div>
     </li>
@@ -1042,7 +1042,7 @@ export const pages = [
                     Вы больше не представляете опасности как политические соперники…
                     </div>
                 </div>
-                <button id="endBtn" class="menu__button text-medium" onclick="location.reload(); return false;">Начать игру заново</button>
+                <button id="endBtn" class="menu__button text-medium" >Начать игру заново</button>
                 <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>
             </div>
         </li>
@@ -1174,7 +1174,7 @@ export const pages = [
                 но вы просто продолжаете тихо доживать свой век при императорском дворе…
                 </div>
             </div>
-            <button id="endBtn" class="menu__button text-medium" onclick="location.reload(); return false;">Начать игру заново</button>
+            <button id="endBtn" class="menu__button text-medium" >Начать игру заново</button>
             <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>
         </div>
     </li>
@@ -1282,7 +1282,7 @@ export const pages = [
                     Ваша миссия завоевать престол для своего князя отныне совершенно невыполнима…
                     </div>
                 </div>
-                <button id="choice" class="menu__button text-medium" onclick="location.reload(); return false;">Начать игру заново</button>
+                <button id="choice" class="menu__button text-medium" >Начать игру заново</button>
                 <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>
             </div>
         </li>
@@ -1310,7 +1310,7 @@ export const pages = [
                      духовной дочерью Византийской империи
                     </div>
                 </div>
-                <button id="choice" class="menu__button text-medium" onclick="location.reload(); return false;">Начать игру заново</button>
+                <button id="choice" class="menu__button text-medium" >Начать игру заново</button>
                 <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>
             </div>
         </li>
@@ -1429,7 +1429,7 @@ export const pages = [
                     за ваше благородное решение к лику святых!
                     </div>
                 </div>
-                <button id="endBtn" class="menu__button text-medium" onclick="location.reload(); return false;">Начать игру заново</button>
+                <button id="endBtn" class="menu__button text-medium" >Начать игру заново</button>
                 <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>
             </div>
         </li>
@@ -1509,7 +1509,7 @@ export const pages = [
                     Впрочем, Вы больше ничего не увидите…
                     </div>
                 </div>
-                <button id="endBtn" class="menu__button text-medium" onclick="location.reload(); return false;">Начать игру заново</button>
+                <button id="endBtn" class="menu__button text-medium" >Начать игру заново</button>
                 <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>
             </div>
         </li>
@@ -1534,7 +1534,7 @@ export const pages = [
                     Вас и Вашего князя убивает стража ханского шатра. Ваш путь окончен
                     </div>
                 </div>
-                <button id="endBtn" class="menu__button text-medium" onclick="location.reload(); return false;">Начать игру заново</button>
+                <button id="endBtn" class="menu__button text-medium" >Начать игру заново</button>
                 <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>
             </div>
         </li>
@@ -1654,7 +1654,7 @@ export const pages = [
                     как будто их у вас тысячи
                     </div>
                 </div>
-                <button id="endBtn" class="menu__button text-medium" onclick="location.reload(); return false;">Начать игру заново</button>
+                <button id="endBtn" class="menu__button text-medium" >Начать игру заново</button>
                 <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>
             </div>
         </li>
@@ -1815,7 +1815,7 @@ export const pages = [
                     для Вас совершенно непонятно… Кому нужен такой предатель, как Вы?
                     </div>
                 </div>
-                <button id="endBtn" class="menu__button text-medium" onclick="location.reload(); return false;">Начать игру заново</button>
+                <button id="endBtn" class="menu__button text-medium" >Начать игру заново</button>
                 <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>
             </div>
         </li>
@@ -1884,7 +1884,7 @@ export const pages = [
                     успехами: Ваше имя, легендарного боярина Василько, навсегда войдет в историю!
                     </div>
                 </div>
-                <button id="endBtn" class="menu__button text-medium" onclick="location.reload(); return false;">Начать игру заново</button>
+                <button id="endBtn" class="menu__button text-medium" >Начать игру заново</button>
                 <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>
             </div>
         </li>
@@ -1942,7 +1942,7 @@ export const pages = [
                     Возможно, Вам теперь интересно узнать, как еще могла сложиться судьба дружинника Василько и его князя?
                     </div>
                 </div>
-                <button id="endBtn" class="menu__button text-medium" onclick="location.reload(); return false;">Начать игру заново</button>
+                <button id="endBtn" class="menu__button text-medium" >Начать игру заново</button>
                 <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>
             </div>
         </li>

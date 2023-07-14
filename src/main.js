@@ -14,6 +14,7 @@ const buttonStart = document.querySelector('#start')
 const leftPage = document.querySelector('#btns')
 const rightPage = document.querySelector('.menu__right')
 const mainPage = document.querySelector('.menu')
+const end_screen = document.querySelector('.end_screen')
 const menuTrophyBtn = document.querySelector('#trophies')
 const testButton = document.querySelector('#test')
 const tooltip = document.querySelector("#tooltip")
@@ -152,6 +153,14 @@ function NextStage(Book, dictBtn){
     if (end){
         SaveTr(trophies.join(''));
         console.log(trophies);
+        end.addEventListener("click", () => {
+            end_screen.innerHTML = printPoints(points)
+            if (end_screen.classList.contains("is-visible")){
+            }
+            else{
+                $(".end_screen").show()
+                end_screen.classList.add("is-visible")}
+        });
         return
     } 
     stage+=1
@@ -220,7 +229,6 @@ function OpenBook(gameStarted) {
         container1.remove()
         if(gameStarted){
         mainPage.innerHTML = pages[0]['page']
-        mainPage.innerHTML = printPoints(100)
         }
         else{
             mainPage.innerHTML = `
