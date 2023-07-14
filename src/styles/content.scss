@@ -67,11 +67,20 @@
     justify-content: space-between;
     align-items:center;
     figure{
+        text-align: center;
+        height: 90%;
+        width: 100%;
         display: flex;
         flex: 1 1 auto;
         justify-content: center;
         flex-direction: column;
+        img{
+            min-height: 60%;
+            max-width: 100%;
+            object-fit: contain;
+        }
         figcaption{
+            max-height: 40%;
             margin-top: 10px;
         }
     }
