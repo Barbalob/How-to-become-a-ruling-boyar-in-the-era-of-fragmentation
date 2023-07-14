@@ -1,34 +1,35 @@
 .wrapper-result{
     display: flex;
     flex-direction: column;
+    margin: 0 auto;
     height: 90vh;
+    width: 80%;
     justify-content: center;
     align-items:center;
     z-index: 999;
-    gap: 15px;
+    background: url(../assets/bg-end.png) no-repeat;
+    background-size:contain;
+    background-position: 50% 50%;
     .result{
-        background: url(../assets/bg-button-answer.png);
-        background-size:cover;
-        padding: 50px 70px;
-        border-radius:100px;
+        padding: 30px 50px;
         display: flex;
+        gap: 30px;
         justify-content: center;
         align-items:center;
         flex-direction: column;
+        max-width: 90%;
+        height: 90%;
         &-points{
             text-align: center;
-            margin: 10px;
+            text-decoration-line: underline;
         }
         &-template{
-            margin: 30px;
-            text-align: center;
         }
         .menu__button-result{
-            width: 400px;
-            height: 73px;
-            background: url(../assets/bg-button.png);
-            background-size: cover;
-            border-radius: 20px;
+            min-width: 484px;
+            min-height: 69.656px;
+            background: url(../assets/test.png) no-repeat;
+            background-size: contain;
         }
         
     }

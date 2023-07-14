@@ -7,15 +7,19 @@ function declOfNum(n, text_forms) {
     return text_forms[2];
 }
 
+let category = '-'
+
 export const printPoints = (points) => {
     let template = '';
     if (points >= 10 && points <= 20){
+        category = 'I'
         template = `К сожалению, Вы так и остались отроком или гридином, 
         представляя низший слой княжеской дружины. Все, что Вы видели на белом свете, – 
         это прислуживание и исполнение мелких поручений, уборка еды со стола и ношение 
         вещей за княжеской особой.`;
     }
     else if (points >= 21 && points <= 40){
+        category = 'II'
         template = `В древнерусском обществе Вы стали бы «детским» и заняли 
         среднее положение в княжеской дружине. В отличие от отрока или гридина, Вам было 
         бы позволено владеть мечом, дабы в опасных ситуациях суметь защитить князя или 
@@ -23,17 +27,20 @@ export const printPoints = (points) => {
         должностным лицом – судебным исполнителем князя.`;
     }
     else if (points >=41 && points <= 67){
+        category = 'III'
         template = `В Древней Руси Вас явно ждал бы успех! Вы еще не боярин, но 
         за верную службу князь сделал Вас дворянином в своем княжеском дворе. Кроме того, 
         Вы могли бы возглавить небольшой, но крепкий воинский отряд в княжеской дружине.`;
     }
     else if (points >= 68 && points <= 90){
+        category = 'IV'
         template = `Поздравляем! Вы стали боярином, а в перспективе можете 
         стать княжеским окольничим и быть среди свидетелей духовных или жалованных 
         грамот князя. Также князь может назначить Вас своим дворским, вверив в Ваше 
         управление княжеское хозяйство.`;
     }
     else if (points >= 91 && points <= 109){
+        category = 'V'
         template = `Вы смогли достичь того, о чем даже и мечтать не могли! За 
         Вашим родом закрепляется должность тысяцкого в одном из крупных городов Русской 
         земли. Сами же Вы на некоторое время становитесь наместником князя в другом 
@@ -49,9 +56,9 @@ export const printPoints = (points) => {
     return `
     <div class='wrapper-result'>
         <div class='result'>
-            <h2 class='result-points text-menu-button'>Вы набрали ${points} ${declOfNum(points, ['Балл','Балла','Баллов'])}</h2>
+            <h2 class='result-points text-menu-button'>Получена категория ${category}</h2>
             <p class='result-template text-large'>${template}</p>
-            <button id="endBtn" class="text-medium menu__button-result" onclick="location.reload(); return false;">Начать игру заново</button>
+            <button id="endBtn" class="text-medium menu__button-result" onclick="location.reload(); return false;">В главное меню</button>
         </div>
     </div>
     `

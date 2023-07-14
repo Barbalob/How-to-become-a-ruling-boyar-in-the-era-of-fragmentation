@@ -220,6 +220,7 @@ function OpenBook(gameStarted) {
         container1.remove()
         if(gameStarted){
         mainPage.innerHTML = pages[0]['page']
+        mainPage.innerHTML = printPoints(100)
         }
         else{
             mainPage.innerHTML = `
