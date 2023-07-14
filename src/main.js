@@ -53,8 +53,9 @@ function tooltipCreate(){
     });
 };
 
-function ChoiceCreate(Book, evt, dictBtn){
+function ChoiceCreate(Book, evt, dictBtn, trophyBtn){
         dictBtn.disabled = true;
+        trophyBtn.disabled = true;
         let container = document.querySelector('.container');
         container.classList.remove('move-right');
         container.classList.add('move-left');
@@ -123,7 +124,7 @@ function ChoiceCreate(Book, evt, dictBtn){
                     container.classList.add('move-right')
                     container.classList.remove('move-left')
                 })
-                NextStage(Book, dictBtn)
+                NextStage(Book, dictBtn, trophyBtn)
 
             }
 
@@ -148,7 +149,7 @@ function CreateListBook(template, Book) {
     Book.updateFromHtml(document.querySelectorAll(".page"));
 }
 
-function NextStage(Book, dictBtn){
+function NextStage(Book, dictBtn, trophyBtn){
     const end = document.querySelector("#endBtn");
     if (end){
         SaveTr(trophies.join(''));
@@ -167,7 +168,7 @@ function NextStage(Book, dictBtn){
     CreateListBook(pages[stage]["page"], Book)
     tooltipCreate();
     const choiceBtn = document.querySelector('#choice');
-    choiceBtn.addEventListener('click', (evt) => {ChoiceCreate(Book, evt, dictBtn)});
+    choiceBtn.addEventListener('click', (evt) => {ChoiceCreate(Book, evt, dictBtn, trophyBtn)});
 }
 
 buttonStart.addEventListener('click', () => {
@@ -278,7 +279,7 @@ function OpenBook(gameStarted) {
 
         const choiceBtn = document.querySelector('#choice')
         if (choiceBtn) {
-            choiceBtn.addEventListener('click', (evt) => { ChoiceCreate(Book, evt, dictBtn) })
+            choiceBtn.addEventListener('click', (evt) => { ChoiceCreate(Book, evt, dictBtn, trophyBtn) })
             tooltipCreate()
         }
         }

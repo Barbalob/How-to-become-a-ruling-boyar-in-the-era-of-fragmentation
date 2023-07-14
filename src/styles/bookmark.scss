@@ -8,17 +8,30 @@
         background-size: cover;
         width:75px;
         height: 80px;
+        &:hover{
+            top:90px
+        }
+        &:active{
+            top:90px
+        }
     }
 
     .trophy-btn{
         position: absolute;
         z-index: 0;
         top:200px;
-        right: 65px;
+        right: 40px;
         background: url(../assets/Trophy_bookmark.png);
         background-size: cover;
         width:75px;
         height: 80px;
+        transition: all 0.1S;
+        &:hover{
+            top:190px
+        }
+        &:active{
+            top:190px
+        }
     }
 
     .home-btn{
@@ -30,5 +43,11 @@
         background-size: cover;
         width:75px;
         height: 80px;
+        &:hover{
+            top:90px
+        }
+        &:active{
+            top:90px
+        }
     }
 }
