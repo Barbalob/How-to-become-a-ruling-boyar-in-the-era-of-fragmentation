@@ -1,13 +1,14 @@
 .container{
     .dictionary-btn{
         position: absolute;
-        z-index: 0;
+        z-index: 4;
         top:100px;
         right: 65px;
         background: url(../assets/Dictionary_bookmark.png);
         background-size: cover;
         width:75px;
         height: 80px;
+        transition: top 0.1S;
         &:hover{
             top:90px
         }
@@ -16,17 +17,17 @@
         }
     }
 
-    
+
     .trophy-btn{
         position: absolute;
-        z-index: 0;
+        z-index: 4;
         top:200px;
         right: 40px;
         background: url(../assets/Trophy_bookmark.png);
         background-size: cover;
         width:75px;
         height: 80px;
-        transition: all 0.1S;
+        transition: top 0.1S;
         &:hover{
             top:190px
         }
@@ -37,13 +38,14 @@
 
     .home-btn{
         position: absolute;
-        z-index: 0;
+        z-index: 4;
         top:100px;
         left: 65px;
         background: url(../assets/Home_bookmark.png);
         background-size: cover;
         width:75px;
         height: 80px;
+        transition: top 0.1S;
         &:hover{
             top:90px
         }

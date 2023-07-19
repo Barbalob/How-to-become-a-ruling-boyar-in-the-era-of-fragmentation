@@ -220,3 +220,22 @@
     width: 100vw;
     height: 100vh;
 }
+
+.side_blockerator{  
+    &__right{
+        display: block;
+        position: absolute;
+        height: 100vh;
+        top:0;
+        right: 0;
+        z-index: 3;
+    }
+    &__left{
+        display: block;
+        position: absolute;
+        height: 100vh;
+        top:0;
+        left: 0;
+        z-index: 3;
+    }
+}

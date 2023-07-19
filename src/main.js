@@ -30,12 +30,14 @@ if(savedTr){
 console.log(trophies);
 
 
+
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
 
 function tooltipCreate(){
     $("[data-tooltip]").mousemove(function (eventObject) {
+        $('body').css({'overflow':'hidden'});
         let data_tooltip = $(this).attr("data-tooltip");
         $("#tooltip").html(data_tooltip)
             .css({ 
@@ -44,6 +46,7 @@ function tooltipCreate(){
             })
             .show();
         }).mouseout(function () {
+            $('body').css({'overflow':'visible'});
           $("#tooltip").hide()
             .html("")
             .css({
@@ -77,6 +80,7 @@ function ChoiceCreate(Book, evt, dictBtn, trophyBtn){
 
             const F = (evt) => {
                 dictBtn.disabled = false;
+                trophyBtn.disabled = false;
                 if(evt.target.id == "chosen"){
                     return
                 }
@@ -234,6 +238,8 @@ function OpenBook(gameStarted) {
         }
         else{
             mainPage.innerHTML = `
+            <div class="side_blockerator__left" id="side_blockerator__left"></div>
+            <div class="side_blockerator__right" id="side_blockerator__right"></div>
             <div class="container">
             <button class='home-btn'></button>
                 <div class="wrapper-book">
@@ -268,6 +274,11 @@ function OpenBook(gameStarted) {
         // testButton.addEventListener('click', () => {
         //     Book.turnToPage(8);
         // });
+        adaptiveSideElements(Book)
+        window.addEventListener('resize', () =>{
+            adaptiveSideElements(Book)
+        });
+
         const homeBtn = document.querySelector(".home-btn")
         homeBtn.addEventListener('click', () => { location.reload()});
 
@@ -285,6 +296,16 @@ function OpenBook(gameStarted) {
         }
         }
     })
+}
+
+function adaptiveSideElements(Book) {
+    let sideBlockWidth = Book.getBoundsRect().left
+    console.log(Book.getBoundsRect().left)
+    document.querySelector(".home-btn").style.left = sideBlockWidth - 75 + 'px'
+    document.querySelector(".dictionary-btn").style.right = sideBlockWidth - 75 + 'px'
+    document.querySelector(".trophy-btn").style.right = sideBlockWidth - 75 - 10 + 'px'
+    document.getElementById('side_blockerator__left').style.width = sideBlockWidth + 'px'
+    document.getElementById('side_blockerator__right').style.width = sideBlockWidth + 'px'
 }
 
 function openSideBtnEvt(SideBtn, Book, pageClass, addingPages) {
