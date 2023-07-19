@@ -220,7 +220,7 @@ function OpenBook(gameStarted) {
         container1.remove()
         if(gameStarted){
         mainPage.innerHTML = pages[0]['page']
-        mainPage.innerHTML = printPoints(100)
+
         }
         else{
             mainPage.innerHTML = `
@@ -243,10 +243,10 @@ function OpenBook(gameStarted) {
 
                 size: "stretch",
                 // set threshold values:
-                minWidth: 315,
-                maxWidth: 1000,
-                minHeight: 800,
-                maxHeight: 400,
+                // minWidth: 315,
+                // maxWidth: 1000,
+                // minHeight: 800,
+                // maxHeight: 400,
                 drawShadow: false,
                 showCover: false,
                 usePortrait: false,
