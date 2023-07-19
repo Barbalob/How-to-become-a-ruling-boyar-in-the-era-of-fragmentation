@@ -299,11 +299,11 @@ function OpenBook(gameStarted) {
 }
 
 function adaptiveSideElements(Book) {
-    let sideBlockWidth = Book.getBoundsRect().left
+    let sideBlockWidth = Book.getBoundsRect().left + 30
     console.log(Book.getBoundsRect().left)
-    document.querySelector(".home-btn").style.left = sideBlockWidth - 75 + 'px'
-    document.querySelector(".dictionary-btn").style.right = sideBlockWidth - 75 + 'px'
-    document.querySelector(".trophy-btn").style.right = sideBlockWidth - 75 - 10 + 'px'
+    document.querySelector(".home-btn").style.left = sideBlockWidth - 75 - 10 + 'px'
+    document.querySelector(".dictionary-btn").style.right = sideBlockWidth - 75 - 10 + 'px'
+    document.querySelector(".trophy-btn").style.right = sideBlockWidth - 75 - 10 - 10 + 'px'
     document.getElementById('side_blockerator__left').style.width = sideBlockWidth + 'px'
     document.getElementById('side_blockerator__right').style.width = sideBlockWidth + 'px'
 }
