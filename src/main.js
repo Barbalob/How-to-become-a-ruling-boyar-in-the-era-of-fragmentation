@@ -14,6 +14,7 @@ const buttonStart = document.querySelector('#start')
 const leftPage = document.querySelector('#btns')
 const rightPage = document.querySelector('.menu__right')
 const mainPage = document.querySelector('.menu')
+const end_screen = document.querySelector('.end_screen')
 const menuTrophyBtn = document.querySelector('#trophies')
 const testButton = document.querySelector('#test')
 const tooltip = document.querySelector("#tooltip")
@@ -52,8 +53,9 @@ function tooltipCreate(){
     });
 };
 
-function ChoiceCreate(Book, evt, dictBtn){
+function ChoiceCreate(Book, evt, dictBtn, trophyBtn){
         dictBtn.disabled = true;
+        trophyBtn.disabled = true;
         let container = document.querySelector('.container');
         container.classList.remove('move-right');
         container.classList.add('move-left');
@@ -122,7 +124,7 @@ function ChoiceCreate(Book, evt, dictBtn){
                     container.classList.add('move-right')
                     container.classList.remove('move-left')
                 })
-                NextStage(Book, dictBtn)
+                NextStage(Book, dictBtn, trophyBtn)
 
             }
 
@@ -147,18 +149,26 @@ function CreateListBook(template, Book) {
     Book.updateFromHtml(document.querySelectorAll(".page"));
 }
 
-function NextStage(Book, dictBtn){
+function NextStage(Book, dictBtn, trophyBtn){
     const end = document.querySelector("#endBtn");
     if (end){
         SaveTr(trophies.join(''));
         console.log(trophies);
+        end.addEventListener("click", () => {
+            end_screen.innerHTML = printPoints(points)
+            if (end_screen.classList.contains("is-visible")){
+            }
+            else{
+                $(".end_screen").show()
+                end_screen.classList.add("is-visible")}
+        });
         return
     } 
     stage+=1
     CreateListBook(pages[stage]["page"], Book)
     tooltipCreate();
     const choiceBtn = document.querySelector('#choice');
-    choiceBtn.addEventListener('click', (evt) => {ChoiceCreate(Book, evt, dictBtn)});
+    choiceBtn.addEventListener('click', (evt) => {ChoiceCreate(Book, evt, dictBtn, trophyBtn)});
 }
 
 buttonStart.addEventListener('click', () => {
@@ -270,7 +280,7 @@ function OpenBook(gameStarted) {
 
         const choiceBtn = document.querySelector('#choice')
         if (choiceBtn) {
-            choiceBtn.addEventListener('click', (evt) => { ChoiceCreate(Book, evt, dictBtn) })
+            choiceBtn.addEventListener('click', (evt) => { ChoiceCreate(Book, evt, dictBtn, trophyBtn) })
             tooltipCreate()
         }
         }

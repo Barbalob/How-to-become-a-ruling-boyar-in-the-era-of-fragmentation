@@ -44,9 +44,17 @@
         align-items: center;
         background: url(../assets/bg-button.png);
         border-radius: 30px;
-        &-active{
+        transition: all 0.1s;
+        &:hover{
             text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
             font-weight: bold;
+            transform: scale(1.02);
+
+        }
+        &:active{
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            font-weight: bold;
+            transform: scale(1.02);
         }
     }
 
@@ -93,6 +101,11 @@
     padding: 20px 40px;
 }
 
+.is-visible {
+	display: block;
+	animation: fadeInFromNone 0.25s ease-in-out;
+	animation-fill-mode: forwards;
+}
 
 .is-hidden {
 	animation: fadeOutFromBlock 0.25s ease-in-out;
@@ -107,7 +120,7 @@
 	}
 }
 
- @keyframes ani  {
+ @keyframes fadeInFromNone  {
 	0% {
 	  opacity: 0;
 	}
@@ -115,6 +128,19 @@
 	  opacity: 1;
 	}
 }
+
+@keyframes fadeInAns  {
+	0% {
+	  opacity: 0;
+	}
+    50%{
+        opacity: 0;
+    }
+	100% {
+	  opacity: 1;
+	}
+}
+
 
 .list-answer{
     display: flex;
@@ -125,18 +151,15 @@
     position: absolute;
     right: 50px;
     max-width: 50%;
-
+    @for $i from 1 through 3 {
     li{
-        &:nth-child(1){
-            animation: ani 3.5s ease-in-out;
-        }
-        &:nth-child(2){
-            animation: ani 4.5s ease-in-out;
-        }
-        &:nth-child(3){
-            animation: ani 5.5s ease-in-out;
+        &:nth-child(#{$i}){
+            animation-delay: $i * (.2s);
+            
         }
     }
+    li{animation: 1s ease-in-out both fadeInAns;}
+}
 
 
     .button-answer{
@@ -145,12 +168,23 @@
         background: url(../assets/bg-button-answer.png);
         background-repeat: no-repeat;
         background-size: cover;
-        animation: fadeOutFromBlock 0.5s ease-in-out;
+        transition: all 0.1s;
+        &:hover{
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            font-weight: bold;
+            transform: scale(1.02);
+
+        }
+        &:active{
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            font-weight: bold;
+            transform: scale(1.02);
+        }
     }
 }
 
 .first{
-    animation: ani 1.0s ease-in-out;
+    animation: fadeInFromNone 1.0s ease-in-out;
 }
 
 
@@ -176,4 +210,13 @@
     width: 100vw;
     height: 100vh;
     z-index: 9999;
+}
+
+.end_screen{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
 }
