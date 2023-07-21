@@ -1,4 +1,3 @@
-
 @mixin text-size($font-style: normal, $font-weight:400, $font-size:26px, $line-height:32px) {
     font-style: $font-style;
     font-weight: $font-weight;
@@ -6,33 +5,117 @@
     line-height: $line-height;
 }
 
+
+$size-very-small:  22px;
+$size-small:       24px;
+$size-medium:      26px;
+$size-high:        28px;
+$size-large:       30px;
+$size-trophy:      52px;
+$size-continued:   100px;
+$size-menu-main:   45px;
+$size-menu-button: 40px;
+
+
 .text{
     &-very-small{
-        @include text-size(normal, 400, 22px, 27.5px);
+        @include text-size(normal, 400, $size-very-small, 27.5px);
     }
     &-small{
-        @include text-size(normal, 400, 24px, 29.98px);
+        @include text-size(normal, 400, $size-small, 29.98px);
     }
     &-medium{
-        @include text-size(normal, 400, 26px, 32.47px);
+        @include text-size(normal, 400, $size-medium, 32.47px);
     }
     &-high{
-        @include text-size(normal, 400, 28px, 35px);
+        @include text-size(normal, 400, $size-high, 35px);
     }
     &-large{
-        @include text-size(normal, 400, 30px, 37.47px);
+        @include text-size(normal, 400, $size-large, 37.47px);
     }
     &-trophy{
-        @include text-size(normal, 400, 52px, 65px);
+        @include text-size(normal, 400, $size-trophy, 65px);
     }
     &-continued{
-        @include text-size(normal, 400, 100px, 70.47px);
+        @include text-size(normal, 400, $size-continued, 70.47px);
     }
     &-menu-main{
-        @include text-size(normal, 400, 45px, 56px);
+        @include text-size(normal, 400, $size-menu-main, 56px);
         text-shadow: 4px 4px 0px #000000;  
     }
     &-menu-button{
-        @include text-size(normal, 400, 40px, 50px);
+        @include text-size(normal, 400, $size-menu-button, 50px);
     }
+}
+
+
+/* Large desktops and laptops */
+//4K
+@media (min-width: 3800px) {
+
+}
+
+//QHD
+@media (min-width: 2500px) and (max-width: 3799px) {
+
+
+}
+
+//FHD
+@media (min-width: 1900px) and (max-width: 2499px) {
+
+}
+
+//HD+
+@media (min-width: 1500px) and (max-width: 1899px) {
+    $size-very-small:  18px;
+    $size-small:       20px;
+    $size-medium:      22px;
+    $size-high:        24px;
+    $size-large:       26px;
+    $size-trophy:      48px;
+    $size-continued:   100px;
+    $size-menu-main:   41px;
+    $size-menu-button: 36px;
+    .text{
+        &-very-small{
+            @include text-size(normal, 400, $size-very-small, $size-very-small*1.2);
+        }
+        &-small{
+            @include text-size(normal, 400, $size-small, $size-small*1.2);
+        }
+        &-medium{
+            @include text-size(normal, 400, $size-medium, $size-medium*1.2);
+        }
+        &-high{
+            @include text-size(normal, 400, $size-high, $size-high*1.2);
+        }
+        &-large{
+            @include text-size(normal, 400, $size-large, $size-large*1.2);
+        }
+        &-trophy{
+            @include text-size(normal, 400, $size-trophy, $size-trophy*1.2);
+        }
+        &-continued{
+            @include text-size(normal, 400, $size-continued, $size-continued*1.2);
+        }
+        &-menu-main{
+            @include text-size(normal, 400, $size-menu-main, $size-menu-main*1.2);
+            text-shadow: 4px 4px 0px #000000;  
+        }
+        &-menu-button{
+            @include text-size(normal, 400, $size-menu-button, $size-menu-button*1.2);
+        }
+    }
+
+}
+
+//HD
+@media (min-width: 992px) and (max-width: 1499px) {
+
+}
+
+//Portrait tablets and small desktops 
+@media (min-width: 768px) and (max-width: 991px) {
+    
 }
