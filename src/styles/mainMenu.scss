@@ -1,0 +1,142 @@
+.menu{
+    &-main{
+        min-width: 80vw;
+        max-width: 90vw;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        max-height: 99vh;
+        align-items: center;
+    }
+
+    &__left{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        height: 80%;
+        gap:2vh;
+    }
+    &__list-button{ 
+        width: 100%;
+        max-height: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 48px;
+    }
+
+    &__button{
+        display: flex;
+        margin: 0 auto;
+        max-height: 50%;
+        width: 80%;
+        background-image: none; 
+        background-color: transparent;
+
+        transition: all 0.1s;
+        &:hover{
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            font-weight: bold;
+            transform: scale(1.02);
+
+        }
+        &:active{
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            font-weight: bold;
+            transform: scale(1.02);
+        }
+    }
+
+    &__list-logo{
+        flex-direction: column;
+        max-height: 50%;
+        width: 90%;
+        display: flex;
+        text-align: center;
+        justify-content: flex-start;
+        gap:20px;
+        .menu__logo-bottom{
+            max-height: 35%;
+            min-width: 100%;
+            object-fit: contain;
+        }
+        &-dop{
+            max-height: 55%;
+            min-width: 100%;
+            display: flex;
+            gap: 30px;
+            justify-content:center;
+            align-items:center;
+            .menu__logo{
+                max-height: 100%;
+                width: 50%;
+                object-fit: contain;
+            }
+        }
+    }
+
+
+
+
+    &__right{
+        display: flex;
+        position: relative;
+        align-items:center;
+        width: 50%;
+        height: 100%;
+        img{
+            max-height: 100%;
+            object-fit: contain; 
+            min-width: 100%;
+            display: block;
+        }
+        figcaption{
+            margin: 0 auto;
+            max-height: 50%;
+            max-width: 100%;
+
+            text-align: center;
+            p{
+                max-width: 100%;
+                // margin: 0 auto;
+                padding-left: 9vw;
+                padding-right: 6vw;
+            }
+        }
+        .book{
+            position: absolute;
+            color: #FFDF6D;
+            text-shadow: 4px 4px 0px #000000;
+                    
+            text-align: center;
+            font-style: normal;
+
+            // width: 453px;
+            // height: 328px;  
+            // margin-left: 151px;
+            // margin-right: 97px;
+        }
+    }
+}
+
+//Стили для кнопок главного меню 
+.menu__button-left{
+    position: relative;
+    display: flex;
+    align-items:center;
+    justify-content: center ;
+    width: 100%;
+    max-height: 100%;
+    margin:auto;
+    .menu__left-img{
+        display: block;
+        max-height: 100%;
+        min-width: 100%;
+        object-fit: contain;
+    }
+    figcaption{
+        position: absolute;
+    }
+}
