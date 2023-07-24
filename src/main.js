@@ -27,7 +27,7 @@ let savedTr = GetTr();
 if(savedTr){
     trophies = savedTr.split('');
 }
-console.log(trophies);
+
 
 
 
@@ -71,8 +71,8 @@ function ChoiceCreate(Book, evt, dictBtn, trophyBtn){
     `)
         mainPage.insertAdjacentElement(RenderPosition.BEFOREEND, testElement);
         tooltipCreate();
-        evt.target.disabled = true;
-        evt.target.id = "disabled"
+        evt.target.parentNode.parentNode.disabled = true;
+        evt.target.parentNode.parentNode.id = "disabled"
         sleep(3000).then(() => {
             const buttonChoice1 = document.querySelector('#choice-1')
             const buttonChoice2 = document.querySelector('#choice-2')
@@ -87,7 +87,6 @@ function ChoiceCreate(Book, evt, dictBtn, trophyBtn){
                 const id = evt.target.id.slice(-1)
                 points += Number($(evt.target).attr("value"));
                 let trophy = $(evt.target).attr("trophy");
-                console.log(trophy);
                 if(trophy){
                     if(trophy.length > 2){
                         trophy = trophy.split(',');
@@ -157,7 +156,7 @@ function NextStage(Book, dictBtn, trophyBtn){
     const end = document.querySelector("#endBtn");
     if (end){
         SaveTr(trophies.join(''));
-        console.log(trophies);
+
         end.addEventListener("click", () => {
             end_screen.innerHTML = printPoints(points)
             if (end_screen.classList.contains("is-visible")){
@@ -172,7 +171,9 @@ function NextStage(Book, dictBtn, trophyBtn){
     CreateListBook(pages[stage]["page"], Book)
     tooltipCreate();
     const choiceBtn = document.querySelector('#choice');
-    choiceBtn.addEventListener('click', (evt) => {ChoiceCreate(Book, evt, dictBtn, trophyBtn)});
+    choiceBtn.addEventListener('click', (evt) => {
+        ChoiceCreate(Book, evt, dictBtn, trophyBtn)
+    });
 }
 
 buttonStart.addEventListener('click', () => {
@@ -300,7 +301,6 @@ function OpenBook(gameStarted) {
 
 function adaptiveSideElements(Book) {
     let sideBlockWidth = Book.getBoundsRect().left + 30
-    console.log(Book.getBoundsRect().left)
     document.querySelector(".home-btn").style.left = sideBlockWidth - 75 - 10 + 'px'
     document.querySelector(".dictionary-btn").style.right = sideBlockWidth - 75 - 10 + 'px'
     document.querySelector(".trophy-btn").style.right = sideBlockWidth - 75 - 10 - 10 + 'px'

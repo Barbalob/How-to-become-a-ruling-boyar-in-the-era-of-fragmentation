@@ -89,7 +89,6 @@ const CreateLiDescriptionTrophies = (index) => {
 
     let textSize = 'text-small'
 
-    console.log(item[0].length + item[1].length + item[2].length);
     if (item[0].length + item[1].length + item[2].length > 1000){
         textSize = 'text-very-small'
     }
@@ -126,7 +125,6 @@ export function trophiesBook(){
     if(savedTr){
         trophies = savedTr.split('');
     }
-    console.log(trophies);
     return `
             ${CreateAllTrophies()}        
     `;

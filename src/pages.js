@@ -173,7 +173,7 @@ export const pages = [
                         <button id="choice" class="menu__button text-medium">
                             <figure  class="button-select">
                                 <img class="button-select-img" src="assets/bg-button.png">
-                                <figcaption class="button-select-text text-menu-button"><p>Что Вы намерены делать в первую очередь?</p></figcaption>                
+                                <figcaption class="button-select-text text-menu-button">Что Вы намерены делать в первую очередь?</figcaption>                
                             </figure>       
                         </button>
                         <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>
@@ -304,7 +304,12 @@ export const pages = [
                 на сторону умелого воина, а не слабака, не умеющего держать оружие!
                 </div>
             </div>
-            <button id="choice" class="menu__button text-medium">Что будете делать?</button>
+            <button id="choice" class="menu__button text-medium">
+                <figure  class="button-select">
+                    <img class="button-select-img" src="assets/bg-button.png">
+                    <figcaption class="button-select-text text-menu-button">Что будете делать?</figcaption>                
+                </figure>         
+            </button>
             <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>
         </div>
     </li>`,
