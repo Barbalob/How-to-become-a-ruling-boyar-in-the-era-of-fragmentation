@@ -170,7 +170,12 @@ export const pages = [
                             чтобы занять достойное место в “<a href="#" alt="Ссылка" data-tooltip="${definitions['Семейное владение Рюриковичей'][0]}">семейном владении Рюриковичей</a>”.
                             </div>
                         </div>
-                        <button id="choice" class="menu__button text-medium">Что Вы намерены делать в первую очередь?</button>
+                        <button id="choice" class="menu__button text-medium">
+                            <figure  class="button-select">
+                                <img class="button-select-img" src="assets/bg-button.png">
+                                <figcaption class="button-select-text text-menu-button"><p>Что Вы намерены делать в первую очередь?</p></figcaption>                
+                            </figure>       
+                        </button>
                         <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>
                     </div>
                 </li>
