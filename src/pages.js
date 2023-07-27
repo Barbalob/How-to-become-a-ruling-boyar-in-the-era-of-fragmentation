@@ -477,7 +477,12 @@ export const pages = [
                             в одном из поединков.
                             </div>
                         </div>
-                        <button id="choice" class="menu__button text-medium">Что же делать?</button>
+                        <button id="choice" class="menu__button text-medium">
+                            <figure  class="button-select">
+                                <img class="button-select-img" src="assets/bg-button.png">
+                                <figcaption class="button-select-text text-menu-button">Что же делать?</figcaption>                
+                            </figure>
+                        </button>
                         <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>
                     </div>
                 </li>
@@ -615,7 +620,12 @@ export const pages = [
                             Вашему князю. 
                             </div>
                         </div>
-                        <button id="choice" class="menu__button text-medium">Что скажете на предложение короля?</button>
+                        <button id="choice" class="menu__button text-medium">
+                            <figure  class="button-select">
+                                <img class="button-select-img" src="assets/bg-button.png">
+                                <figcaption class="button-select-text text-menu-button">Что скажете на предложение короля?</figcaption>                
+                            </figure>
+                        </button>
                         <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>
                     </div>
                 </li>
