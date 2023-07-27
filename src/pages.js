@@ -2,9 +2,9 @@ import { definitions } from './definitionDict'
 export const pages = [
     {
         "page":`
+        <div class="container">
         <div class="side_blockerator__left" id="side_blockerator__left"></div>
         <div class="side_blockerator__right" id="side_blockerator__right"></div>
-        <div class="container">
           <button class='dictionary-btn' data-tooltip="Словарь"></button>
           <button class='trophy-btn' data-tooltip="Трофеи"></button>
           <button class='home-btn' data-tooltip="Главное меню<br>Вы потеряете весь прогресс"></button>
