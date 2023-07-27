@@ -243,9 +243,9 @@ function OpenBook(gameStarted) {
         }
         else{
             mainPage.innerHTML = `
+            <div class="container">
             <div class="side_blockerator__left" id="side_blockerator__left"></div>
             <div class="side_blockerator__right" id="side_blockerator__right"></div>
-            <div class="container">
             <button class='home-btn'></button>
                 <div class="wrapper-book">
                     <ul class="flip-book" id="demoBookExample">
