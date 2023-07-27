@@ -2,9 +2,9 @@ import { definitions } from './definitionDict'
 export const pages = [
     {
         "page":`
+        <div class="container">
         <div class="side_blockerator__left" id="side_blockerator__left"></div>
         <div class="side_blockerator__right" id="side_blockerator__right"></div>
-        <div class="container">
           <button class='dictionary-btn' data-tooltip="Словарь"></button>
           <button class='trophy-btn' data-tooltip="Трофеи"></button>
           <button class='home-btn' data-tooltip="Главное меню<br>Вы потеряете весь прогресс"></button>
@@ -1298,7 +1298,7 @@ export const pages = [
             <div class="page-content content-text">
                 <div class='main-text'> 
                     <img src="assets/letter/letterP.svg" alt="Буква П" class='img-letter-small'>
-                    <div class='text text-small'> 
+                    <div class='text size-very-small'> 
                     атриарх огорчен Вашим отказом. Более того, Вы нанесли ему этим оскорбление. 
                     Вас перестают принимать при дворе, а также во всех приличных дворцах Нового Рима<a href="#" alt="Ссылка" data-tooltip="«Новый Рим» – официальное наименование Константинополя как столицы Римской (Византийской) империи.">Нового Рима</a>. 
                     Ваша миссия завоевать престол для своего князя отныне совершенно невыполнима…

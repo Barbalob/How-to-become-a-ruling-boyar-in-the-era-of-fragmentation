@@ -11,11 +11,13 @@ import {trophiesBook }from './trophies'
 
 
 const buttonStart = document.querySelector('#start')
+const mobStart = document.querySelector('#start-mobile')
 const leftPage = document.querySelector('#btns')
 const rightPage = document.querySelector('.menu__right')
 const mainPage = document.querySelector('.menu')
 const end_screen = document.querySelector('.end_screen')
 const menuTrophyBtn = document.querySelector('#trophies')
+const mobTrophy = document.querySelector('#trophies-mobile')
 const testButton = document.querySelector('#test')
 const tooltip = document.querySelector("#tooltip")
 let trophiesPages = trophiesBook()
@@ -28,7 +30,18 @@ if(savedTr){
     trophies = savedTr.split('');
 }
 
-
+buttonStart.addEventListener('click', () => {
+    OpenBook(true)
+});
+menuTrophyBtn.addEventListener('click', () => {
+    OpenBook(false)
+});
+mobStart.addEventListener('click', () => {
+    OpenBook(true)
+});
+mobTrophy.addEventListener('click', () => {
+    OpenBook(false)
+});
 
 
 function sleep(ms) {
@@ -60,8 +73,7 @@ function ChoiceCreate(Book, evt, dictBtn, trophyBtn){
         dictBtn.disabled = true;
         trophyBtn.disabled = true;
         let container = document.querySelector('.container');
-        let shift = Book.getBoundsRect().width * 0.8;
-        container.style.transform = `translate(-${shift}px,0)`;
+        container.style.transform = `translate(-50vw,0)`;
         const testElement = createElement(`
     <ul class='list-answer'>
         ${pages[stage]["btn-1"]}
@@ -79,6 +91,7 @@ function ChoiceCreate(Book, evt, dictBtn, trophyBtn){
             const buttonChoice3 = document.querySelector('#choice-3')
 
             const F = (evt) => {
+                adaptiveSideElements(Book)
                 dictBtn.disabled = false;
                 trophyBtn.disabled = false;
                 if(evt.target.id == "chosen"){
@@ -174,14 +187,6 @@ function NextStage(Book, dictBtn, trophyBtn){
         ChoiceCreate(Book, evt, dictBtn, trophyBtn)
     });
 }
-
-buttonStart.addEventListener('click', () => {
-    OpenBook(true)
-});
-menuTrophyBtn.addEventListener('click', () => {
-    OpenBook(false)
-});
-
 
 function OpenBook(gameStarted) {
     leftPage.classList.add('is-hidden')

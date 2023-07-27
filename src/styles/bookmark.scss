@@ -1,7 +1,7 @@
-.container{
+
     .dictionary-btn{
         position: absolute;
-        z-index: 4;
+        z-index: 40;
         top:100px;
         right: 65px;
         background: url(../assets/Dictionary_bookmark.png);
@@ -20,7 +20,7 @@
 
     .trophy-btn{
         position: absolute;
-        z-index: 4;
+        z-index: 40;
         top:200px;
         right: 40px;
         background: url(../assets/Trophy_bookmark.png);
@@ -38,7 +38,7 @@
 
     .home-btn{
         position: absolute;
-        z-index: 4;
+        z-index: 40;
         top:100px;
         left: 65px;
         background: url(../assets/Home_bookmark.png);
@@ -53,4 +53,3 @@
             top:90px
         }
     }
-}
