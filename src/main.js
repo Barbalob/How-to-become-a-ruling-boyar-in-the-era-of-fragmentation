@@ -60,8 +60,8 @@ function ChoiceCreate(Book, evt, dictBtn, trophyBtn){
         dictBtn.disabled = true;
         trophyBtn.disabled = true;
         let container = document.querySelector('.container');
-        container.classList.remove('move-right');
-        container.classList.add('move-left');
+        let shift = Book.getBoundsRect().width * 0.8;
+        container.style.transform = `translate(-${shift}px,0)`;
         const testElement = createElement(`
     <ul class='list-answer'>
         ${pages[stage]["btn-1"]}
@@ -124,8 +124,7 @@ function ChoiceCreate(Book, evt, dictBtn, trophyBtn){
 
                 sleep(500).then(() => {
                     testElement.remove();
-                    container.classList.add('move-right')
-                    container.classList.remove('move-left')
+                    container.style.transform = `translate(0,0)`;
                 })
                 NextStage(Book, dictBtn, trophyBtn)
 
@@ -211,7 +210,7 @@ function OpenBook(gameStarted) {
             width: 640,
             height: 882,
 
-            size: "fixed",
+            size: "stretch",
             // set threshold values:
             drawShadow: false,
             showCover: true,
@@ -252,7 +251,32 @@ function OpenBook(gameStarted) {
         }
 
         // mainPage.innerHTML = dictionary
-        const Book = new PageFlip(
+        let BookOptions;
+        var winW = $(window).width();
+        var winH = $(window).height();
+        if (winH > winW){
+            console.log("aaaaaaaaaaaaaaaaa")
+            BookOptions = new PageFlip(
+            document.getElementById("demoBookExample"),
+            {
+                width: 550,
+                height: 803,
+
+                size: "stretch",
+                // set threshold values:
+                // minWidth: 315,
+                // maxWidth: 1000,
+                // minHeight: 800,
+                // maxHeight: 400,
+                drawShadow: false,
+                showCover: false,
+                usePortrait: false,
+                
+                flippingTime: 700,
+                mobileScrollSupport: true // disable content scrolling on mobile devices
+            })}
+            else{
+            BookOptions = new PageFlip(
             document.getElementById("demoBookExample"),
             {
                 width: 550,
@@ -270,7 +294,8 @@ function OpenBook(gameStarted) {
                 flippingTime: 700,
                 mobileScrollSupport: false // disable content scrolling on mobile devices
             }
-        )
+            )}
+        const Book = BookOptions;
         Book.loadFromHTML(document.querySelectorAll(".page"))
         // testButton.addEventListener('click', () => {
         //     Book.turnToPage(8);
@@ -279,6 +304,7 @@ function OpenBook(gameStarted) {
         window.addEventListener('resize', () =>{
             adaptiveSideElements(Book)
         });
+        document.addEventListener("click", () => {adaptiveSideElements(Book)});
 
         const homeBtn = document.querySelector(".home-btn")
         homeBtn.addEventListener('click', () => { location.reload()});
@@ -301,6 +327,7 @@ function OpenBook(gameStarted) {
 
 function adaptiveSideElements(Book) {
     let sideBlockWidth = Book.getBoundsRect().left + 30
+    // console.log(sideBlockWidth)
     document.querySelector(".home-btn").style.left = sideBlockWidth - 75 - 10 + 'px'
     document.querySelector(".dictionary-btn").style.right = sideBlockWidth - 75 - 10 + 'px'
     document.querySelector(".trophy-btn").style.right = sideBlockWidth - 75 - 10 - 10 + 'px'
@@ -313,6 +340,7 @@ function openSideBtnEvt(SideBtn, Book, pageClass, addingPages) {
     let curPage
     if (SideBtn) {
         SideBtn.addEventListener('click', () => {
+            adaptiveSideElements(Book)
             if(pageClass == '.trophy_class'){
                 addingPages = trophiesBook();
             }
