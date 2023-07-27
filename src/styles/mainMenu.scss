@@ -139,6 +139,9 @@
 
 
 
+
+
+
 @media (min-width: 768px){
     .menu-main{
         display: flex;
@@ -147,6 +150,8 @@
         display: none;
     }
 }
+
+
 @media (max-width: 767px) {
 
     .menu-main{
@@ -160,6 +165,7 @@
         flex-direction: column;
         max-height: 99vh;
         align-items: center;
+        justify-content: space-around;
     }
     .menu__list-logo-mobile{
         display: flex;
@@ -194,7 +200,7 @@
         position: relative;
         align-items:center;
         width: 110%;
-        height: 70%;
+        max-height: 75%;
         img{
             max-height: 100%;
             object-fit: contain; 
@@ -228,11 +234,9 @@
         max-height: 15%;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        padding-top: 10px;
-        gap: 1vh;
+        justify-content: space-around;
         .menu__button{
-            max-height: 50%;
+            max-height: 45%;
             .menu__button-left{ 
                 height: 100%;
                 width: 100%;
