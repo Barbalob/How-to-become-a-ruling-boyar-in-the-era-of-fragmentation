@@ -2,9 +2,9 @@ import { definitions } from './definitionDict'
 export const pages = [
     {
         "page":`
-        <div class="container">
         <div class="side_blockerator__left" id="side_blockerator__left"></div>
         <div class="side_blockerator__right" id="side_blockerator__right"></div>
+        <div class="container">
           <button class='dictionary-btn' data-tooltip="Словарь"></button>
           <button class='trophy-btn' data-tooltip="Трофеи"></button>
           <button class='home-btn' data-tooltip="Главное меню<br>Вы потеряете весь прогресс"></button>
@@ -746,7 +746,12 @@ export const pages = [
                             <a href="#" alt="Ссылка" data-tooltip="Венгерские монархи не единожды женились на дочерях князей Русской земли. К примеру, Кальман I Книжник (1070–1116) был женат на дочери Владимира Мономаха (1113–1125) Евфимии, а дочь киевского князя Мстислава Владимировича Великого (1076–1132) Ефросинья (1130–1193), была женой Гезы II (1130–1162).">русская княжна, дочь самого киевского великого князя</a>.
                             </div>
                         </div>
-                        <button id="choice" class="menu__button text-medium">Когда разговор прекращается, Вы решаете…</button>
+                        <button id="choice" class="menu__button text-medium">
+                            <figure  class="button-select">
+                                <img class="button-select-img" src="assets/bg-button.png">
+                                <figcaption class="button-select-text text-menu-button">Когда разговор прекращается, Вы решаете…</figcaption>                
+                            </figure>
+                        </button>
                         <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>
                     </div>
                 </li>
@@ -862,7 +867,12 @@ export const pages = [
                     Через пару дней Вы узнаете о смерти одного из младших сыновей короля. Он и королева присылают Вам и князю приглашение на похороны принца.
                 </div>
             </div>
-            <button id="choice" class="menu__button text-medium">Вы…</button>
+            <button id="choice" class="menu__button text-medium">
+                <figure  class="button-select">
+                    <img class="button-select-img" src="assets/bg-button.png">
+                    <figcaption class="button-select-text text-menu-button">Вы…</figcaption>
+                </figure>
+            </button>
             <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>
         </div>
     </li>
@@ -974,7 +984,12 @@ export const pages = [
                 Через какое-то время Вы узнаете, что венгерский король не готов отправиться с Вами в поход на юго-западные русские княжества: он тоскует по своему ушедшему сыну, да и князья прекратили вражду между собой и объединились вокруг одного представителя династии. Король просит Вас простить его и попытать счастья в других частях <a href="#" alt="Ссылка" data-tooltip="Ойкумена – обжитая человечеством часть мира.">ойкумены</a>.
                 </div>
             </div>
-            <button id="choice" class="menu__button text-medium">Вы решаете…</button>
+            <button id="choice" class="menu__button text-medium">
+                <figure  class="button-select">
+                    <img class="button-select-img" src="assets/bg-button.png">
+                    <figcaption class="button-select-text text-menu-button">Вы решаете…</figcaption>
+                </figure>
+            </button>
             <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>
         </div>
     </li>
@@ -1100,7 +1115,12 @@ export const pages = [
                 Вам необходимо будет переговорить с <a href="#" alt="Ссылка" data-tooltip="Аколуф – начальник варяжской стражи в Византийской империи. Варяги в Византии именовались варангами.">аколуфом</a> варяжской гвардии для выделения Вам боевой охраны.
                 </div>
             </div>
-            <button id="choice" class="menu__button text-medium">Что Вы намерены ответить <a href="#" alt="Ссылка" data-tooltip="Василевс (βᾰσῐλέως) – официальное именование, титул византийского императора.">василевсу</a>?</button>
+            <button id="choice" class="menu__button text-medium">
+                <figure  class="button-select">
+                    <img class="button-select-img" src="assets/bg-button.png">
+                    <figcaption class="button-select-text text-menu-button">Что Вы намерены ответить <a href="#" alt="Ссылка" data-tooltip="Василевс (βᾰσῐλέως) – официальное именование, титул византийского императора.">василевсу</a>?</figcaption>
+                </figure>
+            </button>
             <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>
         </div>
     </li>
@@ -1239,12 +1259,17 @@ export const pages = [
                             до 1187 г., когда султан Египта Салах ад-Дин (1137–1193) захватил его.">Иерусалимском королевстве</a>, Вы 
                             отправляетесь обратно на корабле, выделенном для Вас 
                             как посланника <a href="#" alt="Ссылка" data-tooltip="Василевс (βᾰσῐλέως) – официальное именование, титул византийского императора.">василевса</a>. Вскоре 
-                            Вы возвращаетесь в Царьград<a href="#" alt="Ссылка" data-tooltip="Одно из наименований Константинополя, столицы Византийской империи в Древней Руси.">Царьград</a>, где получаете послание от Константинопольского Патриарха. 
+                            Вы возвращаетесь в <a href="#" alt="Ссылка" data-tooltip="Одно из наименований Константинополя, столицы Византийской империи в Древней Руси.">Царьград</a>, где получаете послание от Константинопольского Патриарха. 
                             Он просит Вас доставить свое письмо к Папе Римскому с отказом 
                             от <a href="#" alt="Ссылка" data-tooltip="Полемика об объединении Православной и Католической церквей обострилась в годы правления Мануила I Комнина (1118–1180). Несмотря на уступки Рима, Константинополь стоял на своем, что, в частности, выразилось в позиции патриарха Михаила III (ум. 1178 г.), который вел к провалу любые переговоры объединении.">переговоров об объединении Церквей</a>.
                             </div>
                         </div>
-                        <button id="choice" class="menu__button text-medium">Что Вы ответите на эту просьбу?</button>
+                        <button id="choice" class="menu__button text-medium">
+                            <figure  class="button-select">
+                                <img class="button-select-img" src="assets/bg-button.png">
+                                <figcaption class="button-select-text text-menu-button">Что Вы ответите на эту просьбу?</figcaption>
+                            </figure>
+                        </button>
                         <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>
                     </div>
                 </li>
@@ -1298,7 +1323,7 @@ export const pages = [
             <div class="page-content content-text">
                 <div class='main-text'> 
                     <img src="assets/letter/letterP.svg" alt="Буква П" class='img-letter-small'>
-                    <div class='text size-very-small'> 
+                    <div class='text text-small'> 
                     атриарх огорчен Вашим отказом. Более того, Вы нанесли ему этим оскорбление. 
                     Вас перестают принимать при дворе, а также во всех приличных дворцах Нового Рима<a href="#" alt="Ссылка" data-tooltip="«Новый Рим» – официальное наименование Константинополя как столицы Римской (Византийской) империи.">Нового Рима</a>. 
                     Ваша миссия завоевать престол для своего князя отныне совершенно невыполнима…
@@ -1384,7 +1409,12 @@ export const pages = [
                             половецким кланом и разгромить его.
                             </div>
                         </div>
-                        <button id="choice" class="menu__button text-medium">Что скажете?</button>
+                        <button id="choice" class="menu__button text-medium">
+                            <figure  class="button-select">
+                                <img class="button-select-img" src="assets/bg-button.png">
+                                <figcaption class="button-select-text text-menu-button">Что скажете?</figcaption>
+                            </figure>
+                        </button>
                         <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>
                     </div>
                 </li>
@@ -1491,7 +1521,12 @@ export const pages = [
                             по ее словам, есть три боевых коня, она хочет сбежать вместе с вами.
                             </div>
                         </div>
-                        <button id="choice" class="menu__button text-medium">Что Вы намерены делать?</button>
+                        <button id="choice" class="menu__button text-medium">
+                            <figure  class="button-select">
+                                <img class="button-select-img" src="assets/bg-button.png">
+                                <figcaption class="button-select-text text-menu-button">Что Вы намерены делать?</figcaption>
+                            </figure>
+                        </button>
                         <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>
                     </div>
                 </li>
@@ -1645,7 +1680,12 @@ export const pages = [
                             Вы пойдете с ним в <a href="#" alt="Ссылка" data-tooltip="Поход новгородских войск на Полоцкое княжество действительно имел место в истории. В 1127 г. состоялся Полоцкий поход Мстислава Великого (1076–1132), великого киевского князя, совместно с его сыном Всеволодом Мстиславичем, князем Новгородским (ум. 1138 г.). Целью похода было смещение княжеского полоцкого стола Давыда Всеславича (ум. после 1129 г.) и постановку на его место Бориса (Рогволода) Всеславича (до 1054 – 1128). Поход оказался успешен для Мстислава Великого и его сына.">поход на враждебный Новгороду Полоцк</a>.
                             </div>
                         </div>
-                        <button id="choice" class="menu__button text-medium">Что Вы намерены сказать?</button>
+                        <button id="choice" class="menu__button text-medium">
+                            <figure  class="button-select">
+                                <img class="button-select-img" src="assets/bg-button.png">
+                                <figcaption class="button-select-text text-menu-button">Что Вы намерены сказать?</figcaption>
+                            </figure>
+                        </button>
                         <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>
                     </div>
                 </li>
@@ -1770,7 +1810,12 @@ export const pages = [
                             Оно больше, чем Вы могли ожидать, дружина Вашего князя тоже напугана.
                             </div>
                         </div>
-                        <button id="choice" class="menu__button text-medium">Что же делать?</button>
+                        <button id="choice" class="menu__button text-medium">
+                            <figure  class="button-select">
+                                <img class="button-select-img" src="assets/bg-button.png">
+                                <figcaption class="button-select-text text-menu-button">Что же делать?</figcaption>
+                            </figure>
+                        </button>
                         <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>
                     </div>
                 </li>
@@ -1876,7 +1921,12 @@ export const pages = [
                              <a href="#" alt="Ссылка" data-tooltip="Данный титул действительно имел место в отечественной истории. В 1253 г. венцом короля Руси папскими представителями был коронован Даниил Романович Галицкий (1201/1204–1264). Князь искал у Святого престола помощи против монголов, однако, так этого и не дождался. Рим же пытался расширить сферу своего влияния на Восток, однако, также потерпел неудачу: ни Даниил Романович, ни сама Галицкая земля не собирались переходить в католицизм. Так титул утратил привлекательность для обеих сторон.">короля Руси</a> вместе с короной!
                             </div>
                         </div>
-                        <button id="choice" class="menu__button text-medium">Не пора ли Вам уходит на покой?</button>
+                        <button id="choice" class="menu__button text-medium">
+                            <figure  class="button-select">
+                                <img class="button-select-img" src="assets/bg-button.png">
+                                <figcaption class="button-select-text text-menu-button">Не пора ли Вам уходит на покой?</figcaption>
+                            </figure>
+                        </button>
                         <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>
                     </div>
                 </li>
