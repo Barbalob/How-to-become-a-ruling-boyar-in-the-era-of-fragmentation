@@ -1374,7 +1374,12 @@ export const pages = [
                     Ваша миссия завоевать престол для своего князя отныне совершенно невыполнима…
                     </div>
                 </div>
-                <button id="choice" class="menu__button text-medium" >Начать игру заново</button>
+                <button id="endBtn" class="menu__button text-medium" >
+                <figure  class="button-select">
+                    <img class="button-select-img" src="assets/bg-button.png">
+                    <figcaption class="button-select-text text-menu-button">Начать игру заново</figcaption>
+                </figure>
+            </button>
                 <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>
             </div>
         </li>
@@ -1402,7 +1407,12 @@ export const pages = [
                      духовной дочерью Византийской империи
                     </div>
                 </div>
-                <button id="choice" class="menu__button text-medium" >Начать игру заново</button>
+                <button id="endBtn" class="menu__button text-medium" >
+                <figure  class="button-select">
+                    <img class="button-select-img" src="assets/bg-button.png">
+                    <figcaption class="button-select-text text-menu-button">Начать игру заново</figcaption>
+                </figure>
+            </button>
                 <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>
             </div>
         </li>
@@ -1876,7 +1886,7 @@ export const pages = [
                             </div>
                         </div>
                         <button id="choice" class="menu__button text-medium">
-                            <figure  class="button-select">
+                            <figure class="button-select">
                                 <img class="button-select-img" src="assets/bg-button.png">
                                 <figcaption class="button-select-text text-menu-button">Что же делать?</figcaption>
                             </figure>
