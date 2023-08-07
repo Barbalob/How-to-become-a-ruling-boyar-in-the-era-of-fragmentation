@@ -45,14 +45,14 @@ menuTrophyBtn.addEventListener('click', () => {
     OpenBook(false)
 });
 mobStart.addEventListener('click', () => {
-    trophiesPages.replace(`<li class="page">`,
+    trophiesPages = trophiesPages.replace(`<li class="page">`,
     `<li class="page"></li>
     <li class="page">`)
     mobileFlag = true
     OpenBook(true)
 });
 mobTrophy.addEventListener('click', () => {
-    trophiesPages.replace(`<li class="page">`,
+    trophiesPages = trophiesPages.replace(`<li class="page">`,
     `<li class="page"></li>
     <li class="page">`)
     mobileFlag = true
@@ -173,7 +173,7 @@ function ChoiceCreate(Book, evt, dictBtn, trophyBtn){
 function CreateListBook(template, Book) {
     const test = `${template}`
     if(mobileFlag){
-        test.replace('<li class="page">','<li class="page"></li><li class="page">');
+        test =  test.replace('<li class="page">','<li class="page"></li><li class="page">');
     }
     if (document.querySelector('.stf__block') != null) {
         document.querySelector('.stf__block').insertAdjacentHTML("beforeend", test);
@@ -259,7 +259,7 @@ function OpenBook(gameStarted) {
         if(gameStarted){
         let startPages = pages[0]['page']
         if(mobileFlag){
-            startPages.replace(
+            startPages = startPages.replace(
             `<li class="page">`,
     
             `<li class="page"></li>
