@@ -24,11 +24,19 @@ let trophiesPages = trophiesBook()
 let stage = 0;
 let points = 0;
 let trophies = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+let mobileFlag = false;
+let winW = $(window).width();
+let winH = $(window).height();
 
 let savedTr = GetTr();
 if(savedTr){
     trophies = savedTr.split('');
 }
+
+if(winH > winW){
+    mobileFlag = true
+}
+
 
 buttonStart.addEventListener('click', () => {
     OpenBook(true)
@@ -37,9 +45,17 @@ menuTrophyBtn.addEventListener('click', () => {
     OpenBook(false)
 });
 mobStart.addEventListener('click', () => {
+    trophiesPages.replace(`<li class="page">`,
+    `<li class="page"></li>
+    <li class="page">`)
+    mobileFlag = true
     OpenBook(true)
 });
 mobTrophy.addEventListener('click', () => {
+    trophiesPages.replace(`<li class="page">`,
+    `<li class="page"></li>
+    <li class="page">`)
+    mobileFlag = true
     OpenBook(false)
 });
 
@@ -156,6 +172,9 @@ function ChoiceCreate(Book, evt, dictBtn, trophyBtn){
 
 function CreateListBook(template, Book) {
     const test = `${template}`
+    if(mobileFlag){
+        test.replace('<li class="page">','<li class="page"></li><li class="page">');
+    }
     if (document.querySelector('.stf__block') != null) {
         document.querySelector('.stf__block').insertAdjacentHTML("beforeend", test);
     } else {
@@ -238,7 +257,15 @@ function OpenBook(gameStarted) {
         const container1 = document.querySelector('.container1')
         container1.remove()
         if(gameStarted){
-        mainPage.innerHTML = pages[0]['page']
+        let startPages = pages[0]['page']
+        if(mobileFlag){
+            startPages.replace(
+            `<li class="page">`,
+    
+            `<li class="page"></li>
+            <li class="page">`);
+        }
+        mainPage.innerHTML = startPages
 
         }
         else{
@@ -257,10 +284,8 @@ function OpenBook(gameStarted) {
 
         // mainPage.innerHTML = dictionary
         let BookOptions;
-        var winW = $(window).width();
-        var winH = $(window).height();
-        if (winH > winW){
-            console.log("aaaaaaaaaaaaaaaaa")
+
+        if (mobileFlag){
             BookOptions = new PageFlip(
             document.getElementById("demoBookExample"),
             {
