@@ -53,3 +53,36 @@
             top:90px
         }
     }
+
+
+.arrow-left, .arrow-right{
+    z-index: 1000;
+    bottom: 0px;
+    position: absolute;
+    background: transparent;
+    padding: 15px;
+    img{
+        height: 50px;
+        object-fit: contain;
+    }
+}
+.arrow-left{
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+.arrow-right{
+    right: 0;
+}
+
+@media (min-width: 768px){
+    .arrow-left, .arrow-right{
+        display: none;
+    }
+}
+
+
+@media (max-width: 767px) {
+    .arrow-left, .arrow-right{
+        display: block;
+    }
+}
