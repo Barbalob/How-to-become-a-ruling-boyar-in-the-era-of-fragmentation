@@ -45,9 +45,6 @@ menuTrophyBtn.addEventListener('click', () => {
     OpenBook(false)
 });
 mobStart.addEventListener('click', () => {
-    trophiesPages = trophiesPages.replace(`<li class="page">`,
-    `<li class="page"></li>
-    <li class="page">`)
     mobileFlag = true
     OpenBook(true)
 });
@@ -171,7 +168,7 @@ function ChoiceCreate(Book, evt, dictBtn, trophyBtn){
 };
 
 function CreateListBook(template, Book) {
-    const test = `${template}`
+    let test = `${template}`
     if(mobileFlag){
         test =  test.replace('<li class="page">','<li class="page"></li><li class="page">');
     }
