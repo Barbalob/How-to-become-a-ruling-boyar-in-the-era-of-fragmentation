@@ -259,7 +259,7 @@
     $size-trophy:      48px;
     $size-continued:   100px;
     $size-menu-main:   35px;
-    $size-menu-button: 26px;
+    $size-menu-button: 16px;
     .text{
         &-very-small{
             @include text-size(normal, 400, $size-very-small, $size-very-small*1.2);
@@ -287,8 +287,9 @@
             text-shadow: 4px 4px 0px #000000;  
         }
         &-menu-button{
-            @include text-size(normal, 400, $size-menu-button, $size-menu-button*1.2);
+            @include text-size(normal, 400, $size-menu-button, $size-menu-button);
         }
     }
 
 }
+

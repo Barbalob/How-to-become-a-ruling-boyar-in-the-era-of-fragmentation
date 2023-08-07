@@ -21,8 +21,13 @@
         }
     }
     .decor{
+        max-width: 100%;
+        max-height: 10%;
         display: flex;
         justify-content: center;
+        .img-decor{
+            max-width: 100%;
+        }
     }
 }
 
@@ -98,5 +103,14 @@
 }
 
 
+@media (max-width: 767px) {
+    .page-content{
+        overflow-x: hidden;
+    }
+    .content-img{
+        overflow: hidden;
+    }
 
+    
+}
 
