@@ -267,6 +267,8 @@ function OpenBook(gameStarted) {
         }
         else{
             mainPage.innerHTML = `
+            // <button class="arrow-left"><img src="assets/arrow.svg"></button>
+            // <button class="arrow-right"><img src="assets/arrow.svg"></button>
             <div class="container">
             <div class="side_blockerator__left" id="side_blockerator__left"></div>
             <div class="side_blockerator__right" id="side_blockerator__right"></div>
@@ -298,7 +300,7 @@ function OpenBook(gameStarted) {
                 drawShadow: false,
                 showCover: false,
                 usePortrait: false,
-                
+                useMouseEvents: false,
                 flippingTime: 700,
                 mobileScrollSupport: true // disable content scrolling on mobile devices
             })}
@@ -332,6 +334,12 @@ function OpenBook(gameStarted) {
             adaptiveSideElements(Book)
         });
         document.addEventListener("click", () => {adaptiveSideElements(Book)});
+
+        const leftBtn = document.querySelector(".arrow-left")
+        leftBtn.addEventListener('click', () => { Book.flipPrev('top')});
+
+        const rightBtn = document.querySelector(".arrow-right")
+        rightBtn.addEventListener('click', () => { Book.flipNext('top')});
 
         const homeBtn = document.querySelector(".home-btn")
         homeBtn.addEventListener('click', () => { location.reload()});
