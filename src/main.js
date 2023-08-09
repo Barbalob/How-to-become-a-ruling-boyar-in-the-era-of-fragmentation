@@ -86,7 +86,9 @@ function ChoiceCreate(Book, evt, dictBtn, trophyBtn){
         dictBtn.disabled = true;
         trophyBtn.disabled = true;
         let container = document.querySelector('.container');
+        if(!mobileFlag){
         container.style.transform = `translate(-50vw,0)`;
+        }
         const testElement = createElement(`
     <ul class='list-answer'>
         ${pages[stage]["btn-1"]}
@@ -104,7 +106,9 @@ function ChoiceCreate(Book, evt, dictBtn, trophyBtn){
             const buttonChoice3 = document.querySelector('#choice-3')
 
             const F = (evt) => {
+                if(!mobileFlag){
                 adaptiveSideElements(Book)
+                }
                 dictBtn.disabled = false;
                 trophyBtn.disabled = false;
                 if(evt.target.id == "chosen"){
@@ -150,7 +154,9 @@ function ChoiceCreate(Book, evt, dictBtn, trophyBtn){
 
                 sleep(500).then(() => {
                     testElement.remove();
+                    if(!mobileFlag){
                     container.style.transform = `translate(0,0)`;
+                    }
                 })
                 NextStage(Book, dictBtn, trophyBtn)
 
@@ -329,11 +335,13 @@ function OpenBook(gameStarted) {
         // testButton.addEventListener('click', () => {
         //     Book.turnToPage(8);
         // });
+        if(!mobileFlag){
         adaptiveSideElements(Book)
         window.addEventListener('resize', () =>{
             adaptiveSideElements(Book)
         });
         document.addEventListener("click", () => {adaptiveSideElements(Book)});
+        }
 
         const leftBtn = document.querySelector(".arrow-left")
         leftBtn.addEventListener('click', () => { Book.flipPrev('top')});
@@ -362,7 +370,6 @@ function OpenBook(gameStarted) {
 
 function adaptiveSideElements(Book) {
     let sideBlockWidth = Book.getBoundsRect().left + 30
-    // console.log(sideBlockWidth)
     document.querySelector(".home-btn").style.left = sideBlockWidth - 75 - 10 + 'px'
     document.querySelector(".dictionary-btn").style.right = sideBlockWidth - 75 - 10 + 'px'
     document.querySelector(".trophy-btn").style.right = sideBlockWidth - 75 - 10 - 10 + 'px'
@@ -375,7 +382,9 @@ function openSideBtnEvt(SideBtn, Book, pageClass, addingPages) {
     let curPage
     if (SideBtn) {
         SideBtn.addEventListener('click', () => {
-            adaptiveSideElements(Book)
+            if(!mobileFlag){
+                adaptiveSideElements(Book)
+            }
             if(pageClass == '.trophy_class'){
                 addingPages = trophiesBook();
             }

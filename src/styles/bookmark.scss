@@ -1,4 +1,4 @@
-
+@media (min-width: 768px){
     .dictionary-btn{
         position: absolute;
         z-index: 40;
@@ -55,6 +55,14 @@
     }
 
 
+
+
+
+    .arrow-left, .arrow-right{
+        display: none;
+    }
+}
+
 .arrow-left, .arrow-right{
     z-index: 1000;
     bottom: 0px;
@@ -74,15 +82,50 @@
     right: 0;
 }
 
-@media (min-width: 768px){
-    .arrow-left, .arrow-right{
-        display: none;
-    }
-}
-
 
 @media (max-width: 767px) {
     .arrow-left, .arrow-right{
         display: block;
+    }
+
+    .dictionary-btn{
+        position: absolute;
+        z-index: 40;
+        top:-63px;
+        right: 160px;
+        background: url(../assets/Dictionary_bookmark.png);
+        background-size: cover;
+        width:75px;
+        height: 80px;
+        transition: top 0.1S;
+        transform: rotate(-90deg);
+
+    }
+
+
+    .trophy-btn{
+        position: absolute;
+        z-index: 40;
+        top:-65px;
+        right: 60px;
+        background: url(../assets/Trophy_bookmark.png);
+        background-size: cover;
+        width:75px;
+        height: 85px;
+        transition: top 0.1S;
+        transform: rotate(-90deg);
+    }
+
+    .home-btn{
+        position: absolute;
+        z-index: 40;
+        top:-63px;
+        right: 260px;
+        background: url(../assets/Home_bookmark.png);
+        background-size: cover;
+        width:75px;
+        height: 80px;
+        transition: top 0.1S;
+        transform: scale(1, -1) rotate(-90deg);
     }
 }

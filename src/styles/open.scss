@@ -1,3 +1,4 @@
+@media (min-width: 768px){
 .container1{
      margin-top: 3vh;
      width: 100vw;
@@ -39,4 +40,50 @@
 
     }
 
+}
+}
+
+@media (max-width: 767px) {
+    .container1{
+        width: 200vw;
+        height: 80vh;
+        transition: transform 2s;
+        transform: translate(-100vw,0);
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto 0;
+    }
+
+    .open-book{
+        margin-top: 1vh;
+        height: 100%;
+        width: 99.3%;
+        .page1{
+            background:url(../assets/book_hl.png) no-repeat ; 
+            background-size: cover;
+            height: 100%;
+            top:0;
+            border-bottom-left-radius: 7px;
+            border-top-left-radius: 7px;
+            
+        }
+        .page2{
+            background:url(../assets/book_hl2.png) no-repeat ; 
+            background-size: cover;
+            height: 100%;
+            top:0;
+            border-bottom-right-radius: 7px;
+            border-top-right-radius: 7px;
+            
+        }
+        .cover{
+            background:url(../assets/book-cover1.png) no-repeat ; 
+            background-size: cover;
+            height: 100%;
+            top:0;
+    
+        }
+    
+    }
 }
