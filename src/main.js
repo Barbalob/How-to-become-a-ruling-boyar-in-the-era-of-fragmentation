@@ -49,9 +49,7 @@ mobStart.addEventListener('click', () => {
     OpenBook(true)
 });
 mobTrophy.addEventListener('click', () => {
-    trophiesPages = trophiesPages.replaceAll(`<li class="page">`,
-    `<li class="page"></li>
-    <li class="page">`)
+    trophiesPages = trophiesPages.replaceAll(' <li class="page trophy_class">','<li class="page"></li><li class="page trophy_class">');
     mobileFlag = true
     OpenBook(false)
 });
@@ -174,7 +172,9 @@ function ChoiceCreate(Book, evt, dictBtn, trophyBtn){
 function CreateListBook(template, Book) {
     let test = `${template}`
     if(mobileFlag){
-        test =  test.replaceAll('<li class="page">','<li class="page"></li><li class="page">');
+        test =  test.replaceAll('<li class="page">','<li class="page"></li><li class="page">')
+        .replaceAll(' <li class="page trophy_class">','<li class="page"></li><li class="page trophy_class">')
+        .replaceAll('<li class="page dict_class">','<li class="page"></li><li class="page tdict_class">');
     }
     if (document.querySelector('.stf__block') != null) {
         document.querySelector('.stf__block').insertAdjacentHTML("beforeend", test);
