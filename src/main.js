@@ -80,7 +80,7 @@ function tooltipCreate(){
     });
 };
 
-function ChoiceCreate(Book, evt, dictBtn, trophyBtn){
+function ChoiceCreate(Book, evt, dictBtn, trophyBtn,gameStarted){
         dictBtn.disabled = true;
         trophyBtn.disabled = true;
         let container = document.querySelector('.container');
@@ -104,7 +104,7 @@ function ChoiceCreate(Book, evt, dictBtn, trophyBtn){
             const buttonChoice3 = document.querySelector('#choice-3')
 
             const F = (evt) => {
-                adaptiveSideElements(Book)
+                adaptiveSideElements(Book,gameStarted)
                 dictBtn.disabled = false;
                 trophyBtn.disabled = false;
                 if(evt.target.id == "chosen"){
@@ -154,7 +154,7 @@ function ChoiceCreate(Book, evt, dictBtn, trophyBtn){
                     container.style.transform = `translate(0,0)`;
                     }
                 })
-                NextStage(Book, dictBtn, trophyBtn)
+                NextStage(Book, dictBtn, trophyBtn,gameStarted)
 
             }
 
@@ -184,7 +184,7 @@ function CreateListBook(template, Book) {
     Book.updateFromHtml(document.querySelectorAll(".page"));
 }
 
-function NextStage(Book, dictBtn, trophyBtn){
+function NextStage(Book, dictBtn, trophyBtn,gameStarted){
     const end = document.querySelector("#endBtn");
     if (end){
         SaveTr(trophies.join(''));
@@ -204,7 +204,7 @@ function NextStage(Book, dictBtn, trophyBtn){
     tooltipCreate();
     const choiceBtn = document.querySelector('#choice');
     choiceBtn.addEventListener('click', (evt) => {
-        ChoiceCreate(Book, evt, dictBtn, trophyBtn)
+        ChoiceCreate(Book, evt, dictBtn, trophyBtn,gameStarted)
     });
 }
 
@@ -283,6 +283,8 @@ function OpenBook(gameStarted) {
                     </ul>
                 </div>
             </div>`
+
+
         }
 
         // mainPage.innerHTML = dictionary
@@ -330,14 +332,12 @@ function OpenBook(gameStarted) {
             )}
         const Book = BookOptions;
         Book.loadFromHTML(document.querySelectorAll(".page"))
-        // testButton.addEventListener('click', () => {
-        //     Book.turnToPage(8);
-        // });
-        adaptiveSideElements(Book)
+
+        adaptiveSideElements(Book,gameStarted)
         window.addEventListener('resize', () =>{
-            adaptiveSideElements(Book)
+            adaptiveSideElements(Book,gameStarted)
         });
-        document.addEventListener("click", () => {adaptiveSideElements(Book)});
+        document.addEventListener("click", () => {adaptiveSideElements(Book,gameStarted)});
 
         const leftBtn = document.querySelector(".arrow-left")
         leftBtn.addEventListener('click', () => { Book.flipPrev('top')});
@@ -350,10 +350,10 @@ function OpenBook(gameStarted) {
 
         if(gameStarted){
         const dictBtn = document.querySelector(".dictionary-btn")
-        openSideBtnEvt(dictBtn, Book, ".dict_class", dictionary)
+        openSideBtnEvt(dictBtn, Book, ".dict_class", dictionary,gameStarted)
 
         const trophyBtn = document.querySelector(".trophy-btn")
-        openSideBtnEvt(trophyBtn, Book, ".trophy_class", trophiesPages)
+        openSideBtnEvt(trophyBtn, Book, ".trophy_class", trophiesPages,gameStarted)
 
         const choiceBtn = document.querySelector('#choice')
         if (choiceBtn) {
@@ -364,30 +364,34 @@ function OpenBook(gameStarted) {
     })
 }
 
-function adaptiveSideElements(Book) {
+function adaptiveSideElements(Book,gameStarted) {
     if(mobileFlag){
     let topBlockHeight = Book.getBoundsRect().top
     console.log(Book.getBoundsRect());
     document.querySelector(".home-btn").style.top = topBlockHeight-60+ 'px'
+    if(gameStarted){
     document.querySelector(".dictionary-btn").style.top = topBlockHeight-60+ 'px'
     document.querySelector(".trophy-btn").style.top = topBlockHeight-62+ 'px'
+    }
     }
     else{
     let sideBlockWidth = Book.getBoundsRect().left + 30
     document.querySelector(".home-btn").style.left = sideBlockWidth - 75 - 10 + 'px'
+    if(gameStarted){
     document.querySelector(".dictionary-btn").style.right = sideBlockWidth - 75 - 10 + 'px'
     document.querySelector(".trophy-btn").style.right = sideBlockWidth - 75 - 10 - 10 + 'px'
+    }
     document.getElementById('side_blockerator__left').style.width = sideBlockWidth + 'px'
     document.getElementById('side_blockerator__right').style.width = sideBlockWidth + 'px'
     }
 }
 
-function openSideBtnEvt(SideBtn, Book, pageClass, addingPages) {
+function openSideBtnEvt(SideBtn, Book, pageClass, addingPages,gameStarted) {
     let flag = true
     let curPage
     if (SideBtn) {
         SideBtn.addEventListener('click', () => {
-                adaptiveSideElements(Book)
+                adaptiveSideElements(Book,gameStarted)
             if(pageClass == '.trophy_class'){
                 addingPages = trophiesBook();
             }
