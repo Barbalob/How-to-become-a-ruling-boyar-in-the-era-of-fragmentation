@@ -616,7 +616,7 @@ export const pages = [
                     <div class="page-content content-img">
                         <figure>
                             <img class="content-img" src="assets/image/7.png" alt="Бегство полков Владимира Галицкого">
-                            <figcaption class="text-img-author text-medium">Бегство полков Владимира Володаревича Галицкого (ум. 1153 г.) от войск Изяслава Мстиславича Киевского (ум. 1154 г.) и венгерского короля Гезы II (1130–1162) из-под Санока и избиение бегущих. 1152 г. Миниатюра из Радзивилловской летописи (рукопись конца XV в.)</figcaption>                     
+                            <figcaption class="text-img-author text-small">Бегство полков Владимира Володаревича Галицкого (ум. 1153 г.) от войск Изяслава Мстиславича Киевского (ум. 1154 г.) и венгерского короля Гезы II (1130–1162) из-под Санока и избиение бегущих. 1152 г. Миниатюра из Радзивилловской летописи (рукопись конца XV в.)</figcaption>                     
                         </figure>                       
                         <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>    
                     </div>
@@ -1136,7 +1136,7 @@ export const pages = [
         <div class="page-content content-img">
             <figure>
                 <img class="content-img" src="assets/image/11.png" alt="Император Мануил">
-                <figcaption class="text-img-author text-medium">Император Мануил I Комнин (1118–1180) с супругой императрицей Марией Антиохийской (1145–1182). Миниатюра 1166 г. Ватиканская апостольская библиотека.</figcaption>                     
+                <figcaption class="text-img-author text-small">Император Мануил I Комнин (1118–1180) с супругой императрицей Марией Антиохийской (1145–1182). Миниатюра 1166 г. Ватиканская апостольская библиотека.</figcaption>                     
             </figure>                       
             <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>    
         </div>
