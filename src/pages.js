@@ -2025,7 +2025,7 @@ export const pages = [
             <figure>
                 <img class="content-img" src="assets/image/17.png" alt="Папский нунций подносит князю Даниилу Романовичу Галицкому королевскую корону">
                 <figcaption class="text-img-author text-medium">Папский нунций подносит князю Даниилу Романовичу Галицкому (1201–1264) королевскую корону. 1253 г. Гравюра Ю. Шюблера по рисунку К. Лебедева из собрания иллюстраций журнала «Нива». 1894 г.</figcaption>                     
-            </figure>                       btn-1
+            </figure>                       
             <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>    
         </div>
         </li> 
@@ -2045,7 +2045,7 @@ export const pages = [
                         <figcaption class="button-select-text text-menu-button">Начать игру заново</figcaption>
                     </figure>
                 </button>
-                <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>
+                <div class='decor'><iюmg src="assets/decor-1.svg" alt="" class="img-decor"></div>
             </div>
         </li>
 
