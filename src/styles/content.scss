@@ -85,6 +85,42 @@
         }
     }
 }
+@media (max-width: 767px) {
+    .content-img{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items:center;
+        figure{
+            text-align: center;
+            height: 90%;
+            width: 100%;
+            display: flex;
+            flex: 1 1 auto;
+            justify-content: center;
+            flex-direction: column;
+            img{
+                min-height: 0%;
+                max-width: 100%;
+                object-fit: contain;
+            }
+            figcaption{
+                max-height: 40%;
+                margin-top: 10px;
+            }
+        }
+    }
+    .page-content{
+        .img-letter{
+            &-small{
+                width: 75px;
+            }
+            &-high{
+                width: 70px;
+            }
+        }
+    }
+}
 
 .content-dictionary{
     display: flex;
@@ -113,4 +149,3 @@
 
     
 }
-
