@@ -73,6 +73,7 @@
         height: 50px;
         object-fit: contain;
     }
+    transition: display 0.1;
 }
 .arrow-left{
     -webkit-transform: scaleX(-1);

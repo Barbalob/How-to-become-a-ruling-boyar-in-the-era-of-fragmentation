@@ -60,32 +60,39 @@ function sleep(ms) {
 }
 
 function tooltipCreate(){
-    $("[data-tooltip]").mousemove(function (eventObject) {
-        $('body').css({'overflow':'hidden'});
-        let data_tooltip = $(this).attr("data-tooltip");
-        $("#tooltip").html(data_tooltip)
-            .css({ 
-              "top" : eventObject.pageY - 50,
-              "left" : eventObject.pageX + 5
-            })
-            .show();
-        }).mouseout(function () {
-            $('body').css({'overflow':'visible'});
-          $("#tooltip").hide()
-            .html("")
-            .css({
-                "top" : 0,
-                "left" : 0
-            });
-    });
+    if(!mobileFlag){
+        $("[data-tooltip]").mousemove(function (eventObject) {
+            $('body').css({'overflow':'hidden'});
+            let data_tooltip = $(this).attr("data-tooltip");
+            $("#tooltip").html(data_tooltip)
+                .css({ 
+                "top" : eventObject.pageY - 50,
+                "left" : eventObject.pageX + 5
+                })
+                .show();
+            }).mouseout(function () {
+                $('body').css({'overflow':'visible'});
+            $("#tooltip").hide()
+                .html("")
+                .css({
+                    "top" : 0,
+                    "left" : 0
+                });
+        });
+    }
 };
 
-function ChoiceCreate(Book, evt, dictBtn, trophyBtn,gameStarted){
+function ChoiceCreate(Book, evt, dictBtn, trophyBtn, gameStarted){
         dictBtn.disabled = true;
         trophyBtn.disabled = true;
+        
         let container = document.querySelector('.container');
         if(!mobileFlag){
-        container.style.transform = `translate(-50vw,0)`;
+        container.style.transform = `translate(-50vw,0)`;  
+        }
+        else{
+            $(".arrow-left").hide()
+            $(".arrow-right").hide()
         }
         const testElement = createElement(`
     <ul class='list-answer'>
@@ -97,8 +104,11 @@ function ChoiceCreate(Book, evt, dictBtn, trophyBtn,gameStarted){
         mainPage.insertAdjacentElement(RenderPosition.BEFOREEND, testElement);
         tooltipCreate();
         evt.target.parentNode.parentNode.disabled = true;
-        evt.target.parentNode.parentNode.id = "disabled"
-        sleep(3000).then(() => {
+        // evt.target.parentNode.parentNode.id = "disabled"
+        let target = document.querySelector('#choice')
+        target.disabled = true
+        target.id = "disabled"
+        sleep(1200).then(() => {
             const buttonChoice1 = document.querySelector('#choice-1')
             const buttonChoice2 = document.querySelector('#choice-2')
             const buttonChoice3 = document.querySelector('#choice-3')
@@ -107,6 +117,10 @@ function ChoiceCreate(Book, evt, dictBtn, trophyBtn,gameStarted){
                 adaptiveSideElements(Book,gameStarted)
                 dictBtn.disabled = false;
                 trophyBtn.disabled = false;
+                if(mobileFlag){
+                    $(".arrow-left").show()
+                    $(".arrow-right").show()
+                }
                 if(evt.target.id == "chosen"){
                     return
                 }
@@ -199,13 +213,15 @@ function NextStage(Book, dictBtn, trophyBtn,gameStarted){
         });
         return
     } 
-    stage+=1
-    CreateListBook(pages[stage]["page"], Book)
-    tooltipCreate();
-    const choiceBtn = document.querySelector('#choice');
-    choiceBtn.addEventListener('click', (evt) => {
-        ChoiceCreate(Book, evt, dictBtn, trophyBtn,gameStarted)
-    });
+    else{
+        stage+=1
+        CreateListBook(pages[stage]["page"], Book)
+        tooltipCreate();
+        const choiceBtn = document.querySelector('#choice');
+        choiceBtn.addEventListener('click', (evt) => {
+            ChoiceCreate(Book, evt, dictBtn, trophyBtn,gameStarted)
+        });
+    }
 }
 
 function OpenBook(gameStarted) {
