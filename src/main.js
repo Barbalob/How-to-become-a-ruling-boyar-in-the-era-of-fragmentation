@@ -47,11 +47,13 @@ menuTrophyBtn.addEventListener('click', () => {
 mobStart.addEventListener('click', () => {
     mobileFlag = true
     OpenBook(true)
+    $('body').css({'overflow':'hidden'});
 });
 mobTrophy.addEventListener('click', () => {
     trophiesPages = trophiesPages.replaceAll(' <li class="page trophy_class">','<li class="page"></li><li class="page trophy_class">');
     mobileFlag = true
     OpenBook(false)
+    $('body').css({'overflow':'hidden'});
 });
 
 
