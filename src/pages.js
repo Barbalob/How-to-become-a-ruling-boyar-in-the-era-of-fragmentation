@@ -2039,6 +2039,7 @@ export const pages = [
                     успехами: Ваше имя, легендарного боярина Василько, навсегда войдет в историю!
                     </div>
                 </div>
+                <div id="endOfGame"></div>
                 <button id="endBtn" class="menu__button text-medium" >
                     <figure  class="button-select">
                         <img class="button-select-img" src="assets/bg-button.png">
@@ -2102,6 +2103,7 @@ export const pages = [
                     Возможно, Вам теперь интересно узнать, как еще могла сложиться судьба дружинника Василько и его князя?
                     </div>
                 </div>
+                <div id="endOfGame"></div>
                 <button id="endBtn" class="menu__button text-medium" >
                     <figure  class="button-select">
                         <img class="button-select-img" src="assets/bg-button.png">

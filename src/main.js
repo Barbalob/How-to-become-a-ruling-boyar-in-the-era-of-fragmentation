@@ -126,6 +126,7 @@ function ChoiceCreate(Book, evt, dictBtn, trophyBtn, gameStarted){
                 }
                 const id = evt.target.id.slice(-1)
                 points += Number($(evt.target).attr("value"));
+                console.log(points)
                 let trophy = $(evt.target).attr("trophy");
                 if(trophy){
                     if(trophy.length > 2){
@@ -202,9 +203,9 @@ function NextStage(Book, dictBtn, trophyBtn,gameStarted){
     const end = document.querySelector("#endBtn");
     if (end){
         SaveTr(trophies.join(''));
-
+        const endOfGame = document.querySelector("#endOfGame");
         end.addEventListener("click", () => {
-            end_screen.innerHTML = printPoints(points)
+            end_screen.innerHTML = printPoints(points, endOfGame)
             if (end_screen.classList.contains("is-visible")){
             }
             else{
@@ -383,7 +384,7 @@ function OpenBook(gameStarted) {
 function adaptiveSideElements(Book,gameStarted) {
     if(mobileFlag){
     let topBlockHeight = Book.getBoundsRect().top
-    console.log(Book.getBoundsRect());
+    // console.log(Book.getBoundsRect());
     document.querySelector(".home-btn").style.top = topBlockHeight-60+ 'px'
     if(gameStarted){
     document.querySelector(".dictionary-btn").style.top = topBlockHeight-60+ 'px'
