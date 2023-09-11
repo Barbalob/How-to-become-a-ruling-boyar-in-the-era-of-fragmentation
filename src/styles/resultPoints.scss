@@ -43,7 +43,29 @@
                 transform: scale(1.02);
             }
         }
-        
     }
     
+}
+@media (max-width: 767px) {
+    .wrapper-result{
+        width: 100%;
+        .result{
+            padding: 0;
+            gap: 10px;
+            max-width: 80%;
+            height: 90%;
+            font-size: 14px;
+            line-height: 16px;
+            .menu__button-result{
+                min-width: -1px;
+                min-height: 29px;
+                background-position: 50% 50%;
+            }
+            .text-large{
+                font-size: 13px;
+                line-height: 14px;
+            }
+        }
+        
+    }
 }
