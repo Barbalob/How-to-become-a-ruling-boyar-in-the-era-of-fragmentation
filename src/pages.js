@@ -17,7 +17,7 @@ export const pages = [
                 <li class="page">
                     <div class="page-content content-text first">
                         <div class='main-text'> 
-                            <img src="assets/letter/letterU.svg" alt="Буква И" class='img-letter-high'>
+                            <img src="assets/letter/letterI.svg" alt="Буква И" class='img-letter-high'>
                             <div class='text text-high'> 
                                 стория средних веков менее
                                 всего может назваться скучною.
@@ -49,7 +49,7 @@ export const pages = [
                 <li class="page">
                     <div class="page-content content-text">
                         <div class='main-text'> 
-                            <img src="assets/letter/letterH.svg" alt="Буква Н" class='img-letter-small'>
+                            <img src="assets/letter/letterN.svg" alt="Буква Н" class='img-letter-small'>
                             <div class='text text-small'> 
                                 а землях Руси настали поистине смутные времена. Могущественные
                                 княжеские кланы готовы вступить в ожесточенную борьбу за власть и влияние. 
@@ -81,7 +81,7 @@ export const pages = [
                 <li class="page">
                     <div class="page-content content-text">
                         <div class='main-text'> 
-                            <img src="assets/letter/letterB.svg" alt="Буква В" class='img-letter-small'>
+                            <img src="assets/letter/letterV.svg" alt="Буква В" class='img-letter-small'>
                             <div class='text text-small'> 
                             аша задача – выжить в жестоком
                             мире удельной раздробленности и 
@@ -112,7 +112,7 @@ export const pages = [
                 <li class="page">
                     <div class="page-content content-text">
                         <div class='main-text'> 
-                            <img src="assets/letter/letterB.svg" alt="Буква В" class='img-letter-small'>
+                            <img src="assets/letter/letterV.svg" alt="Буква В" class='img-letter-small'>
                             <div class='text text-small'> 
                                 течение игры каждый ход Вам будет 
                                 предлагаться выбор из трех или двух
@@ -156,7 +156,7 @@ export const pages = [
                 <li class="page">
                     <div class="page-content content-text">
                         <div class='main-text'> 
-                            <img src="assets/letter/letterH.svg" alt="Буква И" class='img-letter-small'>
+                            <img src="assets/letter/letterN.svg" alt="Буква Н" class='img-letter-small'>
                             <div class='text text-small'> 
                             аходясь при особе своего князя, Вы,
                             к своему стыду, не сумели уберечь
@@ -203,9 +203,9 @@ export const pages = [
         <li class="page">
             <div class="page-content content-text">
                 <div class='main-text'> 
-                    <img src="assets/letter/letterH.svg" alt="Буква И" class='img-letter-small'>
+                    <img src="assets/letter/letterO.svg" alt="Буква О" class='img-letter-small'>
                     <div class='text text-small'> 
-                    Отправив гонцов к ближайшим
+                    тправив гонцов к ближайшим
                     князьям, Вы либо не получаете
                     никаких известий, либо получаете послания с отказами в помощи. 
                     Еще бы: кому нужно поддерживать молодого <a href="#" alt="Ссылка" data-tooltip="Князья-изгои – представители рода Рюриковичей, 
@@ -270,7 +270,7 @@ export const pages = [
         <li class="page">
             <div class="page-content content-text">
                 <div class='main-text'> 
-                    <img src="assets/letter/letterB.svg" alt="Буква И" class='img-letter-small'>
+                    <img src="assets/letter/letterV.svg" alt="Буква В" class='img-letter-small'>
                     <div class='text text-small'> 
                     ы не захотели прожить 
                     по-настоящему увлекательную и
@@ -303,7 +303,7 @@ export const pages = [
     <li class="page">
         <div class="page-content content-text">
             <div class='main-text'> 
-                <img src="assets/letter/letterY.svg" alt="Буква У" class='img-letter-small'>
+                <img src="assets/letter/letterU.svg" alt="Буква У" class='img-letter-small'>
                 <div class='text text-small'> 
                 тром Вы просыпаетесь в своих покоях от стука в дверь. Открыв ее, 
                 Вы видите перед собой придворного с посланием от короля. 
@@ -339,7 +339,7 @@ export const pages = [
         <li class="page">
             <div class="page-content content-text">
                 <div class='main-text'> 
-                    <img src="assets/letter/letterB.svg" alt="Буква B" class='img-letter-small'>
+                    <img src="assets/letter/letterV.svg" alt="Буква B" class='img-letter-small'>
                     <div class='text text-small'> 
                     ы прибегаете к князю, но тот смотрит на Вас, как на испуганного зайца. 
                     Ему пришлось самому взять в руки меч и пойти на турнир. Удивившись, монарх, 
@@ -396,7 +396,7 @@ export const pages = [
         <li class="page">
             <div class="page-content content-text">
                 <div class='main-text'> 
-                    <img src="assets/letter/letterH.svg" alt="Буква H" class='img-letter-small'>
+                    <img src="assets/letter/letterN.svg" alt="Буква H" class='img-letter-small'>
                     <div class='text text-small'> 
                     е остался в стороне от похвал и Ваш князь: впечатленный Вашими боевыми умениями, он, 
                     вспоминая рассказы из детства о великом князе Владимире Святославиче, 
@@ -482,7 +482,7 @@ export const pages = [
                 <li class="page">
                     <div class="page-content content-text">
                         <div class='main-text'> 
-                            <img src="assets/letter/letterH.svg" alt="Буква H" class='img-letter-small'>
+                            <img src="assets/letter/letterN.svg" alt="Буква H" class='img-letter-small'>
                             <div class='text text-small'> 
                             а следующий день Вы с молодым князем решили прогуляться по призамковой 
                             роще. Внезапно на вас нападает пара-тройка легковооруженных людей. В одном 
@@ -509,7 +509,7 @@ export const pages = [
         <li class="page">
             <div class="page-content content-text">
                 <div class='main-text'> 
-                    <img src="assets/letter/letterB.svg" alt="Буква B" class='img-letter-small'>
+                    <img src="assets/letter/letterV.svg" alt="Буква B" class='img-letter-small'>
                     <div class='text text-small'> 
                     месте с князем Вы сражаетесь с врагами. Вскоре все они лежат на земле поверженные.
                     <br>
@@ -542,7 +542,7 @@ export const pages = [
         <li class="page">
             <div class="page-content content-text">
                 <div class='main-text'> 
-                    <img src="assets/letter/letterB.svg" alt="Буква B" class='img-letter-small'>
+                    <img src="assets/letter/letterV.svg" alt="Буква B" class='img-letter-small'>
                     <div class='text text-small'> 
                     ы отбиваетесь от врагов в одиночестве, подвергая свою жизнь смертельной опасности. 
                     С большим трудом, но Вам удается победить их. Немного отдышавшись, Вы отправляетесь к замку. 
@@ -589,7 +589,7 @@ export const pages = [
         <li class="page">
             <div class="page-content content-text">
                 <div class='main-text'> 
-                    <img src="assets/letter/letterB.svg" alt="Буква B" class='img-letter-small'>
+                    <img src="assets/letter/letterV.svg" alt="Буква B" class='img-letter-small'>
                     <div class='text text-small'> 
                     ы сбегаете в лес, изредка оглядываясь назад. Вы видите, что Вашего князя убивают. 
                     На второй день блужданий по лесу Вы набредаете на неприметный домик знахаря. 
@@ -625,6 +625,7 @@ export const pages = [
                 <li class="page">
                     <div class="page-content content-text">
                         <div class='main-text'> 
+                            <img src="assets/letter/letterCH.svg" alt="Буква Ч" class='img-letter-small'>
                             <div class='text text-small'> 
                             Через несколько дней пути Вы со своим князем прибываете ко двору 
                             венгерского монарха. На следующий день, отдохнув в выделенных покоях, 
@@ -667,7 +668,7 @@ export const pages = [
         <li class="page">
             <div class="page-content content-text">
                 <div class='main-text'> 
-                    <img src="assets/letter/letterB.svg" alt="Буква B" class='img-letter-small'>
+                    <img src="assets/letter/letterV.svg" alt="Буква B" class='img-letter-small'>
                     <div class='text text-small'> 
                     енгерский король соглашается с Вами. Необходимо собрать силы, 
                     и только тогда нанести мощный удар противнику и завоевать земли для Вашего князя.
@@ -681,7 +682,7 @@ export const pages = [
         <li class="page">
             <div class="page-content content-text">
                 <div class='main-text'> 
-                    <img src="assets/letter/letterB.svg" alt="Буква B" class='img-letter-small'>
+                    <img src="assets/letter/letterV.svg" alt="Буква B" class='img-letter-small'>
                     <div class='text text-small'> 
                     енгерский король явно впечатлен Вашей решительностью, однако просит Вас 
                     повременить с походом: нужно собрать силы, и только тогда нанести 
@@ -890,9 +891,9 @@ export const pages = [
     <li class="page">
         <div class="page-content content-text">
             <div class='main-text'> 
-                <img src="assets/letter/letterH.svg" alt="Буква И" class='img-letter-small'>
+                <img src="assets/letter/letterCH.svg" alt="Буква Ч" class='img-letter-small'>
                 <div class='text text-small'> 
-                    Через пару дней Вы узнаете о смерти одного из младших сыновей короля. Он и королева присылают Вам и князю приглашение на похороны принца.
+                    ерез пару дней Вы узнаете о смерти одного из младших сыновей короля. Он и королева присылают Вам и князю приглашение на похороны принца.
                 </div>
             </div>
             <button id="choice" class="menu__button text-medium">
@@ -937,7 +938,7 @@ export const pages = [
         <li class="page">
             <div class="page-content content-text">
                 <div class='main-text'> 
-                    <img src="assets/letter/letterP.svg" alt="Буква П" class='img-letter-small'>
+                    <img src="assets/letter/letterK.svg" alt="Буква К" class='img-letter-small'>
                     <div class='text text-small'> 
                     оролевская чета благодарна Вам за согласие. 
                     <br>
@@ -976,7 +977,7 @@ export const pages = [
         <li class="page">
             <div class="page-content content-text">
                 <div class='main-text'> 
-                    <img src="assets/letter/letterK.svg" alt="Буква И" class='img-letter-small'>
+                    <img src="assets/letter/letterK.svg" alt="Буква К" class='img-letter-small'>
                     <div class='text text-small'> 
                     оролевская чета не поняла Ваш
                     отказ проводить в последний путь их
@@ -1012,9 +1013,9 @@ export const pages = [
     <li class="page">
         <div class="page-content content-text">
             <div class='main-text'> 
-                <img src="assets/letter/letterH.svg" alt="Буква И" class='img-letter-small'>
+                <img src="assets/letter/letterCH.svg" alt="Буква Ч" class='img-letter-small'>
                 <div class='text text-small'> 
-                Через какое-то время Вы узнаете, что венгерский король не готов отправиться с Вами в поход на юго-западные русские княжества: он тоскует по своему ушедшему сыну, да и князья прекратили вражду между собой и объединились вокруг одного представителя династии. Король просит Вас простить его и попытать счастья в других частях <a href="#" alt="Ссылка" data-tooltip="Ойкумена – обжитая человечеством часть мира.">ойкумены</a>.
+                ерез какое-то время Вы узнаете, что венгерский король не готов отправиться с Вами в поход на юго-западные русские княжества: он тоскует по своему ушедшему сыну, да и князья прекратили вражду между собой и объединились вокруг одного представителя династии. Король просит Вас простить его и попытать счастья в других частях <a href="#" alt="Ссылка" data-tooltip="Ойкумена – обжитая человечеством часть мира.">ойкумены</a>.
                 </div>
             </div>
             <button id="choice" class="menu__button text-medium">
@@ -1035,9 +1036,9 @@ export const pages = [
         <li class="page">
             <div class="page-content content-text">
                 <div class='main-text'> 
-                    <img src="assets/letter/letterP.svg" alt="Буква П" class='img-letter-small'>
+                    <img src="assets/letter/letterD.svg" alt="Буква Д" class='img-letter-small'>
                     <div class='text text-small'> 
-                    Действительно, сын венгерского короля оказался поклонником императорского двора. 
+                    ействительно, сын венгерского короля оказался поклонником императорского двора. 
                     Там у него есть множество влиятельных знакомых. 
                     Принц соглашается помочь Вам отправиться в столицу 
                     <a href="#" alt="Ссылка" data-tooltip="Держава Ромеев – самоназвание Византийской империи, обозначающее «Римская держава» и выражающее самоощущение византийцев как граждан Римской империи и подданных римского императора.">Державы Ромеев</a>.
@@ -1076,7 +1077,7 @@ export const pages = [
     <li class="page">
         <div class="page-content content-text">
             <div class='main-text'> 
-                <img src="assets/letter/letterC.svg" alt="Буква C" class='img-letter-small'>
+                <img src="assets/letter/letterS.svg" alt="Буква C" class='img-letter-small'>
                 <div class='text text-small'> 
                 тража подбегает и арестовывает Вас.
                 Последние дни Вы проведете в сырой
@@ -1145,7 +1146,7 @@ export const pages = [
     <li class="page">
         <div class="page-content content-text">
             <div class='main-text'> 
-                <img src="assets/letter/letterB.svg" alt="Буква B" class='img-letter-small'>
+                <img src="assets/letter/letterV.svg" alt="Буква B" class='img-letter-small'>
                 <div class='text text-small'> 
                 скоре Вы прибываете в 
                 Константинополь. Поражаясь 
@@ -1186,7 +1187,7 @@ export const pages = [
         <li class="page">
             <div class="page-content content-text">
                 <div class='main-text'> 
-                    <img src="assets/letter/letterB.svg" alt="Буква B" class='img-letter-small'>
+                    <img src="assets/letter/letterV.svg" alt="Буква B" class='img-letter-small'>
                     <div class='text text-small'> 
                     <a href="#" alt="Ссылка" data-tooltip="Василевс (βᾰσῐλέως) – официальное именование, титул византийского императора.">асилевс</a> удивлен Вашей 
                     безрассудностью, но соглашается с
@@ -1202,7 +1203,7 @@ export const pages = [
         <li class="page">
             <div class="page-content content-text">
                 <div class='main-text'> 
-                    <img src="assets/letter/letterU.svg" alt="Буква И" class='img-letter-small'>
+                    <img src="assets/letter/letterI.svg" alt="Буква И" class='img-letter-small'>
                     <div class='text text-small'> 
                     мператор доволен Вашим согласием.
                     Он приказывает своим слугам 
@@ -1251,7 +1252,7 @@ export const pages = [
     <li class="page">
         <div class="page-content content-text">
             <div class='main-text'> 
-                <img src="assets/letter/letterB.svg" alt="Буква B" class='img-letter-small'>
+                <img src="assets/letter/letterV.svg" alt="Буква B" class='img-letter-small'>
                 <div class='text text-small'> 
                 <a href="#" alt="Ссылка" data-tooltip="Василевс (βᾰσῐλέως) – официальное именование, титул византийского императора.">асилевс</a> разочарован в Вас и в 
                 Вашем князе. Без вашего согласия он
@@ -1287,7 +1288,7 @@ export const pages = [
                 <li class="page">
                     <div class="page-content content-text">
                         <div class='main-text'> 
-                            <img src="assets/letter/letterB.svg" alt="Буква В" class='img-letter-small'>
+                            <img src="assets/letter/letterV.svg" alt="Буква В" class='img-letter-small'>
                             <div class='text text-small'> 
                             ы успешно добираетесь до <a href="#" alt="Ссылка" data-tooltip="В Святую землю, 
                             располагавшуюся на территории Иерусалимского королевства, совершались многочисленные 
@@ -1331,7 +1332,7 @@ export const pages = [
         <li class="page">
             <div class="page-content content-text">
                 <div class='main-text'> 
-                    <img src="assets/letter/letterB.svg" alt="Буква В" class='img-letter-small'>
+                    <img src="assets/letter/letterV.svg" alt="Буква В" class='img-letter-small'>
                     <div class='text text-small'> 
                     ы соглашаетесь отвезти послание Патриарха Папе Римскому.
                     <br>
@@ -1437,7 +1438,7 @@ export const pages = [
                 <li class="page">
                     <div class="page-content content-text">
                         <div class='main-text'> 
-                            <img src="assets/letter/letterB.svg" alt="Буква В" class='img-letter-small'>
+                            <img src="assets/letter/letterV.svg" alt="Буква В" class='img-letter-small'>
                             <div class='text text-small'> 
                             озвращаясь в Константинополь после поездки в Рим, Вы узнаете, что император 
                             не готов поддержать Вас и Вашего князя военными силами. Однако, он одаривает Вас золотом, 
@@ -1491,7 +1492,7 @@ export const pages = [
         <li class="page">
             <div class="page-content content-text">
                 <div class='main-text'> 
-                    <img src="assets/letter/letterB.svg" alt="Буква В" class='img-letter-small'>
+                    <img src="assets/letter/letterV.svg" alt="Буква В" class='img-letter-small'>
                     <div class='text text-small'> 
                     скоре вы выступаете в поход. Пара дней, и вот Вы напротив вражеского войска. 
                     Тяжелый бой, тысячи взмахов мечами, но победа за вами, враги повержены!
@@ -1531,9 +1532,9 @@ export const pages = [
         <li class="page">
             <div class="page-content content-text">
                 <div class='main-text'> 
-                    <img src="assets/letter/letterP.svg" alt="Буква П" class='img-letter-small'>
+                    <img src="assets/letter/letterD.svg" alt="Буква Д" class='img-letter-small'>
                     <div class='text text-small'> 
-                    Достойный уважения поступок, но, к сожалению, ставящий крест на достижении 
+                    остойный уважения поступок, но, к сожалению, ставящий крест на достижении 
                     Вашей цели – завоевании княжества для своего князя. Тем не менее, 
                     Вы вошли в историю. Русская Церковь причислила Вас вместе с князем 
                     за ваше благородное решение к лику святых!
@@ -1653,7 +1654,7 @@ export const pages = [
         <li class="page">
             <div class="page-content content-text">
                 <div class='main-text'> 
-                    <img src="assets/letter/letterB.svg" alt="Буква В" class='img-letter-small'>
+                    <img src="assets/letter/letterV.svg" alt="Буква В" class='img-letter-small'>
                     <div class='text text-small'> 
                     ы приняли смелое решение, но совершенно безрассудное. За несколько минут 
                     Вас и Вашего князя убивает стража ханского шатра. Ваш путь окончен
@@ -1673,7 +1674,7 @@ export const pages = [
         <li class="page">
             <div class="page-content content-text">
                 <div class='main-text'> 
-                    <img src="assets/letter/letterB.svg" alt="Буква В" class='img-letter-small'>
+                    <img src="assets/letter/letterV.svg" alt="Буква В" class='img-letter-small'>
                     <div class='text text-small'> 
                     ы будите князя, а после, втроем, вместе с прекрасной половчанкой, 
                     пробираетесь через лагерь к стойбищу. Здесь вы садитесь на трех боевых 
@@ -1702,7 +1703,7 @@ export const pages = [
         <li class="page">
             <div class="page-content content-text">
                 <div class='main-text'> 
-                    <img src="assets/letter/letterB.svg" alt="Буква В" class='img-letter-small'>
+                    <img src="assets/letter/letterB.svg" alt="Буква Б" class='img-letter-small'>
                     <div class='text text-small'> 
                     Благодаря Вас за спасение своей жизни, князь дарит Вам свою княжескую 
                     круглую шапку с меховым околышем, говоря, что в новгородских владениях 
@@ -1782,9 +1783,9 @@ export const pages = [
         <li class="page">
             <div class="page-content content-text">
                 <div class='main-text'> 
-                    <img src="assets/letter/letterP.svg" alt="Буква П" class='img-letter-small'>
+                    <img src="assets/letter/letterD.svg" alt="Буква Д" class='img-letter-small'>
                     <div class='text text-small'> 
-                    Довольно опрометчивое решение. Вы даже не знаете, готов ли вас поддержать 
+                    овольно опрометчивое решение. Вы даже не знаете, готов ли вас поддержать 
                     хотя бы кто-то из русских князей, но разбрасываетесь потенциальными союзниками, 
                     как будто их у вас тысячи
                     </div>
@@ -1803,10 +1804,9 @@ export const pages = [
         <li class="page">
             <div class="page-content content-text">
                 <div class='main-text'> 
-                    <img src="assets/letter/letterP.svg" alt="Буква П" class='img-letter-small'>
+                    <img src="assets/letter/letterK.svg" alt="Буква К" class='img-letter-small'>
                     <div class='text text-small'> 
-                    Что ж, если таково предложение Новгорода, мы согласны. Надеюсь, новгородский князь 
-                    сдержит свое слово ⇒ Князь удовлетворен Вашим решением. После нескольких дней 
+                    нязь удовлетворен Вашим решением. После нескольких дней 
                     отдыха Вы отправляетесь <a href="#" alt="Ссылка" data-tooltip="Поход новгородских войск на Полоцкое княжество действительно имел место в истории. В 1127 г. состоялся Полоцкий поход Мстислава Великого (1076–1132), великого киевского князя, совместно с его сыном Всеволодом Мстиславичем, князем Новгородским (ум. 1138 г.). Целью похода было смещение княжеского полоцкого стола Давыда Всеславича (ум. после 1129 г.) и постановку на его место Бориса (Рогволода) Всеславича (до 1054 – 1128). Поход оказался успешен для Мстислава Великого и его сына.">походом на Полоцк</a>
                     <br>
                     <br>
@@ -1950,7 +1950,7 @@ export const pages = [
         <li class="page">
             <div class="page-content content-text">
                 <div class='main-text'> 
-                    <img src="assets/letter/letterB.svg" alt="Буква В" class='img-letter-small'>
+                    <img src="assets/letter/letterV.svg" alt="Буква В" class='img-letter-small'>
                     <div class='text text-small'> 
                     ы решили <a href="#" alt="Ссылка" data-tooltip="О проблему принятия бояр и дружинников в окружение князя в исторической науке сломано немало копий. Данный вопрос входит в дискуссию о феодализме на Руси и касается таких понятий и практик как клятва верности и право перехода (отъезда). Традиционную концепцию «вольной» боярской службы пересмотрел историк первой половины XX в. С. Б. Веселовский. Для него право отъезда являлось исключительной мерой, на которую решались очень немногие бояре и, видимо, только в крайнем случае. Многими современными историками боярское право отъезда считается свободно применяемым на Руси. П. С. Стефанович пришел к выводу, что домонгольская Русь не знала присяги верности дружинников и права отъезда как институтов системы взаимоотношений князя и служилой знати, что, как подчеркнул исследователь, не является доказательством отсталости общественных отношений в Древней Руси: они были просто другими, чем в Западной Европе.">переметнуться</a> 
                     во вражеский стан. Ночью Вы взбираетесь на своего коня 
@@ -2033,7 +2033,7 @@ export const pages = [
         <li class="page">
             <div class="page-content content-text">
                 <div class='main-text'> 
-                    <img src="assets/letter/letterB.svg" alt="Буква В" class='img-letter-small'>
+                    <img src="assets/letter/letterV.svg" alt="Буква В" class='img-letter-small'>
                     <div class='text text-small'> 
                     ы проделали славный путь и вполне заслуженно ушли на покой. Гордитесь своими 
                     успехами: Ваше имя, легендарного боярина Василько, навсегда войдет в историю!
@@ -2065,7 +2065,7 @@ export const pages = [
         <li class="page">
             <div class="page-content content-text">
                 <div class='main-text'> 
-                    <img src="assets/letter/letterB.svg" alt="Буква В" class='img-letter-small'>
+                    <img src="assets/letter/letterV.svg" alt="Буква В" class='img-letter-small'>
                     <div class='text text-small'> 
                     ы приходите к князю и говорите ему о своем согласии стать его 
                     покладником. Князь с великой радостью принимает Вас и дарует этот чин.
