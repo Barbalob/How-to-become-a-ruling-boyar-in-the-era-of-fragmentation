@@ -5,7 +5,6 @@ import { RenderPosition, createElement, render, renderHTML } from './render.js'
 import {pages} from './pages.js'
 import { dictionary } from './dictionary'
 import {SaveTr, GetTr} from './save'
-import { definitions } from './definitionDict'
 import { printPoints } from './withdrawalPoints'
 import {trophiesBook }from './trophies'
 
@@ -18,8 +17,6 @@ const mainPage = document.querySelector('.menu')
 const end_screen = document.querySelector('.end_screen')
 const menuTrophyBtn = document.querySelector('#trophies')
 const mobTrophy = document.querySelector('#trophies-mobile')
-const testButton = document.querySelector('#test')
-const tooltip = document.querySelector("#tooltip")
 let trophiesPages = trophiesBook()
 let stage = 0;
 let points = 0;
