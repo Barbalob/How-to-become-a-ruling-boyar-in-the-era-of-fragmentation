@@ -19,17 +19,16 @@ export const pages = [
                         <div class='main-text'> 
                             <img src="assets/letter/letterI.svg" alt="Буква И" class='img-letter-high'>
                             <div class='text text-high'> 
-                                стория средних веков менее
-                                всего может назваться скучною.
-                                Нигде нет такой пестроты, такого живого действия,
-                                таких резких противоположностей, такой странной яркости, как в ней:
-                                ее можно сравнить с огромным строением, в фундаменте которого улегся свежий,
-                                крепкий, как вечность, гранит, а толстые стены выведены из различного, старого и нового материала,
-                                так что на одном кирпиче видны готфские руны, на другом блестит римская позолота; арабская резьба,
-                                греческий карниз, готическое окно, – все слепилось в нем и составило самую пеструю башню”
+                            стория средних веков менее всего может назваться скучною. Нигде нет такой пестроты, 
+                            такого живого действия, таких резких противоположностей, такой странной яркости, 
+                            как в ней: ее можно сравнить с огромным строением, в фундаменте которого улегся 
+                            свежий, крепкий, как вечность, гранит, а толстые стены выведены из различного, 
+                            старого и нового материала, так что на одном кирпиче видны готфские руны, 
+                            на другом блестит римская позолота; арабская резьба, греческий карниз, 
+                            готическое окно, – все слепилось в нем и составило самую пеструю башню
                             </div>
                         </div>
-                        <div class='main-text text-high'>(Н. В. Гоголь, “О средних веках”)</div>
+                        <div class='main-text text-high'>(Гоголь Н. В. О Средних веках // Гоголь Н. В. Собр. соч. : в 3 т. М. : Время, 2009. С. 483–494)</div>
                         <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>
                     </div>
                 </li>
@@ -51,15 +50,18 @@ export const pages = [
                         <div class='main-text'> 
                             <img src="assets/letter/letterN.svg" alt="Буква Н" class='img-letter-small'>
                             <div class='text text-small'> 
-                                а землях Руси настали поистине смутные времена. Могущественные
-                                княжеские кланы готовы вступить в ожесточенную борьбу за власть и влияние. 
-                                Князья-изгои, оскорбленные лишением земель, уже точат свои мечи и не спешат убирать их обратно в ножны. 
-                                Владетели крупных княжеств собирают свои дружины, чтобы отстоять свои права перед другими представителями разросшейся семьи Рюриковичей. 
-                                Бурное развитие сел и городов прерывается набегами половцев, зачастую приглашаемых на Русскую землю самими русскими князьями. 
-                                Бал начинает править кровавая эпоха раздробленности...
-                                Вы – молодой дружинник по имени Василько, состоящий в дружине у князя-изгоя, которому не досталось места в “семейном владении Рюриковичей”. 
-                                Его отец, также князь-изгой, всю свою жизнь провел в битвах со своими родичами, но, как только захватил княжеский стол, 
-                                был отравлен своим же поваром по прозвищу Поганка. 
+                            а землях Руси настали поистине смутные времена. Могущественные княжеские 
+                            кланы готовы вступить в ожесточенную борьбу за власть и влияние. 
+                            Князья-изгои, оскорбленные лишением земель, уже точат свои мечи и не спешат 
+                            убирать их обратно в ножны. Владетели крупных княжеств собирают дружины, 
+                            чтобы отстоять свои права перед другими представителями разросшейся 
+                            семьи Рюриковичей. Бурное развитие сел и городов прерывается набегами 
+                            половцев, зачастую приглашаемых на Русскую землю самими русскими князьями. 
+                            Бал начинает править кровавая эпоха раздробленности…
+                            Вы – молодой дружинник по имени Василько, состоящий в дружине у князя-изгоя, 
+                            которому не досталось места в «семейном владении Рюриковичей». Его отец, 
+                            также князь-изгой, всю свою жизнь провел в битвах со своими родичами, но, 
+                            как только захватил княжеский стол, был отравлен своим же поваром по имени Поганка. 
                             </div>
                         </div>
                         <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>
@@ -71,7 +73,7 @@ export const pages = [
                     <div class="page-content content-img">
                         <figure>
                             <img class="content-img" src="assets/image/2.png" alt="Съезд князей">
-                            <figcaption class="text-img-author text-medium">И. Билибин. Рисунок “Съезд князей”</figcaption>                     
+                            <figcaption class="text-img-author text-medium">И. Я. Билибин. Съезд князей. 1907 г. Государственная Третьяковская галерея.</figcaption>                     
                         </figure>                       
                         <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>    
                     </div>
@@ -83,16 +85,17 @@ export const pages = [
                         <div class='main-text'> 
                             <img src="assets/letter/letterV.svg" alt="Буква В" class='img-letter-small'>
                             <div class='text text-small'> 
-                            аша задача – выжить в жестоком
-                            мире удельной раздробленности и 
-                            попытаться, заручившись верными союзниками и братьями-дружинниками, 
-                            добиться для своего князя власти в каком-либо княжестве, поправ врагов и восстановив честь клана!
+                            аша задача – выжить в жестоком мире удельной раздробленности и попытаться, 
+                            заручившись поддержкой верных союзников и братьев-дружинников, добиться для 
+                            своего князя власти в каком-либо княжестве, поправ врагов и восстановив честь клана!
                             <br>
                             <br>
-                            Вас ждет невероятное путешествие по землям Восточной Европы, в ходе которого Вы будете вести битвы, 
-                            плести интриги, торговать и вступать в переговоры. Любое Ваше решение будет иметь последствия: 
-                            за каждый выбранный Вами ход Вы получите определенное количество очков, а также, если повезет, трофейный предмет, 
-                            который прибавит Вам итоговых очков в конце игры. Чем больше Вы наберете очков в течение игры – тем лучше результат!               
+                            Вас ждет невероятное путешествие по землям Восточной Европы, в ходе которого 
+                            Вы будете вести битвы, плести интриги, торговать и вступать в переговоры. 
+                            Любое Ваше решение будет иметь последствия: за каждый выбранный Вами ход Вы получите 
+                            определенное количество очков, а также, если повезет, трофейный предмет, 
+                            который прибавит 
+                            Вам очков в конце игры. Чем больше Вы наберете их в течение игры, тем лучше результат!
                             </div>
                         </div>
                         <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>
@@ -103,7 +106,7 @@ export const pages = [
                     <div class="page-content content-img">
                         <figure>
                             <img class="content-img" src="assets/image/2.png" alt="Съезд князей">
-                            <figcaption class="text-img-author text-medium">И. Билибин. Рисунок “Съезд князей”</figcaption>                     
+                            <figcaption class="text-img-author text-medium">И. Я. Билибин. Съезд князей. 1907 г. Государственная Третьяковская галерея.</figcaption>                     
                         </figure>                       
                         <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>    
                     </div>
@@ -114,19 +117,17 @@ export const pages = [
                         <div class='main-text'> 
                             <img src="assets/letter/letterV.svg" alt="Буква В" class='img-letter-small'>
                             <div class='text text-small'> 
-                                течение игры каждый ход Вам будет 
-                                предлагаться выбор из трех или двух
-                                вариантов ответа, от которого будет зависеть судьба Вашего героя и князя, за которым Вы стоите. 
-                                Наиболее успешный выбор даст дружиннику большее количество очков. От выбора зависит и достаток Вашего героя: 
-                                за те или иные ходы Вы будете получать трофеи, которые также влияют на конечный результат борьбы за княжеский стол. 
-                                Будьте внимательны: некоторые варианты ответа могут привести Вас и Вашего князя к гибели или к бесславному окончанию путешествия, выбирайте с умом!
+                            каждом ходе игры Вам будет предлагаться выбор из трех или двух вариантов ответа, 
+                            от которого будет зависеть судьба Вашего героя и князя, за которым Вы стоите. 
+                            Наиболее успешный выбор даст дружиннику большее количество очков. 
+                            От выбора зависит и достаток Вашего героя: проходя игру, Вы будете получать трофеи, 
+                            которые также влияют на результат борьбы за княжеский стол. Отдельные понятия и 
+                            события по ходу игры выделаются маркером, обозначающим исторические справки.
+                            Будьте внимательны: некоторые варианты ответа могут привести к гибели героя 
+                            или к бесславному окончанию путешествия!                            
                                 <br>
                                 <br>
-                                Ваша цель – выжить, заручиться союзниками и захватить княжеский престол для своего князя.
-                                <br>
-                                <br>
-                                Кроме того, по ходу игры некоторые слова будут выделяться особым маркером. Это будет означать, 
-                                что у данного слова существует историческая справка – объяснение понятия с возможной краткой историографией.           
+                                Ваша цель – выжить, заручиться союзниками и возвести на престол своего князя.
                             </div>
                         </div>
                         <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>
@@ -137,7 +138,7 @@ export const pages = [
                     <div class="page-content content-img">
                         <figure>
                             <img class="content-img" src="assets/image/3.png" alt="Съезд князей">
-                            <figcaption class="text-img-author text-medium">Памятник Любечкому съезду князей. Памятник скульптора Геннадия Ершова, расположенный в Любече на берегу Днепра (Украина, 1997 г.)</figcaption>                     
+                            <figcaption class="text-img-author text-medium">Г. А. Ершов. Памятник Любечскому съезду князей (1097 г.) на территории бывшего Любечского детинца. 1997 г.</figcaption>                     
                         </figure>                       
                         <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>    
                     </div>
@@ -147,7 +148,7 @@ export const pages = [
                     <div class="page-content content-img">
                         <figure>
                             <img class="content-img" src="assets/image/4.png" alt="Съезд князей">
-                            <figcaption class="text-img-author text-medium">Отравление Ростислава Владимировича Тмутараканского, первого князя-изгоя, греческим стратигом. Миниатюра из Радзивилловской летописи (XV век)</figcaption>                     
+                            <figcaption class="text-img-author text-medium">Отравление Ростислава Владимировича Тмутараканского, первого князя-изгоя, греческим стратигом. 1065 г. Миниатюра из Радзивилловской летописи (рукопись конца XV в.). Библиотека Российской академии наук.</figcaption>                     
                         </figure>                       
                         <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>    
                     </div>
@@ -194,7 +195,7 @@ export const pages = [
         <div class="page-content content-img">
             <figure>
                 <img class="content-img" src="assets/image/4.png" alt="Съезд князей">
-                <figcaption class="text-img-author text-medium">Отравление Ростислава Владимировича Тмутараканского, первого князя-изгоя, греческим стратигом. Миниатюра из Радзивилловской летописи (XV век)</figcaption>                     
+                <figcaption class="text-img-author text-medium">Отравление Ростислава Владимировича Тмутараканского, первого князя-изгоя, греческим стратигом. 1065 г. Миниатюра из Радзивилловской летописи (рукопись конца XV в.). Библиотека Российской академии наук. </figcaption>                     
             </figure>                       
             <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>    
         </div>
@@ -261,7 +262,7 @@ export const pages = [
         <div class="page-content content-img">
             <figure>
                 <img class="content-img" src="assets/image/4.png" alt="Съезд князей">
-                <figcaption class="text-img-author text-medium">Отравление Ростислава Владимировича Тмутараканского, первого князя-изгоя, греческим стратигом. Миниатюра из Радзивилловской летописи (XV век)</figcaption>                     
+                <figcaption class="text-img-author text-medium">Отравление Ростислава Владимировича Тмутараканского, первого князя-изгоя, греческим стратигом. 1065 г. Миниатюра из Радзивилловской летописи (рукопись конца XV в.). Библиотека Российской академии наук. </figcaption>                     
             </figure>                       
             <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>    
         </div>
@@ -294,7 +295,7 @@ export const pages = [
         <div class="page-content content-img">
             <figure>
                 <img class="content-img" src="assets/image/5.png" alt="Дуэль на мечах">
-                <figcaption class="text-img-author text-medium">Дуэль на мечах и баклерах (малых круглых щитах). Миниатюра из Манесского кодекса (ок. 1300 г.).</figcaption>                     
+                <figcaption class="text-img-author text-medium">Дуэль на мечах и баклерах (малых круглых щитах). Миниатюра из Манесского кодекса (ок. 1300 г.). Библиотека Гейдельбергского университета (Германия).</figcaption>                     
             </figure>                       
             <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>    
         </div>
@@ -330,7 +331,7 @@ export const pages = [
         <div class="page-content content-img">
             <figure>
                 <img class="content-img" src="assets/image/5.png" alt="Дуэль на мечах">
-                <figcaption class="text-img-author text-medium">Дуэль на мечах и баклерах (малых круглых щитах). Миниатюра из Манесского кодекса (ок. 1300 г.)</figcaption>                     
+                <figcaption class="text-img-author text-medium">Дуэль на мечах и баклерах (малых круглых щитах). Миниатюра из Манесского кодекса (ок. 1300 г.). Библиотека Гейдельбергского университета (Германия).</figcaption>                     
             </figure>                       
             <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>    
         </div>
@@ -458,8 +459,8 @@ export const pages = [
         <div class="page-content content-img">
             <figure>
                 <h2 class='text-trophy'>Получен трофей:</h2>
-                <img class="content-img" src="assets/trophy/3.png" alt="Звание «Великого мужа»">
-                <figcaption class="text-img-author text-medium">Звание «Великого мужа»</figcaption>                     
+                <img class="content-img" src="assets/trophy/3.png" alt="Имя «Великого мужа»">
+                <figcaption class="text-img-author text-medium">Имя «Великого мужа»</figcaption>                     
             </figure>                       
             <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>    
         </div>
@@ -473,7 +474,7 @@ export const pages = [
                     <div class="page-content content-img">
                         <figure>
                             <img class="content-img" src="assets/image/6.png" alt="Пленение поляками Володаря Ростиславича Перемышльского">
-                            <figcaption class="text-img-author text-medium">Пленение поляками при посредничестве Петра Власта (ум. 1153 г.) Володаря Ростиславича Перемышльского (ум. 1124 г.). 1122 г. Миниатюра из Радзивилловской летописи (рукопись конца XV в.)</figcaption>                     
+                            <figcaption class="text-img-author text-medium">Пленение поляками при посредничестве Петра Власта (ум. 1153 г.) Володаря Ростиславича Перемышльского (ум. 1124 г.). 1122 г. Миниатюра из Радзивилловской летописи (рукопись конца XV в.). Библиотека Российской академии наук.</figcaption>                     
                         </figure>                       
                         <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>    
                     </div>
@@ -580,7 +581,7 @@ export const pages = [
         <div class="page-content content-img">
             <figure>
                 <img class="content-img" src="assets/image/6.png" alt="Пленение поляками Володаря Ростиславича Перемышльского">
-                <figcaption class="text-img-author text-medium">Пленение поляками при посредничестве Петра Власта (ум. 1153 г.) Володаря Ростиславича Перемышльского (ум. 1124 г.). 1122 г. Миниатюра из Радзивилловской летописи (рукопись конца XV в.).</figcaption>                     
+                <figcaption class="text-img-author text-medium">Пленение поляками при посредничестве Петра Власта (ум. 1153 г.) Володаря Ростиславича Перемышльского (ум. 1124 г.). 1122 г. Миниатюра из Радзивилловской летописи (рукопись конца XV в.). Библиотека Российской академии наук.</figcaption>                     
             </figure>                       
             <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>    
         </div>
@@ -616,7 +617,7 @@ export const pages = [
                     <div class="page-content content-img">
                         <figure>
                             <img class="content-img" src="assets/image/7.png" alt="Бегство полков Владимира Галицкого">
-                            <figcaption class="text-img-author text-small">Бегство полков Владимира Володаревича Галицкого (ум. 1153 г.) от войск Изяслава Мстиславича Киевского (ум. 1154 г.) и венгерского короля Гезы II (1130–1162) из-под Санока и избиение бегущих. 1152 г. Миниатюра из Радзивилловской летописи (рукопись конца XV в.)</figcaption>                     
+                            <figcaption class="text-img-author text-small">Бегство полков Владимира Володаревича Галицкого (ум. 1153 г.) от войск Изяслава Мстиславича Киевского (ум. 1154 г.) и венгерского короля Гезы II (1130–1162) из-под Санока и избиение бегущих. 1152 г. Миниатюра из Радзивилловской летописи (рукопись конца XV в.). Библиотека Российской академии наук.</figcaption>                     
                         </figure>                       
                         <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>    
                     </div>
@@ -659,7 +660,7 @@ export const pages = [
         <div class="page-content content-img">
             <figure>
                 <img class="content-img" src="assets/image/7.png" alt="Бегство полков Владимира Галицкого">
-                <figcaption class="text-img-author text-medium">Бегство полков Владимира Володаревича Галицкого (ум. 1153 г.) от войск Изяслава Мстиславича Киевского (ум. 1154 г.) и венгерского короля Гезы II (1130–1162) из-под Санока и избиение бегущих. 1152 г. Миниатюра из Радзивилловской летописи (рукопись конца XV в.)</figcaption>                     
+                <figcaption class="text-img-author text-medium">Бегство полков Владимира Володаревича Галицкого (ум. 1153 г.) от войск Изяслава Мстиславича Киевского (ум. 1154 г.) и венгерского короля Гезы II (1130–1162) из-под Санока и избиение бегущих. 1152 г. Миниатюра из Радзивилловской летописи (рукопись конца XV в.). Библиотека Российской академии наук.</figcaption>                     
             </figure>                       
             <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>    
         </div>
@@ -718,7 +719,7 @@ export const pages = [
         <div class="page-content content-img">
             <figure>
                 <img class="content-img" src="assets/image/7.png" alt="Бегство полков Владимира Галицкого">
-                <figcaption class="text-img-author text-medium">Бегство полков Владимира Володаревича Галицкого (ум. 1153 г.) от войск Изяслава Мстиславича Киевского (ум. 1154 г.) и венгерского короля Гезы II (1130–1162) из-под Санока и избиение бегущих. 1152 г. Миниатюра из Радзивилловской летописи (рукопись конца XV в.)</figcaption>                     
+                <figcaption class="text-img-author text-medium">Бегство полков Владимира Володаревича Галицкого (ум. 1153 г.) от войск Изяслава Мстиславича Киевского (ум. 1154 г.) и венгерского короля Гезы II (1130–1162) из-под Санока и избиение бегущих. 1152 г. Миниатюра из Радзивилловской летописи (рукопись конца XV в.). Библиотека Российской академии наук</figcaption>                     
             </figure>                       
             <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>    
         </div>
@@ -753,7 +754,7 @@ export const pages = [
                     <div class="page-content content-img">
                         <figure>
                             <img class="content-img" src="assets/image/8.png" alt="Геза II и Евфросинья Мстиславна принимают её брата Владимира Мстиславича">
-                            <figcaption class="text-img-author text-medium">Геза II (1130–1162) и Евфросинья Мстиславна (1130–1193) принимают её брата Владимира Мстиславича. Миниатюра из Лицевого летописного свода (XVI век)</figcaption>                     
+                            <figcaption class="text-img-author text-medium">Геза II (1130–1162) и Евфросинья Мстиславна (1130–1193) принимают её брата Владимира Мстиславича. Миниатюра из Лицевого летописного свода (XVI век).</figcaption>                     
                         </figure>                       
                         <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>    
                     </div>
@@ -790,7 +791,7 @@ export const pages = [
         <div class="page-content content-img">
             <figure>
                 <img class="content-img" src="assets/image/8.png" alt="Геза II и Евфросинья Мстиславна принимают её брата Владимира Мстиславича">
-                <figcaption class="text-img-author text-medium">Геза II (1130–1162) и Евфросинья Мстиславна (1130–1193) принимают её брата Владимира Мстиславича. Миниатюра из Лицевого летописного свода (XVI век)</figcaption>                     
+                <figcaption class="text-img-author text-medium">Геза II (1130–1162) и Евфросинья Мстиславна (1130–1193) принимают её брата Владимира Мстиславича. Миниатюра из Лицевого летописного свода (XVI век).</figcaption>                     
             </figure>                       
             <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>    
         </div>
@@ -815,7 +816,7 @@ export const pages = [
         <div class="page-content content-img">
             <figure>
                 <img class="content-img" src="assets/image/8.png" alt="Геза II и Евфросинья Мстиславна принимают её брата Владимира Мстиславича">
-                <figcaption class="text-img-author text-medium">Геза II (1130–1162) и Евфросинья Мстиславна (1130–1193) принимают её брата Владимира Мстиславича. Миниатюра из Лицевого летописного свода (XVI век)</figcaption>                     
+                <figcaption class="text-img-author text-medium">Геза II (1130–1162) и Евфросинья Мстиславна (1130–1193) принимают её брата Владимира Мстиславича. Миниатюра из Лицевого летописного свода (XVI век).</figcaption>                     
             </figure>                       
             <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>    
         </div>
@@ -882,7 +883,7 @@ export const pages = [
         <div class="page-content content-img">
             <figure>
                 <img class="content-img" src="assets/image/9.png" alt="Похороны Андрея Боголюбского">
-                <figcaption class="text-img-author text-medium">Похороны Андрея Боголюбского (ум. 1174 г.). Миниатюра из Лицевого летописного свода (XVI в.). Российская национальная библиотека.</figcaption>                     
+                <figcaption class="text-img-author text-medium">Похороны Андрея Боголюбского (ум. 1174 г.). Миниатюра из Лицевого летописного свода (XVI в.). Российская национальная библиотека</figcaption>                     
             </figure>                       
             <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>    
         </div>
@@ -1362,7 +1363,7 @@ export const pages = [
         <div class="page-content content-img">
             <figure>
                 <img class="content-img" src="assets/image/13.png" alt="Папа Александр III">
-                <figcaption class="text-img-author text-medium">Спинелло Аретино. Папа Александр III (1105–1181). Фреска. Вторая половина XIV в. Палаццо Публико, Сиена (Италия)</figcaption>                     
+                <figcaption class="text-img-author text-medium">Спинелло Аретино. Папа Александр III (1105–1181). Фреска. Вторая половина XIV в. Палаццо Публико, Сиена (Италия).</figcaption>                     
             </figure>                       
             <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>    
         </div>
@@ -1393,7 +1394,7 @@ export const pages = [
         <div class="page-content content-img">
             <figure>
                 <img class="content-img" src="assets/image/12.png" alt="Папа Александр III">
-                <figcaption class="text-img-author text-medium">Спинелло Аретино. Папа Александр III (1105–1181). Фреска. Вторая половина XIV в. Палаццо Публико, Сиена (Италия)</figcaption>                     
+                <figcaption class="text-img-author text-medium">Спинелло Аретино. Папа Александр III (1105–1181). Фреска. Вторая половина XIV в. Палаццо Публико, Сиена (Италия).</figcaption>                     
             </figure>                       
             <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>    
         </div>
@@ -1429,7 +1430,7 @@ export const pages = [
                     <div class="page-content content-img">
                         <figure>
                             <img class="content-img" src="assets/image/13.png" alt="Поход на Киев черниговских князей">
-                            <figcaption class="text-img-author text-medium">Поход на Киев черниговских князей Ольговичей в союзе с половцами против князей Владимировичей (Мономаховичей). 1136 г. Миниатюра из Радзивилловской летописи (рукопись конца XV в.)</figcaption>                     
+                            <figcaption class="text-img-author text-medium">Поход на Киев черниговских князей Ольговичей в союзе с половцами против князей Владимировичей (Мономаховичей). 1136 г. Миниатюра из Радзивилловской летописи (рукопись конца XV в.). Библиотека Российской академии наук.</figcaption>                     
                         </figure>                       
                         <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>    
                     </div>
@@ -1523,7 +1524,7 @@ export const pages = [
         <div class="page-content content-img">
             <figure>
                 <img class="content-img" src="assets/image/13.png" alt="Поход на Киев черниговских князей">
-                <figcaption class="text-img-author text-medium">Поход на Киев черниговских князей Ольговичей в союзе с половцами против князей Владимировичей (Мономаховичей). 1136 г. Миниатюра из Радзивилловской летописи (рукопись конца XV в.)</figcaption>                     
+                <figcaption class="text-img-author text-medium">Поход на Киев черниговских князей Ольговичей в союзе с половцами против князей Владимировичей (Мономаховичей). 1136 г. Миниатюра из Радзивилловской летописи (рукопись конца XV в.). Библиотека Российской академии наук.</figcaption>                     
             </figure>                       
             <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>    
         </div>
