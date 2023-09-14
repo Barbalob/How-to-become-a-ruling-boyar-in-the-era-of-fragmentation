@@ -1,5 +1,5 @@
 @import 'nullstyle.scss';
-@import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
+@import url('https://fonts-online.ru/fonts/spsl-new-cyrillic');
 @import 'book.scss';
 @import 'content.scss';
 @import 'textSize';
@@ -11,12 +11,16 @@
 @import 'selectButton.scss';
 @import 'listAnswer.scss';
 
-
+@font-face {
+	font-family: 'SPSL-New-Cyrillic'; 
+	src: local('SPSL-New-Cyrillic'),
+		url(../fonts/spsl_new_cyrillic.ttf); 
+}
 
 .wrapper{
     width: 100%;
     height: 100%;
-    font-family: 'Marck Script', cursive;
+    font-family: 'SPSL-New-Cyrillic';
     background:url(../assets/bg.png)  black no-repeat ;
     background-size: cover;
     overflow: hidden;

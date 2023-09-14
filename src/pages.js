@@ -956,7 +956,7 @@ export const pages = [
         <div class="page-content content-img">
             <figure>
                 <h2 class='text-trophy'>Получен трофей:</h2>
-                <img class="content-img" src="assets/trophy/3.png" alt="Черный мятель">
+                <img class="content-img" src="assets/trophy/7.png" alt="Черный мятель">
                 <figcaption class="text-img-author text-medium">Черный мятель</figcaption>                     
             </figure>                       
             <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>    
@@ -1056,7 +1056,7 @@ export const pages = [
         <div class="page-content content-img">
             <figure>
                 <h2 class='text-trophy'>Получен трофей:</h2>
-                <img class="content-img" src="assets/trophy/7.png" alt="Сафьяновые сапоги с золотым узором">
+                <img class="content-img" src="assets/trophy/8.png" alt="Сафьяновые сапоги с золотым узором">
                 <figcaption class="text-img-author text-medium">Сафьяновые сапоги с золотым узором</figcaption>                     
             </figure>                       
             <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>    
@@ -1230,7 +1230,7 @@ export const pages = [
         <div class="page-content content-img">
             <figure>
                 <h2 class='text-trophy'>Получен трофей:</h2>
-                <img class="content-img" src="assets/trophy/8.png" alt="Щит, обтянутый бархатом">
+                <img class="content-img" src="assets/trophy/9.png" alt="Щит, обтянутый бархатом">
                 <figcaption class="text-img-author text-medium">Щит, обтянутый бархатом</figcaption>                     
             </figure>                       
             <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>    
@@ -1350,7 +1350,7 @@ export const pages = [
         <div class="page-content content-img">
             <figure>
                 <h2 class='text-trophy'>Получен трофей:</h2>
-                <img class="content-img" src="assets/trophy/9.png" alt="Евангелие, украшенное золотом и драгоценными камнями">
+                <img class="content-img" src="assets/trophy/10.png" alt="Евангелие, украшенное золотом и драгоценными камнями">
                 <figcaption class="text-img-author text-medium">Евангелие, украшенное золотом и драгоценными камнями</figcaption>                     
             </figure>                       
             <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>    
@@ -1511,7 +1511,7 @@ export const pages = [
         <div class="page-content content-img">
             <figure>
                 <h2 class='text-trophy'>Получен трофей:</h2>
-                <img class="content-img" src="assets/trophy/10.png" alt="Серебряная чаша половецкого хана">
+                <img class="content-img" src="assets/trophy/11.png" alt="Серебряная чаша половецкого хана">
                 <figcaption class="text-img-author text-medium">Серебряная чаша половецкого хана</figcaption>                     
             </figure>                       
             <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>    
@@ -1693,7 +1693,7 @@ export const pages = [
         <div class="page-content content-img">
             <figure>
                 <h2 class='text-trophy'>Получен трофей:</h2>
-                <img class="content-img" src="assets/trophy/11.png" alt="Боевой половецкий конь">
+                <img class="content-img" src="assets/trophy/12.png" alt="Боевой половецкий конь">
                 <figcaption class="text-img-author text-medium">Боевой половецкий конь</figcaption>                     
             </figure>                       
             <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>    
@@ -1718,7 +1718,7 @@ export const pages = [
         <div class="page-content content-img">
             <figure>
                 <h2 class='text-trophy'>Получен трофей:</h2>
-                <img class="content-img" src="assets/trophy/4.png" alt="Княжеская круглая шапка с меховым околышем">
+                <img class="content-img" src="assets/trophy/13.png" alt="Княжеская круглая шапка с меховым околышем">
                 <figcaption class="text-img-author text-medium">Княжеская круглая шапка с меховым околышем</figcaption>                     
             </figure>                       
             <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>    
@@ -1826,7 +1826,7 @@ export const pages = [
         <div class="page-content content-img">
             <figure>
                 <h2 class='text-trophy'>Получен трофей:</h2>
-                <img class="content-img" src="assets/trophy/12.png" alt="Шуба, крытая шелком, с меховым отложным воротником">
+                <img class="content-img" src="assets/trophy/14.png" alt="Шуба, крытая шелком, с меховым отложным воротником">
                 <figcaption class="text-img-author text-medium">Шуба, крытая шелком, с меховым отложным воротником</figcaption>                     
             </figure>                       
             <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>    
@@ -1928,7 +1928,7 @@ export const pages = [
         <div class="page-content content-img">
             <figure>
                 <h2 class='text-trophy'>Получен трофей:</h2>
-                <img class="content-img" src="assets/trophy/13.png" alt="Земельное владение">
+                <img class="content-img" src="assets/trophy/15.png" alt="Земельное владение">
                 <figcaption class="text-img-author text-medium">Земельное владение</figcaption>                     
             </figure>                       
             <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>    
@@ -2084,7 +2084,7 @@ export const pages = [
         <div class="page-content content-img">
             <figure>
                 <h2 class='text-trophy'>Получен трофей:</h2>
-                <img class="content-img" src="assets/trophy/14.png" alt="Чин покладника">
+                <img class="content-img" src="assets/trophy/16.png" alt="Чин покладника">
                 <figcaption class="text-img-author text-medium">Чин покладника</figcaption>                     
             </figure>                       
             <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>    
