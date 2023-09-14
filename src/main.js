@@ -256,7 +256,8 @@ function OpenBook(gameStarted) {
 
             size: "stretch",
             // set threshold values:
-            drawShadow: false,
+            drawShadow: true,
+            maxShadowOpacity: 0.2,
             showCover: true,
             usePortrait: false,
             mobileScrollSupport: false,
@@ -322,7 +323,8 @@ function OpenBook(gameStarted) {
                 // maxWidth: 1000,
                 // minHeight: 800,
                 // maxHeight: 400,
-                drawShadow: false,
+                drawShadow: true,
+                maxShadowOpacity: 0.2,
                 showCover: false,
                 usePortrait: false,
                 useMouseEvents: false,
@@ -342,15 +344,21 @@ function OpenBook(gameStarted) {
                 // maxWidth: 1000,
                 // minHeight: 800,
                 // maxHeight: 400,
-                drawShadow: false,
+                drawShadow: true,
                 showCover: false,
                 usePortrait: false,
                 flippingTime: 700,
+                maxShadowOpacity: 0.2,
                 mobileScrollSupport: false // disable content scrolling on mobile devices
             }
             )}
         const Book = BookOptions;
         Book.loadFromHTML(document.querySelectorAll(".page"))
+        
+        document.addEventListener("keydown", (e) => {
+            if (e.code == 'ArrowRight'){Book.flipNext()}
+            else if(e.code == 'ArrowLeft'){Book.flipPrev()}
+        });
 
         adaptiveSideElements(Book,gameStarted)
         window.addEventListener('resize', () =>{
