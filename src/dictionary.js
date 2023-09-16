@@ -33,92 +33,34 @@ export const dictionary =
   `
     ${
         Object.keys(definitions).map(key =>{
-
-            if (definitions[key][1] != '' && definitions[key][2] != ''){
-
-                let one = definitions[key][0]
-                let thee = definitions[key][2]
-                let dop = ''
-                let newList =''
-                const transfer = 780
-                if (remainingText != ''){
-                    dop = remainingText;
-                    remainingText = '';
-                }
-
-                const len = definitions[key][0].length + definitions[key][2].length + dop.length
-
-                if (len >= transfer){
-                    if (dop.length >= transfer){
-                        newList = `
-                            <li class="page ${dictClass}">
-                                <div class="page-content content-dictionary">
-                                    <ol class='text text-small'>
-                                        ${dop}
-                                    </ol>
-                                    <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>
-                                </div>
-                            </li>
-                            `
-                        dop = ''
-                    }
-                    else if (definitions[key][0].length + dop.length >= transfer){
-                        const array = cutOffPartString(one, transfer - dop.length)
-                            remainingText = wrapperLi(array[1]) + wrapperLi(thee)
-                            thee = ''
-                            one = array[0]            
-                    }
-                    else if (len >= transfer){
-                        // console.log(len - (definitions[key][0].length + dop.length));
-                        // console.log(thee.length);
-                        const array = cutOffPartString(thee, transfer - (definitions[key][0].length + dop.length))
-                        // console.log(array);
-                        remainingText = wrapperLi(array[1])
-                        thee = array[0]        
-                    }          
-                };
-                if (newList === '')
-                    {return `
-                        <li class="page ${dictClass}">
-                            <div class="page-content content-dictionary">
-                                <ol class='text text-small'>
-                                    ${isEmptyRemainingText(dop)}
-                                    <li>
-                                        ${count++}. <span class='keyword'>${key}</span>. ${one}        
-                                    </li>
-                                    ${isEmptyText(thee)}
-                                </ol>
-                                <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>
-                            </div>
-                        </li>
-                    `}
-                else {return newList + `
-                <li class="page ${dictClass}">
-                    <div class="page-content content-dictionary">
-                        <ol class='text text-small'>
-                            ${isEmptyRemainingText(dop)}
-                            <li>
-                                ${count++}. <span class='keyword'>${key}</span>. ${one}        
-                            </li>
-                            ${isEmptyText(thee)}
-                        </ol>
-                        <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>
-                    </div>
-                </li>
-            `}
+            if (definitions[key][3] === 0){
+                return ''
             }
+            return `
+            <li class="page ${dictClass}">
+                <div class="page-content content-dictionary">
+                    <ol class='text text-small'>
+                        <li>
+                            ${count++}. <span class='keyword'>${key}</span>. ${definitions[key][0]}        
+                        </li>
+                        <li>
+                        ${definitions[key][2]}
+                        </li>
+                    </ol>
+                    <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>
+                </div>
+            </li>
+            <li class="page ${dictClass}">
+                <div class="page-content content-img first">
+                    <figure>
+                        <img class="content-img" src="assets/dict/${definitions[key][3]}.png">
+                        <figcaption class="text-img-author text-medium">${definitions[key][1]}</figcaption>                     
+                    </figure>                       
+                    <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>    
+                </div>
+            </li>
+        `
         }).join(' ')
     }
-    ${`
-    <li class="page ${dictClass}">
-        <div class="page-content content-dictionary">
-            <ol class='text text-small'>
-                <li>
-                    ${remainingText}       
-                </li>
-            </ol>
-            <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>
-        </div>
-    </li>
-    `}
+    
   `;
