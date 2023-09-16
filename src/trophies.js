@@ -15,7 +15,9 @@ const CreateAllTrophies = () => {
         description.push(CreateLiDescriptionTrophies(i+1))
         description.push(CreateLiDescriptionTrophies(i+2))
     }
+    console.log(trophiesList.length-1);
     liList.push(CreateLiTrophiesMain(trophiesList.length-1))
+    description.push(CreateLiDescriptionTrophies(trophiesList.length-1))
     const result = [...liList, ...description];
     return result.join(' ');
 }
@@ -60,6 +62,19 @@ const CreateLiTrophies = (index) => {
 
 const CreateLiTrophiesMain = (index) => {
     const image =  trophiesDict[trophiesList[index]][3]
+    if (index==15){
+        return `
+    <li class="page trophy_class">
+    <div class="page-content content-img first">
+    <figure class='${trophies[index] == 0 ? 'received' : '' }'>
+        <img class="content-img" src="assets/trophy/${image}.png">
+        <figcaption class="text-img-author text-medium">${trophiesList[index]}</figcaption>                     
+    </figure>                       
+    <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>    
+</div>
+    </li>     
+    `
+    }
 
     return `
     <li class="page trophy_class">
@@ -78,7 +93,6 @@ const CreateLiTrophiesMain = (index) => {
 }
 
 const CreateLiDescriptionTrophies = (index) => {
-
     let dop = ''
     if (trophies[index] == 0){
         dop = `<p class="trophy-not-received text-large">Трофей не получен</p>`
@@ -86,7 +100,6 @@ const CreateLiDescriptionTrophies = (index) => {
     const name  =  trophiesList[index]
     const image =  trophiesDict[name][3]
     const item  =  trophiesDict[trophiesList[index]]
-
     let textSize = 'text-small'
 
     if (item[0].length + item[1].length + item[2].length > 1000){
