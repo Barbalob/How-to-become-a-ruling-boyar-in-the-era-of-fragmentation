@@ -18,7 +18,10 @@ const mainPage = document.querySelector('.menu')
 const end_screen = document.querySelector('.end_screen')
 const menuTrophyBtn = document.querySelector('#trophies')
 const mobTrophy = document.querySelector('#trophies-mobile')
+const about = document.querySelector('#aboutUs')
+const mobAbout = document.querySelector('#aboutUs-mobile')
 let trophiesPages = trophiesBook()
+let aboutPages = aboutUs
 let stage = 0;
 let points = 0;
 let trophies = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
@@ -37,22 +40,32 @@ if(winH > winW){
 
 
 buttonStart.addEventListener('click', () => {
-    OpenBook(true)
+    OpenBook('start')
 });
 menuTrophyBtn.addEventListener('click', () => {
-    OpenBook(false)
+    OpenBook('trophy')
+});
+about.addEventListener('click', () => {
+    OpenBook('about')
 });
 mobStart.addEventListener('click', () => {
     mobileFlag = true
-    OpenBook(true)
+    OpenBook('start')
     $('body').css({'overflow':'hidden'});
 });
 mobTrophy.addEventListener('click', () => {
     trophiesPages = trophiesPages.replaceAll(' <li class="page trophy_class">','<li class="page"></li><li class="page trophy_class">');
     mobileFlag = true
-    OpenBook(false)
+    OpenBook('trophy')
     $('body').css({'overflow':'hidden'});
 });
+mobAbout.addEventListener('click', () => {
+    aboutPages = aboutPages.replaceAll(' <li class="page">','<li class="page"></li><li class="page">');
+    mobileFlag = true
+    OpenBook('about')
+    $('body').css({'overflow':'hidden'});
+});
+
 
 
 function sleep(ms) {
@@ -275,7 +288,7 @@ function OpenBook(gameStarted) {
         pageFlip.destroy()
         const container1 = document.querySelector('.container1')
         container1.remove()
-        if(gameStarted){
+        if(gameStarted == 'start'){
         let startPages = pages[0]['page']
         if(mobileFlag){
             startPages = startPages.replaceAll(
@@ -287,7 +300,22 @@ function OpenBook(gameStarted) {
         mainPage.innerHTML = startPages
 
         }
-        else{
+        else if(gameStarted == 'about'){
+            mainPage.innerHTML = `
+            // <button class="arrow-left"><img src="assets/arrow.svg"></button>
+            // <button class="arrow-right"><img src="assets/arrow.svg"></button>
+            <div class="container">
+            <div class="side_blockerator__left" id="side_blockerator__left"></div>
+            <div class="side_blockerator__right" id="side_blockerator__right"></div>
+            <button class='home-btn'></button>
+                <div class="wrapper-book">
+                    <ul class="flip-book" id="demoBookExample">
+                        ${aboutPages}
+                    </ul>
+                </div>
+            </div>`
+        }
+        else if(gameStarted == 'trophy'){
             mainPage.innerHTML = `
             // <button class="arrow-left"><img src="assets/arrow.svg"></button>
             // <button class="arrow-right"><img src="assets/arrow.svg"></button>
@@ -394,7 +422,7 @@ function adaptiveSideElements(Book,gameStarted) {
     let topBlockHeight = Book.getBoundsRect().top
     // console.log(Book.getBoundsRect());
     document.querySelector(".home-btn").style.top = topBlockHeight-60+ 'px'
-    if(gameStarted){
+    if(gameStarted == 'start'){
     document.querySelector(".dictionary-btn").style.top = topBlockHeight-60+ 'px'
     document.querySelector(".trophy-btn").style.top = topBlockHeight-62+ 'px'
     }
@@ -402,7 +430,7 @@ function adaptiveSideElements(Book,gameStarted) {
     else{
     let sideBlockWidth = Book.getBoundsRect().left + 30
     document.querySelector(".home-btn").style.left = sideBlockWidth - 75 - 10 + 'px'
-    if(gameStarted){
+    if(gameStarted == 'start'){
     document.querySelector(".dictionary-btn").style.right = sideBlockWidth - 75 - 10 + 'px'
     document.querySelector(".trophy-btn").style.right = sideBlockWidth - 75 - 10 - 10 + 'px'
     }
