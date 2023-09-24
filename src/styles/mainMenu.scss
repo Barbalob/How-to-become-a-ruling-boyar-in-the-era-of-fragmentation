@@ -24,14 +24,14 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        gap: 48px;
+        gap: 15px;
     }
 
     &__button{
         display: flex;
         margin: 0 auto;
-        max-height: 50%;
-        width: 80%;
+        // max-height: 25%;
+        width: 75%;
         background-image: none; 
         background-color: transparent;
 
@@ -165,13 +165,16 @@
         flex-direction: column;
         max-height: 99vh;
         align-items: center;
-        justify-content: space-around;
+        justify-content: flex-start;
+    }
+    .menu__right-img{
+        margin-bottom: 10px;
     }
     .menu__list-logo-mobile{
         display: flex;
         flex-direction: row;
         width: 100%;
-        max-height: 15%;
+        max-height: 10%;
         justify-content: space-evenly;
         gap: 10px;
         align-items:stretch;
@@ -235,8 +238,10 @@
         display: flex;
         flex-direction: column;
         justify-content: space-around;
+        gap:5px;
+        margin-bottom: 10px;
         .menu__button{
-            max-height: 45%;
+            max-height: 35%;
             .menu__button-left{ 
                 height: 100%;
                 width: 100%;
