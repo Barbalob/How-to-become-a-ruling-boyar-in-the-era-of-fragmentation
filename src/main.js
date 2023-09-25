@@ -202,7 +202,7 @@ function CreateListBook(template, Book) {
     if(mobileFlag){
         test =  test.replaceAll('<li class="page">','<li class="page"></li><li class="page">')
         .replaceAll(' <li class="page trophy_class">','<li class="page"></li><li class="page trophy_class">')
-        .replaceAll('<li class="page dict_class">','<li class="page"></li><li class="page tdict_class">');
+        .replaceAll('<li class="page dict_class">','<li class="page"></li><li class="page dict_class">');
     }
     if (document.querySelector('.stf__block') != null) {
         document.querySelector('.stf__block').insertAdjacentHTML("beforeend", test);

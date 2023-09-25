@@ -1316,7 +1316,7 @@ export const pages = [
         </div>
         </li>      
     `,
-        "choiceр-2":` 
+        "choice-2":` 
         <li class="page">
         <div class="page-content content-img">
             <figure>
@@ -1458,7 +1458,7 @@ export const pages = [
         </div>
         </li>      
     `,
-        "choiceр-2":` 
+        "choice-2":` 
         <li class="page">
         <div class="page-content content-img">
             <figure>
@@ -1563,7 +1563,7 @@ export const pages = [
             </div>
         </li>
     `,
-        "choiceр-2":` 
+        "choice-2":` 
         <li class="page">
         <div class="page-content content-img">
             <figure>
@@ -1724,7 +1724,7 @@ export const pages = [
             </div>
         </li>
     `,
-        "choiceр-2":` 
+        "choice-2":` 
         <li class="page">
             <div class="page-content content-text">
                 <div class='main-text'> 
@@ -1841,7 +1841,7 @@ export const pages = [
         </li>      
 
     `,
-        "choiceр-2":` 
+        "choice-2":` 
         <li class="page">
         <div class="page-content content-img">
             <figure>
@@ -1954,7 +1954,7 @@ export const pages = [
         </li>
 
     `,
-        "choiceр-2":` 
+        "choice-2":` 
         <li class="page">
         <div class="page-content content-img">
             <figure>

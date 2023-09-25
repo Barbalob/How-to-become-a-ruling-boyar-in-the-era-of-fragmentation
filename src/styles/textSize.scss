@@ -57,7 +57,45 @@ $size-menu-button: 28px;
 
 //QHD
 @media (min-width: 2500px) and (max-width: 3799px) {
-
+    $size-very-small:  32px;
+    $size-small:       34px;
+    $size-medium:      36px;
+    $size-high:        38px;
+    $size-large:       40px;
+    $size-trophy:      42px;
+    $size-continued:   100px;
+    $size-menu-main:   65px;
+    $size-menu-button: 40px;
+    .text{
+        &-very-small{
+            @include text-size(normal, 400, $size-very-small, $size-very-small*1.2);
+        }
+        &-small{
+            @include text-size(normal, 400, $size-small, $size-small*1.2);
+        }
+        &-medium{
+            @include text-size(normal, 400, $size-medium, $size-medium*1.2);
+        }
+        &-high{
+            @include text-size(normal, 400, $size-high, $size-high*1.2);
+        }
+        &-large{
+            @include text-size(normal, 400, $size-large, $size-large*1.2);
+        }
+        &-trophy{
+            @include text-size(normal, 400, $size-trophy, $size-trophy*1.2);
+        }
+        &-continued{
+            @include text-size(normal, 400, $size-continued, $size-continued*1.2);
+        }
+        &-menu-main{
+            @include text-size(normal, 400, $size-menu-main, $size-menu-main*1.2);
+            text-shadow: 4px 4px 0px #000000;  
+        }
+        &-menu-button{
+            @include text-size(normal, 400, $size-menu-button, $size-menu-button*1.2);
+        }
+    }
 
 }
 
