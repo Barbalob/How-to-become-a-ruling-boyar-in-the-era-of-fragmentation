@@ -52,6 +52,57 @@ $size-menu-button: 28px;
 /* Large desktops and laptops */
 //4K
 @media (min-width: 3800px) {
+    $size-very-small:  50px;
+    $size-small:       60px;
+    $size-medium:      65px;
+    $size-high:        70px;
+    $size-large:       80px;
+    $size-trophy:      40px;
+    $size-continued:   80px;
+    $size-menu-main:   120px;
+    $size-menu-button: 70px;
+    .text{
+        &-very-small{
+            @include text-size(normal, 400, $size-very-small, $size-very-small*1.2);
+        }
+        &-small{
+            @include text-size(normal, 400, $size-small, $size-small*1.2);
+        }
+        &-medium{
+            @include text-size(normal, 400, $size-medium, $size-medium*1.2);
+        }
+        &-high{
+            @include text-size(normal, 400, $size-high, $size-high*1.2);
+        }
+        &-large{
+            @include text-size(normal, 400, $size-large, $size-large*1.2);
+        }
+        &-trophy{
+            @include text-size(normal, 400, $size-trophy, $size-trophy*1.2);
+        }
+        &-continued{
+            @include text-size(normal, 400, $size-continued, $size-continued*1.2);
+        }
+        &-menu-main{
+            @include text-size(normal, 400, $size-menu-main, $size-menu-main*1.2);
+            text-shadow: 4px 4px 0px #000000;  
+        }
+        &-menu-button{
+            @include text-size(normal, 400, $size-menu-button, $size-menu-button*1.2);
+        }
+    }
+    .page-content{
+        .img-letter{
+            &-small{
+                margin-right: 15px;
+                width: 120px;
+            }
+            &-high{
+                margin-right: 15px;
+                width: 120px;
+            }
+        }
+    }
 
 }
 
@@ -149,6 +200,19 @@ $size-menu-button: 28px;
         }
     }
 
+    .page-content{
+        .img-letter{
+            &-small{
+                margin-right: 4px;
+                width: 40px;
+            }
+            &-high{
+                margin-right: 4px;
+                width: 40px;
+            }
+        }
+    }
+
 }
 
 //HD
@@ -190,6 +254,19 @@ $size-menu-button: 28px;
         }
         &-menu-button{
             @include text-size(normal, 400, $size-menu-button, $size-menu-button*1.1);
+        }
+    }
+
+    .page-content{
+        .img-letter{
+            &-small{
+                margin-right: 3px;
+                width: 38px;
+            }
+            &-high{
+                margin-right: 3px;
+                width: 35px;
+            }
         }
     }
 }
