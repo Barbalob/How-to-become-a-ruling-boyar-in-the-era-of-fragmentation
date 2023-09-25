@@ -63,7 +63,47 @@ $size-menu-button: 28px;
 
 //FHD
 @media (min-width: 1800px) and (max-width: 2499px) {
+    $size-very-small:  22px;
+    $size-small:       24px;
+    $size-medium:      26px;
+    $size-high:        28px;
+    $size-large:       30px;
+    $size-trophy:      52px;
+    $size-continued:   100px;
+    $size-menu-main:   45px;
+    $size-menu-button: 28px;
 
+
+.text{
+    &-very-small{
+        @include text-size(normal, 400, $size-very-small, 27.5px);
+    }
+    &-small{
+        @include text-size(normal, 400, $size-small, 29.98px);
+    }
+    &-medium{
+        @include text-size(normal, 400, $size-medium, 32.47px);
+    }
+    &-high{
+        @include text-size(normal, 400, $size-high, 35px);
+    }
+    &-large{
+        @include text-size(normal, 400, $size-large, 37.47px);
+    }
+    &-trophy{
+        @include text-size(normal, 400, $size-trophy, 65px);
+    }
+    &-continued{
+        @include text-size(normal, 400, $size-continued, 70.47px);
+    }
+    &-menu-main{
+        @include text-size(normal, 400, $size-menu-main, 56px);
+        text-shadow: 4px 4px 0px #000000;  
+    }
+    &-menu-button{
+        @include text-size(normal, 400, $size-menu-button, 30px);
+    }
+}
 }
 
 //HD+
@@ -113,7 +153,45 @@ $size-menu-button: 28px;
 
 //HD
 @media (min-width: 992px) and (max-width: 1499px) {
-
+    $size-very-small:  16px;
+    $size-small:       17px;
+    $size-medium:      18px;
+    $size-high:        22px;
+    $size-large:       24px;
+    $size-trophy:      40px;
+    $size-continued:   80px;
+    $size-menu-main:   41px;
+    $size-menu-button: 22px;
+    .text{
+        &-very-small{
+            @include text-size(normal, 400, $size-very-small, $size-very-small*1.1);
+        }
+        &-small{
+            @include text-size(normal, 400, $size-small, $size-small*1.1);
+        }
+        &-medium{
+            @include text-size(normal, 400, $size-medium, $size-medium*1.1);
+        }
+        &-high{
+            @include text-size(normal, 400, $size-high, $size-high*1.1);
+        }
+        &-large{
+            @include text-size(normal, 400, $size-large, $size-large*1.2);
+        }
+        &-trophy{
+            @include text-size(normal, 400, $size-trophy, $size-trophy*1.2);
+        }
+        &-continued{
+            @include text-size(normal, 400, $size-continued, $size-continued*1.2);
+        }
+        &-menu-main{
+            @include text-size(normal, 400, $size-menu-main, $size-menu-main*1.2);
+            text-shadow: 4px 4px 0px #000000;  
+        }
+        &-menu-button{
+            @include text-size(normal, 400, $size-menu-button, $size-menu-button*1.1);
+        }
+    }
 }
 
 //Portrait tablets and small desktops 
