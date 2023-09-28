@@ -108,15 +108,15 @@ $size-menu-button: 28px;
 
 //QHD
 @media (min-width: 2500px) and (max-width: 3799px) {
-    $size-very-small:  32px;
-    $size-small:       34px;
-    $size-medium:      36px;
-    $size-high:        38px;
-    $size-large:       40px;
-    $size-trophy:      42px;
+    $size-very-small:  38px;
+    $size-small:       40px;
+    $size-medium:      42px;
+    $size-high:        44px;
+    $size-large:       46px;
+    $size-trophy:      48px;
     $size-continued:   100px;
     $size-menu-main:   65px;
-    $size-menu-button: 40px;
+    $size-menu-button: 50px;
     .text{
         &-very-small{
             @include text-size(normal, 400, $size-very-small, $size-very-small*1.2);
@@ -147,7 +147,18 @@ $size-menu-button: 28px;
             @include text-size(normal, 400, $size-menu-button, $size-menu-button*1.2);
         }
     }
-
+    .page-content{
+        .img-letter{
+            &-small{
+                margin-right: 10px;
+                width: 80px;
+            }
+            &-high{
+                margin-right: 10px;
+                width: 80px;
+            }
+        }
+    }
 }
 
 //FHD
