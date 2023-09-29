@@ -28,6 +28,9 @@ let trophies = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
 let mobileFlag = false;
 let winW = $(window).width();
 let winH = $(window).height();
+let globCurPage = false;
+let dictFlag = true;
+let trophyFlag = true;
 
 let savedTr = GetTr();
 if(savedTr){
@@ -440,34 +443,47 @@ function adaptiveSideElements(Book,gameStarted) {
 }
 
 function openSideBtnEvt(SideBtn, Book, pageClass, addingPages,gameStarted) {
-    let flag = true
     let curPage
     if (SideBtn) {
         SideBtn.addEventListener('click', () => {
-                adaptiveSideElements(Book,gameStarted)
+            adaptiveSideElements(Book,gameStarted)
+            
             if(pageClass == '.trophy_class'){
                 addingPages = trophiesBook();
+                ChangeFlag(".dict_class", true)
             }
-            if (flag) {
+            else{
+                ChangeFlag(".trophy_class", true)
+            }
+            if (GetFlag(pageClass)) {
+                $(".dict_class").remove()
+                $(".trophy_class").remove()
+                Book.updateFromHtml(document.querySelectorAll(".page"))
                 SideBtn.disabled = true
                 const pagesCount = Book.getPageCount()
-                curPage = Book.getCurrentPageIndex()
+                if(globCurPage){
+                    curPage = globCurPage
+                }
+                else{
+                    curPage = Book.getCurrentPageIndex()
+                    globCurPage = curPage
+                }
                 CreateListBook(addingPages, Book)
                 Book.flip(pagesCount)
-                flag = false
+                ChangeFlag(pageClass, false)
                 sleep(800).then(() => {
                     SideBtn.disabled = false
                     Book.on('flip', (e) => {
                         if (e.data == pagesCount - 2) {
                             $(pageClass).remove()
                             sleep(100).then(() => {
-                                flag = true
+                                ChangeFlag(pageClass, true)
                                 Book.updateFromHtml(document.querySelectorAll(".page"))
                                 Book.off('flip', (e) => {
                                     if (e.data == pagesCount - 2) {
                                         $(pageClass).remove()
                                         sleep(100).then(() => {
-                                            flag = true
+                                            ChangeFlag(pageClass, true)
                                             Book.updateFromHtml(document.querySelectorAll(".page" ))
                                             Book.off()
                                         })
@@ -481,10 +497,11 @@ function openSideBtnEvt(SideBtn, Book, pageClass, addingPages,gameStarted) {
             else {
                 document.getElementById('blockerator').style.display = 'block'
                 Book.flip(curPage)
+                globCurPage = false
                 sleep(800).then(() => {
                     $(pageClass).remove()
                     Book.updateFromHtml(document.querySelectorAll(".page"))
-                    flag = true
+                    ChangeFlag(pageClass, true)
                     document.getElementById('blockerator').style.display = "none"
                 })
             }
@@ -492,3 +509,20 @@ function openSideBtnEvt(SideBtn, Book, pageClass, addingPages,gameStarted) {
     }
 }
 
+function ChangeFlag(curClass, value){
+    if(curClass == '.trophy_class'){
+            trophyFlag = value
+    }
+    else{
+            dictFlag = value
+    }
+}
+
+function GetFlag(curClass){
+    if(curClass == '.trophy_class'){
+        return trophyFlag
+    }
+    else{
+        return dictFlag
+    }
+}
