@@ -130,6 +130,19 @@ function ChoiceCreate(Book, evt, dictBtn, trophyBtn, gameStarted){
             const buttonChoice3 = document.querySelector('#choice-3')
 
             const F = (evt) => {
+                $("#tooltip").hide()
+                .html("")
+                .css({
+                    "top" : 0,
+                    "left" : 0
+                });
+                let trg;
+                if ($(evt.target).attr("data-tooltip")){
+                    trg = evt.target.parentNode
+                }
+                else{
+                    trg = evt.target
+                }
                 adaptiveSideElements(Book,gameStarted)
                 dictBtn.disabled = false;
                 trophyBtn.disabled = false;
@@ -137,13 +150,13 @@ function ChoiceCreate(Book, evt, dictBtn, trophyBtn, gameStarted){
                     $(".arrow-left").show()
                     $(".arrow-right").show()
                 }
-                if(evt.target.id == "chosen"){
+                if(trg.id == "chosen"){
                     return
                 }
-                const id = evt.target.id.slice(-1)
-                points += Number($(evt.target).attr("value"));
+                const id = trg.id.slice(-1)
+                points += Number($(trg).attr("value"));
                 console.log(points)
-                let trophy = $(evt.target).attr("trophy");
+                let trophy = $(trg).attr("trophy");
                 if(trophy){
                     if(trophy.length > 2){
                         trophy = trophy.split(',');
@@ -155,7 +168,7 @@ function ChoiceCreate(Book, evt, dictBtn, trophyBtn, gameStarted){
                     }
                     SaveTr(trophies.join(''));
                 }
-                evt.target.id ="chosen"
+                trg.id ="chosen"
                 for (let i = 1; i < 4; i++) {
                     if (String(i) !== id) {
                         const buttonChoice = document.querySelector(`#choice-${i}`)

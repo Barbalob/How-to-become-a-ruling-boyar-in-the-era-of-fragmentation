@@ -38,7 +38,7 @@ export const pages = [
                     <div class="page-content content-img first">
                         <figure>
                             <img class="content-img" src="assets/image/1-Gogol.png" alt="Портрет Гоголя">
-                            <figcaption class="text-img-author text-medium">Ф. А. Моллер. Портрет Гоголя (Третьяковская галерея, 1841 г.)</figcaption>                     
+                            <figcaption class="text-img-author text-medium">Ф. А. Моллер. Портрет Н. В. Гоголя. 1841 г. Государственная Третьяковская галерея</figcaption>                     
                         </figure>                       
                         <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>    
                     </div>
@@ -274,7 +274,7 @@ export const pages = [
                 <button id="endBtn" class="menu__button text-medium" >
                     <figure  class="button-select">
                         <img class="button-select-img" src="assets/bg-button.png">
-                        <figcaption class="button-select-text text-menu-button">Начать игру заново</figcaption>
+                        <figcaption class="button-select-text text-menu-button">Посмотреть свой результат</figcaption>
                     </figure>
                 </button>
                 <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>
@@ -345,7 +345,7 @@ export const pages = [
                 <button id="endBtn" class="menu__button text-medium" >
                     <figure  class="button-select">
                         <img class="button-select-img" src="assets/bg-button.png">
-                        <figcaption class="button-select-text text-menu-button">Начать игру заново</figcaption>
+                        <figcaption class="button-select-text text-menu-button">Посмотреть свой результат</figcaption>
                     </figure>
                 </button>
                 <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>
@@ -586,7 +586,7 @@ export const pages = [
                 <button id="endBtn" class="menu__button text-medium" >
                     <figure  class="button-select">
                         <img class="button-select-img" src="assets/bg-button.png">
-                        <figcaption class="button-select-text text-menu-button">Начать игру заново</figcaption>
+                        <figcaption class="button-select-text text-menu-button">Посмотреть свой результат</figcaption>
                     </figure>
                 </button>
                 <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>
@@ -719,7 +719,7 @@ export const pages = [
                 <button id="endBtn" class="menu__button text-medium" >
                     <figure  class="button-select">
                         <img class="button-select-img" src="assets/bg-button.png">
-                        <figcaption class="button-select-text text-menu-button">Начать игру заново</figcaption>
+                        <figcaption class="button-select-text text-menu-button">Посмотреть свой результат</figcaption>
                     </figure>
                 </button>
                 <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>
@@ -815,7 +815,7 @@ export const pages = [
                 <button id="endBtn" class="menu__button text-medium" >
                     <figure  class="button-select">
                         <img class="button-select-img" src="assets/bg-button.png">
-                        <figcaption class="button-select-text text-menu-button">Начать игру заново</figcaption>
+                        <figcaption class="button-select-text text-menu-button">Посмотреть свой результат</figcaption>
                     </figure>
                 </button>
                 <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>
@@ -967,7 +967,7 @@ export const pages = [
                 <button id="endBtn" class="menu__button text-medium" >
                     <figure  class="button-select">
                         <img class="button-select-img" src="assets/bg-button.png">
-                        <figcaption class="button-select-text text-menu-button">Начать игру заново</figcaption>
+                        <figcaption class="button-select-text text-menu-button">Посмотреть свой результат</figcaption>
                     </figure>
                 </button>
                 <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>
@@ -1070,7 +1070,7 @@ export const pages = [
             <button id="endBtn" class="menu__button text-medium" >
                 <figure  class="button-select">
                     <img class="button-select-img" src="assets/bg-button.png">
-                    <figcaption class="button-select-text text-menu-button">Начать игру заново</figcaption>
+                    <figcaption class="button-select-text text-menu-button">Посмотреть свой результат</figcaption>
                 </figure>
             </button>
             <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>
@@ -1103,7 +1103,7 @@ export const pages = [
                 <button id="endBtn" class="menu__button text-medium" >
                     <figure  class="button-select">
                         <img class="button-select-img" src="assets/bg-button.png">
-                        <figcaption class="button-select-text text-menu-button">Начать игру заново</figcaption>
+                        <figcaption class="button-select-text text-menu-button">Посмотреть свой результат</figcaption>
                     </figure>
                 </button>
                 <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>
@@ -1237,7 +1237,7 @@ export const pages = [
             <button id="endBtn" class="menu__button text-medium" >
                 <figure  class="button-select">
                     <img class="button-select-img" src="assets/bg-button.png">
-                    <figcaption class="button-select-text text-menu-button">Начать игру заново</figcaption>
+                    <figcaption class="button-select-text text-menu-button">Посмотреть свой результат</figcaption>
                 </figure>
             </button>
             <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>
@@ -1340,7 +1340,7 @@ export const pages = [
                 <button id="endBtn" class="menu__button text-medium" >
                 <figure  class="button-select">
                     <img class="button-select-img" src="assets/bg-button.png">
-                    <figcaption class="button-select-text text-menu-button">Начать игру заново</figcaption>
+                    <figcaption class="button-select-text text-menu-button">Посмотреть свой результат</figcaption>
                 </figure>
             </button>
                 <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>
@@ -1372,7 +1372,7 @@ export const pages = [
                 <button id="endBtn" class="menu__button text-medium" >
                 <figure  class="button-select">
                     <img class="button-select-img" src="assets/bg-button.png">
-                    <figcaption class="button-select-text text-menu-button">Начать игру заново</figcaption>
+                    <figcaption class="button-select-text text-menu-button">Посмотреть свой результат</figcaption>
                 </figure>
             </button>
                 <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>
@@ -1482,7 +1482,7 @@ export const pages = [
                 <button id="endBtn" class="menu__button text-medium" >
                     <figure  class="button-select">
                         <img class="button-select-img" src="assets/bg-button.png">
-                        <figcaption class="button-select-text text-menu-button">Начать игру заново</figcaption>
+                        <figcaption class="button-select-text text-menu-button">Посмотреть свой результат</figcaption>
                     </figure>
                 </button>
                 <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>
@@ -1556,7 +1556,7 @@ export const pages = [
                 <button id="endBtn" class="menu__button text-medium" >
                     <figure  class="button-select">
                         <img class="button-select-img" src="assets/bg-button.png">
-                        <figcaption class="button-select-text text-menu-button">Начать игру заново</figcaption>
+                        <figcaption class="button-select-text text-menu-button">Посмотреть свой результат</figcaption>
                     </figure>
                 </button>
                 <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>
@@ -1586,7 +1586,7 @@ export const pages = [
                 <button id="endBtn" class="menu__button text-medium" >
                     <figure  class="button-select">
                         <img class="button-select-img" src="assets/bg-button.png">
-                        <figcaption class="button-select-text text-menu-button">Начать игру заново</figcaption>
+                        <figcaption class="button-select-text text-menu-button">Посмотреть свой результат</figcaption>
                     </figure>
                 </button>
                 <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>
@@ -1690,7 +1690,7 @@ export const pages = [
 
         `,
         "btn-1":`<li><button id="choice-1" class="text-medium button-answer" value="0">Участвовать в чужом походе? Мы лучше поищем других князей, которые согласятся помочь нам, не надеясь, что мы сгинем в гуще сражений за их интересы!</button></li>`,
-        "btn-2":`<li><button id="choice-2" class="text-medium button-answer" value="7" trophy="13">Что ж, если таково предложение <a href="#" alt="Ссылка" data-tooltip="${definitions['Новгородская земля'][0]}">Новгорода</a>, мы согласны. Надеюсь, новгородский князь сдержит свое слово ⇒ Князь удовлетворен Вашим решением. После нескольких дней отдыха Вы отправляетесь <a href="#" alt="Ссылка" data-tooltip="${definitions['Поход на враждебный Новгороду Полоцк'][0]}">походом на Полоцк</a></button></li>`,
+        "btn-2":`<li><button id="choice-2" class="text-medium button-answer" value="7" trophy="13">Что ж, если таково предложение <a href="#" alt="Ссылка" data-tooltip="${definitions['Новгородская земля'][0]}">Новгорода</a>, мы согласны. Надеюсь, новгородский князь сдержит свое слово`,
         "btn-3":``,
         
         "choice-1":`
@@ -1717,7 +1717,7 @@ export const pages = [
                 <button id="endBtn" class="menu__button text-medium" >
                     <figure  class="button-select">
                         <img class="button-select-img" src="assets/bg-button.png">
-                        <figcaption class="button-select-text text-menu-button">Начать игру заново</figcaption>
+                        <figcaption class="button-select-text text-menu-button">Посмотреть свой результат</figcaption>
                     </figure>
                 </button>
                 <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>
@@ -1866,7 +1866,7 @@ export const pages = [
                 <button id="endBtn" class="menu__button text-medium" >
                     <figure  class="button-select">
                         <img class="button-select-img" src="assets/bg-button.png">
-                        <figcaption class="button-select-text text-menu-button">Начать игру заново</figcaption>
+                        <figcaption class="button-select-text text-menu-button">Посмотреть свой результат</figcaption>
                     </figure>
                 </button>
                 <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>
@@ -1946,7 +1946,7 @@ export const pages = [
                 <button id="endBtn" class="menu__button text-medium" >
                     <figure  class="button-select">
                         <img class="button-select-img" src="assets/bg-button.png">
-                        <figcaption class="button-select-text text-menu-button">Начать игру заново</figcaption>
+                        <figcaption class="button-select-text text-menu-button">Посмотреть свой результат</figcaption>
                     </figure>
                 </button>
                 <div class='decor'><iюmg src="assets/decor-1.svg" alt="" class="img-decor"></div>
@@ -1987,7 +1987,7 @@ export const pages = [
             <figure>
                 <h2 class='text-trophy'>Получен трофей:</h2>
                 <img class="content-img" src="assets/trophy/16.png" alt="Чин покладника">
-                <figcaption class="text-img-author text-medium">Чин покладника</figcaption>                     
+                <figcaption class="text-img-author text-medium">Чин покладника</figcaption>                    
             </figure>                       
             <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>    
         </div>
@@ -2009,7 +2009,7 @@ export const pages = [
                 <button id="endBtn" class="menu__button text-medium" >
                     <figure  class="button-select">
                         <img class="button-select-img" src="assets/bg-button.png">
-                        <figcaption class="button-select-text text-menu-button">Начать игру заново</figcaption>
+                        <figcaption class="button-select-text text-menu-button">Посмотреть свой результат</figcaption>
                     </figure>
                 </button>
                 <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>
