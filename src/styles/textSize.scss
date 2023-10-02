@@ -5,7 +5,7 @@
     line-height: $line-height;
 }
 
-
+$size-footer:  16px;
 $size-very-small:  22px;
 $size-small:       24px;
 $size-medium:      26px;
@@ -18,6 +18,10 @@ $size-menu-button: 28px;
 
 
 .text{
+    &-footer{
+        @include text-size(normal, 400, $size-footer, 20px);
+        letter-spacing: 2px;
+    }
     &-very-small{
         @include text-size(normal, 400, $size-very-small, 27.5px);
     }
@@ -52,6 +56,7 @@ $size-menu-button: 28px;
 /* Large desktops and laptops */
 //4K
 @media (min-width: 3800px) {
+    $size-footer:  30px;
     $size-very-small:  50px;
     $size-small:       60px;
     $size-medium:      65px;
@@ -62,6 +67,10 @@ $size-menu-button: 28px;
     $size-menu-main:   120px;
     $size-menu-button: 70px;
     .text{
+        &-footer{
+            @include text-size(normal, 400, $size-footer, $size-footer*1.2);
+            letter-spacing: 10px;
+        }
         &-very-small{
             @include text-size(normal, 400, $size-very-small, $size-very-small*1.2);
         }
@@ -108,6 +117,7 @@ $size-menu-button: 28px;
 
 //QHD
 @media (min-width: 2500px) and (max-width: 3799px) {
+    $size-footer:  25px;
     $size-very-small:  38px;
     $size-small:       40px;
     $size-medium:      42px;
@@ -118,6 +128,10 @@ $size-menu-button: 28px;
     $size-menu-main:   65px;
     $size-menu-button: 50px;
     .text{
+        &-footer{
+            @include text-size(normal, 400, $size-footer, $size-footer*1.2);
+            letter-spacing: 8px;
+        }
         &-very-small{
             @include text-size(normal, 400, $size-very-small, $size-very-small*1.2);
         }
@@ -163,6 +177,7 @@ $size-menu-button: 28px;
 
 //FHD
 @media (min-width: 1800px) and (max-width: 2499px) {
+    $size-footer:  16px;
     $size-very-small:  22px;
     $size-small:       24px;
     $size-medium:      26px;
@@ -175,6 +190,10 @@ $size-menu-button: 28px;
 
 
 .text{
+    &-footer{
+        @include text-size(normal, 400, $size-footer, $size-footer*1.2);
+        letter-spacing: 8px;
+    }
     &-very-small{
         @include text-size(normal, 400, $size-very-small, 27.5px);
     }
@@ -208,7 +227,7 @@ $size-menu-button: 28px;
 
 //HD+
 @media (min-width: 1500px) and (max-width: 1799px) {
-
+    $size-footer:  13px;
     $size-very-small:  18px;
     $size-small:       20px;
     $size-medium:      22px;
@@ -219,6 +238,10 @@ $size-menu-button: 28px;
     $size-menu-main:   41px;
     $size-menu-button: 26px;
     .text{
+        &-footer{
+            @include text-size(normal, 400, $size-footer, 20px);
+            letter-spacing: 2px;
+        }
         &-very-small{
             @include text-size(normal, 400, $size-very-small, $size-very-small*1.2);
         }
@@ -266,6 +289,7 @@ $size-menu-button: 28px;
 
 //HD
 @media (min-width: 992px) and (max-width: 1499px) {
+    $size-footer:  10px;
     $size-very-small:  16px;
     $size-small:       17px;
     $size-medium:      18px;
@@ -276,6 +300,10 @@ $size-menu-button: 28px;
     $size-menu-main:   41px;
     $size-menu-button: 22px;
     .text{
+        &-footer{
+            @include text-size(normal, 400, $size-footer, 20px);
+            letter-spacing: 2px;
+        }
         &-very-small{
             @include text-size(normal, 400, $size-very-small, $size-very-small*1.1);
         }

@@ -136,6 +136,27 @@
     }
 }
 
+.double-btn{
+    display: flex;
+    width: 75%;
+    margin: 0 auto;
+    gap: 2%;
+    .menu__button{
+        width: 48%;
+    }
+}
+.aboutUs-btn{
+    width: 48%*75/100;
+}
+
+.footer{
+    position: absolute;
+    bottom: 2px;
+    z-index: 500;
+    text-align: center;
+    width: 100vw;
+}
+
 
 
 
@@ -157,7 +178,7 @@
     .menu-main{
         display: none;
     }
-
+    
     .menu-main-mobile{
         width: 100vw;
         margin: 0 auto;
@@ -238,13 +259,11 @@
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        gap:5px;
+        gap:10px;
         margin-bottom: 10px;
         .menu__button{
-            max-height: 35%;
             .menu__button-left{ 
-                height: 100%;
-                width: 100%;
+                width: 80%;
             }
         }
         .menu__left-img{
@@ -254,8 +273,28 @@
             object-fit: contain;
         }
     }
+    .double-btn{
+        display: flex;
+        width: 95%;
+        margin: 0 auto;
+        .menu__button{
+            width: 35%;
+            .menu__button-left{
+                width: 100%;
+                .menu__left-img{
+                    display: block;
+                    height: 34px;
+                    object-fit: fill;
+                }
+            }
+        }
+    }
+    .footer{
+        bottom:-3px;
+    }
 
-    
+
+    $size-footer:  10px;
     $size-very-small:  14px;
     $size-small:       16px;
     $size-medium:      17px;
@@ -266,6 +305,10 @@
     $size-menu-main:   35px;
     $size-menu-button: 16px;
     .text{
+        &-footer{
+            @include text-size(normal, 400, $size-footer, 20px);
+            letter-spacing: 2px;
+        }
         &-very-small{
             @include text-size(normal, 400, $size-very-small, $size-very-small*1.2);
         }
