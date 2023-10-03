@@ -20,7 +20,10 @@ const menuTrophyBtn = document.querySelector('#trophies')
 const mobTrophy = document.querySelector('#trophies-mobile')
 const about = document.querySelector('#aboutUs')
 const mobAbout = document.querySelector('#aboutUs-mobile')
+const dictMenuBtn = document.querySelector('#dictBtn')
+const mobDictMenuBtn = document.querySelector('#dictBtn-mobile')
 let trophiesPages = trophiesBook()
+let dictPages = dictionary
 let aboutPages = aboutUs
 let stage = 0;
 let points = 0;
@@ -51,6 +54,9 @@ menuTrophyBtn.addEventListener('click', () => {
 about.addEventListener('click', () => {
     OpenBook('about')
 });
+dictMenuBtn.addEventListener('click', () => {
+    OpenBook('dict')
+});
 mobStart.addEventListener('click', () => {
     mobileFlag = true
     OpenBook('start')
@@ -66,6 +72,12 @@ mobAbout.addEventListener('click', () => {
     aboutPages = aboutPages.replaceAll(' <li class="page">','<li class="page"></li><li class="page">');
     mobileFlag = true
     OpenBook('about')
+    $('body').css({'overflow':'hidden'});
+});
+mobDictMenuBtn.addEventListener('click', () => {
+    dictPages = dictPages.replaceAll(' <li class="page dict_class">','<li class="page"></li><li class="page dict_class">');
+    mobileFlag = true
+    OpenBook('dict')
     $('body').css({'overflow':'hidden'});
 });
 
@@ -348,6 +360,23 @@ function OpenBook(gameStarted) {
 
 
         }
+        else if(gameStarted == 'dict'){
+            mainPage.innerHTML = `
+            // <button class="arrow-left"><img src="assets/arrow.svg"></button>
+            // <button class="arrow-right"><img src="assets/arrow.svg"></button>
+            <div class="container">
+            <div class="side_blockerator__left" id="side_blockerator__left"></div>
+            <div class="side_blockerator__right" id="side_blockerator__right"></div>
+            <button class='home-btn'></button>
+                <div class="wrapper-book">
+                    <ul class="flip-book" id="demoBookExample">
+                        ${dictPages}
+                    </ul>
+                </div>
+            </div>`
+
+
+        }
 
         // mainPage.innerHTML = dictionary
         let BookOptions;
@@ -419,7 +448,7 @@ function OpenBook(gameStarted) {
 
         if(gameStarted){
         const dictBtn = document.querySelector(".dictionary-btn")
-        openSideBtnEvt(dictBtn, Book, ".dict_class", dictionary,gameStarted)
+        openSideBtnEvt(dictBtn, Book, ".dict_class", dictPages,gameStarted)
 
         const trophyBtn = document.querySelector(".trophy-btn")
         openSideBtnEvt(trophyBtn, Book, ".trophy_class", trophiesPages,gameStarted)
