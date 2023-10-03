@@ -35,20 +35,20 @@ const CreateLiTrophies = (index) => {
                 <ul class="content-list-img-dop">
                     <li class="content-list-img-dop-li"> 
                         <figure class='${trophies[index] == 0 ? 'received' : '' }'>
-                            <img src="assets/trophy/${imageFirst}.png" alt="">
+                            <img id='${imageFirst}' src="assets/trophy/${imageFirst}.png" alt="">
                             <figcaption class='text-medium'>${trophiesList[index]}</figcaption>
                         </figure>
                     </li> 
                     <li class="content-list-img-dop-li"> 
                         <figure class='${trophies[index+1] == 0 ? 'received' : '' }'>
-                            <img src="assets/trophy/${imageSecond}.png" alt="">
+                            <img id='${imageSecond}' src="assets/trophy/${imageSecond}.png" alt="">
                             <figcaption class='text-medium'>${trophiesList[index + 1]}</figcaption>
                         </figure>
                     </li> 
                 </ul>
                 <div class="content-list-img-bottom"> 
                     <figure class='${trophies[index+2] == 0 ? 'received' : '' }'>
-                        <img src="assets/trophy/${imageThird}.png" alt="">
+                        <img id='${imageThird}' src="assets/trophy/${imageThird}.png" alt="">
                         <figcaption class='text-medium'>${trophiesList[index + 2]}</figcaption>
                     </figure>
                 </div>  
@@ -67,7 +67,7 @@ const CreateLiTrophiesMain = (index) => {
     <li class="page trophy_class">
     <div class="page-content content-img first">
     <figure class='${trophies[index] == 0 ? 'received' : '' }'>
-        <img class="content-img" src="assets/trophy/${image}.png">
+        <img id='${image}' class="content-img" src="assets/trophy/${image}.png">
         <figcaption class="text-img-author text-medium">${trophiesList[index]}</figcaption>                     
     </figure>                       
     <div class='decor'><img src="assets/decor-1.svg" alt="" class="img-decor"></div>    
