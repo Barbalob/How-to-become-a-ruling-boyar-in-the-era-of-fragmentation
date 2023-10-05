@@ -3,8 +3,8 @@ const people = {
     'Попович Алексей': ['Alexei.jpg','Редактор и научный консультант проекта'],
     'Мария Кузнецова': ['Maria.jpg','Тимлид'],
     'Елизавета Федорова': ['Lisa.jpg','Дизайнер'],
-    'Артём Кунщиков': ['Artem.jpg','Frontend'],
-    'Андрей Ситников': ['Andrey.jpg','Frontend'],
+    'Артём Кунщиков': ['Artem.jpg','Frontend-разработчик'],
+    'Андрей Ситников': ['Andrey.jpg','Frontend-разработчик'],
 };
 
 export const aboutUs = 
