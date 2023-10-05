@@ -87,6 +87,15 @@ function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
 
+function flipToTrophyEvt(Book){
+    let pageCount = Book.getPageCount()
+    Book.off('click')
+    $(".trophImg").on('click', (evt) => {
+        Book.flip(pageCount - 32 + (Number(evt.target.id)-1)*2)
+    });           
+};
+
+
 function tooltipCreate(){
     if(!mobileFlag){
         $("[data-tooltip]").mousemove(function (eventObject) {
@@ -357,7 +366,7 @@ function OpenBook(gameStarted) {
                     </ul>
                 </div>
             </div>`
-
+            
 
         }
         else if(gameStarted == 'dict'){
@@ -425,7 +434,11 @@ function OpenBook(gameStarted) {
             )}
         const Book = BookOptions;
         Book.loadFromHTML(document.querySelectorAll(".page"))
-        
+
+        if(gameStarted == 'trophy'){
+            tooltipCreate()
+            flipToTrophyEvt(Book)
+        }
         document.addEventListener("keydown", (e) => {
             if (e.code == 'ArrowRight'){Book.flipNext()}
             else if(e.code == 'ArrowLeft'){Book.flipPrev()}
@@ -511,6 +524,9 @@ function openSideBtnEvt(SideBtn, Book, pageClass, addingPages,gameStarted) {
                     globCurPage = curPage
                 }
                 CreateListBook(addingPages, Book)
+                if(pageClass == '.trophy_class'){
+                    flipToTrophyEvt(Book)
+                }
                 Book.flip(pagesCount)
                 ChangeFlag(pageClass, false)
                 sleep(800).then(() => {
