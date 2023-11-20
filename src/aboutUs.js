@@ -11,7 +11,7 @@ export const aboutUs =
   `
     ${
         Object.keys(people).map(key =>{
-            // console.log(key);
+            
             return `
             <li class="page">
                 <div class="page-content content-img">

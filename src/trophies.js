@@ -15,7 +15,7 @@ const CreateAllTrophies = () => {
         description.push(CreateLiDescriptionTrophies(i+1))
         description.push(CreateLiDescriptionTrophies(i+2))
     }
-    console.log(trophiesList.length-1);
+    // console.log(trophiesList.length-1);
     liList.push(CreateLiTrophiesMain(trophiesList.length-1))
     description.push(CreateLiDescriptionTrophies(trophiesList.length-1))
     const result = [...liList, ...description];

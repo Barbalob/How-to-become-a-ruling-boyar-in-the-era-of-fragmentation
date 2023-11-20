@@ -176,7 +176,7 @@ function ChoiceCreate(Book, evt, dictBtn, trophyBtn, gameStarted){
                 }
                 const id = trg.id.slice(-1)
                 points += Number($(trg).attr("value"));
-                console.log(points)
+                // console.log(points)
                 let trophy = $(trg).attr("trophy");
                 if(trophy){
                     if(trophy.length > 2){
@@ -244,7 +244,7 @@ function CreateListBook(template, Book) {
     if (document.querySelector('.stf__block') != null) {
         document.querySelector('.stf__block').insertAdjacentHTML("beforeend", test);
     } else {
-        console.log('no');
+        // console.log('no');
     }
     Book.updateFromHtml(document.querySelectorAll(".page"));
 }

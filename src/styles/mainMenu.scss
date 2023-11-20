@@ -50,21 +50,22 @@
     }
 
     &__list-logo{
-        flex-direction: column;
+        flex-direction: row;
         max-height: 50%;
         width: 90%;
         display: flex;
         text-align: center;
         justify-content: flex-start;
+        align-items: center;
         gap:20px;
         .menu__logo-bottom{
-            max-height: 35%;
-            min-width: 100%;
+            max-height: 60%;
+            max-width: 40%;
             object-fit: contain;
         }
         &-dop{
             max-height: 55%;
-            min-width: 100%;
+            min-width: 60%;
             display: flex;
             gap: 30px;
             justify-content:center;
@@ -159,7 +160,15 @@
 
 
 
-
+@media (min-width: 3000px){
+    .menu{
+        &__list-logo{
+            .menu__logo-bottom{
+                min-width: 30%;
+            }
+        }
+    }
+}
 
 
 
